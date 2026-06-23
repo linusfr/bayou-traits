@@ -131,7 +131,7 @@ export default function App() {
 	const panelOpen = !!detail
 
 	return (
-		<div className="min-h-screen bg-hunt-bg font-body flex flex-col">
+		<div className="h-screen overflow-hidden bg-hunt-bg font-body flex flex-col">
 
 			{/* ── Header ── */}
 			<header className="shrink-0 border-b border-hunt-border-strong bg-hunt-surface">
@@ -236,7 +236,7 @@ export default function App() {
 
 					{/* Synergy panel */}
 					{panelOpen ? (
-						<div className="flex-1 overflow-y-auto p-4 lg:p-6">
+						<div key={selectedId} className="flex-1 overflow-y-auto p-4 lg:p-6">
 							<SynergyPanel
 								detail={detail}
 								onClose={() => setSelectedId(null)}
