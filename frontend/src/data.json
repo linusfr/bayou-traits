@@ -4208,7 +4208,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "Nagant made, double-action revolver. High fire-rate, muzzle velocity, and capacity at the cost of damage and reload speed. Extended stock and barrel.",
+			"description": "Nagant made, double-action revolver. High fire-rate, muzzle velocity, and capacity at the cost of damage and reload speed. Extended stock and barrel, modified with a Deadeye scope.",
 			"image_url": "",
 			"trait_synergies": [
 				{
