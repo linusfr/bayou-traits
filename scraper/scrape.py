@@ -35,6 +35,7 @@ WEAPON_TYPE_HINTS = {
     "bow": ["bow", "crossbow"],
     "single_shot": ["single-shot", "single shot"],
     "aim_helper": ["aim helper", "throwing range"],
+    "healing": ["first aid", "bandage", "vitality shot", "stamina shot", "regeneration shot"],
 }
 
 AMMO_NAMES = {"compact", "medium", "long", "shotgun", "sparks", "nitro"}
@@ -365,6 +366,8 @@ def parse_tool_page(html: str, tool_class: str) -> list[dict]:
     tools: list[dict] = []
     for name, els in sections:
         if not name or len(name) > 60:
+            continue
+        if "not available" in name.lower():
             continue
         description = ""
         cost = 0

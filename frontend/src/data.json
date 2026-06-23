@@ -4,7 +4,7 @@
     "scraped_at": "2026-06-23T11:39:05.893796+00:00",
     "trait_count": 56,
     "weapon_count": 40,
-    "tool_count": 41
+    "tool_count": 40
   },
   "traits": [
     {
@@ -347,7 +347,24 @@
       "trait_type": "normal",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/6c/Doctor.png",
       "weapon_synergies": [],
-      "tool_synergies": []
+      "tool_synergies": [
+        {
+          "tool_id": "first_aid_kit",
+          "reason": "Doctor doubles health restored by First Aid Kits, maximising healing efficiency."
+        },
+        {
+          "tool_id": "medical_pack",
+          "reason": "Doctor doubles health restored by healing items, including the Medical Pack."
+        },
+        {
+          "tool_id": "vitality_shot",
+          "reason": "Doctor doubles health from healing consumables, boosting Vitality Shot value."
+        },
+        {
+          "tool_id": "vitality_shot_weak",
+          "reason": "Doctor doubles health from healing consumables, boosting Vitality Shot value."
+        }
+      ]
     },
     {
       "id": "fanning",
@@ -711,7 +728,40 @@
       "trait_type": "normal",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/52/Physician.png",
       "weapon_synergies": [],
-      "tool_synergies": []
+      "tool_synergies": [
+        {
+          "tool_id": "first_aid_kit",
+          "reason": "Physician reduces First Aid Kit use time by 50%, allowing faster healing under pressure."
+        },
+        {
+          "tool_id": "medical_pack",
+          "reason": "Physician cuts Medical Pack use time by 50%, critical when reviving or healing mid-fight."
+        },
+        {
+          "tool_id": "vitality_shot",
+          "reason": "Physician reduces healing consumable use time, including Vitality Shots."
+        },
+        {
+          "tool_id": "vitality_shot_weak",
+          "reason": "Physician reduces healing consumable use time, including Vitality Shots."
+        },
+        {
+          "tool_id": "stamina_shot",
+          "reason": "Physician reduces use time for Stamina Shots, enabling quicker stamina recovery."
+        },
+        {
+          "tool_id": "stamina_shot_weak",
+          "reason": "Physician reduces use time for Stamina Shots, enabling quicker stamina recovery."
+        },
+        {
+          "tool_id": "regeneration_shot",
+          "reason": "Physician reduces Regeneration Shot use time, making health-over-time faster to apply."
+        },
+        {
+          "tool_id": "regeneration_shot_weak",
+          "reason": "Physician reduces Regeneration Shot use time, making health-over-time faster to apply."
+        }
+      ]
     },
     {
       "id": "pitcher",
@@ -1328,7 +1378,7 @@
     },
     {
       "id": "crossbow",
-      "name": "Crossbow",
+      "name": "Hand Crossbow",
       "type": "bow",
       "size": "large",
       "ammo": "unknown",
@@ -1829,15 +1879,6 @@
   ],
   "tools": [
     {
-      "id": "electric_lamp_not_available_anymore",
-      "name": "Electric Lamp (not available anymore)",
-      "description": "A battery-powered light worn on the shoulder. Increases visibility and can be used to blind nearby enemies during night.",
-      "cost": 5,
-      "tool_class": "support",
-      "type": "support",
-      "trait_synergies": []
-    },
-    {
       "id": "fusees",
       "name": "Fusees",
       "description": "Handheld railroad flares used for illuminating dark areas and for signalling. Can ignite flammable materials. Comes in a pack of three.",
@@ -2146,7 +2187,16 @@
       "cost": 30,
       "tool_class": "healing",
       "type": "healing",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "doctor",
+          "reason": "Doctor doubles health restored by First Aid Kits, maximising healing efficiency."
+        },
+        {
+          "trait_id": "physician",
+          "reason": "Physician reduces First Aid Kit use time by 50%, allowing faster healing under pressure."
+        }
+      ]
     },
     {
       "id": "medical_pack",
@@ -2155,7 +2205,16 @@
       "cost": 35,
       "tool_class": "healing",
       "type": "healing",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "doctor",
+          "reason": "Doctor doubles health restored by healing items, including the Medical Pack."
+        },
+        {
+          "trait_id": "physician",
+          "reason": "Physician cuts Medical Pack use time by 50%, critical when reviving or healing mid-fight."
+        }
+      ]
     },
     {
       "id": "dusters",
@@ -2208,7 +2267,16 @@
       "cost": 20,
       "tool_class": "healing",
       "type": "healing",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "doctor",
+          "reason": "Doctor doubles health from healing consumables, boosting Vitality Shot value."
+        },
+        {
+          "trait_id": "physician",
+          "reason": "Physician reduces healing consumable use time, including Vitality Shots."
+        }
+      ]
     },
     {
       "id": "vitality_shot",
@@ -2217,7 +2285,16 @@
       "cost": 85,
       "tool_class": "healing",
       "type": "healing",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "doctor",
+          "reason": "Doctor doubles health from healing consumables, boosting Vitality Shot value."
+        },
+        {
+          "trait_id": "physician",
+          "reason": "Physician reduces healing consumable use time, including Vitality Shots."
+        }
+      ]
     },
     {
       "id": "stamina_shot_weak",
@@ -2226,7 +2303,12 @@
       "cost": 60,
       "tool_class": "healing",
       "type": "healing",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "physician",
+          "reason": "Physician reduces use time for Stamina Shots, enabling quicker stamina recovery."
+        }
+      ]
     },
     {
       "id": "stamina_shot",
@@ -2235,7 +2317,12 @@
       "cost": 100,
       "tool_class": "healing",
       "type": "healing",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "physician",
+          "reason": "Physician reduces use time for Stamina Shots, enabling quicker stamina recovery."
+        }
+      ]
     },
     {
       "id": "regeneration_shot_weak",
@@ -2244,7 +2331,12 @@
       "cost": 40,
       "tool_class": "healing",
       "type": "healing",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "physician",
+          "reason": "Physician reduces Regeneration Shot use time, making health-over-time faster to apply."
+        }
+      ]
     },
     {
       "id": "regeneration_shot",
@@ -2253,7 +2345,12 @@
       "cost": 105,
       "tool_class": "healing",
       "type": "healing",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "physician",
+          "reason": "Physician reduces Regeneration Shot use time, making health-over-time faster to apply."
+        }
+      ]
     },
     {
       "id": "poison_bomb",
