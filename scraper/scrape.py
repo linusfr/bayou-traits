@@ -194,7 +194,7 @@ def parse_trait(html: str, title: str) -> dict | None:
         elif "description" in key or "effect" in key:
             description = val
         elif key == "type":
-            # wiki.gg: "Regular" → normal, "Event" → event, "Scarce" → scarce
+            # wiki.gg infobox type can be multi-value, e.g. "Burn, Scarce"
             vl = val.lower()
             if "event" in vl:
                 trait_type = "event"
@@ -216,10 +216,16 @@ def parse_trait(html: str, title: str) -> dict | None:
             category = 'supportive'
 
     page_text = soup.get_text().lower()
-    if trait_type == "normal":
-        if "burn trait" in page_text or "is burned" in page_text:
-            trait_type = "burn"
-        elif "scarce" in page_text:
+    # Detect burn trait independently of the primary type classification
+    is_burn = (
+        "burn" in (fields.get("type", "").lower())
+        or "burn trait" in page_text
+        or "is burned" in page_text
+    )
+    if trait_type == "normal" and is_burn:
+        pass  # keep normal; is_burn flag carries the information
+    elif trait_type == "normal":
+        if "scarce" in page_text:
             trait_type = "scarce"
 
     desc_lower = description.lower()
@@ -234,6 +240,7 @@ def parse_trait(html: str, title: str) -> dict | None:
         "rank": rank,
         "category": category or "unknown",
         "trait_type": trait_type,
+        "is_burn": is_burn,
         "image_url": extract_image_url(soup),
         "_weapon_type_hints": weapon_type_hints,
         "_ammo_hints": ammo_hints,

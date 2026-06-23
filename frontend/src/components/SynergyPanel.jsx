@@ -17,6 +17,13 @@ const WEAPON_CLASS_PILL = {
 	launcher: 'text-amber-300  border-amber-800/60  bg-amber-950/30',
 }
 
+const TRAIT_TYPE_PILL = {
+	scarce: 'text-amber-400 border-amber-900/60 bg-amber-950/30',
+	event:  'text-cyan-400  border-cyan-900/60  bg-cyan-950/30',
+}
+
+const BURN_PILL = 'text-red-400 border-red-900/60 bg-red-950/30'
+
 const TOOL_CLASS_PILL = {
 	explosive: 'text-orange-400 border-orange-900/60 bg-orange-950/30',
 	fire:      'text-red-400   border-red-900/60   bg-red-950/30',
@@ -134,8 +141,11 @@ export default function SynergyPanel({ detail, onClose, onNavigate }) {
 							{item.cost > 0 && (
 								<span className="text-xs text-hunt-gold">{item.cost} upgrade points</span>
 							)}
-							{item.trait_type && item.trait_type !== 'normal' && (
-								<span className="text-xs text-hunt-text-dim italic capitalize">{item.trait_type}</span>
+							{item.trait_type && item.trait_type !== 'normal' && TRAIT_TYPE_PILL[item.trait_type] && (
+								<Pill label={item.trait_type} className={TRAIT_TYPE_PILL[item.trait_type]} />
+							)}
+							{item.is_burn && (
+								<Pill label="burn" className={BURN_PILL} />
 							)}
 						</>
 					)}

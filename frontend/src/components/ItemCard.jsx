@@ -17,6 +17,13 @@ const WEAPON_CLASS_COLOR = {
 	launcher: 'text-amber-300',
 }
 
+const TRAIT_TYPE_PILL = {
+	scarce: 'text-amber-400 border-amber-900/60 bg-amber-950/30',
+	event:  'text-cyan-400  border-cyan-900/60  bg-cyan-950/30',
+}
+
+const BURN_PILL = 'text-red-400 border-red-900/60 bg-red-950/30'
+
 const TOOL_CLASS_COLOR = {
 	explosive: 'text-orange-400',
 	fire:      'text-red-400',
@@ -104,14 +111,24 @@ export default function ItemCard({ item, type, selected, onClick }) {
 							</span>
 						)}
 					</div>
-					{item.category && item.category !== 'unknown' && (
-						<div className="mt-2">
+					<div className="flex flex-wrap gap-1 mt-2">
+						{item.category && item.category !== 'unknown' && (
 							<span className={`inline text-xs px-2 py-0.5 rounded border capitalize
 								${CATEGORY_PILL[item.category] ?? 'text-hunt-text-dim border-hunt-border bg-transparent'}`}>
 								{item.category}
 							</span>
-						</div>
-					)}
+						)}
+						{item.trait_type && item.trait_type !== 'normal' && TRAIT_TYPE_PILL[item.trait_type] && (
+							<span className={`inline text-xs px-2 py-0.5 rounded border capitalize ${TRAIT_TYPE_PILL[item.trait_type]}`}>
+								{item.trait_type}
+							</span>
+						)}
+						{item.is_burn && (
+							<span className={`inline text-xs px-2 py-0.5 rounded border ${BURN_PILL}`}>
+								burn
+							</span>
+						)}
+					</div>
 					{item.description && (
 						<p className="mt-2 text-xs text-hunt-text-muted line-clamp-2 leading-relaxed">
 							{item.description}
