@@ -6,7 +6,7 @@ A fast, searchable reference for Hunt: Showdown trait, weapon, and tool synergie
 
 Search by weapon to find the traits that make it sing. Search by tool to see which perks improve your consumables. Search by trait to see everything it affects. Cross-reference in all directions. Know your loadout before you step into the fog.
 
-**[→ Open the finder](https://linusfr.github.io/bayou-traits)**
+**[→ Open the finder](https://bayou-traits.com)**
 
 ---
 
