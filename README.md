@@ -13,9 +13,10 @@ Search by weapon to find the traits that make it sing. Search by tool to see whi
 ## What it does
 
 - **By Weapon** — pick a gun, see exactly which traits make it dangerous and why
-- **By Tool** — pick a consumable (throwables, healing shots, First Aid Kits…) and see which traits improve it
-- **By Trait** — find which weapons and tools benefit from a given perk, in one view
-- Filter by weapon class (ammo type + melee / bow / launcher), tool category, or trait category
+- **By Tool** — pick a throwable, trap, or melee tool and see which traits improve it
+- **By Consumable** — pick a shot, medical item, or support supply and see which traits apply
+- **By Trait** — find which weapons, tools, and consumables benefit from a given perk, in one view
+- Filter by weapon class (ammo type + melee / bow / launcher), slot size (1–5), tool category, or trait category
 - Traits are tagged: **scarce** (in-run pickups only), **burn** (lost when your hunter dies), **solo** (bonus when playing alone), **event** (limited availability)
 - Fuzzy search across names and descriptions
 - Responsive — works on mobile, desktop, and your cursed ultrawide
@@ -71,7 +72,6 @@ scraper/                  Python pipeline (uv)
   scrape.py               → fetches trait/weapon/tool metadata from wiki.gg
   scrape_weapon_traits.py → scrapes "Recommended Traits" from each weapon page
   scrape_tool_traits.py   → scrapes "Recommended Traits" from each tool/consumable page
-  enrich.py               → (legacy) DeepSeek enrichment, no longer used for synergies
   build.py                → orchestrates scrape → synergy scrape → copy to frontend
 
 frontend/                 Preact + Tailwind + Fuse.js (pnpm, Vite 6)
