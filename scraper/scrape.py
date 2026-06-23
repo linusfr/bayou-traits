@@ -31,7 +31,7 @@ WEAPON_TYPE_HINTS = {
     "pistol": ["pistol", "handgun"],
     "shotgun": ["shotgun", "pump-action"],
     "sniper": ["sniper"],
-    "melee": ["melee weapon", "knife", "blade", "axe", "saber", "hammer"],
+    "melee": ["melee weapon", "knife", "blade", "sword", "axe", "saber", "hammer", "machete", "bat"],
     "bow": ["bow", "crossbow"],
     "single_shot": ["single-shot", "single shot"],
     "aim_helper": ["aim helper", "throwing range"],
@@ -269,12 +269,27 @@ def parse_weapon(html: str, title: str) -> dict | None:
                     if trait_name:
                         wiki_synergy_traits.append({"trait_name": trait_name, "reason": reason})
 
+    # Stable filter category used by the frontend
+    _ammo = ammo or "unknown"
+    _type = weapon_type or "unknown"
+    if _ammo != "unknown":
+        weapon_class = _ammo
+    elif "melee" in _type:
+        weapon_class = "melee"
+    elif "bow" in _type:
+        weapon_class = "bow"
+    elif "explosive" in _type or "aim-helper" in _type:
+        weapon_class = "launcher"
+    else:
+        weapon_class = "unknown"
+
     return {
         "id": slugify(title),
         "name": title,
-        "type": weapon_type or "unknown",
+        "type": _type,
         "size": size or "unknown",
-        "ammo": ammo or "unknown",
+        "ammo": _ammo,
+        "weapon_class": weapon_class,
         "description": description,
         "image_url": extract_image_url(soup),
         "_wiki_synergy_traits": wiki_synergy_traits,

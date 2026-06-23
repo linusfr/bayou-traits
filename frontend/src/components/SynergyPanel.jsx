@@ -5,13 +5,16 @@ const CATEGORY_PILL = {
 	supportive: 'text-[#A89060] border-[#A89060]/40 bg-[#A89060]/10',
 }
 
-const AMMO_PILL = {
-	long:    'text-yellow-400 border-yellow-900/60 bg-yellow-950/30',
-	medium:  'text-orange-400 border-orange-900/60 bg-orange-950/30',
-	compact: 'text-sky-400   border-sky-900/60   bg-sky-950/30',
-	shotgun: 'text-red-400   border-red-900/60   bg-red-950/30',
-	sparks:  'text-purple-400 border-purple-900/60 bg-purple-950/30',
-	nitro:   'text-red-300   border-red-900/50   bg-red-950/20',
+const WEAPON_CLASS_PILL = {
+	long:     'text-yellow-400 border-yellow-900/60 bg-yellow-950/30',
+	medium:   'text-orange-400 border-orange-900/60 bg-orange-950/30',
+	compact:  'text-sky-400   border-sky-900/60   bg-sky-950/30',
+	shotgun:  'text-red-400   border-red-900/60   bg-red-950/30',
+	sparks:   'text-purple-400 border-purple-900/60 bg-purple-950/30',
+	nitro:    'text-red-300   border-red-900/50   bg-red-950/20',
+	melee:    'text-stone-400  border-stone-700/60  bg-stone-950/30',
+	bow:      'text-emerald-400 border-emerald-900/60 bg-emerald-950/30',
+	launcher: 'text-amber-300  border-amber-800/60  bg-amber-950/30',
 }
 
 function Pill({ label, className }) {
@@ -38,8 +41,8 @@ function SynergyRow({ syn, isWeapon, onNavigate }) {
 					? syn.category && syn.category !== 'unknown' && (
 						<Pill label={syn.category} className={CATEGORY_PILL[syn.category] ?? 'text-hunt-text-dim border-hunt-border'} />
 					)
-					: syn.ammo && syn.ammo !== 'unknown' && (
-						<Pill label={syn.ammo} className={AMMO_PILL[syn.ammo] ?? 'text-hunt-text-dim border-hunt-border'} />
+					: syn.weapon_class && syn.weapon_class !== 'unknown' && (
+						<Pill label={syn.weapon_class} className={WEAPON_CLASS_PILL[syn.weapon_class] ?? 'text-hunt-text-dim border-hunt-border'} />
 					)
 				}
 			</div>
@@ -82,13 +85,13 @@ export default function SynergyPanel({ detail, onClose, onNavigate }) {
 				<div className="flex flex-wrap items-center gap-2 mt-2">
 					{isWeapon ? (
 						<>
-							{item.ammo && item.ammo !== 'unknown' && (
+							{item.weapon_class && item.weapon_class !== 'unknown' && (
 								<Pill
-									label={`${item.ammo} ammo`}
-									className={AMMO_PILL[item.ammo] ?? 'text-hunt-text-dim border-hunt-border'}
+									label={item.ammo !== 'unknown' ? `${item.weapon_class} ammo` : item.weapon_class}
+									className={WEAPON_CLASS_PILL[item.weapon_class] ?? 'text-hunt-text-dim border-hunt-border'}
 								/>
 							)}
-							{item.size && item.size !== 'unknown' && (
+							{item.size && item.size !== 'unknown' && item.size !== 'melee' && (
 								<span className="text-xs text-hunt-text-muted capitalize">{item.size}</span>
 							)}
 						</>

@@ -5,7 +5,7 @@ import SearchBar from './components/SearchBar'
 import ItemCard from './components/ItemCard'
 import SynergyPanel from './components/SynergyPanel'
 
-const AMMO_ORDER = ['long', 'medium', 'compact', 'shotgun', 'sparks', 'nitro']
+const WEAPON_CLASS_ORDER = ['long', 'medium', 'compact', 'shotgun', 'sparks', 'nitro', 'melee', 'bow', 'launcher']
 
 const WEAPON_FUSE_OPTS = { keys: ['name', 'type', 'ammo', 'size'], threshold: 0.35 }
 const TRAIT_FUSE_OPTS  = { keys: ['name', 'description', 'category'], threshold: 0.35 }
@@ -55,7 +55,7 @@ export default function App() {
 		if (filter) {
 			list = list.filter(item =>
 				mode === 'weapon'
-					? item.ammo === filter || item.size === filter
+					? item.weapon_class === filter
 					: item.category === filter
 			)
 		}
@@ -92,8 +92,8 @@ export default function App() {
 
 	const activeFilters = useMemo(() => {
 		if (mode === 'weapon') {
-			const present = new Set(weapons.map(w => w.ammo).filter(a => a && a !== 'unknown'))
-			return AMMO_ORDER.filter(a => present.has(a))
+			const present = new Set(weapons.map(w => w.weapon_class).filter(c => c && c !== 'unknown'))
+			return WEAPON_CLASS_ORDER.filter(c => present.has(c))
 		}
 		const present = new Set(traits.map(t => t.category).filter(c => c && c !== 'unknown'))
 		return [...present].sort()

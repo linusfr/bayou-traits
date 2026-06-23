@@ -5,13 +5,16 @@ const CATEGORY_PILL = {
 	supportive: 'text-[#A89060] border-[#A89060]/40 bg-[#A89060]/10',
 }
 
-const AMMO_COLOR = {
-	long:    'text-yellow-400',
-	medium:  'text-orange-400',
-	compact: 'text-sky-400',
-	shotgun: 'text-red-400',
-	sparks:  'text-purple-400',
-	nitro:   'text-red-300',
+const WEAPON_CLASS_COLOR = {
+	long:     'text-yellow-400',
+	medium:   'text-orange-400',
+	compact:  'text-sky-400',
+	shotgun:  'text-red-400',
+	sparks:   'text-purple-400',
+	nitro:    'text-red-300',
+	melee:    'text-stone-400',
+	bow:      'text-emerald-400',
+	launcher: 'text-amber-300',
 }
 
 export default function ItemCard({ item, type, selected, onClick }) {
@@ -35,12 +38,12 @@ export default function ItemCard({ item, type, selected, onClick }) {
 						{item.name}
 					</p>
 					<div className="flex items-center gap-2 mt-2 flex-wrap">
-						{item.ammo && item.ammo !== 'unknown' && (
-							<span className={`text-xs font-medium capitalize ${AMMO_COLOR[item.ammo] ?? 'text-hunt-text-muted'}`}>
-								{item.ammo}
+						{item.weapon_class && item.weapon_class !== 'unknown' && (
+							<span className={`text-xs font-medium capitalize ${WEAPON_CLASS_COLOR[item.weapon_class] ?? 'text-hunt-text-muted'}`}>
+								{item.weapon_class}
 							</span>
 						)}
-						{item.size && item.size !== 'unknown' && (
+						{item.size && item.size !== 'unknown' && item.size !== 'melee' && (
 							<span className="text-xs text-hunt-text-dim capitalize">{item.size}</span>
 						)}
 					</div>

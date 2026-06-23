@@ -1,7 +1,7 @@
 {
   "meta": {
     "patch": "2.2.1",
-    "scraped_at": "2026-06-23T11:08:36.357693+00:00",
+    "scraped_at": "2026-06-23T11:15:45.207560+00:00",
     "trait_count": 56,
     "weapon_count": 40
   },
@@ -9,7 +9,7 @@
     {
       "id": "adrenaline",
       "name": "Adrenaline",
-      "description": "When you enter critical health, you will receive a small Stamina boost.",
+      "description": "When you enter critical health (below 25 HP), you will receive a small Stamina boost (restores 50 Stamina).",
       "cost": 1,
       "rank": 1,
       "category": "defensive",
@@ -20,7 +20,7 @@
     {
       "id": "ambidextrous",
       "name": "Ambidextrous",
-      "description": "Quicker reloading of matched pairs, and custom clip reloads for semi-auto pistol sets.",
+      "description": "Quicker reloading of matched pairs (25% faster), and custom clip reloads for semi-auto pistol sets (25% faster).",
       "cost": 3,
       "rank": 34,
       "category": "supportive",
@@ -29,30 +29,30 @@
       "weapon_synergies": [
         {
           "weapon_id": "bornheim_no_3",
-          "reason": "Ambidextrous speeds up the custom clip reload for semi-auto pistols like the Bornheim."
+          "reason": "Ambidextrous speeds up clip reloads for semi-auto pistols like the Bornheim, reducing downtime."
         },
         {
           "weapon_id": "caldwell_conversion_pistol",
-          "reason": "Ambidextrous speeds up reloading matched pairs, but the Conversion is a revolver, not semi-auto."
+          "reason": "Ambidextrous speeds up matched pair reloads, but the Conversion is a revolver, not semi-auto; trait only helps if dual-wielded."
         },
         {
           "weapon_id": "crown_king_auto_5",
-          "reason": "Ambidextrous speeds up reloading matched pairs, but the Auto-5 is a shotgun, not a pistol."
+          "reason": "Ambidextrous speeds up clip reloads for semi-auto shotguns like the Crown & King, reducing downtime."
         },
         {
           "weapon_id": "dolch_96",
-          "reason": "Ambidextrous speeds up the custom clip reload for semi-auto pistols like the Dolch."
+          "reason": "Ambidextrous speeds up clip reloads for semi-auto pistols like the Dolch, reducing downtime."
         },
         {
           "weapon_id": "quad_derringer",
-          "reason": "Ambidextrous speeds up reloading matched pairs, but the Derringer is not semi-auto."
+          "reason": "Ambidextrous speeds up matched pair reloads; Quad Derringer benefits when dual-wielded."
         }
       ]
     },
     {
       "id": "assailant",
       "name": "Assailant",
-      "description": "Increases melee effectiveness of Throwing Knives and Throwing Axes. Melee weapons found in the World can be thrown.",
+      "description": "Increases melee effectiveness of Throwing Knives and Throwing Axes (50% more damage). Melee weapons found in the World can be thrown.",
       "cost": 1,
       "rank": 18,
       "category": "offensive",
@@ -60,27 +60,39 @@
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/c0/Assailant.png",
       "weapon_synergies": [
         {
+          "weapon_id": "baseball_bat",
+          "reason": "Assailant allows throwing melee weapons like the Baseball Bat, increasing ranged melee options."
+        },
+        {
           "weapon_id": "cavalry_saber",
-          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the saber itself."
+          "reason": "Assailant allows throwing melee weapons like the Cavalry Saber, increasing ranged melee options."
         },
         {
           "weapon_id": "combat_axe",
-          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the combat axe."
+          "reason": "Assailant allows throwing melee weapons like the Combat Axe, increasing ranged melee options."
+        },
+        {
+          "weapon_id": "katana",
+          "reason": "Assailant allows the Katana to be thrown, turning it into a ranged melee weapon."
+        },
+        {
+          "weapon_id": "machete",
+          "reason": "Assailant allows the Machete to be thrown, enabling ranged melee attacks."
         },
         {
           "weapon_id": "railroad_hammer",
-          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the hammer."
+          "reason": "Assailant allows the Railroad Hammer to be thrown, providing a ranged heavy melee option."
         },
         {
           "weapon_id": "winfield_1893_slate",
-          "reason": "Assailant allows throwing the Slate's melee as a projectile, increasing ranged melee options."
+          "reason": "Assailant allows the Slate's melee to be thrown, adding ranged utility to a shotgun."
         }
       ]
     },
     {
       "id": "beastface",
       "name": "Beastface",
-      "description": "Reduced reaction range of animals (doesn't affect Monsters like Hellhounds).",
+      "description": "Reduced reaction range of animals (50% less detection range, doesn't affect Monsters like Hellhounds).",
       "cost": 4,
       "rank": 42,
       "category": "supportive",
@@ -102,7 +114,7 @@
     {
       "id": "blade_seer",
       "name": "Blade Seer",
-      "description": "Bolts, arrows, throwing axes, and throwing knives are highlighted in Dark Sight for better visibility. Also applies to Beetle view. (25m).",
+      "description": "Bolts, arrows, throwing axes, and throwing knives are highlighted in Dark Sight for better visibility. Also applies to Beetle view. (25m range).",
       "cost": 1,
       "rank": 54,
       "category": "supportive",
@@ -110,20 +122,32 @@
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a3/Blade_Seer.png",
       "weapon_synergies": [
         {
+          "weapon_id": "baseball_bat",
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, aiding retrieval after throwing."
+        },
+        {
           "weapon_id": "cavalry_saber",
-          "reason": "Blade Seer highlights the Saber in Dark Sight, aiding in tracking thrown melee weapons."
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, helping locate the saber after throwing."
         },
         {
           "weapon_id": "combat_axe",
-          "reason": "Blade Seer highlights the Axe in Dark Sight, helping locate it after throwing."
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, making the axe easier to find."
+        },
+        {
+          "weapon_id": "katana",
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, aiding retrieval of the thrown katana."
+        },
+        {
+          "weapon_id": "machete",
+          "reason": "Blade Seer highlights throwing axes, which are melee throwables, aiding in retrieval after throwing."
         },
         {
           "weapon_id": "railroad_hammer",
-          "reason": "Blade Seer highlights the Hammer in Dark Sight, useful for retrieval after throwing."
+          "reason": "Blade Seer highlights throwing knives, which are melee throwables, aiding in retrieval after throwing."
         },
         {
           "weapon_id": "winfield_1893_slate",
-          "reason": "Blade Seer highlights the Slate's melee in Dark Sight, aiding in tracking thrown attacks."
+          "reason": "Blade Seer does not benefit the Slate as it has no bolts, arrows, or throwing axes/knives."
         }
       ]
     },
@@ -141,7 +165,7 @@
     {
       "id": "bolt_thrower",
       "name": "Bolt Thrower",
-      "description": "Reduced reload time for Crossbows.",
+      "description": "Reduced reload time for Crossbows (25% faster).",
       "cost": 3,
       "rank": 32,
       "category": "offensive",
@@ -150,11 +174,11 @@
       "weapon_synergies": [
         {
           "weapon_id": "bow",
-          "reason": "Bolt Thrower reduces reload time for crossbows, but Bow is not a crossbow; no benefit."
+          "reason": "Bolt Thrower reduces reload time for crossbows, not bows; no benefit for Bow."
         },
         {
           "weapon_id": "crossbow",
-          "reason": "Bolt Thrower reduces crossbow reload time, increasing DPS and follow-up shot speed."
+          "reason": "Bolt Thrower reduces reload time for crossbows, directly benefiting the Crossbow's slow reload."
         }
       ]
     },
@@ -172,7 +196,7 @@
     {
       "id": "bulwark",
       "name": "Bulwark",
-      "description": "Reduce the damage from explosions and Bomb Lance harpoon attacks by 50%. Vastly reduces the duration of being fully blinded by a Flash Bomb.",
+      "description": "Reduce the damage from explosions and Bomb Lance harpoon attacks by 50%. Vastly reduces the duration of being fully blinded by a Flash Bomb (by 75%).",
       "cost": 2,
       "rank": 1,
       "category": "defensive",
@@ -183,7 +207,7 @@
     {
       "id": "conduit",
       "name": "Conduit",
-      "description": "Get a Health and Stamina boost when your team picks up a Clue or closes a Rift.",
+      "description": "Get a Health and Stamina boost (restores 50 HP and 100 Stamina) when your team picks up a Clue or closes a Rift.",
       "cost": 5,
       "rank": 38,
       "category": "supportive",
@@ -194,7 +218,7 @@
     {
       "id": "dauntless",
       "name": "Dauntless",
-      "description": "Thrown Explosives can be defused when interacting with them.",
+      "description": "Thrown Explosives can be defused when interacting with them (hold interact for 2 seconds).",
       "cost": 1,
       "rank": 64,
       "category": "defensive",
@@ -227,7 +251,7 @@
     {
       "id": "decoy_supply",
       "name": "Decoy Supply",
-      "description": "Restock all types of Decoys from ammo crates.",
+      "description": "Restock all types of Decoys from ammo crates (restores 2 decoys per crate).",
       "cost": 1,
       "rank": 53,
       "category": "supportive",
@@ -269,43 +293,43 @@
       "weapon_synergies": [
         {
           "weapon_id": "bornheim_no_3",
-          "reason": "Fanning increases fire rate for single-action pistols, but Bornheim is semi-auto; no benefit."
+          "reason": "Fanning increases fire rate for single-action pistols; Bornheim is semi-auto, so no benefit."
         },
         {
           "weapon_id": "caldwell_92_new_army",
-          "reason": "Fanning increases fire rate for single-action revolvers; New Army is single-action."
+          "reason": "Fanning increases fire rate for single-action pistols; New Army is double-action, so no benefit."
         },
         {
           "weapon_id": "caldwell_conversion_pistol",
-          "reason": "Fanning boosts fire rate for single-action pistols; Conversion Pistol is single-action."
+          "reason": "Fanning increases fire rate for single-action pistols; Conversion Pistol is single-action, so it benefits."
         },
         {
           "weapon_id": "caldwell_pax",
-          "reason": "Fanning increases fire rate for single-action revolvers; Pax is single-action."
+          "reason": "Fanning increases fire rate for single-action revolvers like the Pax, allowing rapid follow-up shots."
         },
         {
           "weapon_id": "dolch_96",
-          "reason": "Fanning only works on single-action pistols; Dolch 96 is semi-auto, no benefit."
+          "reason": "Fanning does not benefit the Dolch 96 because it is a semi-auto pistol, not single-action."
         },
         {
           "weapon_id": "lemat_mark_ii_revolver",
-          "reason": "Fanning increases fire rate for single-action revolvers; LeMat is single-action."
+          "reason": "Fanning increases fire rate for single-action revolvers like the LeMat, enabling faster shots."
         },
         {
           "weapon_id": "nagant_m1895",
-          "reason": "Fanning increases fire rate for single-action revolvers; Nagant M1895 is single-action."
+          "reason": "Fanning increases fire rate for single-action revolvers like the Nagant M1895, improving DPS."
         },
         {
           "weapon_id": "nagant_m1895_officer",
-          "reason": "Fanning only works on single-action pistols; Officer is double-action, no benefit."
+          "reason": "Fanning does not benefit the Officer because it is a double-action revolver, not single-action."
         },
         {
           "weapon_id": "quad_derringer",
-          "reason": "Fanning only works on single-action revolvers; Derringer is not a revolver, no benefit."
+          "reason": "Fanning does not benefit the Quad Derringer because it is not a single-action pistol."
         },
         {
           "weapon_id": "scottfield_model_3",
-          "reason": "Fanning drastically increases the Scottfield's fire rate, making it a close-range powerhouse."
+          "reason": "Fanning increases fire rate for single-action revolvers like the Scottfield, allowing rapid shots."
         }
       ]
     },
@@ -334,7 +358,7 @@
     {
       "id": "ghoul",
       "name": "Ghoul",
-      "description": "Killing Monsters restores 5 Health.",
+      "description": "Killing Monsters restores a small amount of Health (5 HP per kill).",
       "cost": 3,
       "rank": 20,
       "category": "supportive",
@@ -345,7 +369,7 @@
     {
       "id": "greyhound",
       "name": "Greyhound",
-      "description": "Sprint at full speed for a longer duration.",
+      "description": "Sprint at full speed for a longer duration (increases stamina by 25%).",
       "cost": 5,
       "rank": 3,
       "category": "movement",
@@ -367,7 +391,7 @@
     {
       "id": "hundred_hands",
       "name": "Hundred Hands",
-      "description": "Increases the damage of a Bow by 10% and reduces sway while at full draw. Allows use of arrows in melee attacks.",
+      "description": "Increases the damage of a Bow and reduces sway while at full draw. Allows use of arrows in melee attacks.",
       "cost": 2,
       "rank": 51,
       "category": "offensive",
@@ -376,11 +400,11 @@
       "weapon_synergies": [
         {
           "weapon_id": "bow",
-          "reason": "Hundred Hands boosts bow damage and reduces sway, improving accuracy and lethality at full draw."
+          "reason": "Hundred Hands increases bow damage and reduces sway at full draw, improving accuracy and lethality."
         },
         {
           "weapon_id": "crossbow",
-          "reason": "Hundred Hands increases crossbow damage and reduces sway, making shots more consistent and deadly."
+          "reason": "Hundred Hands increases bow damage and reduces sway, making crossbow shots more lethal and accurate."
         }
       ]
     },
@@ -396,82 +420,82 @@
       "weapon_synergies": [
         {
           "weapon_id": "berthier_mle_1892",
-          "reason": "Iron Eye keeps you in ironsights between shots, maintaining aim for faster follow-up shots."
+          "reason": "Iron Eye keeps you in iron sights after each bolt-action shot, enabling faster follow-up shots."
         },
         {
           "weapon_id": "caldwell_marathon",
-          "reason": "Iron Eye allows staying in ironsights between pump-action shots, improving target tracking."
+          "reason": "Iron Eye maintains iron sights between pump-action shots, improving target tracking and fire rate."
         },
         {
           "weapon_id": "caldwell_rival_78",
-          "reason": "Iron Eye keeps you in ironsights after each shot, enabling quicker follow-up shots."
+          "reason": "Iron Eye keeps you in iron sights after each pump-action shot, aiding rapid follow-up shots."
         },
         {
           "weapon_id": "crown_king_auto_5",
-          "reason": "Iron Eye is not applicable; Crown & King is semi-auto, not pump/bolt/lever."
+          "reason": "Iron Eye is not applicable as Crown & King is semi-auto, not bolt/lever/pump-action."
         },
         {
           "weapon_id": "drilling",
-          "reason": "Iron Eye keeps you in ironsights between shots, useful for the Drilling's rifle and shotgun modes."
+          "reason": "Iron Eye keeps you in iron sights after each shot, useful for Drilling's break-action but not bolt/lever/pump."
         },
         {
           "weapon_id": "lebel_1886",
-          "reason": "Allows faster follow-up shots by keeping the sight picture after each bolt-action cycle."
+          "reason": "Iron Eye maintains iron sights between bolt-action shots, enabling faster follow-up shots."
         },
         {
           "weapon_id": "lemat_mark_ii_revolver",
-          "reason": "Iron Eye does not affect revolvers; it only works on bolt/lever/pump actions."
+          "reason": "Iron Eye is not applicable as LeMat is a revolver, not bolt/lever/pump-action."
         },
         {
           "weapon_id": "mako_1895_carbine",
-          "reason": "Keeps sights aligned after levering, enabling quicker consecutive shots."
+          "reason": "Lever-action requires cycling; Iron Eye keeps sights aligned for faster follow-up shots."
         },
         {
           "weapon_id": "mosin_nagant_m1891",
-          "reason": "Maintains iron sight view after bolt cycling for faster target reacquisition."
+          "reason": "Bolt-action cycling breaks sight picture; Iron Eye maintains aim for quicker successive shots."
         },
         {
           "weapon_id": "romero_77",
-          "reason": "Iron Eye does not apply to single-shot shotguns; only bolt/lever/pump actions."
+          "reason": "Single-shot shotgun; Iron Eye irrelevant as no cycling between shots."
         },
         {
           "weapon_id": "specter_1882",
-          "reason": "Keeps sights up after pump action, allowing rapid follow-up shots."
+          "reason": "Pump-action shotgun; Iron Eye keeps sights on target during cycling for rapid follow-ups."
         },
         {
           "weapon_id": "springfield_m1892_krag",
-          "reason": "Remains in iron sights after bolt cycle, improving shot consistency."
+          "reason": "Bolt-action cycling; Iron Eye prevents sight realignment, enabling faster aimed shots."
         },
         {
           "weapon_id": "vetterli_71_karabiner",
-          "reason": "Stays in iron sights after bolt action, aiding quick follow-up shots."
+          "reason": "Bolt-action medium ammo; Iron Eye maintains sight picture for quicker aimed follow-ups."
         },
         {
           "weapon_id": "winfield_1887_terminus",
-          "reason": "Lets you stay aimed between lever-action shots, improving follow-up accuracy with the shotgun."
+          "reason": "Lever-action shotgun; Iron Eye keeps sights on target during cycling for rapid shots."
         },
         {
           "weapon_id": "winfield_1893_slate",
-          "reason": "Keeps you in iron sights between lever-action shots, maintaining aim for quick follow-ups."
+          "reason": "Lever-action shotgun; Iron Eye maintains aim during cycling for faster follow-up shots."
         },
         {
           "weapon_id": "winfield_m1873",
-          "reason": "Allows continuous aiming through lever cycles, boosting accuracy and fire rate control."
+          "reason": "Iron Eye keeps you in ironsights between lever-action shots, maintaining accuracy for follow-up shots."
         },
         {
           "weapon_id": "winfield_m1873c",
-          "reason": "Enables staying aimed between lever-action shots, enhancing precision and speed."
+          "reason": "Iron Eye keeps you in ironsights between lever-action shots, maintaining accuracy for follow-up shots."
         },
         {
           "weapon_id": "winfield_m1876_centennial",
-          "reason": "Remain scoped between lever cycles, improving accuracy and follow-up shot speed."
+          "reason": "Iron Eye keeps you in ironsights between lever-action shots, maintaining accuracy for follow-up shots."
         }
       ]
     },
     {
       "id": "kiteskin",
       "name": "Kiteskin",
-      "description": "Significantly reduces fall damage.",
+      "description": "Significantly reduces fall damage (by 50%).",
       "cost": 1,
       "rank": 16,
       "category": "movement",
@@ -491,27 +515,27 @@
       "weapon_synergies": [
         {
           "weapon_id": "mako_1895_carbine",
-          "reason": "Increases hip-fire rate for lever-action, making it deadly in close quarters."
+          "reason": "Levering increases hip-fire rate for lever-action rifles, enabling faster spam shots at close range."
         },
         {
           "weapon_id": "winfield_1887_terminus",
-          "reason": "Boosts hip-fire rate for lever-action shotgun, allowing rapid close-range blasts."
+          "reason": "Levering increases hip-fire rate for lever-action shotguns, allowing quicker follow-up shots."
         },
         {
           "weapon_id": "winfield_1893_slate",
-          "reason": "Speeds up hip-fire levering, enabling faster shotgun follow-ups in melee range."
+          "reason": "Levering increases hip-fire rate for lever-action shotguns, allowing quicker follow-up shots."
         },
         {
           "weapon_id": "winfield_m1873",
-          "reason": "Levering increases hip-fire rate, maximizing the Winfield's lever-action spam potential at close range."
+          "reason": "Levering increases hip-fire rate for lever-action rifles, enabling faster spam shots at close range."
         },
         {
           "weapon_id": "winfield_m1873c",
-          "reason": "Levering boosts hip-fire rate, making the compact Winfield even deadlier in close-quarters spam."
+          "reason": "Levering increases hip-fire rate for lever-action rifles, enabling faster spam shots at close range."
         },
         {
           "weapon_id": "winfield_m1876_centennial",
-          "reason": "Levering offsets the Centennial's slower fire rate by enabling rapid hip-fire spam."
+          "reason": "Levering increases hip-fire rate of fire for lever-action weapons, making the Centennial more effective at close range."
         }
       ]
     },
@@ -529,7 +553,7 @@
     {
       "id": "magpie",
       "name": "Magpie",
-      "description": "Receive three short effects when picking up a Bounty Token: Antidote, Stamina, and Regeneration. SOLO: Dark Sight Boost capacity in all Boost sources are doubled.",
+      "description": "Receive three short effects when picking up a Bounty Token: Antidote (10 min), Stamina (10 min), and Regeneration (10 min). SOLO: Dark Sight Boost capacity in all Boost sources are doubled.",
       "cost": 1,
       "rank": 1,
       "category": "supportive",
@@ -540,7 +564,7 @@
     {
       "id": "martialist",
       "name": "Martialist",
-      "description": "Allows a Katana to be sheathed, which enables a first strike attack that does extra damage.",
+      "description": "Allows a Katana to be sheathed, which enables a first strike attack that does extra damage (2x damage).",
       "cost": 2,
       "rank": 28,
       "category": "offensive",
@@ -615,7 +639,7 @@
       "weapon_synergies": [
         {
           "weapon_id": "bomb_lance",
-          "reason": "Pitcher extends throw range, allowing Bomb Lance explosive harpoons to hit targets from safer distances."
+          "reason": "Pitcher increases throwing range, allowing the Bomb Lance's explosive harpoon to be thrown farther and more accurately."
         }
       ]
     },
@@ -699,7 +723,7 @@
     {
       "id": "salveskin",
       "name": "Salveskin",
-      "description": "While alive, reduce all fire damage and stop burn speed and stop time from escalating. (Fire damage reduced by 25%)",
+      "description": "While alive, reduce all fire damage and stop burn speed and stop time from escalating. (Fire damage reduced by 50%)",
       "cost": 2,
       "rank": 1,
       "category": "defensive",
@@ -785,19 +809,19 @@
       "weapon_synergies": [
         {
           "weapon_id": "bornheim_no_3",
-          "reason": "Steady Hand reduces sway on the Bornheim's scope, improving accuracy during rapid follow-up shots."
+          "reason": "Steady Hand reduces sway when scoped on pistols, improving accuracy for the Bornheim No. 3's precise shots."
         },
         {
           "weapon_id": "caldwell_conversion_pistol",
-          "reason": "Steady Hand stabilizes the Conversion Pistol's scope sway, enabling more precise long-range shots."
+          "reason": "Steady Hand reduces sway when scoped on pistols, aiding the Caldwell Conversion Pistol's long-range accuracy."
         },
         {
           "weapon_id": "dolch_96",
-          "reason": "Steady Hand tightens Dolch's scope sway, enhancing accuracy for its high-damage semi-auto fire."
+          "reason": "Steady Hand reduces sway when scoped on pistols, helping the Dolch 96 maintain accuracy during rapid fire."
         },
         {
           "weapon_id": "quad_derringer",
-          "reason": "Steady Hand reduces Derringer's scope sway, making its precise shots more reliable at range."
+          "reason": "Steady Hand reduces sway when scoped on pistols, improving the Quad Derringer's precision at range."
         }
       ]
     },
@@ -861,12 +885,22 @@
     {
       "id": "baseball_bat",
       "name": "Baseball Bat",
-      "type": "unknown",
+      "type": "melee",
       "size": "small",
       "ammo": "unknown",
+      "weapon_class": "melee",
       "description": "The Baseball Bat swings intuitively and easily, delivering a solid blow.",
       "image_url": "",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "assailant",
+          "reason": "Assailant allows throwing melee weapons like the Baseball Bat, increasing ranged melee options."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, aiding retrieval after throwing."
+        }
+      ]
     },
     {
       "id": "berthier_mle_1892",
@@ -874,12 +908,13 @@
       "type": "bolt-action",
       "size": "large",
       "ammo": "long",
+      "weapon_class": "long",
       "description": "The lighter alternative to the Lebel 1886, the Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you in ironsights between shots, maintaining aim for faster follow-up shots."
+          "reason": "Iron Eye keeps you in iron sights after each bolt-action shot, enabling faster follow-up shots."
         }
       ]
     },
@@ -889,12 +924,13 @@
       "type": "explosive aim-helper",
       "size": "large",
       "ammo": "unknown",
+      "weapon_class": "launcher",
       "description": "Adapted for combat on land, this explosive harpoon can be fired short distances and deals tremendous damage on direct impact.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "pitcher",
-          "reason": "Pitcher extends throw range, allowing Bomb Lance explosive harpoons to hit targets from safer distances."
+          "reason": "Pitcher increases throwing range, allowing the Bomb Lance's explosive harpoon to be thrown farther and more accurately."
         }
       ]
     },
@@ -904,20 +940,21 @@
       "type": "semi-auto pistol",
       "size": "small",
       "ammo": "compact",
+      "weapon_class": "compact",
       "description": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. Reloads via a five-round magazine, or by topping up rounds individually.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/b/bc/Bornheim_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Ambidextrous speeds up the custom clip reload for semi-auto pistols like the Bornheim."
+          "reason": "Ambidextrous speeds up clip reloads for semi-auto pistols like the Bornheim, reducing downtime."
         },
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action pistols, but Bornheim is semi-auto; no benefit."
+          "reason": "Fanning increases fire rate for single-action pistols; Bornheim is semi-auto, so no benefit."
         },
         {
           "trait_id": "steady_hand",
-          "reason": "Steady Hand reduces sway on the Bornheim's scope, improving accuracy during rapid follow-up shots."
+          "reason": "Steady Hand reduces sway when scoped on pistols, improving accuracy for the Bornheim No. 3's precise shots."
         }
       ]
     },
@@ -927,16 +964,17 @@
       "type": "bow",
       "size": "medium",
       "ammo": "unknown",
+      "weapon_class": "bow",
       "description": "Able to pierce through flesh and bone at a great distance, the Hunting Bow will make quick, stealthy work of monsters and men.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "bolt_thrower",
-          "reason": "Bolt Thrower reduces reload time for crossbows, but Bow is not a crossbow; no benefit."
+          "reason": "Bolt Thrower reduces reload time for crossbows, not bows; no benefit for Bow."
         },
         {
           "trait_id": "hundred_hands",
-          "reason": "Hundred Hands boosts bow damage and reduces sway, improving accuracy and lethality at full draw."
+          "reason": "Hundred Hands increases bow damage and reduces sway at full draw, improving accuracy and lethality."
         }
       ]
     },
@@ -946,12 +984,13 @@
       "type": "revolver",
       "size": "small",
       "ammo": "compact",
+      "weapon_class": "compact",
       "description": "Fast, light, and easy to handle, this double-action revolver has a distinguished counter-clockwise rotating cylinder that swings out to effortlessly reload its six .38 bullets.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action revolvers; New Army is single-action."
+          "reason": "Fanning increases fire rate for single-action pistols; New Army is double-action, so no benefit."
         }
       ]
     },
@@ -961,20 +1000,21 @@
       "type": "revolver pistol",
       "size": "medium",
       "ammo": "long",
+      "weapon_class": "long",
       "description": "The Caldwell Conversion Pistol is a single-action six-shot revolver. Slow to reload but sturdy and reliable.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/f3/Caldwell_conversion_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Ambidextrous speeds up reloading matched pairs, but the Conversion is a revolver, not semi-auto."
+          "reason": "Ambidextrous speeds up matched pair reloads, but the Conversion is a revolver, not semi-auto; trait only helps if dual-wielded."
         },
         {
           "trait_id": "fanning",
-          "reason": "Fanning boosts fire rate for single-action pistols; Conversion Pistol is single-action."
+          "reason": "Fanning increases fire rate for single-action pistols; Conversion Pistol is single-action, so it benefits."
         },
         {
           "trait_id": "steady_hand",
-          "reason": "Steady Hand stabilizes the Conversion Pistol's scope sway, enabling more precise long-range shots."
+          "reason": "Steady Hand reduces sway when scoped on pistols, aiding the Caldwell Conversion Pistol's long-range accuracy."
         }
       ]
     },
@@ -984,12 +1024,13 @@
       "type": "shotgun",
       "size": "large",
       "ammo": "compact",
+      "weapon_class": "compact",
       "description": "Fast-firing pump-action rifle that performs best at mid-range. A clunky reload reduces its flexibility.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye allows staying in ironsights between pump-action shots, improving target tracking."
+          "reason": "Iron Eye maintains iron sights between pump-action shots, improving target tracking and fire rate."
         }
       ]
     },
@@ -999,12 +1040,13 @@
       "type": "revolver",
       "size": "small",
       "ammo": "medium",
+      "weapon_class": "medium",
       "description": "This iconic single-action six round revolver needs no further introduction. Robust, powerful, and accurate, it brought peace to the once lawless West.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a9/Pax_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action revolvers; Pax is single-action."
+          "reason": "Fanning increases fire rate for single-action revolvers like the Pax, allowing rapid follow-up shots."
         }
       ]
     },
@@ -1014,12 +1056,13 @@
       "type": "shotgun",
       "size": "medium",
       "ammo": "shotgun",
+      "weapon_class": "shotgun",
       "description": "Sturdy, break-action, side-by-side shotgun with a medium-length barrel that can destroy all but the toughest targets at close range.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/4/44/Caldwell_rivall_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you in ironsights after each shot, enabling quicker follow-up shots."
+          "reason": "Iron Eye keeps you in iron sights after each pump-action shot, aiding rapid follow-up shots."
         }
       ]
     },
@@ -1029,16 +1072,17 @@
       "type": "melee",
       "size": "small",
       "ammo": "unknown",
+      "weapon_class": "melee",
       "description": "Regulation cavalry saber in use since the Civil War. Lightweight with good reach.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the saber itself."
+          "reason": "Assailant allows throwing melee weapons like the Cavalry Saber, increasing ranged melee options."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights the Saber in Dark Sight, aiding in tracking thrown melee weapons."
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, helping locate the saber after throwing."
         }
       ]
     },
@@ -1048,16 +1092,17 @@
       "type": "melee",
       "size": "small",
       "ammo": "unknown",
+      "weapon_class": "melee",
       "description": "A heavy two-handed melee weapon that can split open the toughest of enemies with ease.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/9/90/Combat_axe_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the combat axe."
+          "reason": "Assailant allows throwing melee weapons like the Combat Axe, increasing ranged melee options."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights the Axe in Dark Sight, helping locate it after throwing."
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, making the axe easier to find."
         }
       ]
     },
@@ -1067,16 +1112,17 @@
       "type": "bow",
       "size": "large",
       "ammo": "unknown",
+      "weapon_class": "bow",
       "description": "Imaginative hand crossbow that fires compact bolts. Excels in situations when discretion is required above all. Bolts can be retrieved and re-used.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/1d/Hand_crossbow_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "bolt_thrower",
-          "reason": "Bolt Thrower reduces crossbow reload time, increasing DPS and follow-up shot speed."
+          "reason": "Bolt Thrower reduces reload time for crossbows, directly benefiting the Crossbow's slow reload."
         },
         {
           "trait_id": "hundred_hands",
-          "reason": "Hundred Hands increases crossbow damage and reduces sway, making shots more consistent and deadly."
+          "reason": "Hundred Hands increases bow damage and reduces sway, making crossbow shots more lethal and accurate."
         }
       ]
     },
@@ -1086,16 +1132,17 @@
       "type": "semi-auto shotgun",
       "size": "large",
       "ammo": "shotgun",
+      "weapon_class": "shotgun",
       "description": "Prototype long-barreled semi-automatic shotgun with internal four round magazine plus one in the chamber. High power and rate of fire, but strong recoil and short range.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/19/Cnk_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Ambidextrous speeds up reloading matched pairs, but the Auto-5 is a shotgun, not a pistol."
+          "reason": "Ambidextrous speeds up clip reloads for semi-auto shotguns like the Crown & King, reducing downtime."
         },
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye is not applicable; Crown & King is semi-auto, not pump/bolt/lever."
+          "reason": "Iron Eye is not applicable as Crown & King is semi-auto, not bolt/lever/pump-action."
         }
       ]
     },
@@ -1105,20 +1152,21 @@
       "type": "semi-auto pistol",
       "size": "medium",
       "ammo": "compact",
+      "weapon_class": "compact",
       "description": "Powerful, German, prototype, semi-automatic pistol with an internal magazine loaded from the top. When fully emptied, it can be reloaded fast with a ten-round stripper clip.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/62/Dolch_96_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Ambidextrous speeds up the custom clip reload for semi-auto pistols like the Dolch."
+          "reason": "Ambidextrous speeds up clip reloads for semi-auto pistols like the Dolch, reducing downtime."
         },
         {
           "trait_id": "fanning",
-          "reason": "Fanning only works on single-action pistols; Dolch 96 is semi-auto, no benefit."
+          "reason": "Fanning does not benefit the Dolch 96 because it is a semi-auto pistol, not single-action."
         },
         {
           "trait_id": "steady_hand",
-          "reason": "Steady Hand tightens Dolch's scope sway, enhancing accuracy for its high-damage semi-auto fire."
+          "reason": "Steady Hand reduces sway when scoped on pistols, helping the Dolch 96 maintain accuracy during rapid fire."
         }
       ]
     },
@@ -1128,24 +1176,35 @@
       "type": "shotgun",
       "size": "medium",
       "ammo": "medium",
+      "weapon_class": "medium",
       "description": "Two medium rifle barrels combined with a shotgun underbarrel to create an all-round flexible and powerful weapon.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you in ironsights between shots, useful for the Drilling's rifle and shotgun modes."
+          "reason": "Iron Eye keeps you in iron sights after each shot, useful for Drilling's break-action but not bolt/lever/pump."
         }
       ]
     },
     {
       "id": "katana",
       "name": "Katana",
-      "type": "unknown",
+      "type": "melee",
       "size": "small",
       "ammo": "unknown",
+      "weapon_class": "melee",
       "description": "A two-handed sword refined over hundreds of years to slice and pierce even the sturdiest armor, making human flesh effortless to rend. Special attack enabled with Martialist Trait .",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e9/Katana.png",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "assailant",
+          "reason": "Assailant allows the Katana to be thrown, turning it into a ranged melee weapon."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, aiding retrieval of the thrown katana."
+        }
+      ]
     },
     {
       "id": "lebel_1886",
@@ -1153,12 +1212,13 @@
       "type": "bolt-action",
       "size": "large",
       "ammo": "long",
+      "weapon_class": "long",
       "description": "The Lebel 1886, groundbreaking for its time, is a bolt-action rifle with an internal 10-round magazine. Slightly outperformed by more modern designs, it remains a powerful weapon of choice.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/84/Lebel_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Allows faster follow-up shots by keeping the sight picture after each bolt-action cycle."
+          "reason": "Iron Eye maintains iron sights between bolt-action shots, enabling faster follow-up shots."
         }
       ]
     },
@@ -1167,29 +1227,40 @@
       "name": "LeMat Mark II Revolver",
       "type": "revolver shotgun",
       "size": "medium",
-      "ammo": "shotgun",
+      "ammo": "long",
+      "weapon_class": "long",
       "description": "Infamous icon of the Confederacy, this updated model takes nine cartridges in its cylinder. Its second barrel delivers a shotgun blast up close.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/78/Lemat_lowered_pistol.png",
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action revolvers; LeMat is single-action."
+          "reason": "Fanning increases fire rate for single-action revolvers like the LeMat, enabling faster shots."
         },
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye does not affect revolvers; it only works on bolt/lever/pump actions."
+          "reason": "Iron Eye is not applicable as LeMat is a revolver, not bolt/lever/pump-action."
         }
       ]
     },
     {
       "id": "machete",
       "name": "Machete",
-      "type": "unknown",
+      "type": "melee",
       "size": "small",
       "ammo": "unknown",
+      "weapon_class": "melee",
       "description": "Used both for cutting through undergrowth and limbs, a machete is a reliable weapon to forge a path.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/88/Machete_lowered.png",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "assailant",
+          "reason": "Assailant allows the Machete to be thrown, enabling ranged melee attacks."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Blade Seer highlights throwing axes, which are melee throwables, aiding in retrieval after throwing."
+        }
+      ]
     },
     {
       "id": "mako_1895_carbine",
@@ -1197,16 +1268,17 @@
       "type": "lever-action",
       "size": "large",
       "ammo": "long",
+      "weapon_class": "long",
       "description": "Long range, lever-action rifle that delivers a powerful punch with long ammo. From a new manufacturer in competition with Winfield.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Keeps sights aligned after levering, enabling quicker consecutive shots."
+          "reason": "Lever-action requires cycling; Iron Eye keeps sights aligned for faster follow-up shots."
         },
         {
           "trait_id": "levering",
-          "reason": "Increases hip-fire rate for lever-action, making it deadly in close quarters."
+          "reason": "Levering increases hip-fire rate for lever-action rifles, enabling faster spam shots at close range."
         }
       ]
     },
@@ -1216,6 +1288,7 @@
       "type": "single-shot",
       "size": "large",
       "ammo": "long",
+      "weapon_class": "long",
       "description": "The workhorse rifle of the British Empire, the Martini-Henry IC1 is a single-shot breech-loading rifle that values simplicity and power.",
       "image_url": "",
       "trait_synergies": []
@@ -1226,12 +1299,13 @@
       "type": "bolt-action",
       "size": "large",
       "ammo": "long",
+      "weapon_class": "long",
       "description": "Modern Imperial Russian bolt-action service rifle with an internal magazine, firing powerful long cartridges. When fully emptied, can be reloaded fast with a five-round stripper clip.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/2/24/Mosin_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Maintains iron sight view after bolt cycling for faster target reacquisition."
+          "reason": "Bolt-action cycling breaks sight picture; Iron Eye maintains aim for quicker successive shots."
         }
       ]
     },
@@ -1241,12 +1315,13 @@
       "type": "revolver",
       "size": "medium",
       "ammo": "compact",
+      "weapon_class": "compact",
       "description": "Modern, Imperial Russian, single-action revolver. Slow to reload. Sacrifices stopping power for an extra bullet in the drum and a higher rate of fire.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/c1/Nagant_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action revolvers; Nagant M1895 is single-action."
+          "reason": "Fanning increases fire rate for single-action revolvers like the Nagant M1895, improving DPS."
         }
       ]
     },
@@ -1256,12 +1331,13 @@
       "type": "revolver",
       "size": "large",
       "ammo": "compact",
+      "weapon_class": "compact",
       "description": "Modern, Imperial Russian, double-action revolver. Though it has a faster rate of fire, the stronger force required to pull the trigger has a negative impact on accuracy.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/9/96/Nagant_officer_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning only works on single-action pistols; Officer is double-action, no benefit."
+          "reason": "Fanning does not benefit the Officer because it is a double-action revolver, not single-action."
         }
       ]
     },
@@ -1271,6 +1347,7 @@
       "type": "unknown",
       "size": "large",
       "ammo": "nitro",
+      "weapon_class": "nitro",
       "description": "Powerful, side-by-side, big game hunting rifle that can bring down the largest targets at mid-range. Carries limited ammunition.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e2/Nitro_Express_Rifle_lowered.png",
       "trait_synergies": []
@@ -1281,20 +1358,21 @@
       "type": "pistol",
       "size": "tool",
       "ammo": "compact",
+      "weapon_class": "compact",
       "description": "A small, light pistol that is easy to carry and conceal. Holds four shots. Twelve additional rounds carried.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/85/Quad_derringer_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Ambidextrous speeds up reloading matched pairs, but the Derringer is not semi-auto."
+          "reason": "Ambidextrous speeds up matched pair reloads; Quad Derringer benefits when dual-wielded."
         },
         {
           "trait_id": "fanning",
-          "reason": "Fanning only works on single-action revolvers; Derringer is not a revolver, no benefit."
+          "reason": "Fanning does not benefit the Quad Derringer because it is not a single-action pistol."
         },
         {
           "trait_id": "steady_hand",
-          "reason": "Steady Hand reduces Derringer's scope sway, making its precise shots more reliable at range."
+          "reason": "Steady Hand reduces sway when scoped on pistols, improving the Quad Derringer's precision at range."
         }
       ]
     },
@@ -1304,16 +1382,17 @@
       "type": "melee",
       "size": "small",
       "ammo": "unknown",
+      "weapon_class": "melee",
       "description": "Large mallet designed to hammer railroad spikes into their tracks, repurposed to hammer heads into the dirt.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the hammer."
+          "reason": "Assailant allows the Railroad Hammer to be thrown, providing a ranged heavy melee option."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights the Hammer in Dark Sight, useful for retrieval after throwing."
+          "reason": "Blade Seer highlights throwing knives, which are melee throwables, aiding in retrieval after throwing."
         }
       ]
     },
@@ -1323,12 +1402,13 @@
       "type": "shotgun",
       "size": "large",
       "ammo": "shotgun",
+      "weapon_class": "shotgun",
       "description": "Classic break-action shotgun with a long barrel. Good range and power for a shotgun. Has to reload after every shot.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/8f/Romero_77_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye does not apply to single-shot shotguns; only bolt/lever/pump actions."
+          "reason": "Single-shot shotgun; Iron Eye irrelevant as no cycling between shots."
         }
       ]
     },
@@ -1338,12 +1418,13 @@
       "type": "revolver",
       "size": "small",
       "ammo": "medium",
+      "weapon_class": "medium",
       "description": "A classic, single-action break open revolver, the Scottfield has seen both sides of the law. The break action allows for quicker ejecting of spent rounds, meaning a faster overall reload when empty.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning drastically increases the Scottfield's fire rate, making it a close-range powerhouse."
+          "reason": "Fanning increases fire rate for single-action revolvers like the Scottfield, allowing rapid shots."
         }
       ]
     },
@@ -1353,6 +1434,7 @@
       "type": "single-shot",
       "size": "large",
       "ammo": "sparks",
+      "weapon_class": "sparks",
       "description": "Renowned, large-bore, single-shot rifle with good sights. Can put down a bison across a prairie.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/f3/Sparks_lowered.png",
       "trait_synergies": []
@@ -1363,12 +1445,13 @@
       "type": "shotgun",
       "size": "large",
       "ammo": "shotgun",
+      "weapon_class": "shotgun",
       "description": "Revolutionary pump-action shotgun with long barrel, able to fire shells in rapid succession. Reloading the internal magazine takes time, due to its clunky, unrefined loading sequence.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Keeps sights up after pump action, allowing rapid follow-up shots."
+          "reason": "Pump-action shotgun; Iron Eye keeps sights on target during cycling for rapid follow-ups."
         }
       ]
     },
@@ -1378,6 +1461,7 @@
       "type": "unknown",
       "size": "large",
       "ammo": "medium",
+      "weapon_class": "medium",
       "description": "A breech-loading rifle with a .50-70 caliber centerfire cartridge, the Springfield 1866 is best known for its quick rate of fire.",
       "image_url": "",
       "trait_synergies": []
@@ -1388,12 +1472,13 @@
       "type": "bolt-action",
       "size": "large",
       "ammo": "long",
+      "weapon_class": "long",
       "description": "The Springfield M1892 Krag is a bolt-action rifle that holds five rounds in its internal magazine, and one in its chamber. Its magazine lid allows the wielder to top it up from the side, without opening the bolt, and ejecting the chambered round.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Remains in iron sights after bolt cycle, improving shot consistency."
+          "reason": "Bolt-action cycling; Iron Eye prevents sight realignment, enabling faster aimed shots."
         }
       ]
     },
@@ -1403,12 +1488,13 @@
       "type": "bolt-action",
       "size": "large",
       "ammo": "medium",
+      "weapon_class": "medium",
       "description": "Swiss military, bolt-action carbine with internal magazine. Powerful at medium distances. Reloading is inspired by the Winfield repeater rifle, making it easy to top up ammunition.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/51/Veterli_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Stays in iron sights after bolt action, aiding quick follow-up shots."
+          "reason": "Bolt-action medium ammo; Iron Eye maintains sight picture for quicker aimed follow-ups."
         }
       ]
     },
@@ -1418,16 +1504,17 @@
       "type": "lever-action shotgun",
       "size": "medium",
       "ammo": "shotgun",
+      "weapon_class": "shotgun",
       "description": "Seminal lever-action repeating shotgun. Boasting a balance between power and rate-of-fire, this became an icon of the era. Chamber 5+2 shells.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Lets you stay aimed between lever-action shots, improving follow-up accuracy with the shotgun."
+          "reason": "Lever-action shotgun; Iron Eye keeps sights on target during cycling for rapid shots."
         },
         {
           "trait_id": "levering",
-          "reason": "Boosts hip-fire rate for lever-action shotgun, allowing rapid close-range blasts."
+          "reason": "Levering increases hip-fire rate for lever-action shotguns, allowing quicker follow-up shots."
         }
       ]
     },
@@ -1437,24 +1524,25 @@
       "type": "lever-action shotgun melee",
       "size": "large",
       "ammo": "shotgun",
+      "weapon_class": "shotgun",
       "description": "An exposed hammer shotgun that replaces lever-action with pump-action, this Winfield Model 93 holds several 12-gauge rounds to cause devastating damage to opponents.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant allows throwing the Slate's melee as a projectile, increasing ranged melee options."
+          "reason": "Assailant allows the Slate's melee to be thrown, adding ranged utility to a shotgun."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights the Slate's melee in Dark Sight, aiding in tracking thrown attacks."
+          "reason": "Blade Seer does not benefit the Slate as it has no bolts, arrows, or throwing axes/knives."
         },
         {
           "trait_id": "iron_eye",
-          "reason": "Keeps you in iron sights between lever-action shots, maintaining aim for quick follow-ups."
+          "reason": "Lever-action shotgun; Iron Eye maintains aim during cycling for faster follow-up shots."
         },
         {
           "trait_id": "levering",
-          "reason": "Speeds up hip-fire levering, enabling faster shotgun follow-ups in melee range."
+          "reason": "Levering increases hip-fire rate for lever-action shotguns, allowing quicker follow-up shots."
         }
       ]
     },
@@ -1464,16 +1552,17 @@
       "type": "lever-action",
       "size": "large",
       "ammo": "compact",
+      "weapon_class": "compact",
       "description": "Iconic repeating rifle with very large internal magazine, capable of firing compact bullets at rapid speed. Reload is very simple, making an ammo top-up a quick job.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/7c/Winfield_Landing.png",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Allows continuous aiming through lever cycles, boosting accuracy and fire rate control."
+          "reason": "Iron Eye keeps you in ironsights between lever-action shots, maintaining accuracy for follow-up shots."
         },
         {
           "trait_id": "levering",
-          "reason": "Levering increases hip-fire rate, maximizing the Winfield's lever-action spam potential at close range."
+          "reason": "Levering increases hip-fire rate for lever-action rifles, enabling faster spam shots at close range."
         }
       ]
     },
@@ -1483,16 +1572,17 @@
       "type": "lever-action",
       "size": "medium",
       "ammo": "compact",
+      "weapon_class": "compact",
       "description": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/5d/Winfield_M1873C_lowered.png",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Enables staying aimed between lever-action shots, enhancing precision and speed."
+          "reason": "Iron Eye keeps you in ironsights between lever-action shots, maintaining accuracy for follow-up shots."
         },
         {
           "trait_id": "levering",
-          "reason": "Levering boosts hip-fire rate, making the compact Winfield even deadlier in close-quarters spam."
+          "reason": "Levering increases hip-fire rate for lever-action rifles, enabling faster spam shots at close range."
         }
       ]
     },
@@ -1502,16 +1592,17 @@
       "type": "lever-action",
       "size": "large",
       "ammo": "medium",
+      "weapon_class": "medium",
       "description": "Powerful repeating rifle chambered for larger ammunition than previous models. The magazine holds 9 rounds.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/8c/WinfieldCentennial_Landing.png",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Remain scoped between lever cycles, improving accuracy and follow-up shot speed."
+          "reason": "Iron Eye keeps you in ironsights between lever-action shots, maintaining accuracy for follow-up shots."
         },
         {
           "trait_id": "levering",
-          "reason": "Levering offsets the Centennial's slower fire rate by enabling rapid hip-fire spam."
+          "reason": "Levering increases hip-fire rate of fire for lever-action weapons, making the Centennial more effective at close range."
         }
       ]
     }
