@@ -684,7 +684,40 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": []
+			"tool_synergies": [
+				{
+					"tool_id": "decoys",
+					"reason": "Decoy Supply lets you restock Decoys from ammo crates, keeping your supply topped up across a long hunt."
+				},
+				{
+					"tool_id": "alert_trip_mine",
+					"reason": "Decoy Supply lets you restock Alert Trip Mine from ammo crates, keeping your supply topped up across a long hunt."
+				},
+				{
+					"tool_id": "chaos_bomb",
+					"reason": "Decoy Supply lets you restock Chaos Bomb from ammo crates, keeping your supply topped up across a long hunt."
+				},
+				{
+					"tool_id": "blank_fire_decoys",
+					"reason": "Decoy Supply lets you restock Blank Fire Decoys from ammo crates, keeping your supply topped up across a long hunt."
+				},
+				{
+					"tool_id": "decoy_fuses",
+					"reason": "Decoy Supply lets you restock Decoy Fuses from ammo crates, keeping your supply topped up across a long hunt."
+				},
+				{
+					"tool_id": "stalker_beetle",
+					"reason": "Decoy Supply lets you restock Stalker Beetle from ammo crates, keeping your supply topped up across a long hunt."
+				},
+				{
+					"tool_id": "choke_beetle",
+					"reason": "Decoy Supply lets you restock Choke Beetle from ammo crates, keeping your supply topped up across a long hunt."
+				},
+				{
+					"tool_id": "fire_beetle",
+					"reason": "Decoy Supply lets you restock Fire Beetle from ammo crates, keeping your supply topped up across a long hunt."
+				}
+			]
 		},
 		{
 			"id": "determination",
@@ -716,30 +749,6 @@
 				{
 					"tool_id": "medical_pack",
 					"reason": "Doctor does not affect Medical Pack; it only applies to First Aid Kit."
-				},
-				{
-					"tool_id": "vitality_shot_weak",
-					"reason": "Doctor does not affect Vitality Shots; it only applies to First Aid Kit."
-				},
-				{
-					"tool_id": "vitality_shot",
-					"reason": "Doctor does not affect Vitality Shots; it only applies to First Aid Kit."
-				},
-				{
-					"tool_id": "stamina_shot_weak",
-					"reason": "Doctor doubles health restored by First Aid Kit, but Stamina Shot does not restore health; no synergy."
-				},
-				{
-					"tool_id": "stamina_shot",
-					"reason": "Doctor doubles health restored by First Aid Kit, but Stamina Shot does not restore health; no synergy."
-				},
-				{
-					"tool_id": "regeneration_shot_weak",
-					"reason": "Doctor doubles health restored by First Aid Kit, but Regeneration Shot provides gradual healing; no direct synergy."
-				},
-				{
-					"tool_id": "regeneration_shot",
-					"reason": "Doctor doubles health restored by First Aid Kit, but Regeneration Shot provides gradual healing; no direct synergy."
 				}
 			]
 		},
@@ -1125,44 +1134,12 @@
 					"reason": "Frontiersman gives the Poison Bomb one extra use, significantly extending your supply in a hunt."
 				},
 				{
-					"tool_id": "antidote_shot_weak",
-					"reason": "Frontiersman gives the Antidote Shot (Weak) one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "antidote_shot",
-					"reason": "Frontiersman gives the Antidote Shot one extra use, significantly extending your supply in a hunt."
-				},
-				{
 					"tool_id": "hive_bomb",
 					"reason": "Frontiersman gives the Hive Bomb one extra use, significantly extending your supply in a hunt."
 				},
 				{
 					"tool_id": "poison_trip_mine",
 					"reason": "Frontiersman gives the Poison Trip Mine one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "vitality_shot_weak",
-					"reason": "Frontiersman gives the Vitality Shot (Weak) one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "vitality_shot",
-					"reason": "Frontiersman gives the Vitality Shot one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "stamina_shot_weak",
-					"reason": "Frontiersman gives the Stamina Shot (Weak) one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "stamina_shot",
-					"reason": "Frontiersman gives the Stamina Shot one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "regeneration_shot_weak",
-					"reason": "Frontiersman gives the Regeneration Shot (Weak) one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "regeneration_shot",
-					"reason": "Frontiersman gives the Regeneration Shot one extra use, significantly extending your supply in a hunt."
 				},
 				{
 					"tool_id": "dusters",
@@ -1739,30 +1716,6 @@
 				{
 					"tool_id": "medical_pack",
 					"reason": "Physician reduces bandage time, making Medical Pack use faster in combat."
-				},
-				{
-					"tool_id": "vitality_shot_weak",
-					"reason": "Physician reduces bandage time, but Vitality Shot is injected instantly; no synergy."
-				},
-				{
-					"tool_id": "vitality_shot",
-					"reason": "Physician reduces bandage time, but Vitality Shot is injected instantly; no synergy."
-				},
-				{
-					"tool_id": "stamina_shot_weak",
-					"reason": "Physician speeds up bandaging, but Stamina Shot (Weak) is not a bandage; no direct benefit."
-				},
-				{
-					"tool_id": "stamina_shot",
-					"reason": "Physician speeds up bandaging, but Stamina Shot is not a bandage; no direct benefit."
-				},
-				{
-					"tool_id": "regeneration_shot_weak",
-					"reason": "Physician speeds up bandaging, but Regeneration Shot (Weak) is not a bandage; no direct benefit."
-				},
-				{
-					"tool_id": "regeneration_shot",
-					"reason": "Physician speeds up bandaging, but Regeneration Shot is not a bandage; no direct benefit."
 				}
 			]
 		},
@@ -1814,16 +1767,8 @@
 					"reason": "Pitcher increases throw range, allowing safe deployment of lingering fire AoE."
 				},
 				{
-					"tool_id": "knife",
-					"reason": "Pitcher does not benefit knife as it is not thrown; no effect."
-				},
-				{
 					"tool_id": "throwing_knives",
 					"reason": "Pitcher increases throw range, allowing safer ranged melee attacks."
-				},
-				{
-					"tool_id": "heavy_knife",
-					"reason": "Pitcher does not benefit heavy knife as it is not thrown; no effect."
 				},
 				{
 					"tool_id": "throwing_axes",
@@ -1834,10 +1779,6 @@
 					"reason": "Pitcher extends decoy throw range, enabling longer-distance distractions."
 				},
 				{
-					"tool_id": "alert_trip_mine",
-					"reason": "Pitcher increases throw range, letting you place mines farther away."
-				},
-				{
 					"tool_id": "chaos_bomb",
 					"reason": "Pitcher extends chaos bomb throw range, allowing longer-distance noise creation."
 				},
@@ -1846,52 +1787,12 @@
 					"reason": "Pitcher increases throw range, enabling decoys to be thrown farther."
 				},
 				{
-					"tool_id": "decoy_fuses",
-					"reason": "Pitcher extends fuse throw range, allowing longer-distance sound distractions."
-				},
-				{
 					"tool_id": "poison_bomb",
 					"reason": "Pitcher increases throw range, letting you place poison clouds farther away."
 				},
 				{
-					"tool_id": "antidote_shot_weak",
-					"reason": "Pitcher extends throw range, allowing you to toss antidote shots farther."
-				},
-				{
-					"tool_id": "antidote_shot",
-					"reason": "Pitcher increases throwing range, allowing you to toss Antidote Shot farther to yourself or allies."
-				},
-				{
 					"tool_id": "hive_bomb",
 					"reason": "Pitcher extends throw distance, enabling you to place Hive Bombs more accurately from safer positions."
-				},
-				{
-					"tool_id": "poison_trip_mine",
-					"reason": "Pitcher lets you throw Poison Trip Mines farther, setting traps from a distance."
-				},
-				{
-					"tool_id": "dusters",
-					"reason": "Pitcher does not benefit Dusters as they are melee tools, not thrown items."
-				},
-				{
-					"tool_id": "knuckle_knife",
-					"reason": "Pitcher does not benefit Knuckle Knife as it is a melee tool, not a thrown item."
-				},
-				{
-					"tool_id": "stalker_beetle",
-					"reason": "Pitcher increases throw range, allowing you to launch Stalker Beetles farther for scouting."
-				},
-				{
-					"tool_id": "choke_beetle",
-					"reason": "Pitcher extends throw distance, enabling you to deploy Choke Beetles from safer positions."
-				},
-				{
-					"tool_id": "fire_beetle",
-					"reason": "Pitcher increases throw range, letting you send Fire Beetles farther to ignite targets."
-				},
-				{
-					"tool_id": "concertina_trip_mine",
-					"reason": "Pitcher increases throw range, allowing safer placement of trip mines from a distance."
 				},
 				{
 					"tool_id": "concertina_bomb",
@@ -2421,6 +2322,14 @@
 				{
 					"tool_id": "flash_bomb",
 					"reason": "Surefoot lets you sprint while holding a primed Flash Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "antidote_shot_weak",
+					"reason": "Surefoot lets you sprint while holding a primed Antidote Shot (Weak), so you don't have to stop moving to administer it."
+				},
+				{
+					"tool_id": "antidote_shot",
+					"reason": "Surefoot lets you sprint while holding a primed Antidote Shot, so you don't have to stop moving to administer it."
 				}
 			]
 		},
@@ -2450,6 +2359,18 @@
 				{
 					"tool_id": "poison_trip_mine",
 					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to track your own Poison Trip Mine placements."
+				},
+				{
+					"tool_id": "stalker_beetle",
+					"reason": "Vigilant highlights active Stalker Beetles in Dark Sight, letting you track them and keep tabs on their position."
+				},
+				{
+					"tool_id": "choke_beetle",
+					"reason": "Vigilant highlights active Choke Beetles in Dark Sight, letting you track them and keep tabs on their position."
+				},
+				{
+					"tool_id": "fire_beetle",
+					"reason": "Vigilant highlights active Fire Beetles in Dark Sight, letting you track them and keep tabs on their position."
 				}
 			]
 		},
@@ -5454,10 +5375,6 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher does not benefit knife as it is not thrown; no effect."
-				},
-				{
 					"trait_id": "berserker",
 					"reason": "Berserker doubles all melee attack damage, making the Knife deal twice as much damage per hit."
 				},
@@ -5513,10 +5430,6 @@
 			"tool_class": "melee",
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher does not benefit heavy knife as it is not thrown; no effect."
-				},
 				{
 					"trait_id": "berserker",
 					"reason": "Berserker doubles all melee attack damage, making the Heavy Knife deal twice as much damage per hit."
@@ -5584,6 +5497,10 @@
 				{
 					"trait_id": "frontiersman",
 					"reason": "Frontiersman gives the Decoys one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"trait_id": "decoy_supply",
+					"reason": "Decoy Supply lets you restock Decoys from ammo crates, keeping your supply topped up across a long hunt."
 				}
 			]
 		},
@@ -5596,10 +5513,6 @@
 			"type": "throwable decoy aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher increases throw range, letting you place mines farther away."
-				},
-				{
 					"trait_id": "poacher",
 					"reason": "Poacher lets you place and disarm traps silently, preventing enemies from hearing you set this trap."
 				},
@@ -5610,6 +5523,10 @@
 				{
 					"trait_id": "frontiersman",
 					"reason": "Frontiersman gives the Alert Trip Mine one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"trait_id": "decoy_supply",
+					"reason": "Decoy Supply lets you restock Alert Trip Mine from ammo crates, keeping your supply topped up across a long hunt."
 				}
 			]
 		},
@@ -5632,6 +5549,10 @@
 				{
 					"trait_id": "frontiersman",
 					"reason": "Frontiersman gives the Chaos Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"trait_id": "decoy_supply",
+					"reason": "Decoy Supply lets you restock Chaos Bomb from ammo crates, keeping your supply topped up across a long hunt."
 				}
 			]
 		},
@@ -5654,6 +5575,10 @@
 				{
 					"trait_id": "frontiersman",
 					"reason": "Frontiersman gives the Blank Fire Decoys one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"trait_id": "decoy_supply",
+					"reason": "Decoy Supply lets you restock Blank Fire Decoys from ammo crates, keeping your supply topped up across a long hunt."
 				}
 			]
 		},
@@ -5666,8 +5591,8 @@
 			"type": "throwable decoy aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher extends fuse throw range, allowing longer-distance sound distractions."
+					"trait_id": "decoy_supply",
+					"reason": "Decoy Supply lets you restock Decoy Fuses from ammo crates, keeping your supply topped up across a long hunt."
 				}
 			]
 		},
@@ -5772,12 +5697,8 @@
 			"type": "throwable poison aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher extends throw range, allowing you to toss antidote shots farther."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Antidote Shot (Weak) one extra use, significantly extending your supply in a hunt."
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Antidote Shot (Weak), so you don't have to stop moving to administer it."
 				}
 			]
 		},
@@ -5790,12 +5711,8 @@
 			"type": "throwable poison aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher increases throwing range, allowing you to toss Antidote Shot farther to yourself or allies."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Antidote Shot one extra use, significantly extending your supply in a hunt."
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Antidote Shot, so you don't have to stop moving to administer it."
 				}
 			]
 		},
@@ -5830,10 +5747,6 @@
 			"type": "throwable poison aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher lets you throw Poison Trip Mines farther, setting traps from a distance."
-				},
-				{
 					"trait_id": "poacher",
 					"reason": "Poacher lets you place and disarm traps silently, preventing enemies from hearing you set this trap."
 				},
@@ -5856,20 +5769,8 @@
 			"type": "healing",
 			"trait_synergies": [
 				{
-					"trait_id": "doctor",
-					"reason": "Doctor does not affect Vitality Shots; it only applies to First Aid Kit."
-				},
-				{
-					"trait_id": "physician",
-					"reason": "Physician reduces bandage time, but Vitality Shot is injected instantly; no synergy."
-				},
-				{
 					"trait_id": "surefoot",
 					"reason": "Surefoot lets you sprint while holding a primed Vitality Shot (Weak), closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Vitality Shot (Weak) one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5882,20 +5783,8 @@
 			"type": "healing",
 			"trait_synergies": [
 				{
-					"trait_id": "doctor",
-					"reason": "Doctor does not affect Vitality Shots; it only applies to First Aid Kit."
-				},
-				{
-					"trait_id": "physician",
-					"reason": "Physician reduces bandage time, but Vitality Shot is injected instantly; no synergy."
-				},
-				{
 					"trait_id": "surefoot",
 					"reason": "Surefoot lets you sprint while holding a primed Vitality Shot, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Vitality Shot one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5908,20 +5797,8 @@
 			"type": "healing",
 			"trait_synergies": [
 				{
-					"trait_id": "doctor",
-					"reason": "Doctor doubles health restored by First Aid Kit, but Stamina Shot does not restore health; no synergy."
-				},
-				{
-					"trait_id": "physician",
-					"reason": "Physician speeds up bandaging, but Stamina Shot (Weak) is not a bandage; no direct benefit."
-				},
-				{
 					"trait_id": "surefoot",
 					"reason": "Surefoot lets you sprint while holding a primed Stamina Shot (Weak), closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Stamina Shot (Weak) one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5934,20 +5811,8 @@
 			"type": "healing",
 			"trait_synergies": [
 				{
-					"trait_id": "doctor",
-					"reason": "Doctor doubles health restored by First Aid Kit, but Stamina Shot does not restore health; no synergy."
-				},
-				{
-					"trait_id": "physician",
-					"reason": "Physician speeds up bandaging, but Stamina Shot is not a bandage; no direct benefit."
-				},
-				{
 					"trait_id": "surefoot",
 					"reason": "Surefoot lets you sprint while holding a primed Stamina Shot, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Stamina Shot one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5960,20 +5825,8 @@
 			"type": "healing",
 			"trait_synergies": [
 				{
-					"trait_id": "doctor",
-					"reason": "Doctor doubles health restored by First Aid Kit, but Regeneration Shot provides gradual healing; no direct synergy."
-				},
-				{
-					"trait_id": "physician",
-					"reason": "Physician speeds up bandaging, but Regeneration Shot (Weak) is not a bandage; no direct benefit."
-				},
-				{
 					"trait_id": "surefoot",
 					"reason": "Surefoot lets you sprint while holding a primed Regeneration Shot (Weak), closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Regeneration Shot (Weak) one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5986,20 +5839,8 @@
 			"type": "healing",
 			"trait_synergies": [
 				{
-					"trait_id": "doctor",
-					"reason": "Doctor doubles health restored by First Aid Kit, but Regeneration Shot provides gradual healing; no direct synergy."
-				},
-				{
-					"trait_id": "physician",
-					"reason": "Physician speeds up bandaging, but Regeneration Shot is not a bandage; no direct benefit."
-				},
-				{
 					"trait_id": "surefoot",
 					"reason": "Surefoot lets you sprint while holding a primed Regeneration Shot, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Regeneration Shot one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -6011,10 +5852,6 @@
 			"tool_class": "melee",
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher does not benefit Dusters as they are melee tools, not thrown items."
-				},
 				{
 					"trait_id": "berserker",
 					"reason": "Berserker doubles all melee attack damage, making the Dusters deal twice as much damage per hit."
@@ -6038,10 +5875,6 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher does not benefit Knuckle Knife as it is a melee tool, not a thrown item."
-				},
-				{
 					"trait_id": "berserker",
 					"reason": "Berserker doubles all melee attack damage, making the Knuckle Knife deal twice as much damage per hit."
 				},
@@ -6064,8 +5897,12 @@
 			"type": "throwable decoy aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher increases throw range, allowing you to launch Stalker Beetles farther for scouting."
+					"trait_id": "vigilant",
+					"reason": "Vigilant highlights active Stalker Beetles in Dark Sight, letting you track them and keep tabs on their position."
+				},
+				{
+					"trait_id": "decoy_supply",
+					"reason": "Decoy Supply lets you restock Stalker Beetle from ammo crates, keeping your supply topped up across a long hunt."
 				}
 			]
 		},
@@ -6078,8 +5915,12 @@
 			"type": "throwable decoy aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher extends throw distance, enabling you to deploy Choke Beetles from safer positions."
+					"trait_id": "vigilant",
+					"reason": "Vigilant highlights active Choke Beetles in Dark Sight, letting you track them and keep tabs on their position."
+				},
+				{
+					"trait_id": "decoy_supply",
+					"reason": "Decoy Supply lets you restock Choke Beetle from ammo crates, keeping your supply topped up across a long hunt."
 				}
 			]
 		},
@@ -6092,8 +5933,12 @@
 			"type": "throwable decoy aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher increases throw range, letting you send Fire Beetles farther to ignite targets."
+					"trait_id": "vigilant",
+					"reason": "Vigilant highlights active Fire Beetles in Dark Sight, letting you track them and keep tabs on their position."
+				},
+				{
+					"trait_id": "decoy_supply",
+					"reason": "Decoy Supply lets you restock Fire Beetle from ammo crates, keeping your supply topped up across a long hunt."
 				}
 			]
 		},
@@ -6123,10 +5968,6 @@
 			"tool_class": "explosive",
 			"type": "throwable explosive aim-helper",
 			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher increases throw range, allowing safer placement of trip mines from a distance."
-				},
 				{
 					"trait_id": "poacher",
 					"reason": "Poacher lets you place and disarm traps silently, preventing enemies from hearing you set this trap."
