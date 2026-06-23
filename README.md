@@ -36,17 +36,17 @@ Requires [hermit](https://cashapp.github.io/hermit/) and [direnv](https://direnv
 prek install
 
 # Install all dependencies
-make install
+task install
 ```
 
 ## Running locally
 
 ```bash
 # Dev server (hot reload, uses whatever data.json is in frontend/src/)
-make dev
+task dev
 
 # Rebuild data from scratch (scrape wiki metadata → scrape synergies → copy)
-make build
+task build
 ```
 
 ## Refreshing data after a Hunt patch
@@ -54,7 +54,7 @@ make build
 The wiki scrapers pick up the current patch version automatically. Run the pipeline locally or trigger the [Refresh Data](../../actions/workflows/refresh-data.yml) workflow manually on GitHub.
 
 ```bash
-make build
+task build
 git add frontend/src/data.json
 git commit -m "chore(data): refresh for patch X.X.X"
 git push

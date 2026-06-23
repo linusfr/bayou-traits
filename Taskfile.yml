@@ -1,0 +1,56 @@
+version: '3'
+
+tasks:
+  default:
+    silent: true
+    cmds:
+      - task --list
+
+  install:
+    desc: First-time setup — install all dependencies and hooks
+    deps: [hooks]
+    cmds:
+      - cd scraper && uv sync
+      - cd frontend && pnpm install
+
+  hooks:
+    desc: Install pre-commit hooks via prek
+    cmds:
+      - prek install
+
+  scrape:
+    desc: Scrape wiki metadata (traits, weapons, tools)
+    dir: scraper
+    cmds:
+      - uv run python scrape.py
+
+  synergies:
+    desc: Scrape weapon and tool synergies from wiki (run after scrape + data)
+    dir: scraper
+    cmds:
+      - uv run python scrape_weapon_traits.py
+      - uv run python scrape_tool_traits.py
+
+  data:
+    desc: Copy raw scraped data into the frontend
+    cmds:
+      - cp scraper/data/raw.json frontend/src/data.json
+
+  build:
+    desc: Full pipeline — scrape wiki → synergies → build frontend
+    cmds:
+      - cd scraper && uv run python build.py
+      - cd frontend && pnpm build
+
+  dev:
+    desc: Start dev server with hot reload
+    dir: frontend
+    cmds:
+      - pnpm dev
+
+  clean:
+    desc: Remove build artifacts and caches
+    cmds:
+      - rm -rf dist/
+      - find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
+      - find . -name "*.pyc" -delete 2>/dev/null || true
