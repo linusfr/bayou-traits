@@ -173,7 +173,7 @@ export default function App() {
 					</div>
 					<SearchBar
 						value={query}
-						onChange={setQuery}
+						onChange={v => { setQuery(v); setSelectedId(null) }}
 						placeholder={mode === 'weapon' ? 'Search weapons…' : mode === 'tool' ? 'Search tools…' : 'Search traits…'}
 					/>
 				</div>
