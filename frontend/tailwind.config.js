@@ -6,16 +6,16 @@ export default {
 			colors: {
 				hunt: {
 					bg:             '#0B0906',
-					surface:        '#131009',
-					card:           '#1C1510',
-					'card-hover':   '#251C12',
+					surface:        '#160E08',
+					card:           '#221810',
+					'card-hover':   '#2A1F13',
 					border:         '#2C2016',
 					'border-strong':'#5C3E20',
 					gold:           '#C9932A',
 					'gold-bright':  '#E8B048',
 					text:           '#E4D5B8',
 					'text-muted':   '#8A7356',
-					'text-dim':     '#4A3E2E',
+					'text-dim':     '#6B5A44',
 				},
 			},
 			fontFamily: {

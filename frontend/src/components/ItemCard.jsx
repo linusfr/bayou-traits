@@ -1,8 +1,8 @@
 const CATEGORY_PILL = {
-	offensive:  'text-red-400   border-red-900/60   bg-red-950/30',
-	defensive:  'text-green-400 border-green-900/60 bg-green-950/30',
-	movement:   'text-sky-400   border-sky-900/60   bg-sky-950/30',
-	supportive: 'text-amber-400 border-amber-900/60 bg-amber-950/30',
+	offensive:  'text-[#C04A4A] border-[#C04A4A]/40 bg-[#C04A4A]/10',
+	defensive:  'text-[#4A8C5C] border-[#4A8C5C]/40 bg-[#4A8C5C]/10',
+	movement:   'text-[#B87E4A] border-[#B87E4A]/40 bg-[#B87E4A]/10',
+	supportive: 'text-[#A89060] border-[#A89060]/40 bg-[#A89060]/10',
 }
 
 const AMMO_COLOR = {
@@ -23,7 +23,7 @@ export default function ItemCard({ item, type, selected, onClick }) {
 	return (
 		<button
 			onClick={onClick}
-			className={`relative w-full text-left rounded border transition-all duration-150 p-3
+			className={`card-shine relative w-full text-left rounded border transition-all duration-150 p-3
 				${selected
 					? 'border-hunt-gold shadow-gold bg-hunt-card-hover'
 					: 'border-hunt-border bg-hunt-card hover:border-hunt-border-strong hover:bg-hunt-card-hover'
@@ -31,7 +31,7 @@ export default function ItemCard({ item, type, selected, onClick }) {
 		>
 			{isWeapon ? (
 				<>
-					<p className="font-display text-hunt-text text-sm font-medium leading-snug">
+					<p className="text-hunt-text text-sm font-medium leading-snug">
 						{item.name}
 					</p>
 					<div className="flex items-center gap-2 mt-2 flex-wrap">
@@ -53,7 +53,7 @@ export default function ItemCard({ item, type, selected, onClick }) {
 			) : (
 				<>
 					<div className="flex items-start justify-between gap-2">
-						<p className="font-display text-hunt-text text-sm font-medium leading-snug">
+						<p className="text-hunt-text text-sm font-medium leading-snug">
 							{item.name}
 						</p>
 						{item.cost > 0 && (

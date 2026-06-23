@@ -1,8 +1,8 @@
 const CATEGORY_PILL = {
-	offensive:  'text-red-400   border-red-900/60   bg-red-950/30',
-	defensive:  'text-green-400 border-green-900/60 bg-green-950/30',
-	movement:   'text-sky-400   border-sky-900/60   bg-sky-950/30',
-	supportive: 'text-amber-400 border-amber-900/60 bg-amber-950/30',
+	offensive:  'text-[#C04A4A] border-[#C04A4A]/40 bg-[#C04A4A]/10',
+	defensive:  'text-[#4A8C5C] border-[#4A8C5C]/40 bg-[#4A8C5C]/10',
+	movement:   'text-[#B87E4A] border-[#B87E4A]/40 bg-[#B87E4A]/10',
+	supportive: 'text-[#A89060] border-[#A89060]/40 bg-[#A89060]/10',
 }
 
 const AMMO_PILL = {
@@ -128,7 +128,7 @@ export default function SynergyPanel({ detail, onClose, onNavigate }) {
 				</p>
 				{synergies.length === 0 ? (
 					<p className="text-sm text-hunt-text-dim italic">
-						No synergy data available yet — run the build pipeline to populate.
+						The bayou keeps its secrets. Trigger a data refresh to populate synergies.
 					</p>
 				) : (
 					<div className="space-y-2 pr-1">

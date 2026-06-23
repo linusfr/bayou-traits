@@ -99,15 +99,15 @@ export default function App() {
 		<div className="min-h-screen bg-hunt-bg font-body flex flex-col">
 
 			{/* ── Header ── */}
-			<header className="shrink-0 border-b border-hunt-border bg-hunt-surface">
-				<div className="max-w-[1800px] mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+			<header className="shrink-0 border-b border-hunt-border-strong bg-hunt-surface">
+				<div className="max-w-[1800px] mx-auto px-4 sm:px-6 py-5 sm:py-6 flex items-center justify-between gap-4">
 					<div>
-						<h1 className="font-display text-hunt-gold font-semibold tracking-wide glow-gold
-							text-lg sm:text-xl">
-							Hunt: Showdown
+						<h1 className="font-display text-hunt-gold font-semibold tracking-[0.06em] glow-gold
+							text-2xl sm:text-3xl">
+							Bayou Traits
 						</h1>
-						<p className="text-xs uppercase tracking-[0.2em] text-hunt-text-muted mt-0.5">
-							Trait Finder
+						<p className="text-xs uppercase tracking-[0.25em] text-hunt-text-muted mt-1">
+							Hunt: Showdown &middot; Trait &amp; Weapon Synergies
 						</p>
 					</div>
 					<div className="text-right shrink-0">
@@ -182,7 +182,7 @@ export default function App() {
 					>
 						{items.length === 0 ? (
 							<div className="flex-1 flex items-center justify-center">
-								<p className="text-hunt-text-dim font-display text-sm">No results</p>
+								<p className="text-hunt-text-dim text-sm">Nothing found in the fog.</p>
 							</div>
 						) : (
 							<div className="p-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 3xl:grid-cols-4 gap-2 content-start">
@@ -210,10 +210,22 @@ export default function App() {
 						</div>
 					) : (
 						/* Placeholder on desktop when nothing is selected */
-						<div className="hidden lg:flex flex-1 items-center justify-center text-hunt-text-dim">
+						<div className="hidden lg:flex flex-1 items-center justify-center">
 							<div className="text-center">
-								<p className="font-display text-hunt-border-strong text-5xl mb-3">⌖</p>
-								<p className="text-sm">Select a {mode} to see synergies</p>
+								<svg
+									className="w-14 h-14 text-hunt-border-strong mb-4 mx-auto"
+									viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={0.75}
+								>
+									<circle cx="12" cy="12" r="8.5" />
+									<circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" />
+									<line x1="12" y1="1" x2="12" y2="5.5" />
+									<line x1="12" y1="18.5" x2="12" y2="23" />
+									<line x1="1" y1="12" x2="5.5" y2="12" />
+									<line x1="18.5" y1="12" x2="23" y2="12" />
+								</svg>
+								<p className="text-hunt-text-dim text-sm">
+									Select a {mode} to reveal its synergies
+								</p>
 							</div>
 						</div>
 					)}
