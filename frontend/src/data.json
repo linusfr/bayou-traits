@@ -2500,7 +2500,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Springfield made, breech-loading trapdoor cavalry carbine. Fires single shots at medium range with high damage.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -2986,7 +2986,7 @@
 			"size": "large",
 			"ammo": "unknown",
 			"weapon_class": "bow",
-			"description": "",
+			"description": "Crossbow that fires powerful bolts. Quiet at range, but cumbersome with a long reload. Bolts can be recovered and reused.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3006,7 +3006,7 @@
 			"size": "large",
 			"ammo": "unknown",
 			"weapon_class": "bow",
-			"description": "",
+			"description": "Crossbow that fires powerful bolts. Quiet at range, but cumbersome with a long reload. Bolts can be recovered and reused. Modified with a mid-range scope.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3177,7 +3177,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. A lightened Ranger 73, this trades convenience for a slightly reduced capacity.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3197,7 +3197,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. A lightened Ranger 73, this trades convenience for a slightly reduced capacity. Modified with a mid-to-long-range scope.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3221,7 +3221,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. A lightened Ranger 73, this trades convenience for a slightly reduced capacity. Modified with a silencer.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3312,7 +3312,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. A lengthened Ranger 73 that is better at long range and has a larger capacity.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3332,7 +3332,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. A lengthened Ranger 73 that is better at long range and has a larger capacity. Modified with a bayonet for melee.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3356,7 +3356,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. A lengthened Ranger 73 that is better at long range and has a larger capacity. Modified with a long-range scope.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3400,7 +3400,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Springfield made, bolt-action rifle. High fire-rate and ability to top off are offset by lower damage than other rifles.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3416,7 +3416,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Springfield made, bolt-action rifle. High fire-rate and ability to top off are offset by lower damage than other rifles. Modified with a bayonet for melee.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3436,7 +3436,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Springfield made, bolt-action rifle. High fire-rate and ability to top off are offset by lower damage than other rifles. Modified with a silencer.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3452,7 +3452,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Springfield made, bolt-action rifle. High fire-rate and ability to top off are offset by lower damage than other rifles. Modified with a long-range scope.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3853,7 +3853,7 @@
 			"size": "medium",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Russian made, bolt-action rifle. A shortened Mosin-Nagant, powerful albeit some reduced power and less effective range.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3877,7 +3877,7 @@
 			"size": "medium",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Russian made, bolt-action rifle. A shortened Mosin-Nagant, powerful albeit some reduced power and less effective range. Modified with an extended ammo capacity.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3901,7 +3901,7 @@
 			"size": "medium",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Russian made, bolt-action rifle. A shortened Mosin-Nagant, powerful albeit some reduced power and less effective range. Shortened and modified with a rear bludgeon.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3929,7 +3929,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Russian made, bolt-action rifle. A shortened Mosin-Nagant, powerful albeit some reduced power and less effective range. Modified with enhanced sights, barrel, and stock.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3949,7 +3949,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Russian made, bolt-action rifle. A shortened Mosin-Nagant, powerful albeit some reduced power and less effective range. Modified with an extended barrel, stock, and mid-range scope.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3973,7 +3973,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Russian made, bolt-action rifle. Powerful, fast, and can be reloaded with a stripper clip.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3993,7 +3993,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Russian made, bolt-action rifle. Powerful, fast, and can be reloaded with a stripper clip. Modified with an automatic action and increased ammo capacity.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4009,7 +4009,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Russian made, bolt-action rifle. Powerful, fast, and can be reloaded with a stripper clip. Modified with a bayonet for melee.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4033,7 +4033,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Russian made, bolt-action rifle. Powerful and fast, but incompatible with stripper clips. Modified with a long-range scope.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4170,7 +4170,7 @@
 			"size": "small",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Nagant made, double-action revolver. High fire-rate, muzzle velocity, and capacity at the cost of damage and reload speed. Can be dual wielded.",
 			"image_url": "",
 			"trait_synergies": []
 		},
@@ -4181,7 +4181,7 @@
 			"size": "small",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Nagant made, double-action revolver. High fire-rate, muzzle velocity, and capacity at the cost of damage and reload speed. Modified with brass knuckles for melee. Can be dual wielded.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4197,7 +4197,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Nagant made, double-action revolver. High fire-rate, muzzle velocity, and capacity at the cost of damage and reload speed. Extended stock and barrel.",
 			"image_url": "",
 			"trait_synergies": []
 		},
@@ -4208,7 +4208,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Nagant made, double-action revolver. High fire-rate, muzzle velocity, and capacity at the cost of damage and reload speed. Extended stock and barrel.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4292,7 +4292,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. High fire-rate, large magazine, easy reload, and good handling.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4312,7 +4312,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. High fire-rate, large magazine, easy reload, and good handling. Modified with an enhanced toggle-able sight.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4336,7 +4336,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. High fire-rate, large magazine, easy reload, and good handling. Uses a speed-loader for faster reloading.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4356,7 +4356,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. High fire-rate, large magazine, easy reload, and good handling. Modified with a stock-mounted blade.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4799,7 +4799,7 @@
 			"size": "large",
 			"ammo": "medium",
 			"weapon_class": "medium",
-			"description": "",
+			"description": "Springfield made, breech-loading trapdoor rifle. Fires single shots and is effective at long range.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4975,7 +4975,7 @@
 			"size": "medium",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Caldwell made, single-action revolver. Based on the Conversion, this fires Long Ammo for more damage, but kicks like a mule. Can be dual wielded.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4995,7 +4995,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Caldwell made, single-action revolver. Based on the Conversion, this fires Long Ammo for more damage, but kicks like a mule. Modified with a Deadeye scope and stock.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -5019,7 +5019,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "",
+			"description": "Caldwell made, single-action revolver. Based on the Conversion, this fires Long Ammo for more damage, but kicks like a mule. Modified with an added stock.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -5035,7 +5035,7 @@
 			"size": "medium",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. A shortened Frontier 73C, this has a reduced capacity and range, but is handier.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -5059,7 +5059,7 @@
 			"size": "medium",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. A shortened Frontier 73C, this has a reduced capacity and range, but is handier. Modified with a Deadeye scope, but no stock.",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -5087,7 +5087,7 @@
 			"size": "medium",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "",
+			"description": "Winfield made, lever-action repeating rifle. A shortened Frontier 73C, this has a reduced capacity and range, but is handier. Shortened and modified with a bayonet.",
 			"image_url": "",
 			"trait_synergies": [
 				{
