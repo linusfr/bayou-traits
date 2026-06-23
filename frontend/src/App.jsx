@@ -281,6 +281,15 @@ export default function App() {
 					</a>
 					{' '}· Built {new Date(data.meta.scraped_at).toLocaleDateString()}
 					{' '}· {data.meta.trait_count} traits · {data.meta.weapon_count} weapons{data.meta.tool_count ? ` · ${data.meta.tool_count} tools` : ''}
+					{' '}·{' '}
+					<a
+						href="https://github.com/linusfr/bayou-traits"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-hunt-text-muted hover:text-hunt-gold transition-colors"
+					>
+						GitHub
+					</a>
 				</p>
 			</footer>
 		</div>
