@@ -270,14 +270,14 @@ export default function App() {
 			{/* ── Footer ── */}
 			<footer className="shrink-0 border-t border-hunt-border bg-hunt-surface px-4 py-2">
 				<p className="max-w-[1800px] mx-auto text-xs text-hunt-text-dim text-center">
-					Data scraped from the{' '}
+					Data scraped from{' '}
 					<a
-						href="https://huntshowdown.fandom.com"
+						href="https://huntshowdown.wiki.gg"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-hunt-text-muted hover:text-hunt-gold transition-colors"
 					>
-						Hunt: Showdown Wiki
+						huntshowdown.wiki.gg
 					</a>
 					{' '}· Built {new Date(data.meta.scraped_at).toLocaleDateString()}
 					{' '}· {data.meta.trait_count}{data.meta.wiki_trait_count && data.meta.wiki_trait_count !== data.meta.trait_count ? `/${data.meta.wiki_trait_count}` : ''} traits

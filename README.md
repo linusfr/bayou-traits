@@ -16,6 +16,7 @@ Search by weapon to find the traits that make it sing. Search by tool to see whi
 - **By Tool** — pick a consumable (throwables, healing shots, First Aid Kits…) and see which traits improve it
 - **By Trait** — find which weapons and tools benefit from a given perk, in one view
 - Filter by weapon class (ammo type + melee / bow / launcher), tool category, or trait category
+- Traits are tagged: **scarce** (in-run pickups only), **burn** (lost when your hunter dies), **event** (limited availability)
 - Fuzzy search across names and descriptions
 - Responsive — works on mobile, desktop, and your cursed ultrawide
 
