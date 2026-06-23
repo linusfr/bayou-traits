@@ -221,7 +221,10 @@ export default function App() {
 				</div>
 
 				{/* Class / category filter pills */}
-				<div className="max-w-[1800px] mx-auto px-4 sm:px-6 pb-2 flex gap-2 overflow-x-auto no-scrollbar">
+				<div className="max-w-[1800px] mx-auto px-4 sm:px-6 pb-2 flex items-center gap-2 overflow-x-auto no-scrollbar">
+					<span className="text-xs text-hunt-text-dim uppercase tracking-widest shrink-0">
+						{mode === "weapon" ? "Ammo" : mode === "tool" || mode === "consumable" ? "Class" : "Category"}
+					</span>
 					<button
 						onClick={() => { setFilter(null); setSelectedId(null); }}
 						className={`px-3 py-1 text-xs rounded-full border shrink-0 transition-colors
