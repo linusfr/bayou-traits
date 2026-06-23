@@ -109,6 +109,8 @@ def parse_infobox_table(soup: BeautifulSoup) -> dict:
                 key = re.sub(r"\s+", " ", cells[0].get_text(separator=" ", strip=True)).strip().lower()
                 val = re.sub(r"\s+", " ", cells[1].get_text(separator=" ", strip=True)).strip()
                 if key and val:
+                    if '{{{' in val:
+                        continue
                     fields[key] = val
     return fields
 
@@ -153,6 +155,17 @@ def parse_trait(html: str, title: str) -> dict | None:
 
     if not description:
         description = first_real_paragraph(soup)
+
+    if not category:
+        desc_lower = description.lower()
+        if any(k in desc_lower for k in ['damage', 'attack', 'kill']):
+            category = 'offensive'
+        elif any(k in desc_lower for k in ['heal', 'health', 'resist', 'reviv', 'protect']):
+            category = 'defensive'
+        elif any(k in desc_lower for k in ['speed', 'sprint', 'move', 'run', 'walk']):
+            category = 'movement'
+        else:
+            category = 'supportive'
 
     page_text = soup.get_text().lower()
     if "burn trait" in page_text or "is burned" in page_text:
@@ -297,6 +310,109 @@ def parse_weapon(html: str, title: str) -> dict | None:
     }
 
 
+TOOL_GROUPS = {
+    "Explosives":     "explosive",
+    "Fire":           "fire",
+    "Knife":          "melee",
+    "Deception":      "decoy",
+    "Light":          "support",
+    "First Aid Kit":  "healing",
+    "Healing Shots":  "healing",
+    "Poison":         "poison",
+    "Choke Bomb":     "poison",
+    "Dusters":        "melee",
+    "Spyglass":       "support",
+    "Stalker Beetle": "decoy",
+    "Ammo Box":       "support",
+}
+
+
+def clean(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
+
+def parse_tool_page(html: str, tool_class: str) -> list[dict]:
+    """Parse tool items from a group page using <h2> section boundaries."""
+    if not html:
+        return []
+    from bs4 import NavigableString
+    soup = BeautifulSoup(html, "lxml")
+    content = soup.find("div", class_="mw-parser-output") or soup
+
+    # Collect document elements grouped by h2 heading (each h2 = one item)
+    sections: list[tuple[str, list]] = []
+    current_name: str | None = None
+    current_els: list = []
+
+    for el in content.children:
+        if isinstance(el, NavigableString):
+            continue
+        if el.name == "h2":
+            if current_name:
+                sections.append((current_name, current_els))
+            raw = re.sub(r"\[.*?\]", "", el.get_text(strip=True)).strip()
+            current_name = raw if raw and raw != "Contents" else None
+            current_els = []
+        elif current_name:
+            current_els.append(el)
+    if current_name:
+        sections.append((current_name, current_els))
+
+    throwable_classes = {"explosive", "fire", "melee", "decoy", "poison"}
+    tool_type = f"throwable {tool_class} aim-helper" if tool_class in throwable_classes else tool_class
+
+    tools: list[dict] = []
+    for name, els in sections:
+        if not name or len(name) > 60:
+            continue
+        description = ""
+        cost = 0
+        for el in els:
+            if el.name == "p" and not description:
+                t = clean(el.get_text(separator=" ", strip=True))
+                if len(t) > 15 and not t.startswith("["):
+                    description = t
+            elif el.name == "table":
+                for row in el.find_all("tr"):
+                    cells = row.find_all(["td", "th"])
+                    if len(cells) == 2:
+                        k = clean(cells[0].get_text(separator=" ", strip=True)).lower()
+                        v = clean(cells[1].get_text(separator=" ", strip=True))
+                        if k == "cost":
+                            m = re.search(r"\d+", v)
+                            if m:
+                                cost = int(m.group())
+        if description:
+            tools.append({
+                "id": slugify(name),
+                "name": name,
+                "description": description,
+                "cost": cost,
+                "tool_class": tool_class,
+                "type": tool_type,
+                "trait_synergies": [],
+            })
+    return tools
+
+
+async def scrape_tools(client: httpx.AsyncClient, sem: asyncio.Semaphore) -> list[dict]:
+    tools: list[dict] = []
+    seen_ids: set[str] = set()
+
+    async def fetch_group(page: str, tool_class: str) -> None:
+        async with sem:
+            await asyncio.sleep(0.25)
+            html = await fetch_page_html(client, page)
+        for item in parse_tool_page(html, tool_class):
+            if item["id"] not in seen_ids:
+                seen_ids.add(item["id"])
+                tools.append(item)
+
+    await asyncio.gather(*[fetch_group(page, tc) for page, tc in TOOL_GROUPS.items()])
+    return tools
+
+
 async def get_patch_version(client: httpx.AsyncClient) -> str:
     params = {
         "action": "query",
@@ -365,15 +481,21 @@ async def main() -> None:
         weapons = [r for t, h in weapon_results if (r := parse_weapon(h, t))]
         print(f"  Parsed {len(weapons)} weapons")
 
+        print("Scraping tool pages...")
+        tools = await scrape_tools(client, sem)
+        print(f"  Parsed {len(tools)} tools")
+
     output = {
         "meta": {
             "patch": patch,
             "scraped_at": datetime.now(timezone.utc).isoformat(),
             "trait_count": len(traits),
             "weapon_count": len(weapons),
+            "tool_count": len(tools),
         },
         "traits": traits,
         "weapons": weapons,
+        "tools": tools,
     }
 
     out_path = DATA_DIR / "raw.json"

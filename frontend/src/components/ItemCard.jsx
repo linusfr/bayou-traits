@@ -17,9 +17,20 @@ const WEAPON_CLASS_COLOR = {
 	launcher: 'text-amber-300',
 }
 
+const TOOL_CLASS_COLOR = {
+	explosive: 'text-orange-400',
+	fire:      'text-red-400',
+	healing:   'text-green-400',
+	melee:     'text-stone-400',
+	decoy:     'text-yellow-400',
+	poison:    'text-lime-400',
+	support:   'text-sky-400',
+}
+
 export default function ItemCard({ item, type, selected, onClick }) {
 	const isWeapon = type === 'weapon'
-	const synCount = isWeapon
+	const isTool   = type === 'tool'
+	const synCount = isWeapon || isTool
 		? (item.trait_synergies?.length ?? 0)
 		: (item.weapon_synergies?.length ?? 0)
 
@@ -47,6 +58,34 @@ export default function ItemCard({ item, type, selected, onClick }) {
 							<span className="text-xs text-hunt-text-dim capitalize">{item.size}</span>
 						)}
 					</div>
+					{synCount > 0 && (
+						<p className="mt-2 text-xs text-hunt-text-dim">
+							{synCount} trait{synCount !== 1 ? 's' : ''}
+						</p>
+					)}
+				</>
+			) : isTool ? (
+				<>
+					<p className="text-hunt-text text-sm font-medium leading-snug">
+						{item.name}
+					</p>
+					<div className="flex items-center gap-2 mt-2 flex-wrap">
+						{item.tool_class && (
+							<span className={`text-xs font-medium capitalize ${TOOL_CLASS_COLOR[item.tool_class] ?? 'text-hunt-text-muted'}`}>
+								{item.tool_class}
+							</span>
+						)}
+						{item.cost > 0 && (
+							<span className="text-xs text-hunt-gold font-semibold tabular-nums">
+								{item.cost}pt
+							</span>
+						)}
+					</div>
+					{item.description && (
+						<p className="mt-2 text-xs text-hunt-text-muted line-clamp-2 leading-relaxed">
+							{item.description}
+						</p>
+					)}
 					{synCount > 0 && (
 						<p className="mt-2 text-xs text-hunt-text-dim">
 							{synCount} trait{synCount !== 1 ? 's' : ''}

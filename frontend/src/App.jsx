@@ -6,27 +6,46 @@ import ItemCard from './components/ItemCard'
 import SynergyPanel from './components/SynergyPanel'
 
 const WEAPON_CLASS_ORDER = ['long', 'medium', 'compact', 'shotgun', 'sparks', 'nitro', 'melee', 'bow', 'launcher']
+const TOOL_CLASS_ORDER   = ['explosive', 'fire', 'healing', 'melee', 'decoy', 'poison', 'support']
 
 const WEAPON_FUSE_OPTS = { keys: ['name', 'type', 'ammo', 'size'], threshold: 0.35 }
 const TRAIT_FUSE_OPTS  = { keys: ['name', 'description', 'category'], threshold: 0.35 }
+const TOOL_FUSE_OPTS   = { keys: ['name', 'description', 'tool_class'], threshold: 0.35 }
 
-function buildSynergyDetail(item, type, weaponIdx, traitIdx) {
+function buildSynergyDetail(item, type, weaponIdx, traitIdx, toolIdx) {
 	if (!item) return null
-	const isWeapon = type === 'weapon'
-	const synergies = isWeapon
-		? (item.trait_synergies ?? [])
+	if (type === 'weapon') {
+		const synergies = (item.trait_synergies ?? [])
 			.map(s => {
 				const t = traitIdx[s.trait_id]
 				return t ? { ...t, reason: s.reason } : null
 			})
 			.filter(Boolean)
-		: (item.weapon_synergies ?? [])
+		return { item, synergies, type }
+	}
+	if (type === 'tool') {
+		const synergies = (item.trait_synergies ?? [])
 			.map(s => {
-				const w = weaponIdx[s.weapon_id]
-				return w ? { ...w, reason: s.reason } : null
+				const t = traitIdx[s.trait_id]
+				return t ? { ...t, reason: s.reason } : null
 			})
 			.filter(Boolean)
-	return { item, synergies, type }
+		return { item, synergies, type }
+	}
+	// trait mode — weapon synergies; tool synergies resolved separately
+	const synergies = (item.weapon_synergies ?? [])
+		.map(s => {
+			const w = weaponIdx[s.weapon_id]
+			return w ? { ...w, reason: s.reason } : null
+		})
+		.filter(Boolean)
+	const toolSynergies = (item.tool_synergies ?? [])
+		.map(s => {
+			const t = toolIdx[s.tool_id]
+			return t ? { ...t, reason: s.reason } : null
+		})
+		.filter(Boolean)
+	return { item, synergies, toolSynergies, type }
 }
 
 export default function App() {
@@ -37,16 +56,21 @@ export default function App() {
 
 	const weapons = data.weapons
 	const traits  = data.traits
+	const tools   = data.tools ?? []
 
 	const weaponIdx = useMemo(() => Object.fromEntries(weapons.map(w => [w.id, w])), [weapons])
 	const traitIdx  = useMemo(() => Object.fromEntries(traits.map(t  => [t.id,  t])), [traits])
+	const toolIdx   = useMemo(() => Object.fromEntries(tools.map(t   => [t.id,  t])), [tools])
 
 	const weaponFuse = useMemo(() => new Fuse(weapons, WEAPON_FUSE_OPTS), [weapons])
 	const traitFuse  = useMemo(() => new Fuse(traits,  TRAIT_FUSE_OPTS),  [traits])
+	const toolFuse   = useMemo(() => new Fuse(tools,   TOOL_FUSE_OPTS),   [tools])
 
 	const items = useMemo(() => {
-		const source = mode === 'weapon' ? weapons : traits
-		const fuse   = mode === 'weapon' ? weaponFuse : traitFuse
+		let source, fuse
+		if (mode === 'weapon') { source = weapons; fuse = weaponFuse }
+		else if (mode === 'tool') { source = tools; fuse = toolFuse }
+		else { source = traits; fuse = traitFuse }
 
 		let list = query.trim()
 			? fuse.search(query.trim()).map(r => r.item)
@@ -56,17 +80,21 @@ export default function App() {
 			list = list.filter(item =>
 				mode === 'weapon'
 					? item.weapon_class === filter
+					: mode === 'tool'
+					? item.tool_class === filter
 					: item.category === filter
 			)
 		}
 		return list
-	}, [mode, query, filter, weapons, traits, weaponFuse, traitFuse])
+	}, [mode, query, filter, weapons, traits, tools, weaponFuse, traitFuse, toolFuse])
 
 	const detail = useMemo(() => {
 		if (!selectedId) return null
-		const item = mode === 'weapon' ? weaponIdx[selectedId] : traitIdx[selectedId]
-		return buildSynergyDetail(item, mode, weaponIdx, traitIdx)
-	}, [selectedId, mode, weaponIdx, traitIdx])
+		const item = mode === 'weapon' ? weaponIdx[selectedId]
+			: mode === 'tool' ? toolIdx[selectedId]
+			: traitIdx[selectedId]
+		return buildSynergyDetail(item, mode, weaponIdx, traitIdx, toolIdx)
+	}, [selectedId, mode, weaponIdx, traitIdx, toolIdx])
 
 	const switchMode = useCallback((m) => {
 		setMode(m)
@@ -80,24 +108,25 @@ export default function App() {
 	}, [])
 
 	// Navigate from a synergy row: flip mode and select the linked item
-	const handleNavigate = useCallback((id) => {
-		setMode(prev => {
-			const next = prev === 'weapon' ? 'trait' : 'weapon'
-			return next
-		})
+	const handleNavigate = useCallback((id, targetMode) => {
+		setMode(targetMode ?? (mode === 'weapon' ? 'trait' : mode === 'tool' ? 'trait' : 'weapon'))
 		setQuery('')
 		setFilter(null)
 		setSelectedId(id)
-	}, [])
+	}, [mode])
 
 	const activeFilters = useMemo(() => {
 		if (mode === 'weapon') {
 			const present = new Set(weapons.map(w => w.weapon_class).filter(c => c && c !== 'unknown'))
 			return WEAPON_CLASS_ORDER.filter(c => present.has(c))
 		}
+		if (mode === 'tool') {
+			const present = new Set(tools.map(t => t.tool_class).filter(c => c && c !== 'unknown'))
+			return TOOL_CLASS_ORDER.filter(c => present.has(c))
+		}
 		const present = new Set(traits.map(t => t.category).filter(c => c && c !== 'unknown'))
 		return [...present].sort()
-	}, [mode, weapons, traits])
+	}, [mode, weapons, traits, tools])
 
 	const panelOpen = !!detail
 
@@ -128,7 +157,7 @@ export default function App() {
 				<div className="max-w-[1800px] mx-auto px-4 sm:px-6 pt-3 pb-2 flex flex-col sm:flex-row gap-2 sm:gap-3">
 					{/* Mode toggle */}
 					<div className="flex rounded overflow-hidden border border-hunt-border shrink-0">
-						{['weapon', 'trait'].map(m => (
+						{[['weapon', 'By Weapon'], ['tool', 'By Tool'], ['trait', 'By Trait']].map(([m, label]) => (
 							<button
 								key={m}
 								onClick={() => switchMode(m)}
@@ -138,14 +167,14 @@ export default function App() {
 										: 'bg-hunt-surface text-hunt-text-muted hover:text-hunt-text hover:bg-hunt-card'
 									}`}
 							>
-								{m === 'weapon' ? 'By Weapon' : 'By Trait'}
+								{label}
 							</button>
 						))}
 					</div>
 					<SearchBar
 						value={query}
 						onChange={setQuery}
-						placeholder={mode === 'weapon' ? 'Search weapons…' : 'Search traits…'}
+						placeholder={mode === 'weapon' ? 'Search weapons…' : mode === 'tool' ? 'Search tools…' : 'Search traits…'}
 					/>
 				</div>
 
@@ -230,7 +259,7 @@ export default function App() {
 									<line x1="18.5" y1="12" x2="23" y2="12" />
 								</svg>
 								<p className="text-hunt-text-dim text-sm">
-									Select a {mode} to reveal its synergies
+									Select a {mode === 'weapon' ? 'weapon' : mode === 'tool' ? 'tool' : 'trait'} to reveal its synergies
 								</p>
 							</div>
 						</div>
@@ -251,7 +280,7 @@ export default function App() {
 						Hunt: Showdown Wiki
 					</a>
 					{' '}· Built {new Date(data.meta.scraped_at).toLocaleDateString()}
-					{' '}· {data.meta.trait_count} traits · {data.meta.weapon_count} weapons
+					{' '}· {data.meta.trait_count} traits · {data.meta.weapon_count} weapons{data.meta.tool_count ? ` · ${data.meta.tool_count} tools` : ''}
 				</p>
 			</footer>
 		</div>
