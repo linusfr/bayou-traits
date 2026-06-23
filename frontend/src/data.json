@@ -2,7 +2,7 @@
 	"meta": {
 		"patch": "2.8.0.3",
 		"scraped_at": "2026-06-23T13:02:50.530591+00:00",
-		"trait_count": 84,
+		"trait_count": 76,
 		"weapon_count": 147,
 		"tool_count": 45,
 		"wiki_weapon_count": 147,
@@ -129,98 +129,26 @@
 			"image_url": "",
 			"weapon_synergies": [
 				{
-					"weapon_id": "baseball_bat",
-					"reason": "Assailant increases melee effectiveness of Throwing Knives and Axes, not the Baseball Bat."
-				},
-				{
-					"weapon_id": "berthier_1892_riposte",
-					"reason": "Assailant boosts throwing knife/axe melee, but Berthier Riposte's melee is a bayonet; no direct benefit."
-				},
-				{
-					"weapon_id": "cavalry_saber",
-					"reason": "Assailant improves throwing knife/axe melee, not the saber's own melee; no synergy."
-				},
-				{
 					"weapon_id": "combat_axe",
 					"reason": "Assailant enhances throwing knife/axe melee, not the axe's melee; no direct benefit."
-				},
-				{
-					"weapon_id": "dolch_96_claw",
-					"reason": "Assailant boosts throwing knife/axe melee, not the Claw's melee; no synergy."
 				},
 				{
 					"weapon_id": "drilling_hatchet",
 					"reason": "Assailant improves throwing knife/axe melee, not the hatchet's melee; no direct benefit."
 				},
 				{
-					"weapon_id": "katana",
-					"reason": "Assailant enhances throwing knife/axe melee, not the katana's melee; no synergy."
-				},
-				{
-					"weapon_id": "lebel_1886_talon",
-					"reason": "Assailant boosts throwing knife/axe melee, not the Talon's melee; no direct benefit."
-				},
-				{
-					"weapon_id": "machete",
-					"reason": "Assailant improves throwing knife/axe melee, not the machete's melee; no synergy."
-				},
-				{
-					"weapon_id": "mako_1895_claw",
-					"reason": "Assailant boosts throwing knife/axe melee, complementing the Mako Claw's built-in melee for versatile close-range options."
-				},
-				{
-					"weapon_id": "martini_henry_riposte",
-					"reason": "Assailant enhances throwing melee, giving the single-shot Martini-Henry a backup silent kill option."
-				},
-				{
-					"weapon_id": "pax_claw",
-					"reason": "Assailant improves throwing knife/axe damage, synergizing with the Pax Claw's melee for quick follow-ups."
-				},
-				{
-					"weapon_id": "railroad_hammer",
-					"reason": "Assailant increases throwing melee effectiveness, providing a ranged option for the pure-melee Railroad Hammer."
-				},
-				{
 					"weapon_id": "romero_77_hatchet",
 					"reason": "Assailant boosts throwing knife/axe damage, allowing the Romero Hatchet to engage silently before closing."
-				},
-				{
-					"weapon_id": "romero_77_talon",
-					"reason": "Assailant enhances throwing melee, giving the Romero Talon a silent ranged option alongside its shotgun."
-				},
-				{
-					"weapon_id": "shredder",
-					"reason": "Assailant improves throwing knife/axe effectiveness, adding a silent ranged attack to the melee Shredder."
-				},
-				{
-					"weapon_id": "slate_riposte",
-					"reason": "Assailant boosts throwing melee, complementing the Slate Riposte's shotgun with a silent ranged option."
 				}
 			],
 			"tool_synergies": [
-				{
-					"tool_id": "knife",
-					"reason": "Assailant increases melee damage of throwing knives and axes, but knife is not a throwing weapon, so no benefit."
-				},
 				{
 					"tool_id": "throwing_knives",
 					"reason": "Assailant increases melee damage of throwing knives, making them more effective in close combat."
 				},
 				{
-					"tool_id": "heavy_knife",
-					"reason": "Assailant only affects throwing knives and axes, not heavy knife, so no benefit."
-				},
-				{
 					"tool_id": "throwing_axes",
 					"reason": "Assailant increases melee damage of throwing axes, improving their close-quarters lethality."
-				},
-				{
-					"tool_id": "dusters",
-					"reason": "Assailant only affects throwing knives and axes, not dusters, so no benefit."
-				},
-				{
-					"tool_id": "knuckle_knife",
-					"reason": "Assailant only affects throwing knives and axes, not knuckle knife, so no benefit."
 				},
 				{
 					"tool_id": "throwing_spear",
@@ -249,11 +177,104 @@
 			"category": "offensive",
 			"trait_type": "scarce",
 			"image_url": "",
-			"weapon_synergies": [],
+			"weapon_synergies": [
+				{
+					"weapon_id": "baseball_bat",
+					"reason": "Berserker doubles all melee attack damage, making the Baseball Bat's every strike deal twice the normal damage."
+				},
+				{
+					"weapon_id": "cavalry_saber",
+					"reason": "Berserker doubles all melee attack damage, making the Cavalry Saber's every strike deal twice the normal damage."
+				},
+				{
+					"weapon_id": "combat_axe",
+					"reason": "Berserker doubles all melee attack damage, making the Combat Axe's every strike deal twice the normal damage."
+				},
+				{
+					"weapon_id": "katana",
+					"reason": "Berserker doubles all melee attack damage, making the Katana's every strike deal twice the normal damage."
+				},
+				{
+					"weapon_id": "machete",
+					"reason": "Berserker doubles all melee attack damage, making the Machete's every strike deal twice the normal damage."
+				},
+				{
+					"weapon_id": "railroad_hammer",
+					"reason": "Berserker doubles all melee attack damage, making the Railroad Hammer's every strike deal twice the normal damage."
+				},
+				{
+					"weapon_id": "romero_77_hatchet",
+					"reason": "Berserker doubles all melee attack damage, making the Romero 77 Hatchet's melee attack far more lethal."
+				},
+				{
+					"weapon_id": "berthier_1892_riposte",
+					"reason": "Berserker doubles all melee attack damage, making the Berthier 1892 Riposte's melee attack far more lethal."
+				},
+				{
+					"weapon_id": "slate_riposte",
+					"reason": "Berserker doubles all melee attack damage, making the Slate Riposte's melee attack far more lethal."
+				},
+				{
+					"weapon_id": "martini_henry_riposte",
+					"reason": "Berserker doubles all melee attack damage, making the Martini-Henry Riposte's melee attack far more lethal."
+				},
+				{
+					"weapon_id": "romero_77_talon",
+					"reason": "Berserker doubles all melee attack damage, making the Romero 77 Talon's melee attack far more lethal."
+				},
+				{
+					"weapon_id": "lebel_1886_talon",
+					"reason": "Berserker doubles all melee attack damage, making the Lebel 1886 Talon's melee attack far more lethal."
+				},
+				{
+					"weapon_id": "dolch_96_claw",
+					"reason": "Berserker doubles all melee attack damage, making the Dolch 96 Claw's melee attack far more lethal."
+				},
+				{
+					"weapon_id": "shredder",
+					"reason": "Berserker doubles all melee attack damage, making the Shredder's melee attack far more lethal."
+				},
+				{
+					"weapon_id": "mako_1895_claw",
+					"reason": "Berserker doubles all melee attack damage, making the Mako 1895 Claw's melee attack far more lethal."
+				},
+				{
+					"weapon_id": "drilling_hatchet",
+					"reason": "Berserker doubles all melee attack damage, making the Drilling Hatchet's melee attack far more lethal."
+				},
+				{
+					"weapon_id": "pax_claw",
+					"reason": "Berserker doubles all melee attack damage, making the Pax Claw's melee attack far more lethal."
+				}
+			],
 			"tool_synergies": [
 				{
+					"tool_id": "knife",
+					"reason": "Berserker doubles all melee attack damage, making the Knife deal twice as much damage per hit."
+				},
+				{
+					"tool_id": "throwing_knives",
+					"reason": "Berserker doubles all melee attack damage, making the Throwing Knives deal twice as much damage per hit."
+				},
+				{
+					"tool_id": "heavy_knife",
+					"reason": "Berserker doubles all melee attack damage, making the Heavy Knife deal twice as much damage per hit."
+				},
+				{
+					"tool_id": "throwing_axes",
+					"reason": "Berserker doubles all melee attack damage, making the Throwing Axes deal twice as much damage per hit."
+				},
+				{
+					"tool_id": "dusters",
+					"reason": "Berserker doubles all melee attack damage, making the Dusters deal twice as much damage per hit."
+				},
+				{
+					"tool_id": "knuckle_knife",
+					"reason": "Berserker doubles all melee attack damage, making the Knuckle Knife deal twice as much damage per hit."
+				},
+				{
 					"tool_id": "throwing_spear",
-					"reason": "Berserker doubles all melee attack damage, making the Throwing Spear's close-range stab devastating."
+					"reason": "Berserker doubles all melee attack damage, making the Throwing Spear deal twice as much damage per hit."
 				}
 			]
 		},
@@ -268,98 +289,50 @@
 			"image_url": "",
 			"weapon_synergies": [
 				{
-					"weapon_id": "baseball_bat",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Baseball Bat is not thrown; no benefit."
+					"weapon_id": "chu_ko_nu",
+					"reason": "Blade Seer highlights spent Bolts in Dark Sight, making it easy to retrieve Chu Ko Nu bolts after a fight."
 				},
 				{
-					"weapon_id": "berthier_1892_riposte",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Riposte is a melee attachment; no benefit."
+					"weapon_id": "crossbow",
+					"reason": "Blade Seer highlights spent Bolts in Dark Sight, letting you recover Crossbow bolts efficiently."
 				},
 				{
-					"weapon_id": "cavalry_saber",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Cavalry Saber is not thrown; no benefit."
+					"weapon_id": "crossbow_deadeye",
+					"reason": "Blade Seer highlights spent Bolts in Dark Sight, letting you recover Crossbow Deadeye bolts efficiently."
+				},
+				{
+					"weapon_id": "hand_crossbow",
+					"reason": "Blade Seer highlights spent Bolts in Dark Sight, letting you recover Hand Crossbow bolts efficiently."
+				},
+				{
+					"weapon_id": "hunting_bow",
+					"reason": "Blade Seer highlights spent Arrows in Dark Sight, making it easy to retrieve Hunting Bow arrows after each engagement."
 				},
 				{
 					"weapon_id": "combat_axe",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Combat Axe is not thrown; no benefit."
-				},
-				{
-					"weapon_id": "dolch_96_claw",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Claw is a melee attachment; no benefit."
+					"reason": "Blade Seer highlights thrown Combat Axes in Dark Sight, so you can quickly locate and retrieve them after a throw."
 				},
 				{
 					"weapon_id": "drilling_hatchet",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Hatchet is a melee attachment; no benefit."
-				},
-				{
-					"weapon_id": "katana",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Katana is not thrown; no benefit."
-				},
-				{
-					"weapon_id": "lebel_1886_talon",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Talon is a melee attachment; no benefit."
-				},
-				{
-					"weapon_id": "machete",
-					"reason": "Blade Seer does not benefit the Machete as it is a melee weapon with no throwable projectiles."
-				},
-				{
-					"weapon_id": "mako_1895_claw",
-					"reason": "Blade Seer does not benefit the Mako 1895 Claw as it has no throwable projectiles."
-				},
-				{
-					"weapon_id": "martini_henry_riposte",
-					"reason": "Blade Seer does not benefit the Martini-Henry Riposte as it has no throwable projectiles."
-				},
-				{
-					"weapon_id": "pax_claw",
-					"reason": "Blade Seer does not benefit the Pax Claw as it has no throwable projectiles."
-				},
-				{
-					"weapon_id": "railroad_hammer",
-					"reason": "Blade Seer does not benefit the Railroad Hammer as it is a melee weapon with no throwable projectiles."
+					"reason": "Blade Seer highlights the thrown hatchet in Dark Sight, letting you find and retrieve the Drilling Hatchet's secondary after throwing it."
 				},
 				{
 					"weapon_id": "romero_77_hatchet",
-					"reason": "Blade Seer does not benefit the Romero 77 Hatchet as it has no throwable projectiles."
-				},
-				{
-					"weapon_id": "romero_77_talon",
-					"reason": "Blade Seer does not benefit the Romero 77 Talon as it has no throwable projectiles."
-				},
-				{
-					"weapon_id": "shredder",
-					"reason": "Blade Seer does not benefit the Shredder as it is a melee weapon with no throwable projectiles."
-				},
-				{
-					"weapon_id": "slate_riposte",
-					"reason": "Blade Seer highlights thrown melee weapons in Dark Sight, making it easier to retrieve them after throwing."
+					"reason": "Blade Seer highlights the thrown hatchet in Dark Sight, making it easy to retrieve the Romero's hatchet secondary."
 				}
 			],
 			"tool_synergies": [
 				{
-					"tool_id": "knife",
-					"reason": "Blade Seer highlights arrows and bolts, not knife, so no benefit."
-				},
-				{
 					"tool_id": "throwing_knives",
 					"reason": "Blade Seer highlights throwing knives in dark sight up to 75m, aiding retrieval."
-				},
-				{
-					"tool_id": "heavy_knife",
-					"reason": "Blade Seer does not benefit Heavy Knife as it is not a thrown weapon."
 				},
 				{
 					"tool_id": "throwing_axes",
 					"reason": "Blade Seer increases Dark Sight highlight range for Throwing Axes to 75m, aiding retrieval."
 				},
 				{
-					"tool_id": "dusters",
-					"reason": "Blade Seer does not benefit Dusters as they are not a thrown weapon."
-				},
-				{
-					"tool_id": "knuckle_knife",
-					"reason": "Blade Seer does not benefit Knuckle Knife as it is not a thrown weapon."
+					"tool_id": "throwing_spear",
+					"reason": "Blade Seer highlights the thrown spear in Dark Sight, making it easy to locate and retrieve after a throw."
 				}
 			]
 		},
@@ -438,8 +411,12 @@
 					"reason": "Bolt Thrower reduces reload time, improving the Hand Crossbow's slow fire rate."
 				},
 				{
-					"weapon_id": "hunting_bow",
-					"reason": "Bolt Thrower reduces reload time for crossbows, but does not affect bows; no benefit."
+					"weapon_id": "bomb_lance",
+					"reason": "Bolt Thrower reduces reload time for Bomb Launchers and Bomb Lances by 25% (added in Update 2.1), letting you fire follow-up shots faster."
+				},
+				{
+					"weapon_id": "bomb_launcher",
+					"reason": "Bolt Thrower reduces reload time for Bomb Launchers and Bomb Lances by 25% (added in Update 2.1), letting you fire follow-up shots faster."
 				}
 			],
 			"tool_synergies": []
@@ -686,47 +663,6 @@
 			"tool_synergies": []
 		},
 		{
-			"id": "deadeye_scopesmith",
-			"name": "Deadeye Scopesmith",
-			"description": "See also: Scopesmith, Marksman Scopesmith, Sniper Scopesmith.",
-			"cost": 0,
-			"rank": 0,
-			"category": "offensive",
-			"trait_type": "normal",
-			"image_url": "",
-			"weapon_synergies": [
-				{
-					"weapon_id": "berthier_1892_deadeye",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
-					"weapon_id": "crossbow_deadeye",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
-					"weapon_id": "martini_henry_deadeye",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
-					"weapon_id": "nagant_m1895_deadeye",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
-					"weapon_id": "officer_carbine_deadeye",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
-					"weapon_id": "uppercut_deadeye",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
-					"weapon_id": "vetterli_71_deadeye",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				}
-			],
-			"tool_synergies": []
-		},
-		{
 			"id": "death_cheat",
 			"name": "Death Cheat",
 			"description": "You will not lose your Hunter if you fail to extract, but equipment and missing Health Chunks will be lost.",
@@ -760,39 +696,6 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": []
-		},
-		{
-			"id": "dewclaw",
-			"name": "Dewclaw",
-			"description": "Enhances the melee attack of a bow and arrow.",
-			"cost": 0,
-			"rank": 0,
-			"category": "offensive",
-			"trait_type": "normal",
-			"image_url": "",
-			"weapon_synergies": [
-				{
-					"weapon_id": "chu_ko_nu",
-					"reason": "Dewclaw increases melee damage and reduces stamina cost for bow weapons, making the Chu Ko Nu's melee attack more effective."
-				},
-				{
-					"weapon_id": "crossbow",
-					"reason": "Dewclaw increases melee damage and reduces stamina cost for bow weapons, making the Crossbow's melee attack more effective."
-				},
-				{
-					"weapon_id": "crossbow_deadeye",
-					"reason": "Dewclaw increases melee damage and reduces stamina cost for bow weapons, making the Crossbow Deadeye's melee attack more effective."
-				},
-				{
-					"weapon_id": "hand_crossbow",
-					"reason": "Dewclaw increases melee damage and reduces stamina cost for bow weapons, making the Hand Crossbow's melee attack more effective."
-				},
-				{
-					"weapon_id": "hunting_bow",
-					"reason": "Dewclaw increases bow melee damage, allowing one-hit kills with the Hunting Bow's charged attack."
-				}
-			],
 			"tool_synergies": []
 		},
 		{
@@ -1140,7 +1043,156 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": []
+			"tool_synergies": [
+				{
+					"tool_id": "dynamite_stick",
+					"reason": "Frontiersman gives the Dynamite Stick one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "waxed_dynamite_stick",
+					"reason": "Frontiersman gives the Waxed Dynamite Stick one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "sticky_bomb",
+					"reason": "Frontiersman gives the Sticky Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "dynamite_bundle",
+					"reason": "Frontiersman gives the Dynamite Bundle one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "frag_bomb",
+					"reason": "Frontiersman gives the Frag Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "big_dynamite_bundle",
+					"reason": "Frontiersman gives the Big Dynamite Bundle one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "fire_bomb",
+					"reason": "Frontiersman gives the Fire Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "liquid_fire_bomb",
+					"reason": "Frontiersman gives the Liquid Fire Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "hellfire_bomb",
+					"reason": "Frontiersman gives the Hellfire Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "knife",
+					"reason": "Frontiersman gives the Knife one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "throwing_knives",
+					"reason": "Frontiersman gives the Throwing Knives one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "heavy_knife",
+					"reason": "Frontiersman gives the Heavy Knife one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "throwing_axes",
+					"reason": "Frontiersman gives the Throwing Axes one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "decoys",
+					"reason": "Frontiersman gives the Decoys one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "alert_trip_mine",
+					"reason": "Frontiersman gives the Alert Trip Mine one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "chaos_bomb",
+					"reason": "Frontiersman gives the Chaos Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "blank_fire_decoys",
+					"reason": "Frontiersman gives the Blank Fire Decoys one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "first_aid_kit",
+					"reason": "Frontiersman gives the First Aid Kit one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "medical_pack",
+					"reason": "Frontiersman gives the Medical Pack one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "poison_bomb",
+					"reason": "Frontiersman gives the Poison Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "antidote_shot_weak",
+					"reason": "Frontiersman gives the Antidote Shot (Weak) one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "antidote_shot",
+					"reason": "Frontiersman gives the Antidote Shot one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "hive_bomb",
+					"reason": "Frontiersman gives the Hive Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "poison_trip_mine",
+					"reason": "Frontiersman gives the Poison Trip Mine one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "vitality_shot_weak",
+					"reason": "Frontiersman gives the Vitality Shot (Weak) one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "vitality_shot",
+					"reason": "Frontiersman gives the Vitality Shot one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "stamina_shot_weak",
+					"reason": "Frontiersman gives the Stamina Shot (Weak) one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "stamina_shot",
+					"reason": "Frontiersman gives the Stamina Shot one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "regeneration_shot_weak",
+					"reason": "Frontiersman gives the Regeneration Shot (Weak) one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "regeneration_shot",
+					"reason": "Frontiersman gives the Regeneration Shot one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "dusters",
+					"reason": "Frontiersman gives the Dusters one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "knuckle_knife",
+					"reason": "Frontiersman gives the Knuckle Knife one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "concertina_trip_mine",
+					"reason": "Frontiersman gives the Concertina Trip Mine one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "concertina_bomb",
+					"reason": "Frontiersman gives the Concertina Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "flash_bomb",
+					"reason": "Frontiersman gives the Flash Bomb one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "throwing_spear",
+					"reason": "Frontiersman gives the Throwing Spear one extra use, significantly extending your supply in a hunt."
+				},
+				{
+					"tool_id": "bear_traps",
+					"reason": "Frontiersman gives the Bear Traps one extra use, significantly extending your supply in a hunt."
+				}
+			]
 		},
 		{
 			"id": "gator_legs",
@@ -1239,18 +1291,6 @@
 			"rank": 0,
 			"category": "supportive",
 			"trait_type": "event",
-			"image_url": "",
-			"weapon_synergies": [],
-			"tool_synergies": []
-		},
-		{
-			"id": "iron_devastator",
-			"name": "Iron Devastator",
-			"description": "See also: Iron Eye, Iron Repeater, Iron Sharpshooter.",
-			"cost": 0,
-			"rank": 0,
-			"category": "offensive",
-			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
 			"tool_synergies": []
@@ -1489,30 +1529,6 @@
 			"tool_synergies": []
 		},
 		{
-			"id": "iron_repeater",
-			"name": "Iron Repeater",
-			"description": "See also: Iron Eye, Iron Devastator, Iron Sharpshooter.",
-			"cost": 0,
-			"rank": 0,
-			"category": "offensive",
-			"trait_type": "normal",
-			"image_url": "",
-			"weapon_synergies": [],
-			"tool_synergies": []
-		},
-		{
-			"id": "iron_sharpshooter",
-			"name": "Iron Sharpshooter",
-			"description": "See also: Iron Eye , Iron Devastator , Iron Repeater .",
-			"cost": 0,
-			"rank": 0,
-			"category": "offensive",
-			"trait_type": "normal",
-			"image_url": "",
-			"weapon_synergies": [],
-			"tool_synergies": []
-		},
-		{
 			"id": "kiteskin",
 			"name": "Kiteskin",
 			"description": "Significantly reduces fall damage.",
@@ -1631,47 +1647,6 @@
 			"trait_type": "event",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": []
-		},
-		{
-			"id": "marksman_scopesmith",
-			"name": "Marksman Scopesmith",
-			"description": "See also: Scopesmith , Deadeye Scopesmith , Sniper Scopesmith .",
-			"cost": 0,
-			"rank": 0,
-			"category": "offensive",
-			"trait_type": "normal",
-			"image_url": "",
-			"weapon_synergies": [
-				{
-					"weapon_id": "berthier_1892_marksman",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
-					"weapon_id": "frontier_73c_marksman",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
-					"weapon_id": "lebel_1886_marksman",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
-					"weapon_id": "lemat_carbine_marksman",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
-					"weapon_id": "martini_henry_marksman",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
-					"weapon_id": "springfield_1866_marksman",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
-					"weapon_id": "vetterli_71_marksman",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				}
-			],
 			"tool_synergies": []
 		},
 		{
@@ -1800,16 +1775,7 @@
 			"category": "offensive",
 			"trait_type": "normal",
 			"image_url": "",
-			"weapon_synergies": [
-				{
-					"weapon_id": "bomb_lance",
-					"reason": "Increases throwing range of the Bomb Lance's explosive harpoon, allowing safer engagements."
-				},
-				{
-					"weapon_id": "bomb_launcher",
-					"reason": "Increases throwing range of the Bomb Launcher's projectiles, enabling longer-range explosive attacks."
-				}
-			],
+			"weapon_synergies": [],
 			"tool_synergies": [
 				{
 					"tool_id": "dynamite_stick",
@@ -2236,54 +2202,106 @@
 			"category": "supportive",
 			"trait_type": "normal",
 			"image_url": "",
-			"weapon_synergies": [],
-			"tool_synergies": [
-				{
-					"tool_id": "throwing_spear",
-					"reason": "Silent Killer reduces the sound of melee attacks, letting you use the Throwing Spear's melee mode without alerting nearby hunters."
-				}
-			]
-		},
-		{
-			"id": "sniper_scopesmith",
-			"name": "Sniper Scopesmith",
-			"description": "See also: Scopesmith , Deadeye Scopesmith , Marksman Scopesmith .",
-			"cost": 0,
-			"rank": 0,
-			"category": "offensive",
-			"trait_type": "normal",
-			"image_url": "",
 			"weapon_synergies": [
 				{
-					"weapon_id": "centennial_sniper",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
+					"weapon_id": "baseball_bat",
+					"reason": "Silent Killer cuts the Baseball Bat's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				},
 				{
-					"weapon_id": "infantry_73l_sniper",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
+					"weapon_id": "cavalry_saber",
+					"reason": "Silent Killer cuts the Cavalry Saber's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				},
 				{
-					"weapon_id": "krag_sniper",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
+					"weapon_id": "combat_axe",
+					"reason": "Silent Killer cuts the Combat Axe's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				},
 				{
-					"weapon_id": "maynard_sniper",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
+					"weapon_id": "katana",
+					"reason": "Silent Killer cuts the Katana's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				},
 				{
-					"weapon_id": "maynard_sniper_silencer",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
+					"weapon_id": "machete",
+					"reason": "Silent Killer cuts the Machete's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				},
 				{
-					"weapon_id": "mosin_nagant_sniper",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
+					"weapon_id": "railroad_hammer",
+					"reason": "Silent Killer cuts the Railroad Hammer's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				},
 				{
-					"weapon_id": "sparks_sniper",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
+					"weapon_id": "romero_77_hatchet",
+					"reason": "Silent Killer cuts the Romero 77 Hatchet's melee attack sound by 50%, hiding your melee approach from nearby hunters."
+				},
+				{
+					"weapon_id": "berthier_1892_riposte",
+					"reason": "Silent Killer cuts the Berthier 1892 Riposte's melee attack sound by 50%, hiding your melee approach from nearby hunters."
+				},
+				{
+					"weapon_id": "slate_riposte",
+					"reason": "Silent Killer cuts the Slate Riposte's melee attack sound by 50%, hiding your melee approach from nearby hunters."
+				},
+				{
+					"weapon_id": "martini_henry_riposte",
+					"reason": "Silent Killer cuts the Martini-Henry Riposte's melee attack sound by 50%, hiding your melee approach from nearby hunters."
+				},
+				{
+					"weapon_id": "romero_77_talon",
+					"reason": "Silent Killer cuts the Romero 77 Talon's melee attack sound by 50%, hiding your melee approach from nearby hunters."
+				},
+				{
+					"weapon_id": "lebel_1886_talon",
+					"reason": "Silent Killer cuts the Lebel 1886 Talon's melee attack sound by 50%, hiding your melee approach from nearby hunters."
+				},
+				{
+					"weapon_id": "dolch_96_claw",
+					"reason": "Silent Killer cuts the Dolch 96 Claw's melee attack sound by 50%, hiding your melee approach from nearby hunters."
+				},
+				{
+					"weapon_id": "shredder",
+					"reason": "Silent Killer cuts the Shredder's melee attack sound by 50%, hiding your melee approach from nearby hunters."
+				},
+				{
+					"weapon_id": "mako_1895_claw",
+					"reason": "Silent Killer cuts the Mako 1895 Claw's melee attack sound by 50%, hiding your melee approach from nearby hunters."
+				},
+				{
+					"weapon_id": "drilling_hatchet",
+					"reason": "Silent Killer cuts the Drilling Hatchet's melee attack sound by 50%, hiding your melee approach from nearby hunters."
+				},
+				{
+					"weapon_id": "pax_claw",
+					"reason": "Silent Killer cuts the Pax Claw's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			],
-			"tool_synergies": []
+			"tool_synergies": [
+				{
+					"tool_id": "knife",
+					"reason": "Silent Killer reduces the Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"tool_id": "throwing_knives",
+					"reason": "Silent Killer reduces the Throwing Knives's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"tool_id": "heavy_knife",
+					"reason": "Silent Killer reduces the Heavy Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"tool_id": "throwing_axes",
+					"reason": "Silent Killer reduces the Throwing Axes's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"tool_id": "dusters",
+					"reason": "Silent Killer reduces the Dusters's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"tool_id": "knuckle_knife",
+					"reason": "Silent Killer reduces the Knuckle Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"tool_id": "throwing_spear",
+					"reason": "Silent Killer reduces the Throwing Spear's attack sound by 50%, letting you strike without alerting nearby hunters."
+				}
+			]
 		},
 		{
 			"id": "steady_aim",
@@ -2291,18 +2309,6 @@
 			"description": "Weapon sway gradually lessens when you're looking through a scope or Aperture sights. Reduces sway by 50% after 2 seconds of aiming.",
 			"cost": 2,
 			"rank": 30,
-			"category": "offensive",
-			"trait_type": "normal",
-			"image_url": "",
-			"weapon_synergies": [],
-			"tool_synergies": []
-		},
-		{
-			"id": "steady_hand",
-			"name": "Steady Hand",
-			"description": "See also: Steady Aim .",
-			"cost": 0,
-			"rank": 0,
 			"category": "offensive",
 			"trait_type": "normal",
 			"image_url": "",
@@ -2321,36 +2327,100 @@
 			"weapon_synergies": [],
 			"tool_synergies": [
 				{
+					"tool_id": "dynamite_stick",
+					"reason": "Surefoot lets you sprint while holding a primed Dynamite Stick, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "waxed_dynamite_stick",
+					"reason": "Surefoot lets you sprint while holding a primed Waxed Dynamite Stick, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "sticky_bomb",
+					"reason": "Surefoot lets you sprint while holding a primed Sticky Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "dynamite_bundle",
+					"reason": "Surefoot lets you sprint while holding a primed Dynamite Bundle, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "frag_bomb",
+					"reason": "Surefoot lets you sprint while holding a primed Frag Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "big_dynamite_bundle",
+					"reason": "Surefoot lets you sprint while holding a primed Big Dynamite Bundle, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "fire_bomb",
+					"reason": "Surefoot lets you sprint while holding a primed Fire Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "liquid_fire_bomb",
+					"reason": "Surefoot lets you sprint while holding a primed Liquid Fire Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "hellfire_bomb",
+					"reason": "Surefoot lets you sprint while holding a primed Hellfire Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "decoys",
+					"reason": "Surefoot lets you sprint while holding a primed Decoys, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "chaos_bomb",
+					"reason": "Surefoot lets you sprint while holding a primed Chaos Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "blank_fire_decoys",
+					"reason": "Surefoot lets you sprint while holding a primed Blank Fire Decoys, closing distance or reposition without losing throw timing."
+				},
+				{
 					"tool_id": "first_aid_kit",
-					"reason": "Surefoot allows sprinting while holding the kit, enabling faster repositioning during healing."
+					"reason": "Surefoot lets you sprint while holding a primed First Aid Kit, closing distance or reposition without losing throw timing."
 				},
 				{
 					"tool_id": "medical_pack",
-					"reason": "Surefoot allows sprinting while holding the pack, so you can heal teammates while moving."
+					"reason": "Surefoot lets you sprint while holding a primed Medical Pack, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "poison_bomb",
+					"reason": "Surefoot lets you sprint while holding a primed Poison Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "hive_bomb",
+					"reason": "Surefoot lets you sprint while holding a primed Hive Bomb, closing distance or reposition without losing throw timing."
 				},
 				{
 					"tool_id": "vitality_shot_weak",
-					"reason": "Surefoot allows sprinting while priming the shot, letting you heal on the move."
+					"reason": "Surefoot lets you sprint while holding a primed Vitality Shot (Weak), closing distance or reposition without losing throw timing."
 				},
 				{
 					"tool_id": "vitality_shot",
-					"reason": "Surefoot allows sprinting while priming the shot, enabling mobile healing in combat."
+					"reason": "Surefoot lets you sprint while holding a primed Vitality Shot, closing distance or reposition without losing throw timing."
 				},
 				{
 					"tool_id": "stamina_shot_weak",
-					"reason": "Surefoot allows sprinting while priming the shot, so you can boost stamina while running."
+					"reason": "Surefoot lets you sprint while holding a primed Stamina Shot (Weak), closing distance or reposition without losing throw timing."
 				},
 				{
 					"tool_id": "stamina_shot",
-					"reason": "Surefoot allows sprinting while priming the Stamina Shot, enabling faster repositioning without losing the buff."
+					"reason": "Surefoot lets you sprint while holding a primed Stamina Shot, closing distance or reposition without losing throw timing."
 				},
 				{
 					"tool_id": "regeneration_shot_weak",
-					"reason": "Surefoot lets you sprint while priming the Weak Regeneration Shot, maintaining mobility during healing."
+					"reason": "Surefoot lets you sprint while holding a primed Regeneration Shot (Weak), closing distance or reposition without losing throw timing."
 				},
 				{
 					"tool_id": "regeneration_shot",
-					"reason": "Surefoot enables sprinting while priming the Regeneration Shot, allowing continuous movement while regenerating health."
+					"reason": "Surefoot lets you sprint while holding a primed Regeneration Shot, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "concertina_bomb",
+					"reason": "Surefoot lets you sprint while holding a primed Concertina Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"tool_id": "flash_bomb",
+					"reason": "Surefoot lets you sprint while holding a primed Flash Bomb, closing distance or reposition without losing throw timing."
 				}
 			]
 		},
@@ -2567,12 +2637,12 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant increases melee effectiveness of Throwing Knives and Axes, not the Baseball Bat."
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Baseball Bat's every strike deal twice the normal damage."
 				},
 				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Baseball Bat is not thrown; no benefit."
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Baseball Bat's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				}
 			]
 		},
@@ -2607,10 +2677,6 @@
 					"reason": "Bolt-action with scope; Iron Eye irrelevant as scoped weapons don't use iron sights."
 				},
 				{
-					"trait_id": "deadeye_scopesmith",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -2631,10 +2697,6 @@
 					"reason": "Bolt-action with scope; Iron Eye irrelevant as scoped weapons don't use iron sights."
 				},
 				{
-					"trait_id": "marksman_scopesmith",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -2651,16 +2713,16 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant boosts throwing knife/axe melee, but Berthier Riposte's melee is a bayonet; no direct benefit."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Riposte is a melee attachment; no benefit."
-				},
-				{
 					"trait_id": "iron_eye",
 					"reason": "Bolt-action cycling lowers sights; Iron Eye keeps them up for faster follow-up shots."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Berthier 1892 Riposte's melee attack far more lethal."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Berthier 1892 Riposte's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -2675,8 +2737,8 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Increases throwing range of the Bomb Lance's explosive harpoon, allowing safer engagements."
+					"trait_id": "bolt_thrower",
+					"reason": "Bolt Thrower reduces reload time for Bomb Launchers and Bomb Lances by 25% (added in Update 2.1), letting you fire follow-up shots faster."
 				}
 			]
 		},
@@ -2691,8 +2753,8 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Increases throwing range of the Bomb Launcher's projectiles, enabling longer-range explosive attacks."
+					"trait_id": "bolt_thrower",
+					"reason": "Bolt Thrower reduces reload time for Bomb Launchers and Bomb Lances by 25% (added in Update 2.1), letting you fire follow-up shots faster."
 				}
 			]
 		},
@@ -2819,12 +2881,12 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant improves throwing knife/axe melee, not the saber's own melee; no synergy."
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Cavalry Saber's every strike deal twice the normal damage."
 				},
 				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Cavalry Saber is not thrown; no benefit."
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Cavalry Saber's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				}
 			]
 		},
@@ -2927,10 +2989,6 @@
 					"reason": "Levering provides a close-range option for the Sniper, allowing rapid hip-fire when scoped is impractical."
 				},
 				{
-					"trait_id": "sniper_scopesmith",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -2971,8 +3029,8 @@
 					"reason": "Bolt Thrower reduces reload time for crossbows, increasing DPS for the Chu Ko Nu's rapid-fire capability."
 				},
 				{
-					"trait_id": "dewclaw",
-					"reason": "Dewclaw increases melee damage and reduces stamina cost for bow weapons, making the Chu Ko Nu's melee attack more effective."
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer highlights spent Bolts in Dark Sight, making it easy to retrieve Chu Ko Nu bolts after a fight."
 				}
 			]
 		},
@@ -2992,7 +3050,15 @@
 				},
 				{
 					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Combat Axe is not thrown; no benefit."
+					"reason": "Blade Seer highlights thrown Combat Axes in Dark Sight, so you can quickly locate and retrieve them after a throw."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Combat Axe's every strike deal twice the normal damage."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Combat Axe's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				}
 			]
 		},
@@ -3055,8 +3121,8 @@
 					"reason": "Bolt Thrower reduces reload time, allowing faster follow-up shots with the Crossbow's single-shot mechanism."
 				},
 				{
-					"trait_id": "dewclaw",
-					"reason": "Dewclaw increases melee damage and reduces stamina cost for bow weapons, making the Crossbow's melee attack more effective."
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer highlights spent Bolts in Dark Sight, letting you recover Crossbow bolts efficiently."
 				}
 			]
 		},
@@ -3075,16 +3141,12 @@
 					"reason": "Bolt Thrower reduces reload time, enabling quicker shots with the scoped Crossbow Deadeye."
 				},
 				{
-					"trait_id": "dewclaw",
-					"reason": "Dewclaw increases melee damage and reduces stamina cost for bow weapons, making the Crossbow Deadeye's melee attack more effective."
-				},
-				{
-					"trait_id": "deadeye_scopesmith",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
+				},
+				{
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer highlights spent Bolts in Dark Sight, letting you recover Crossbow Deadeye bolts efficiently."
 				}
 			]
 		},
@@ -3159,14 +3221,6 @@
 					"reason": "Ambidextrous speeds up the custom clip reload for the Dolch 96 Claw, reducing downtime."
 				},
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant boosts throwing knife/axe melee, not the Claw's melee; no synergy."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Claw is a melee attachment; no benefit."
-				},
-				{
 					"trait_id": "crack_shot",
 					"reason": "Reduces sway for precise follow-up shots and increases zoom for better mid-range accuracy."
 				},
@@ -3177,6 +3231,14 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers does not benefit semi-auto pistols; it only works on single-shot rifles."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Dolch 96 Claw's melee attack far more lethal."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Dolch 96 Claw's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -3247,10 +3309,6 @@
 					"reason": "Assailant improves throwing knife/axe melee, not the hatchet's melee; no direct benefit."
 				},
 				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Hatchet is a melee attachment; no benefit."
-				},
-				{
 					"trait_id": "crack_shot",
 					"reason": "Reduces sway and increases zoom for the rifle barrel, aiding aimed shots despite melee attachment."
 				},
@@ -3261,6 +3319,18 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Drilling Hatchet is single-shot; Iron Eye does not benefit since it's not bolt/lever/pump-action."
+				},
+				{
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer highlights the thrown hatchet in Dark Sight, letting you find and retrieve the Drilling Hatchet's secondary after throwing it."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Drilling Hatchet's melee attack far more lethal."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Drilling Hatchet's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -3321,10 +3391,6 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "marksman_scopesmith",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -3356,8 +3422,8 @@
 					"reason": "Bolt Thrower reduces reload time, improving the Hand Crossbow's slow fire rate."
 				},
 				{
-					"trait_id": "dewclaw",
-					"reason": "Dewclaw increases melee damage and reduces stamina cost for bow weapons, making the Hand Crossbow's melee attack more effective."
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer highlights spent Bolts in Dark Sight, letting you recover Hand Crossbow bolts efficiently."
 				}
 			]
 		},
@@ -3416,16 +3482,12 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "bolt_thrower",
-					"reason": "Bolt Thrower reduces reload time for crossbows, but does not affect bows; no benefit."
-				},
-				{
-					"trait_id": "dewclaw",
-					"reason": "Dewclaw increases bow melee damage, allowing one-hit kills with the Hunting Bow's charged attack."
-				},
-				{
 					"trait_id": "hundred_hands",
 					"reason": "Hundred Hands increases damage and reduces sway for the Hunting Bow, improving accuracy and lethality."
+				},
+				{
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer highlights spent Arrows in Dark Sight, making it easy to retrieve Hunting Bow arrows after each engagement."
 				}
 			]
 		},
@@ -3462,10 +3524,6 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "sniper_scopesmith",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -3482,12 +3540,12 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant enhances throwing knife/axe melee, not the katana's melee; no synergy."
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Katana's every strike deal twice the normal damage."
 				},
 				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Katana is not thrown; no benefit."
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Katana's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				}
 			]
 		},
@@ -3534,10 +3592,6 @@
 			"description": "See also: Springfield 1866 .",
 			"image_url": "",
 			"trait_synergies": [
-				{
-					"trait_id": "sniper_scopesmith",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
-				},
 				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
@@ -3595,10 +3649,6 @@
 					"reason": "Iron Eye keeps you in scope after each bolt-action shot, enabling faster follow-up shots."
 				},
 				{
-					"trait_id": "marksman_scopesmith",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -3615,16 +3665,16 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant boosts throwing knife/axe melee, not the Talon's melee; no direct benefit."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights thrown melee weapons at 75m, but Talon is a melee attachment; no benefit."
-				},
-				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye keeps you in ironsights after each bolt-action shot, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Lebel 1886 Talon's melee attack far more lethal."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Lebel 1886 Talon's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -3699,10 +3749,6 @@
 					"reason": "Iron Eye maintains scope view between shots, crucial for the Marksman variant's lever-action to stay on target."
 				},
 				{
-					"trait_id": "marksman_scopesmith",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -3719,12 +3765,12 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant improves throwing knife/axe melee, not the machete's melee; no synergy."
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Machete's every strike deal twice the normal damage."
 				},
 				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit the Machete as it is a melee weapon with no throwable projectiles."
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Machete's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				}
 			]
 		},
@@ -3783,20 +3829,20 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant boosts throwing knife/axe melee, complementing the Mako Claw's built-in melee for versatile close-range options."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit the Mako 1895 Claw as it has no throwable projectiles."
-				},
-				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye retains sight picture after firing, allowing quicker follow-ups with the Mako Claw's lever-action despite melee attachment."
 				},
 				{
 					"trait_id": "levering",
 					"reason": "Levering boosts hip-fire rate on lever-action weapons, making the Mako 1895 Claw's follow-up shots faster."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Mako 1895 Claw's melee attack far more lethal."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Mako 1895 Claw's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -3871,10 +3917,6 @@
 					"reason": "Fast Fingers speeds the single-shot reload of the Martini-Henry Deadeye's long ammo rifle."
 				},
 				{
-					"trait_id": "deadeye_scopesmith",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -3915,10 +3957,6 @@
 					"reason": "Fast Fingers speeds the single-shot reload of the Martini-Henry Marksman's long ammo rifle."
 				},
 				{
-					"trait_id": "marksman_scopesmith",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -3935,16 +3973,16 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant enhances throwing melee, giving the single-shot Martini-Henry a backup silent kill option."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit the Martini-Henry Riposte as it has no throwable projectiles."
-				},
-				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers speeds the single-shot reload of the Martini-Henry Riposte's long ammo rifle."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Martini-Henry Riposte's melee attack far more lethal."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Martini-Henry Riposte's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -3958,10 +3996,6 @@
 			"description": "A scoped rifle with high damage and medium ammo. Requires a two-stage reload with the placement of a percussion cap.",
 			"image_url": "",
 			"trait_synergies": [
-				{
-					"trait_id": "sniper_scopesmith",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
-				},
 				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
@@ -3978,10 +4012,6 @@
 			"description": "A scoped rifle with high damage and medium ammo. Requires a two-stage reload with the placement of a percussion cap. Modified with a silencer.",
 			"image_url": "",
 			"trait_synergies": [
-				{
-					"trait_id": "sniper_scopesmith",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
-				},
 				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
@@ -4087,10 +4117,6 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "sniper_scopesmith",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -4125,10 +4151,6 @@
 				{
 					"trait_id": "fanning",
 					"reason": "Fanning increases fire rate on single-action pistols, letting the Deadeye spam compact ammo rapidly."
-				},
-				{
-					"trait_id": "deadeye_scopesmith",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
 				},
 				{
 					"trait_id": "scopesmith",
@@ -4255,10 +4277,6 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "deadeye_scopesmith",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -4291,16 +4309,16 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant improves throwing knife/axe damage, synergizing with the Pax Claw's melee for quick follow-ups."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit the Pax Claw as it has no throwable projectiles."
-				},
-				{
 					"trait_id": "fanning",
 					"reason": "Fanning increases fire rate on single-action pistols, allowing the Pax Claw to spam medium ammo quickly."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Pax Claw's melee attack far more lethal."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Pax Claw's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -4331,12 +4349,12 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant increases throwing melee effectiveness, providing a ranged option for the pure-melee Railroad Hammer."
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Railroad Hammer's every strike deal twice the normal damage."
 				},
 				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit the Railroad Hammer as it is a melee weapon with no throwable projectiles."
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Railroad Hammer's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				}
 			]
 		},
@@ -4520,12 +4538,20 @@
 					"reason": "Assailant boosts throwing knife/axe damage, allowing the Romero Hatchet to engage silently before closing."
 				},
 				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit the Romero 77 Hatchet as it has no throwable projectiles."
-				},
-				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye keeps the Romero 77 Hatchet's sights up, allowing faster follow-up shots after each pump-action cycle."
+				},
+				{
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer highlights the thrown hatchet in Dark Sight, making it easy to retrieve the Romero's hatchet secondary."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Romero 77 Hatchet's melee attack far more lethal."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Romero 77 Hatchet's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -4556,16 +4582,16 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant enhances throwing melee, giving the Romero Talon a silent ranged option alongside its shotgun."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit the Romero 77 Talon as it has no throwable projectiles."
-				},
-				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye keeps the Romero 77 Talon's sights up, enabling quicker follow-up shots after each pump-action."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Romero 77 Talon's melee attack far more lethal."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Romero 77 Talon's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -4660,12 +4686,12 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant improves throwing knife/axe effectiveness, adding a silent ranged attack to the melee Shredder."
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Shredder's melee attack far more lethal."
 				},
 				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit the Shredder as it is a melee weapon with no throwable projectiles."
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Shredder's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -4696,16 +4722,16 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant boosts throwing melee, complementing the Slate Riposte's shotgun with a silent ranged option."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights thrown melee weapons in Dark Sight, making it easier to retrieve them after throwing."
-				},
-				{
 					"trait_id": "iron_eye",
 					"reason": "Slate Riposte is pump-action; Iron Eye maintains sight picture for faster follow-up shots."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Slate Riposte's melee attack far more lethal."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer cuts the Slate Riposte's melee attack sound by 50%, hiding your melee approach from nearby hunters."
 				}
 			]
 		},
@@ -4810,10 +4836,6 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers reduces reload time for single-shot rifles like Sparks Sniper, allowing quicker follow-up shots."
-				},
-				{
-					"trait_id": "sniper_scopesmith",
-					"reason": "Sniper Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Sniper-scoped weapon."
 				},
 				{
 					"trait_id": "scopesmith",
@@ -4939,10 +4961,6 @@
 					"reason": "Fast Fingers reduces reload time for single-shot rifles like Springfield Marksman, enabling faster follow-up shots."
 				},
 				{
-					"trait_id": "marksman_scopesmith",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -5049,10 +5067,6 @@
 			"description": "See also: Conversion .",
 			"image_url": "",
 			"trait_synergies": [
-				{
-					"trait_id": "deadeye_scopesmith",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
 				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
@@ -5170,10 +5184,6 @@
 					"reason": "Iron Eye retains scope view after each bolt-action shot, improving target tracking and fire rate."
 				},
 				{
-					"trait_id": "deadeye_scopesmith",
-					"reason": "Deadeye Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Deadeye-scoped weapon."
-				},
-				{
 					"trait_id": "scopesmith",
 					"reason": "Scopesmith keeps you in scope after firing, reducing the reset time between shots when using any scoped weapon."
 				}
@@ -5192,10 +5202,6 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye keeps you scoped between shots, crucial for maintaining precision on distant targets."
-				},
-				{
-					"trait_id": "marksman_scopesmith",
-					"reason": "Marksman Scopesmith keeps you in scope after firing, letting you stay on target for follow-up shots with this Marksman-scoped weapon."
 				},
 				{
 					"trait_id": "scopesmith",
@@ -5252,6 +5258,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throwing range, allowing Dynamite Stick to be thrown farther and more accurately."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Dynamite Stick, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Dynamite Stick one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5266,6 +5280,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throwing range, allowing Waxed Dynamite Stick to be thrown farther and more accurately."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Waxed Dynamite Stick, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Waxed Dynamite Stick one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5280,6 +5302,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throwing range, allowing Sticky Bomb to be thrown farther and more accurately."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Sticky Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Sticky Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5294,6 +5324,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throwing range, allowing Dynamite Bundle to be thrown farther and more accurately."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Dynamite Bundle, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Dynamite Bundle one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5308,6 +5346,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, allowing safer distance from blast radius."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Frag Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Frag Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5322,6 +5368,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher extends throw range, enabling hits on distant targets with large AoE."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Big Dynamite Bundle, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Big Dynamite Bundle one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5336,6 +5390,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, allowing area denial from safer positions."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Fire Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Fire Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5350,6 +5412,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher extends throw range, enabling fire coverage on distant chokepoints."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Liquid Fire Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Liquid Fire Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5364,6 +5434,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, allowing safe deployment of lingering fire AoE."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Hellfire Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Hellfire Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5376,16 +5454,20 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant increases melee damage of throwing knives and axes, but knife is not a throwing weapon, so no benefit."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights arrows and bolts, not knife, so no benefit."
-				},
-				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher does not benefit knife as it is not thrown; no effect."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Knife deal twice as much damage per hit."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces the Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Knife one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5408,6 +5490,18 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, allowing safer ranged melee attacks."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Throwing Knives deal twice as much damage per hit."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces the Throwing Knives's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Throwing Knives one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5420,16 +5514,20 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant only affects throwing knives and axes, not heavy knife, so no benefit."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit Heavy Knife as it is not a thrown weapon."
-				},
-				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher does not benefit heavy knife as it is not thrown; no effect."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Heavy Knife deal twice as much damage per hit."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces the Heavy Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Heavy Knife one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5452,6 +5550,18 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throwing range, allowing axes to hit distant targets more easily."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Throwing Axes deal twice as much damage per hit."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces the Throwing Axes's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Throwing Axes one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5466,6 +5576,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher extends decoy throw range, enabling longer-distance distractions."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Decoys, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Decoys one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5488,6 +5606,10 @@
 				{
 					"trait_id": "vigilant",
 					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to track your own Alert Trip Mine placements."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Alert Trip Mine one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5502,6 +5624,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher extends chaos bomb throw range, allowing longer-distance noise creation."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Chaos Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Chaos Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5516,6 +5646,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, enabling decoys to be thrown farther."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Blank Fire Decoys, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Blank Fire Decoys one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5569,7 +5707,11 @@
 				},
 				{
 					"trait_id": "surefoot",
-					"reason": "Surefoot allows sprinting while holding the kit, enabling faster repositioning during healing."
+					"reason": "Surefoot lets you sprint while holding a primed First Aid Kit, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the First Aid Kit one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5591,7 +5733,11 @@
 				},
 				{
 					"trait_id": "surefoot",
-					"reason": "Surefoot allows sprinting while holding the pack, so you can heal teammates while moving."
+					"reason": "Surefoot lets you sprint while holding a primed Medical Pack, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Medical Pack one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5606,6 +5752,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, letting you place poison clouds farther away."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Poison Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Poison Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5620,6 +5774,10 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher extends throw range, allowing you to toss antidote shots farther."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Antidote Shot (Weak) one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5634,6 +5792,10 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throwing range, allowing you to toss Antidote Shot farther to yourself or allies."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Antidote Shot one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5648,6 +5810,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher extends throw distance, enabling you to place Hive Bombs more accurately from safer positions."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Hive Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Hive Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5670,6 +5840,10 @@
 				{
 					"trait_id": "vigilant",
 					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to track your own Poison Trip Mine placements."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Poison Trip Mine one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5691,7 +5865,11 @@
 				},
 				{
 					"trait_id": "surefoot",
-					"reason": "Surefoot allows sprinting while priming the shot, letting you heal on the move."
+					"reason": "Surefoot lets you sprint while holding a primed Vitality Shot (Weak), closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Vitality Shot (Weak) one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5713,7 +5891,11 @@
 				},
 				{
 					"trait_id": "surefoot",
-					"reason": "Surefoot allows sprinting while priming the shot, enabling mobile healing in combat."
+					"reason": "Surefoot lets you sprint while holding a primed Vitality Shot, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Vitality Shot one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5735,7 +5917,11 @@
 				},
 				{
 					"trait_id": "surefoot",
-					"reason": "Surefoot allows sprinting while priming the shot, so you can boost stamina while running."
+					"reason": "Surefoot lets you sprint while holding a primed Stamina Shot (Weak), closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Stamina Shot (Weak) one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5757,7 +5943,11 @@
 				},
 				{
 					"trait_id": "surefoot",
-					"reason": "Surefoot allows sprinting while priming the Stamina Shot, enabling faster repositioning without losing the buff."
+					"reason": "Surefoot lets you sprint while holding a primed Stamina Shot, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Stamina Shot one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5779,7 +5969,11 @@
 				},
 				{
 					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while priming the Weak Regeneration Shot, maintaining mobility during healing."
+					"reason": "Surefoot lets you sprint while holding a primed Regeneration Shot (Weak), closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Regeneration Shot (Weak) one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5801,7 +5995,11 @@
 				},
 				{
 					"trait_id": "surefoot",
-					"reason": "Surefoot enables sprinting while priming the Regeneration Shot, allowing continuous movement while regenerating health."
+					"reason": "Surefoot lets you sprint while holding a primed Regeneration Shot, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Regeneration Shot one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5814,16 +6012,20 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant only affects throwing knives and axes, not dusters, so no benefit."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit Dusters as they are not a thrown weapon."
-				},
-				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher does not benefit Dusters as they are melee tools, not thrown items."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Dusters deal twice as much damage per hit."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces the Dusters's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Dusters one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5836,16 +6038,20 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "assailant",
-					"reason": "Assailant only affects throwing knives and axes, not knuckle knife, so no benefit."
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": "Blade Seer does not benefit Knuckle Knife as it is not a thrown weapon."
-				},
-				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher does not benefit Knuckle Knife as it is a melee tool, not a thrown item."
+				},
+				{
+					"trait_id": "berserker",
+					"reason": "Berserker doubles all melee attack damage, making the Knuckle Knife deal twice as much damage per hit."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces the Knuckle Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Knuckle Knife one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5928,6 +6134,10 @@
 				{
 					"trait_id": "vigilant",
 					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to track your own Concertina Trip Mine placements."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Concertina Trip Mine one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5942,6 +6152,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, enabling you to trap enemies from farther away."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Concertina Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Concertina Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5956,6 +6174,14 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, letting you blind enemies from safer distances."
+				},
+				{
+					"trait_id": "surefoot",
+					"reason": "Surefoot lets you sprint while holding a primed Flash Bomb, closing distance or reposition without losing throw timing."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Flash Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5976,12 +6202,20 @@
 					"reason": "Pitcher extends the throw range for aim-helper items, letting you spear targets from greater distances."
 				},
 				{
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer highlights the thrown spear in Dark Sight, making it easy to locate and retrieve after a throw."
+				},
+				{
 					"trait_id": "berserker",
-					"reason": "Berserker doubles all melee attack damage, making the Throwing Spear's close-range stab devastating."
+					"reason": "Berserker doubles all melee attack damage, making the Throwing Spear deal twice as much damage per hit."
 				},
 				{
 					"trait_id": "silent_killer",
-					"reason": "Silent Killer reduces the sound of melee attacks, letting you use the Throwing Spear's melee mode without alerting nearby hunters."
+					"reason": "Silent Killer reduces the Throwing Spear's attack sound by 50%, letting you strike without alerting nearby hunters."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Throwing Spear one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -6000,6 +6234,10 @@
 				{
 					"trait_id": "vigilant",
 					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to keep track of your own Bear Traps in the field."
+				},
+				{
+					"trait_id": "frontiersman",
+					"reason": "Frontiersman gives the Bear Traps one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		}
