@@ -142,7 +142,7 @@ export default function App() {
 							Bayou Traits
 						</h1>
 						<p className="text-xs uppercase tracking-[0.25em] text-hunt-text-muted mt-1">
-							Hunt: Showdown &middot; Trait &amp; Weapon Synergies
+							Hunt: Showdown &middot; Trait, Weapon &amp; Tool Synergies
 						</p>
 					</div>
 					<div className="text-right shrink-0">
