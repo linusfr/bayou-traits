@@ -99,10 +99,17 @@ async def scrape_all(weapons: list[dict], trait_ids: set[str]) -> dict[str, list
 
 			html = await fetch_html_with_retry(client, title)
 			if html is None:
-				# Try stripping variant suffixes one word at a time
+				# Wiki uses subpage format for variants: Weapons/Base/Variant
+				# Try splitting off the last word as a subpage before falling back to base page
 				parts = name.split()
 				for drop in range(1, len(parts)):
 					base = " ".join(parts[:-drop])
+					suffix = "_".join(parts[-drop:])
+					subpage_title = f"Weapons/{base.replace(' ', '_')}/{suffix}"
+					html = await fetch_html_with_retry(client, subpage_title)
+					if html is not None:
+						break
+					# Also try the plain underscore form one more time (shouldn't be needed but defensive)
 					base_title = weapon_name_to_wiki_title(base)
 					html = await fetch_html_with_retry(client, base_title)
 					if html is not None:

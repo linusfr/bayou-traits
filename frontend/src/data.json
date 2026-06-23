@@ -644,14 +644,6 @@
 					"reason": "Fanning increases LeMat's fire rate by allowing faster trigger pulls on its single-action revolver mode."
 				},
 				{
-					"weapon_id": "lemat_carbine",
-					"reason": "Fanning increases LeMat Carbine's fire rate by allowing faster trigger pulls on its single-action revolver mode."
-				},
-				{
-					"weapon_id": "lemat_carbine_marksman",
-					"reason": "Fanning increases LeMat Carbine Marksman's fire rate by allowing faster trigger pulls on its single-action revolver mode."
-				},
-				{
 					"weapon_id": "nagant_m1895",
 					"reason": "Fanning increases Nagant M1895's fire rate by allowing faster trigger pulls on its single-action revolver."
 				},
@@ -739,10 +731,6 @@
 					"reason": "Fast Fingers speeds the single-shot reload of the Martini-Henry Deadeye's long ammo rifle."
 				},
 				{
-					"weapon_id": "martini_henry_ironside",
-					"reason": "Fast Fingers speeds the single-shot reload of the Martini-Henry Ironside's long ammo rifle."
-				},
-				{
 					"weapon_id": "martini_henry_marksman",
 					"reason": "Fast Fingers speeds the single-shot reload of the Martini-Henry Marksman's long ammo rifle."
 				},
@@ -761,14 +749,6 @@
 				{
 					"weapon_id": "sparks",
 					"reason": "Fast Fingers reduces reload time for single-shot rifles like Sparks, allowing quicker follow-up shots."
-				},
-				{
-					"weapon_id": "sparks_pistol",
-					"reason": "Fast Fingers speeds up the single-shot reload cycle."
-				},
-				{
-					"weapon_id": "sparks_pistol_silencer",
-					"reason": "Fast Fingers speeds up the single-shot reload cycle."
 				},
 				{
 					"weapon_id": "sparks_silencer",
@@ -1007,24 +987,12 @@
 					"reason": "Bolt-action cycling lowers sights; Iron Eye keeps them up for quicker aimed shots."
 				},
 				{
-					"weapon_id": "berthier_1892_deadeye",
-					"reason": "Bolt-action with scope; Iron Eye irrelevant as scoped weapons don't use iron sights."
-				},
-				{
-					"weapon_id": "berthier_1892_marksman",
-					"reason": "Bolt-action with scope; Iron Eye irrelevant as scoped weapons don't use iron sights."
-				},
-				{
 					"weapon_id": "berthier_1892_riposte",
 					"reason": "Bolt-action cycling lowers sights; Iron Eye keeps them up for faster follow-up shots."
 				},
 				{
 					"weapon_id": "centennial",
 					"reason": "Lever-action cycling is fast; Iron Eye keeps sights aligned for quick follow-up shots without re-aiming."
-				},
-				{
-					"weapon_id": "centennial_pointman",
-					"reason": "Same lever-action mechanism; staying in sights after each shot maintains accuracy for rapid successive shots."
 				},
 				{
 					"weapon_id": "centennial_shorty",
@@ -1035,19 +1003,11 @@
 					"reason": "Silenced lever-action; Iron Eye prevents sight realignment delay, crucial for stealthy follow-up shots."
 				},
 				{
-					"weapon_id": "centennial_sniper",
-					"reason": "Sniper variant with lever-action; Iron Eye allows staying scoped for precise follow-up shots at range."
-				},
-				{
 					"weapon_id": "centennial_trauma",
 					"reason": "Lever-action with melee attachment; Iron Eye keeps sights up for immediate shots after bashing."
 				},
 				{
 					"weapon_id": "frontier_73c",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
-					"weapon_id": "frontier_73c_marksman",
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
 				},
 				{
@@ -1063,10 +1023,6 @@
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
 				},
 				{
-					"weapon_id": "infantry_73l_sniper",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
 					"weapon_id": "krag",
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
 				},
@@ -1079,20 +1035,12 @@
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
 				},
 				{
-					"weapon_id": "krag_sniper",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
 					"weapon_id": "lebel_1886",
 					"reason": "Iron Eye keeps you in ironsights after each bolt-action shot, enabling faster follow-up shots."
 				},
 				{
 					"weapon_id": "lebel_1886_aperture",
 					"reason": "Iron Eye keeps you in aperture sights after each bolt-action shot, enabling faster follow-up shots."
-				},
-				{
-					"weapon_id": "lebel_1886_marksman",
-					"reason": "Iron Eye keeps you in scope after each bolt-action shot, enabling faster follow-up shots."
 				},
 				{
 					"weapon_id": "lebel_1886_talon",
@@ -1135,23 +1083,11 @@
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
 				},
 				{
-					"weapon_id": "mosin_obrez_sharpeye",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
 					"weapon_id": "mosin_nagant",
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
 				},
 				{
-					"weapon_id": "mosin_nagant_avtomat",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
 					"weapon_id": "mosin_nagant_bayonet",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
-					"weapon_id": "mosin_nagant_sniper",
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
 				},
 				{
@@ -1203,10 +1139,6 @@
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
 				},
 				{
-					"weapon_id": "vandal_73c_bullseye",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
 					"weapon_id": "vandal_73c_striker",
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
 				},
@@ -1217,18 +1149,6 @@
 				{
 					"weapon_id": "vetterli_71_bayonet",
 					"reason": "Iron Eye lets you stay scoped after each shot, maintaining aim for faster follow-up shots."
-				},
-				{
-					"weapon_id": "vetterli_71_cyclone",
-					"reason": "Iron Eye keeps you in iron sights between semi-auto shots, enabling rapid accurate follow-ups."
-				},
-				{
-					"weapon_id": "vetterli_71_deadeye",
-					"reason": "Iron Eye retains scope view after each bolt-action shot, improving target tracking and fire rate."
-				},
-				{
-					"weapon_id": "vetterli_71_marksman",
-					"reason": "Iron Eye keeps you scoped between shots, crucial for maintaining precision on distant targets."
 				},
 				{
 					"weapon_id": "vetterli_71_silencer",
@@ -1712,6 +1632,22 @@
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				},
 				{
+					"weapon_id": "bornheim_no_3_match",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "centennial_pointman",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "centennial_shorty",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "centennial_shorty_silencer",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
 					"weapon_id": "chu_ko_nu",
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				},
@@ -1728,7 +1664,11 @@
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				},
 				{
-					"weapon_id": "dolch_96_precision",
+					"weapon_id": "drilling_hatchet",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "drilling_shorty",
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				},
 				{
@@ -1752,23 +1692,55 @@
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				},
 				{
-					"weapon_id": "mosin_obrez_match",
+					"weapon_id": "nagant_m1895_deadeye",
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				},
 				{
-					"weapon_id": "mosin_obrez_sharpeye",
+					"weapon_id": "nagant_m1895_precision",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "rival_78_mace",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "rival_78_shorty",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "romero_77_hatchet",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "romero_77_shorty",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "scottfield_precision",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "specter_1882_shorty",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "springfield_1866_bullseye",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "springfield_1866_shorty",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "springfield_1866_striker",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"weapon_id": "terminus_shorty",
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				},
 				{
 					"weapon_id": "uppercut",
-					"reason": "Quartermaster lets you carry two large weapons simultaneously."
-				},
-				{
-					"weapon_id": "uppercut_deadeye",
-					"reason": "Quartermaster lets you carry two large weapons simultaneously."
-				},
-				{
-					"weapon_id": "uppercut_precision",
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				},
 				{
@@ -1880,7 +1852,68 @@
 			"category": "offensive",
 			"trait_type": "normal",
 			"image_url": "",
-			"weapon_synergies": [],
+			"weapon_synergies": [
+				{
+					"weapon_id": "berthier_1892_deadeye",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "berthier_1892_marksman",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "centennial_pointman",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "centennial_sniper",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "frontier_73c_marksman",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "infantry_73l_sniper",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "krag_sniper",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "lebel_1886_marksman",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "mosin_obrez_sharpeye",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "mosin_nagant_sniper",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "nagant_m1895_deadeye",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "uppercut_deadeye",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "vandal_73c_bullseye",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "vetterli_71_deadeye",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"weapon_id": "vetterli_71_marksman",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				}
+			],
 			"tool_synergies": [],
 			"is_burn": false,
 			"is_solo": false
@@ -1983,6 +2016,10 @@
 					"reason": "Silent Killer cuts the Baseball Bat's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				},
 				{
+					"weapon_id": "berthier_1892_riposte",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
 					"weapon_id": "bomb_lance",
 					"reason": "Silent Killer reduces melee attack sound by 50%."
 				},
@@ -1991,20 +2028,116 @@
 					"reason": "Silent Killer cuts the Cavalry Saber's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				},
 				{
+					"weapon_id": "centennial_trauma",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
 					"weapon_id": "combat_axe",
 					"reason": "Silent Killer cuts the Combat Axe's melee attack sound by 50%, so nearby hunters won't hear your swing."
+				},
+				{
+					"weapon_id": "dolch_96_claw",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "drilling_hatchet",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "infantry_73l_bayonet",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				},
 				{
 					"weapon_id": "katana",
 					"reason": "Silent Killer cuts the Katana's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				},
 				{
+					"weapon_id": "krag_bayonet",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "lebel_1886_talon",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
 					"weapon_id": "machete",
 					"reason": "Silent Killer cuts the Machete's melee attack sound by 50%, so nearby hunters won't hear your swing."
 				},
 				{
+					"weapon_id": "mako_1895_claw",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "martini_henry_riposte",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "mosin_obrez_mace",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "mosin_nagant_bayonet",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "officer_brawler",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "pax_claw",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
 					"weapon_id": "railroad_hammer",
 					"reason": "Silent Killer cuts the Railroad Hammer's melee attack sound by 50%, so nearby hunters won't hear your swing."
+				},
+				{
+					"weapon_id": "ranger_73_talon",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "rival_78_mace",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "rival_78_trauma",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "romero_77_hatchet",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "romero_77_talon",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "scottfield_brawler",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "slate_riposte",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "specter_1882_bayonet",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "springfield_1866_bayonet",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "springfield_1866_striker",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "vandal_73c_striker",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				},
+				{
+					"weapon_id": "vetterli_71_bayonet",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			],
 			"tool_synergies": [
@@ -2051,12 +2184,120 @@
 			"image_url": "",
 			"weapon_synergies": [
 				{
+					"weapon_id": "1865_carbine_aperture",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "berthier_1892_deadeye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "berthier_1892_marksman",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "centennial_pointman",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "centennial_sniper",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "crossbow_deadeye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "dolch_96_bullseye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "frontier_73c_marksman",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "infantry_73l_sniper",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "krag_sniper",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "lebel_1886_aperture",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "lebel_1886_marksman",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "mako_1895_aperture",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "martini_henry_deadeye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "martini_henry_marksman",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
 					"weapon_id": "maynard_sniper",
 					"reason": "Sway dissipates faster in ADS and scope, reducing time-to-accurate-shot for follow-up fire."
 				},
 				{
 					"weapon_id": "maynard_sniper_silencer",
 					"reason": "Sway dissipates faster in ADS and scope, reducing time-to-accurate-shot for follow-up fire."
+				},
+				{
+					"weapon_id": "mosin_obrez_sharpeye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "mosin_nagant_sniper",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "nagant_m1895_deadeye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "officer_carbine_deadeye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "ranger_73_aperture",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "sparks_sniper",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "springfield_1866_bullseye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "springfield_1866_marksman",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "uppercut_deadeye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "vandal_73c_bullseye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "vetterli_71_deadeye",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				},
+				{
+					"weapon_id": "vetterli_71_marksman",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			],
 			"tool_synergies": [],
@@ -2229,6 +2470,10 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Lever-action requires cycling; Iron Eye keeps sights up for faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -2337,8 +2582,12 @@
 					"reason": "Prevents losing the chambered round when performing a partial reload."
 				},
 				{
-					"trait_id": "iron_eye",
-					"reason": "Bolt-action with scope; Iron Eye irrelevant as scoped weapons don't use iron sights."
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -2357,8 +2606,12 @@
 					"reason": "Prevents losing the chambered round when performing a partial reload."
 				},
 				{
-					"trait_id": "iron_eye",
-					"reason": "Bolt-action with scope; Iron Eye irrelevant as scoped weapons don't use iron sights."
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -2379,6 +2632,10 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Bolt-action cycling lowers sights; Iron Eye keeps them up for faster follow-up shots."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -2467,6 +2724,10 @@
 				{
 					"trait_id": "bulletgrubber",
 					"reason": "Bulletgrubber recovers the chambered round during partial reloads, preventing ammo loss."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -2533,12 +2794,20 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "iron_eye",
-					"reason": "Same lever-action mechanism; staying in sights after each shot maintains accuracy for rapid successive shots."
-				},
-				{
 					"trait_id": "levering",
 					"reason": "Levering enhances Pointman's hip-fire speed, allowing rapid follow-up shots at medium range."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -2559,6 +2828,10 @@
 				{
 					"trait_id": "levering",
 					"reason": "Levering maximizes the Shorty's close-range potential by increasing its already fast hip-fire rate."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -2579,6 +2852,10 @@
 				{
 					"trait_id": "levering",
 					"reason": "Levering offsets the silencer's fire rate penalty, enabling quick stealthy hip-fire kills."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -2593,12 +2870,16 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "iron_eye",
-					"reason": "Sniper variant with lever-action; Iron Eye allows staying scoped for precise follow-up shots at range."
-				},
-				{
 					"trait_id": "levering",
 					"reason": "Levering provides a close-range option for the Sniper, allowing rapid hip-fire when scoped is impractical."
+				},
+				{
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -2619,6 +2900,10 @@
 				{
 					"trait_id": "levering",
 					"reason": "Levering increases Trauma's hip-fire rate, making it more versatile in close-quarters despite its melee attachment."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -2731,6 +3016,10 @@
 				{
 					"trait_id": "bolt_thrower",
 					"reason": "Bolt Thrower reduces reload time, enabling quicker shots with the scoped Crossbow Deadeye."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -2771,6 +3060,10 @@
 				{
 					"trait_id": "quartermaster",
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -2791,6 +3084,10 @@
 				{
 					"trait_id": "quartermaster",
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -2807,10 +3104,6 @@
 				{
 					"trait_id": "bulletgrubber",
 					"reason": "Bulletgrubber recovers the chambered round during partial reloads, preventing ammo loss."
-				},
-				{
-					"trait_id": "quartermaster",
-					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -2834,7 +3127,16 @@
 			"weapon_class": "medium",
 			"description": "German made, break-action combination firearm with two rifle barrels and single shotgun underbarrel. Highly flexible. Shortened and modified with an axe blade.",
 			"image_url": "",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				}
+			]
 		},
 		{
 			"id": "drilling_shorty",
@@ -2845,7 +3147,12 @@
 			"weapon_class": "medium",
 			"description": "German made, break-action combination firearm with two rifle barrels and single shotgun underbarrel. Highly flexible. Shortened stock and barrel.",
 			"image_url": "",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				}
+			]
 		},
 		{
 			"id": "flame_rifle",
@@ -2894,12 +3201,16 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
 					"trait_id": "levering",
 					"reason": "Levering significantly boosts the lever-action fire rate."
+				},
+				{
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3031,6 +3342,10 @@
 				{
 					"trait_id": "levering",
 					"reason": "Levering significantly boosts the lever-action fire rate."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -3045,12 +3360,16 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
 					"trait_id": "levering",
 					"reason": "Levering significantly boosts the lever-action fire rate."
+				},
+				{
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3103,6 +3422,10 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -3133,8 +3456,12 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3175,6 +3502,10 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye keeps you in aperture sights after each bolt-action shot, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3193,8 +3524,12 @@
 					"reason": "Prevents losing the chambered round when performing a partial reload."
 				},
 				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye keeps you in scope after each bolt-action shot, enabling faster follow-up shots."
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3215,6 +3550,10 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye keeps you in ironsights after each bolt-action shot, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -3243,12 +3582,7 @@
 			"weapon_class": "compact",
 			"description": "Re-envisioned, single-action combination revolver with an additional shotgun barrel. High capacity and strong at close range. Extended stock and barrel.",
 			"image_url": "",
-			"trait_synergies": [
-				{
-					"trait_id": "fanning",
-					"reason": "Fanning increases LeMat Carbine's fire rate by allowing faster trigger pulls on its single-action revolver mode."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "lemat_carbine_marksman",
@@ -3259,12 +3593,7 @@
 			"weapon_class": "compact",
 			"description": "Re-envisioned, single-action combination revolver with an additional shotgun barrel. High capacity and strong at close range. Extended stock and barrel, modified with a Marksman scope.",
 			"image_url": "",
-			"trait_synergies": [
-				{
-					"trait_id": "fanning",
-					"reason": "Fanning increases LeMat Carbine Marksman's fire rate by allowing faster trigger pulls on its single-action revolver mode."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "machete",
@@ -3319,6 +3648,10 @@
 				{
 					"trait_id": "levering",
 					"reason": "Levering increases hip-fire rate for lever-action rifles, letting the Mako 1895 Aperture spam shots quickly."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3339,6 +3672,10 @@
 				{
 					"trait_id": "levering",
 					"reason": "Levering boosts hip-fire rate on lever-action weapons, making the Mako 1895 Claw's follow-up shots faster."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -3411,6 +3748,10 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers speeds the single-shot reload of the Martini-Henry Deadeye's long ammo rifle."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3423,12 +3764,7 @@
 			"weapon_class": "long",
 			"description": "British made, single-shot breech-loading rifle. Can be quickly reloaded and offers good power. Modified with a semi-automatic conversion.",
 			"image_url": "",
-			"trait_synergies": [
-				{
-					"trait_id": "fast_fingers",
-					"reason": "Fast Fingers speeds the single-shot reload of the Martini-Henry Ironside's long ammo rifle."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "martini_henry_marksman",
@@ -3443,6 +3779,10 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers speeds the single-shot reload of the Martini-Henry Marksman's long ammo rifle."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3459,6 +3799,10 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers speeds the single-shot reload of the Martini-Henry Riposte's long ammo rifle."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -3571,6 +3915,10 @@
 				{
 					"trait_id": "quartermaster",
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -3591,10 +3939,6 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
-					"trait_id": "quartermaster",
-					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -3613,12 +3957,12 @@
 					"reason": "Prevents losing the chambered round when performing a partial reload."
 				},
 				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
 				},
 				{
-					"trait_id": "quartermaster",
-					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3655,10 +3999,6 @@
 				{
 					"trait_id": "bulletgrubber",
 					"reason": "Prevents losing the chambered round when performing a partial reload."
-				},
-				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
 				}
 			]
 		},
@@ -3679,6 +4019,10 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -3697,8 +4041,12 @@
 					"reason": "Prevents losing the chambered round when performing a partial reload."
 				},
 				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3731,6 +4079,18 @@
 				{
 					"trait_id": "fanning",
 					"reason": "Fanning increases fire rate on single-action pistols, letting the Deadeye spam compact ammo rapidly."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3747,6 +4107,10 @@
 				{
 					"trait_id": "fanning",
 					"reason": "Fanning boosts fire rate on single-action pistols, making the Precision's compact ammo spam faster."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -3819,7 +4183,12 @@
 			"weapon_class": "compact",
 			"description": "See also: Nagant M1895 .",
 			"image_url": "",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				}
+			]
 		},
 		{
 			"id": "officer_carbine",
@@ -3841,7 +4210,12 @@
 			"weapon_class": "compact",
 			"description": "See also: Nagant M1895 .",
 			"image_url": "",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
+				}
+			]
 		},
 		{
 			"id": "pax",
@@ -3872,6 +4246,10 @@
 				{
 					"trait_id": "fanning",
 					"reason": "Fanning increases fire rate on single-action pistols, allowing the Pax Claw to spam medium ammo quickly."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -3944,6 +4322,10 @@
 				{
 					"trait_id": "levering",
 					"reason": "Levering significantly boosts the lever-action fire rate."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -3984,6 +4366,10 @@
 				{
 					"trait_id": "levering",
 					"reason": "Levering significantly boosts the lever-action fire rate."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -4007,7 +4393,16 @@
 			"weapon_class": "shotgun",
 			"description": "Caldwell made, break-action shotgun with two barrels. High damage but high pellet spread, two-tapping gives it an edge. Shortened and modified with a rear bludgeon.",
 			"image_url": "",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				}
+			]
 		},
 		{
 			"id": "rival_78_shorty",
@@ -4018,7 +4413,12 @@
 			"weapon_class": "shotgun",
 			"description": "Caldwell made, break-action shotgun with two barrels. High damage but high pellet spread, two-tapping gives it an edge. Shortened stock and barrel.",
 			"image_url": "",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				}
+			]
 		},
 		{
 			"id": "rival_78_trauma",
@@ -4029,7 +4429,12 @@
 			"weapon_class": "shotgun",
 			"description": "Caldwell made, break-action shotgun with two barrels. High damage but high pellet spread, two-tapping gives it an edge. Modified with a stock-mounted bludgeon.",
 			"image_url": "",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				}
+			]
 		},
 		{
 			"id": "romero_77",
@@ -4062,7 +4467,16 @@
 			"weapon_class": "shotgun",
 			"description": "American made, break-action shotgun with single barrel. High damage, cost-effective, and tight bullet spread. Shortened and modified with an axe blade.",
 			"image_url": "",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				}
+			]
 		},
 		{
 			"id": "romero_77_shorty",
@@ -4073,7 +4487,12 @@
 			"weapon_class": "shotgun",
 			"description": "American made, break-action shotgun with single barrel. High damage, cost-effective, and tight bullet spread. Shortened stock and barrel.",
 			"image_url": "",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				}
+			]
 		},
 		{
 			"id": "romero_77_talon",
@@ -4084,7 +4503,12 @@
 			"weapon_class": "shotgun",
 			"description": "American made, break-action shotgun with single barrel. High damage, cost-effective, and tight bullet spread. Modified with a stock-mounted blade.",
 			"image_url": "",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
+				}
+			]
 		},
 		{
 			"id": "scottfield",
@@ -4115,6 +4539,10 @@
 				{
 					"trait_id": "fanning",
 					"reason": "Fanning boosts the slow fire rate of this single-action revolver, allowing rapid follow-up shots in melee range."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -4131,6 +4559,10 @@
 				{
 					"trait_id": "fanning",
 					"reason": "Fanning turns this single-action revolver into a close-range spam weapon, compensating for its slow base fire rate."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -4211,6 +4643,10 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Slate Riposte is pump-action; Iron Eye maintains sight picture for faster follow-up shots."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -4239,12 +4675,7 @@
 			"weapon_class": "sparks",
 			"description": "Single-shot rifle, cut down into a small handgun. Equally powerful up to mid-range, and convenient to handle. Increased recoil. Can be dual wielded.",
 			"image_url": "",
-			"trait_synergies": [
-				{
-					"trait_id": "fast_fingers",
-					"reason": "Fast Fingers speeds up the single-shot reload cycle."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "sparks_pistol_silencer",
@@ -4255,12 +4686,7 @@
 			"weapon_class": "sparks",
 			"description": "Single-shot rifle, cut down into a small handgun. Equally powerful up to mid-range, and convenient to handle. Increased recoil. Modified with a silencer. Can be dual wielded.",
 			"image_url": "",
-			"trait_synergies": [
-				{
-					"trait_id": "fast_fingers",
-					"reason": "Fast Fingers speeds up the single-shot reload cycle."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "sparks_silencer",
@@ -4291,6 +4717,10 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers reduces reload time for single-shot rifles like Sparks Sniper, allowing quicker follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -4331,6 +4761,10 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Specter Bayonet is pump-action; Iron Eye keeps you aimed for quicker follow-up shots."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -4351,6 +4785,10 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Specter Shorty is pump-action; Iron Eye retains aim between shots, improving accuracy."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -4383,6 +4821,10 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers reduces reload time for single-shot rifles like Springfield Bayonet, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -4399,6 +4841,14 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers reduces reload time for single-shot rifles like Springfield Bullseye, allowing quicker follow-up shots."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -4415,6 +4865,10 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers reduces reload time for single-shot rifles like Springfield Marksman, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -4431,6 +4885,10 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers speeds up reloading the single-shot Springfield Shorty, reducing downtime between shots."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -4447,6 +4905,14 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": "Fast Fingers speeds up reloading the single-shot Springfield Striker, reducing downtime between shots."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -4495,6 +4961,10 @@
 				{
 					"trait_id": "levering",
 					"reason": "Levering boosts hip-fire rate on lever-action shotguns, making the Terminus Shorty's shots quicker."
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -4533,8 +5003,12 @@
 					"reason": "Fanning lets you fan the hammer for rapid fire on this single-action revolver."
 				},
 				{
-					"trait_id": "quartermaster",
-					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -4551,10 +5025,6 @@
 				{
 					"trait_id": "fanning",
 					"reason": "Fanning lets you fan the hammer for rapid fire on this single-action revolver."
-				},
-				{
-					"trait_id": "quartermaster",
-					"reason": "Quartermaster lets you carry two large weapons simultaneously."
 				}
 			]
 		},
@@ -4593,16 +5063,20 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye keeps you in ADS between shots, letting you fire faster without re-aiming."
-				},
-				{
 					"trait_id": "levering",
 					"reason": "Levering significantly boosts the lever-action fire rate."
 				},
 				{
 					"trait_id": "quartermaster",
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -4627,6 +5101,10 @@
 				{
 					"trait_id": "quartermaster",
 					"reason": "Quartermaster lets you carry two large weapons simultaneously."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -4659,6 +5137,10 @@
 				{
 					"trait_id": "iron_eye",
 					"reason": "Iron Eye lets you stay scoped after each shot, maintaining aim for faster follow-up shots."
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": "Silent Killer reduces melee attack sound by 50%."
 				}
 			]
 		},
@@ -4671,12 +5153,7 @@
 			"weapon_class": "medium",
 			"description": "Swiss made, bolt-action carbine. Powerful at medium distances, and easy to reload. Balances ease of use with damage. Modified with a semi-automatic conversion.",
 			"image_url": "",
-			"trait_synergies": [
-				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye keeps you in iron sights between semi-auto shots, enabling rapid accurate follow-ups."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "vetterli_71_deadeye",
@@ -4689,8 +5166,12 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye retains scope view after each bolt-action shot, improving target tracking and fire rate."
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
@@ -4705,8 +5186,12 @@
 			"image_url": "",
 			"trait_synergies": [
 				{
-					"trait_id": "iron_eye",
-					"reason": "Iron Eye keeps you scoped between shots, crucial for maintaining precision on distant targets."
+					"trait_id": "scopesmith",
+					"reason": "Scopesmith lets you stay in scope view after firing, enabling faster follow-up shots."
+				},
+				{
+					"trait_id": "steady_aim",
+					"reason": "Steady Aim reduces sway after entering ADS, improving accuracy for follow-up shots."
 				}
 			]
 		},
