@@ -2,7 +2,7 @@
   "meta": {
     "patch": "2.2.1",
     "scraped_at": "2026-06-23T11:39:05.893796+00:00",
-    "trait_count": 56,
+    "trait_count": 63,
     "weapon_count": 40,
     "tool_count": 43
   },
@@ -822,8 +822,8 @@
       "tool_synergies": []
     },
     {
-      "id": "poison_sense",
-      "name": "Poison Sense",
+      "id": "pain_sense",
+      "name": "Pain Sense",
       "description": "You can see nearby poisoned Hunters while in Dark Sight. Also applies to Beetle view. (150m)",
       "cost": 1,
       "rank": 59,
@@ -1063,6 +1063,260 @@
       "category": "defensive",
       "trait_type": "normal",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/78/Desolation%27s_Wake_icon.png",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "surefoot",
+      "name": "Surefoot",
+      "description": "You can sprint while holding primed Throwables, First Aid Kits, and Consumable Shots.",
+      "cost": 6,
+      "rank": 20,
+      "category": "movement",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": [
+        {
+          "tool_id": "choke_beetle",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "decoy_fuses",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "decoys",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "vitality_shot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "liquid_fire_bomb",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "blank_fire_decoys",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "stamina_shot_weak",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "waxed_dynamite_stick",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "antidote_shot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "hellfire_bomb",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "concertina_trip_mine",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "antidote_shot_weak",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "concertina_bomb",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "stamina_shot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "frag_bomb",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "hive_bomb",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "knife",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "knuckle_knife",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "regeneration_shot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "big_dynamite_bundle",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "stalker_beetle",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "poison_bomb",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "poison_trip_mine",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "regeneration_shot_weak",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "throwing_knives",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "alert_trip_mine",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "fire_bomb",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "chaos_bomb",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "throwing_axes",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "flash_bomb",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "dynamite_stick",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "heavy_knife",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "first_aid_kit",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "sticky_bomb",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "vitality_shot_weak",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "medical_pack",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "fire_beetle",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "dynamite_bundle",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        },
+        {
+          "tool_id": "dusters",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        }
+      ]
+    },
+    {
+      "id": "fast_fingers",
+      "name": "Fast Fingers",
+      "description": "Prepare some bullets in hand to reload single-shot rifles, and their non-pistol variants, faster.",
+      "cost": 4,
+      "rank": 0,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [
+        {
+          "weapon_id": "martini_henry_ic1",
+          "reason": "Fast Fingers speeds up single-shot rifle reload, directly buffing fire rate for this weapon."
+        },
+        {
+          "weapon_id": "springfield_m1892_krag",
+          "reason": "Fast Fingers speeds up single-shot rifle reload, directly buffing fire rate for this weapon."
+        },
+        {
+          "weapon_id": "bomb_lance",
+          "reason": "Fast Fingers speeds up single-shot rifle reload, directly buffing fire rate for this weapon."
+        }
+      ],
+      "tool_synergies": []
+    },
+    {
+      "id": "shadow_leap",
+      "name": "Shadow Leap",
+      "description": "Using Dark Sight, channel a Monster within range to jump to its location and kill it instantly. Excludes Targets. (50m)",
+      "cost": 0,
+      "rank": 0,
+      "category": "movement",
+      "trait_type": "scarce",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "blast_sense",
+      "name": "Blast Sense",
+      "description": "Loud sounds such as gunshots and explosions are highlighted while in Dark Sight. Gunshots from Silenced Weapons with Subsonic Ammo cannot be seen. (200m)",
+      "cost": 2,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "catalyst",
+      "name": "Catalyst",
+      "description": "Unlock Conditional Trait Effects on the Beastface, Kiteskin, Vigilant, Pain Sense, and Frontiersman Traits.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "pain_sense",
+      "name": "Pain Sense",
+      "description": "You can see nearby bleeding, poisoned and burning Hunters while in Dark Sight. Also applies to Beetle view. (150m)",
+      "cost": 3,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "poltergeist",
+      "name": "Poltergeist",
+      "description": "Players can manipulate, interact, and agitate in-world objects and animals remotely via Dark Sight. (50m). Works in Beetle View.",
+      "cost": 2,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "normal",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     }
@@ -1777,6 +2031,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throwing range, allowing Dynamite Stick to be thrown farther."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1791,6 +2049,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throwing range, allowing Waxed Dynamite Stick to be thrown farther."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1805,6 +2067,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throwing range, allowing Sticky Bomb to be thrown farther."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1819,6 +2085,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throwing range, allowing Dynamite Bundle to be thrown farther."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1833,6 +2103,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, allowing safer frag bomb tosses from distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1847,6 +2121,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher extends throw range, enabling distant placement of big dynamite bundle."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1861,6 +2139,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, letting you ignite targets from safer distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1875,6 +2157,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher extends throw range, allowing area denial from farther away."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1889,6 +2175,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, enabling safe deployment of hellfire bomb."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1907,6 +2197,10 @@
         {
           "trait_id": "blade_seer",
           "reason": "Blade Seer highlights thrown knives in Dark Sight, helping you retrieve them after throwing."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1929,6 +2223,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, allowing silent kills from farther distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1939,7 +2237,12 @@
       "cost": 20,
       "tool_class": "melee",
       "type": "throwable melee aim-helper",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        }
+      ]
     },
     {
       "id": "throwing_axes",
@@ -1960,6 +2263,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throwing range, allowing Throwing Axes to hit distant targets more effectively."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1974,6 +2281,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throwing range, enabling Decoys to be thrown farther to distract enemies."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -1988,6 +2299,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throwing range, allowing Alert Trip Mines to be placed at greater distances."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2002,6 +2317,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throwing range, letting Chaos Bombs be thrown farther to create confusion."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2016,6 +2335,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throwing range, enabling Blank Fire Decoys to be thrown farther to mimic gunshots."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2030,6 +2353,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throwing range, allowing Decoy Fuses to be thrown farther to simulate explosives."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2048,6 +2375,10 @@
         {
           "trait_id": "physician",
           "reason": "Physician reduces First Aid Kit use time by 50%, allowing faster healing under pressure."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2066,6 +2397,10 @@
         {
           "trait_id": "physician",
           "reason": "Physician cuts Medical Pack use time by 50%, critical when reviving or healing mid-fight."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2076,7 +2411,12 @@
       "cost": 30,
       "tool_class": "melee",
       "type": "throwable melee aim-helper",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        }
+      ]
     },
     {
       "id": "knuckle_knife",
@@ -2085,7 +2425,12 @@
       "cost": 50,
       "tool_class": "melee",
       "type": "throwable melee aim-helper",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        }
+      ]
     },
     {
       "id": "vitality_shot_weak",
@@ -2102,6 +2447,10 @@
         {
           "trait_id": "physician",
           "reason": "Physician reduces healing consumable use time, including Vitality Shots."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2120,6 +2469,10 @@
         {
           "trait_id": "physician",
           "reason": "Physician reduces healing consumable use time, including Vitality Shots."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2134,6 +2487,10 @@
         {
           "trait_id": "physician",
           "reason": "Physician reduces use time for Stamina Shots, enabling quicker stamina recovery."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2148,6 +2505,10 @@
         {
           "trait_id": "physician",
           "reason": "Physician reduces use time for Stamina Shots, enabling quicker stamina recovery."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2162,6 +2523,10 @@
         {
           "trait_id": "physician",
           "reason": "Physician reduces Regeneration Shot use time, making health-over-time faster to apply."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2176,6 +2541,10 @@
         {
           "trait_id": "physician",
           "reason": "Physician reduces Regeneration Shot use time, making health-over-time faster to apply."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2190,6 +2559,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, allowing safer deployment of Poison Bomb from distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2204,6 +2577,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, enabling self-buff from safer distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2218,6 +2595,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, enabling self-buff from safer distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2232,6 +2613,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, allowing safer deployment of Hive Bomb from distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2246,6 +2631,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, enabling trap placement from safer distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2278,6 +2667,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, allowing beetle launch from safer distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2292,6 +2685,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, allowing beetle launch from safer distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2306,6 +2703,10 @@
         {
           "trait_id": "pitcher",
           "reason": "Pitcher increases throw range, allowing beetle launch from safer distance."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
         }
       ]
     },
@@ -2316,7 +2717,12 @@
       "cost": 90,
       "tool_class": "explosive",
       "type": "throwable explosive aim-helper",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        }
+      ]
     },
     {
       "id": "concertina_bomb",
@@ -2325,7 +2731,12 @@
       "cost": 48,
       "tool_class": "explosive",
       "type": "throwable explosive aim-helper",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        }
+      ]
     },
     {
       "id": "flash_bomb",
@@ -2334,7 +2745,12 @@
       "cost": 25,
       "tool_class": "decoy",
       "type": "throwable decoy aim-helper",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+        }
+      ]
     }
   ]
 }

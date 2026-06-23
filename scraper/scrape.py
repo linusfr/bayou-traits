@@ -10,11 +10,13 @@ from pathlib import Path
 import httpx
 from bs4 import BeautifulSoup
 
-WIKI_API = "https://huntshowdown.fandom.com/api.php"
+# wiki.gg is the current, maintained wiki. Fandom is kept only for tools (group pages).
+WIKI_API   = "https://huntshowdown.wiki.gg/api.php"
+FANDOM_API = "https://huntshowdown.fandom.com/api.php"
 DATA_DIR = Path(__file__).parent / "data"
 
 HEADERS = {
-    "User-Agent": "HuntTraitsFinder/1.0 (build-script; github.com/yourusername/hunt-traits)"
+    "User-Agent": "HuntTraitsFinder/1.0 (build-script; github.com/linusfr/bayou-traits)"
 }
 
 SKIP_PAGES = {
@@ -50,7 +52,7 @@ AMMO_HINTS = {
 }
 
 
-async def fetch_category_members(client: httpx.AsyncClient, category: str) -> list[str]:
+async def fetch_category_members(client: httpx.AsyncClient, category: str, api: str = WIKI_API) -> list[str]:
     titles = []
     params = {
         "action": "query",
@@ -61,7 +63,7 @@ async def fetch_category_members(client: httpx.AsyncClient, category: str) -> li
         "format": "json",
     }
     while True:
-        r = await client.get(WIKI_API, params=params, headers=HEADERS)
+        r = await client.get(api, params=params, headers=HEADERS)
         r.raise_for_status()
         data = r.json()
         titles.extend(m["title"] for m in data["query"]["categorymembers"])
@@ -71,14 +73,14 @@ async def fetch_category_members(client: httpx.AsyncClient, category: str) -> li
     return titles
 
 
-async def fetch_page_html(client: httpx.AsyncClient, title: str) -> str:
+async def fetch_page_html(client: httpx.AsyncClient, title: str, api: str = WIKI_API) -> str:
     params = {
         "action": "parse",
         "page": title,
         "prop": "text",
         "format": "json",
     }
-    r = await client.get(WIKI_API, params=params, headers=HEADERS)
+    r = await client.get(api, params=params, headers=HEADERS)
     if r.status_code != 200:
         return ""
     data = r.json()
@@ -94,10 +96,34 @@ def slugify(name: str) -> str:
 def extract_image_url(soup: BeautifulSoup) -> str:
     for img in soup.find_all("img"):
         src = img.get("src", "")
-        if "static.wikia.nocookie.net" in src and ".png" in src.lower():
-            # Strip revision suffix to get clean URL
+        if src.lower().endswith(".png") and ("wiki.gg" in src or "wikia.nocookie.net" in src):
             return re.sub(r"/revision/latest.*", "", src)
     return ""
+
+
+def parse_druid_infobox(soup: BeautifulSoup) -> dict:
+    """Parse wiki.gg's druid-infobox format (div-based, druid-label / druid-data pairs)."""
+    fields: dict[str, str] = {}
+    # Labels and data are siblings inside druid-item containers
+    for item in soup.find_all(class_=re.compile(r"druid-item|pi-item")):
+        label_el = item.find(class_=re.compile(r"druid-label|pi-data-label"))
+        data_el  = item.find(class_=re.compile(r"druid-data|pi-data-value"))
+        if label_el and data_el:
+            key = re.sub(r"\s+", " ", label_el.get_text(separator=" ", strip=True)).lower()
+            val = re.sub(r"\s+", " ", data_el.get_text(separator=" ", strip=True)).strip()
+            if key and val and '{{{' not in val:
+                fields[key] = val
+    # Fallback: also try adjacent druid-label / druid-data siblings anywhere on page
+    if not fields:
+        labels = soup.find_all(class_=re.compile(r"druid-label"))
+        for lbl in labels:
+            key = re.sub(r"\s+", " ", lbl.get_text(separator=" ", strip=True)).lower()
+            nxt = lbl.find_next_sibling()
+            if nxt:
+                val = re.sub(r"\s+", " ", nxt.get_text(separator=" ", strip=True)).strip()
+                if key and val and '{{{' not in val:
+                    fields[key] = val
+    return fields
 
 
 def parse_infobox_table(soup: BeautifulSoup) -> dict:
@@ -132,7 +158,8 @@ def parse_trait(html: str, title: str) -> dict | None:
     if not name:
         return None
 
-    fields = parse_infobox_table(soup)
+    # Try wiki.gg druid format first, fall back to fandom wikitable
+    fields = parse_druid_infobox(soup) or parse_infobox_table(soup)
 
     description = ""
     cost = 0
@@ -147,12 +174,19 @@ def parse_trait(html: str, title: str) -> dict | None:
             m = re.search(r"\d+", val)
             if m:
                 cost = int(m.group())
-        elif "rank" in key:
+        elif "unlock" in key or "rank" in key:
             m = re.search(r"\d+", val)
             if m:
                 rank = int(m.group())
         elif "description" in key or "effect" in key:
             description = val
+        elif key == "type":
+            # wiki.gg: "Regular" → normal, "Event" → event, "Scarce" → scarce
+            vl = val.lower()
+            if "event" in vl:
+                trait_type = "event"
+            elif "scarce" in vl:
+                trait_type = "scarce"
 
     if not description:
         description = first_real_paragraph(soup)
@@ -169,12 +203,11 @@ def parse_trait(html: str, title: str) -> dict | None:
             category = 'supportive'
 
     page_text = soup.get_text().lower()
-    if "burn trait" in page_text or "is burned" in page_text:
-        trait_type = "burn"
-    elif "scarce" in page_text:
-        trait_type = "scarce"
-    elif "catalyst" in page_text:
-        trait_type = "catalyst"
+    if trait_type == "normal":
+        if "burn trait" in page_text or "is burned" in page_text:
+            trait_type = "burn"
+        elif "scarce" in page_text:
+            trait_type = "scarce"
 
     desc_lower = description.lower()
     weapon_type_hints = [wt for wt, kws in WEAPON_TYPE_HINTS.items() if any(k in desc_lower for k in kws)]
@@ -196,11 +229,14 @@ def parse_trait(html: str, title: str) -> dict | None:
 
 
 def parse_weapon(html: str, title: str) -> dict | None:
-    if not html or title in SKIP_PAGES:
+    # title is "Weapons/SparkName" on wiki.gg; strip prefix for the display name
+    name = title.removeprefix("Weapons/").strip()
+    if not html or not name or name in SKIP_PAGES:
         return None
     soup = BeautifulSoup(html, "lxml")
 
-    fields = parse_infobox_table(soup)
+    # Try wiki.gg druid infobox first, fall back to fandom wikitable
+    fields = parse_druid_infobox(soup) or parse_infobox_table(soup)
 
     weapon_type = ""
     size = ""
@@ -210,12 +246,20 @@ def parse_weapon(html: str, title: str) -> dict | None:
     for key, val in fields.items():
         if key in ("type", "weapon type", "class", "action"):
             weapon_type = val.lower()
-        elif key in ("size", "slot", "category"):
-            size = val.lower()
-        elif "ammo" in key or "ammunition" in key or "caliber" in key:
+        elif key in ("size", "slot"):
+            # wiki.gg uses numeric slot sizes: 4=large, 2=medium, 1=small
+            m = re.search(r"\d+", val)
+            if m:
+                n = int(m.group())
+                size = {4: "large", 3: "large", 2: "medium", 1: "small"}.get(n, val.lower())
+            else:
+                size = val.lower()
+        elif "ammo type" in key or "ammunition" in key or "caliber" in key:
+            ammo = val.lower().split()[0]  # e.g. "Long Ammo" → "long"
+        elif key == "ammo" and not ammo:
             ammo = val.lower()
         elif key == "name" and not ammo:
-            # Some weapon infoboxes use a "Name" row whose value is the ammo type
+            # Fandom fallback: "Name" row value may encode the ammo type
             val_lower = val.lower()
             for ammo_name in AMMO_NAMES:
                 if ammo_name in val_lower:
@@ -231,46 +275,49 @@ def parse_weapon(html: str, title: str) -> dict | None:
             weapon_type = " ".join(k.replace("_", "-") for k in matched)
 
     # Hard overrides for weapons whose name uniquely identifies ammo/type
-    # (wiki infobox may use generic category names that defeat keyword matching)
-    name_lower = title.lower()
+    name_lower = name.lower()
     if "sparks" in name_lower:
         ammo = "sparks"
-    if title == "Bomb Lance":
+    if name in ("Bomb Lance", "Bomb Launcher"):
         weapon_type = "explosive aim-helper"
+    if "nitro" in name_lower:
+        ammo = "nitro"
 
-    # Infer size from weapon type if missing
+    # Infer weapon type from name + description when the infobox has no type field
+    if not weapon_type:
+        combined = f"{name_lower} {description.lower()}"
+        matched = [k for k, kws in WEAPON_TYPE_HINTS.items() if any(kw in combined for kw in kws)]
+        if matched:
+            weapon_type = " ".join(k.replace("_", "-") for k in matched)
+
+    # Infer ammo from known name patterns if still missing
+    if not ammo:
+        if any(x in name_lower for x in ["romero", "specter", "homestead", "haymaker", "auto-5", "auto-4", "shredder", "drilling", "rival", "terminus", "slate"]):
+            ammo = "shotgun"
+        elif any(x in name_lower for x in ["mosin", "krag", "lebel", "martini", "infantry", "berthier", "vetterli", "centennial", "maynard", "1865 carbine", "wildland"]):
+            ammo = "long"
+        elif any(x in name_lower for x in ["winfield m1873", "mako", "springfield 1866", "marathon", "frontier", "ranger", "vandal", "uppercut"]):
+            ammo = "medium"
+        elif any(x in name_lower for x in ["dolch", "bornheim", "nagant", "scottfield", "lemat", "derringer", "pax", "new army", "conversion", "1890 cavalry"]):
+            ammo = "compact"
+        elif any(x in name_lower for x in ["bow", "crossbow", "chu ko nu"]):
+            ammo = ""  # bows have no ammo class; weapon_class comes from type
+
+    # Infer size from slot count if wiki.gg didn't provide it
     if not size:
-        name_lower = title.lower()
-        if any(x in name_lower for x in ["rifle", "mosin", "springfield", "lebel", "martini", "sparks", "nitro", "mako", "berthier", "vetterli", "krag", "winfield m18", "winfield 1893"]):
+        if any(x in name_lower for x in ["rifle", "mosin", "springfield", "lebel", "martini", "sparks", "nitro", "mako", "berthier", "vetterli", "krag", "centennial", "maynard", "infantry", "1865 carbine", "wildland"]):
             size = "large"
-        elif any(x in name_lower for x in ["romero", "specter", "drilling", "auto-5", "terminus", "1893 slate"]):
+        elif any(x in name_lower for x in ["romero", "specter", "drilling", "auto-5", "terminus", "slate", "haymaker", "homestead", "shredder"]):
             size = "medium"
-        elif any(x in name_lower for x in ["pistol", "dolch", "bornheim", "nagant", "caldwell", "scottfield", "lemat", "derringer", "pax", "new army"]):
+        elif any(x in name_lower for x in ["dolch", "bornheim", "nagant", "scottfield", "lemat", "derringer", "pax", "new army", "conversion", "1890 cavalry", "uppercut"]):
             size = "small"
         elif any(x in name_lower for x in ["knife", "sword", "axe", "hammer", "saber", "machete", "katana", "bat", "lance"]):
             size = "melee"
 
-    # Infer ammo from known weapon names if not found
-    if not ammo:
-        name_lower = title.lower()
-        if any(x in name_lower for x in ["sparks"]):
-            ammo = "sparks"
-        elif any(x in name_lower for x in ["nitro"]):
-            ammo = "nitro"
-        elif any(x in name_lower for x in ["romero", "specter", "auto-5", "drilling", "rival", "terminus", "1893 slate"]):
-            ammo = "shotgun"
-        elif any(x in name_lower for x in ["mosin", "springfield krag", "lebel", "martini", "winfield m1876", "berthier", "vetterli"]):
-            ammo = "long"
-        elif any(x in name_lower for x in ["winfield m1873", "mako", "springfield 1866", "caldwell marathon", "winfield 1893"]):
-            ammo = "medium"
-        elif any(x in name_lower for x in ["dolch", "bornheim", "nagant", "caldwell", "scottfield", "lemat", "derringer", "pax", "new army"]):
-            ammo = "compact"
-
-    # Parse "Key Traits" section from weapon wiki pages
+    # Parse "Key Traits" section (may exist on some wiki pages)
     wiki_synergy_traits = []
     for heading in soup.find_all(["h2", "h3", "h4"]):
         if "key trait" in heading.get_text(strip=True).lower():
-            # Walk siblings to find the next ul
             sibling = heading.find_next_sibling()
             while sibling and sibling.name not in ("ul", "h2", "h3"):
                 sibling = sibling.find_next_sibling()
@@ -286,7 +333,7 @@ def parse_weapon(html: str, title: str) -> dict | None:
     # Stable filter category used by the frontend
     _ammo = ammo or "unknown"
     _type = weapon_type or "unknown"
-    if _ammo != "unknown":
+    if _ammo not in ("unknown", ""):
         weapon_class = _ammo
     elif "melee" in _type:
         weapon_class = "melee"
@@ -298,8 +345,8 @@ def parse_weapon(html: str, title: str) -> dict | None:
         weapon_class = "unknown"
 
     return {
-        "id": slugify(title),
-        "name": title,
+        "id": slugify(name),
+        "name": name,
         "type": _type,
         "size": size or "unknown",
         "ammo": _ammo,
@@ -407,7 +454,7 @@ async def scrape_tools(client: httpx.AsyncClient, sem: asyncio.Semaphore) -> lis
     async def fetch_group(page: str, tool_class: str) -> None:
         async with sem:
             await asyncio.sleep(0.25)
-            html = await fetch_page_html(client, page)
+            html = await fetch_page_html(client, page, api=FANDOM_API)
         for item in parse_tool_page(html, tool_class):
             if item["id"] not in seen_ids:
                 seen_ids.add(item["id"])
@@ -418,24 +465,26 @@ async def scrape_tools(client: httpx.AsyncClient, sem: asyncio.Semaphore) -> lis
 
 
 async def get_patch_version(client: httpx.AsyncClient) -> str:
-    params = {
-        "action": "query",
-        "list": "categorymembers",
-        "cmtitle": "Category:Updates",
-        "cmlimit": "5",
-        "cmdir": "desc",
-        "cmsort": "timestamp",
-        "format": "json",
-    }
-    try:
-        r = await client.get(WIKI_API, params=params, headers=HEADERS)
-        data = r.json()
-        for m in data["query"]["categorymembers"]:
-            match = re.search(r"(\d+\.\d+(?:\.\d+)*)", m["title"])
-            if match:
-                return match.group(1)
-    except Exception as e:
-        print(f"  Warning: could not detect patch version: {e}")
+    # Try wiki.gg updates category first, fall back to fandom
+    for api, cat in [(WIKI_API, "Updates"), (FANDOM_API, "Updates")]:
+        params = {
+            "action": "query",
+            "list": "categorymembers",
+            "cmtitle": f"Category:{cat}",
+            "cmlimit": "5",
+            "cmdir": "desc",
+            "cmsort": "timestamp",
+            "format": "json",
+        }
+        try:
+            r = await client.get(api, params=params, headers=HEADERS)
+            data = r.json()
+            for m in data.get("query", {}).get("categorymembers", []):
+                match = re.search(r"(\d+\.\d+(?:\.\d+)*)", m["title"])
+                if match:
+                    return match.group(1)
+        except Exception:
+            pass
     return "unknown"
 
 
@@ -444,13 +493,10 @@ async def main() -> None:
 
     sem = asyncio.Semaphore(5)
 
-    async def rate_limited_fetch(client: httpx.AsyncClient, title: str) -> tuple[str, str]:
+    async def rate_limited_fetch(client: httpx.AsyncClient, title: str, api: str = WIKI_API) -> tuple[str, str]:
         async with sem:
             await asyncio.sleep(0.25)
-            html = await fetch_page_html(client, title)
-            # Some traits live at "Traits/Name" rather than "Name"
-            if not html and "/" not in title:
-                html = await fetch_page_html(client, f"Traits/{title}")
+            html = await fetch_page_html(client, title, api)
             return title, html
 
     limits = httpx.Limits(max_connections=10, max_keepalive_connections=5)
@@ -459,33 +505,35 @@ async def main() -> None:
         patch = await get_patch_version(client)
         print(f"  Patch: {patch}")
 
-        print("Fetching trait list...")
+        print("Fetching trait list from wiki.gg...")
         raw_trait_titles = await fetch_category_members(client, "Traits")
+        # wiki.gg: traits live at "Traits/Name"; filter out sub-pages and meta pages
         trait_titles = [
             t for t in raw_trait_titles
-            if t not in SKIP_PAGES and not t.startswith("Template:")
+            if t.startswith("Traits/") and t.count("/") == 1
         ]
-        print(f"  Found {len(trait_titles)} trait entries")
+        print(f"  Found {len(trait_titles)} trait pages")
 
-        print("Fetching weapon list...")
-        weapon_titles = await fetch_category_members(client, "Weapons")
+        print("Fetching weapon list from wiki.gg...")
+        raw_weapon_titles = await fetch_category_members(client, "Weapons")
+        # wiki.gg: base weapons are "Weapons/Name" (exactly one slash); variants have more
         weapon_titles = [
-            t for t in weapon_titles
-            if t not in SKIP_PAGES and not t.startswith("Template:")
+            t for t in raw_weapon_titles
+            if t.startswith("Weapons/") and t.count("/") == 1
         ]
-        print(f"  Found {len(weapon_titles)} weapon entries")
+        print(f"  Found {len(weapon_titles)} base weapon pages")
 
-        print("Scraping trait pages...")
+        print("Scraping trait pages from wiki.gg...")
         trait_results = await asyncio.gather(*[rate_limited_fetch(client, t) for t in trait_titles])
         traits = [r for t, h in trait_results if (r := parse_trait(h, t)) and r["description"]]
         print(f"  Parsed {len(traits)} traits")
 
-        print("Scraping weapon pages...")
+        print("Scraping weapon pages from wiki.gg...")
         weapon_results = await asyncio.gather(*[rate_limited_fetch(client, t) for t in weapon_titles])
         weapons = [r for t, h in weapon_results if (r := parse_weapon(h, t))]
         print(f"  Parsed {len(weapons)} weapons")
 
-        print("Scraping tool pages...")
+        print("Scraping tool pages from Fandom (group pages)...")
         tools = await scrape_tools(client, sem)
         print(f"  Parsed {len(tools)} tools")
 
@@ -494,11 +542,17 @@ async def main() -> None:
     if wiki_weapon_count != len(weapons):
         print(f"\n⚠ Coverage gap: scraped {len(weapons)} weapons but wiki lists {wiki_weapon_count}")
         scraped_names = {w["name"].lower() for w in weapons}
-        missing = [t for t in weapon_titles if t.lower() not in scraped_names]
+        missing = [t.removeprefix("Weapons/") for t in weapon_titles
+                   if t.removeprefix("Weapons/").lower() not in scraped_names]
         if missing:
             print(f"  Possibly missing: {missing[:10]}")
     if wiki_trait_count != len(traits):
         print(f"\n⚠ Coverage gap: scraped {len(traits)} traits but wiki lists {wiki_trait_count}")
+        scraped_trait_names = {t["name"].lower() for t in traits}
+        missing_traits = [t.removeprefix("Traits/") for t in trait_titles
+                          if t.removeprefix("Traits/").lower() not in scraped_trait_names]
+        if missing_traits:
+            print(f"  Possibly missing: {missing_traits[:10]}")
 
     output = {
         "meta": {
