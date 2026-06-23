@@ -5,8 +5,7 @@ import SearchBar from './components/SearchBar'
 import ItemCard from './components/ItemCard'
 import SynergyPanel from './components/SynergyPanel'
 
-const WEAPON_AMMO_FILTERS = ['long', 'medium', 'compact', 'shotgun', 'sparks', 'nitro']
-const TRAIT_CATEGORY_FILTERS = ['offensive', 'defensive', 'movement', 'supportive']
+const AMMO_ORDER = ['long', 'medium', 'compact', 'shotgun', 'sparks', 'nitro']
 
 const WEAPON_FUSE_OPTS = { keys: ['name', 'type', 'ammo', 'size'], threshold: 0.35 }
 const TRAIT_FUSE_OPTS  = { keys: ['name', 'description', 'category'], threshold: 0.35 }
@@ -91,7 +90,14 @@ export default function App() {
 		setSelectedId(id)
 	}, [])
 
-	const activeFilters = mode === 'weapon' ? WEAPON_AMMO_FILTERS : TRAIT_CATEGORY_FILTERS
+	const activeFilters = useMemo(() => {
+		if (mode === 'weapon') {
+			const present = new Set(weapons.map(w => w.ammo).filter(a => a && a !== 'unknown'))
+			return AMMO_ORDER.filter(a => present.has(a))
+		}
+		const present = new Set(traits.map(t => t.category).filter(c => c && c !== 'unknown'))
+		return [...present].sort()
+	}, [mode, weapons, traits])
 
 	const panelOpen = !!detail
 

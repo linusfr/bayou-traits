@@ -19,6 +19,18 @@ DEEPSEEK_BASE = "https://api.deepseek.com"
 MODEL = "deepseek-chat"
 
 BATCH_SIZE = 8
+AUGMENT_BATCH = 15
+
+AUGMENT_PROMPT = """\
+You are an expert at Hunt: Showdown. For each trait below, improve the description \
+by adding specific numbers, percentages, or durations where you know them from the game. \
+Keep changes minimal — only add concrete mechanics you are confident about. \
+If you don't know the exact values, return the original description unchanged.
+
+{traits}
+
+Respond ONLY with valid JSON: {{"traits": [{{"id": "...", "description": "..."}}]}}
+"""
 
 ENRICH_PROMPT = """\
 You are an expert at Hunt: Showdown. For each trait-weapon pair below, write \
@@ -127,6 +139,36 @@ async def enrich_batch(
         return [{"weapon_id": w, "trait_id": t, "reason": r or "Synergy noted in wiki."} for w, t, r in batch]
 
 
+async def augment_descriptions(
+    client: AsyncOpenAI,
+    traits: list,
+) -> None:
+    """Ask DeepSeek to add specific numbers/percentages to vague trait descriptions."""
+    print(f"\nAugmenting trait descriptions ({len(traits)} traits)...")
+    for i in range(0, len(traits), AUGMENT_BATCH):
+        batch = traits[i : i + AUGMENT_BATCH]
+        lines = "\n".join(
+            f'- id="{t["id"]}" name="{t["name"]}": "{t["description"]}"'
+            for t in batch
+        )
+        prompt = AUGMENT_PROMPT.format(traits=lines)
+        try:
+            resp = await client.chat.completions.create(
+                model=MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.1,
+                response_format={"type": "json_object"},
+            )
+            result = json.loads(resp.choices[0].message.content)
+            by_id = {t["id"]: t["description"] for t in result.get("traits", [])}
+            for trait in batch:
+                if trait["id"] in by_id and by_id[trait["id"]]:
+                    trait["description"] = by_id[trait["id"]]
+        except Exception as e:
+            print(f"  Warning: augment batch failed ({e})")
+        await asyncio.sleep(0.4)
+
+
 async def main() -> None:
     if not RAW_PATH.exists():
         raise FileNotFoundError(f"{RAW_PATH} not found — run scrape.py first")
@@ -191,6 +233,10 @@ async def main() -> None:
         trait["weapon_synergies"] = trait_syns.get(trait["id"], [])
         trait.pop("_weapon_type_hints", None)
         trait.pop("_ammo_hints", None)
+
+    if api_key:
+        client = get_client()
+        await augment_descriptions(client, traits)
 
     OUT_PATH.write_text(json.dumps(data, indent=2, ensure_ascii=False))
     print(f"\nSaved enriched data to {OUT_PATH}")

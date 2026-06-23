@@ -1,7 +1,7 @@
 {
   "meta": {
     "patch": "2.2.1",
-    "scraped_at": "2026-06-23T09:52:52.522122+00:00",
+    "scraped_at": "2026-06-23T11:08:36.357693+00:00",
     "trait_count": 56,
     "weapon_count": 40
   },
@@ -20,7 +20,7 @@
     {
       "id": "ambidextrous",
       "name": "Ambidextrous",
-      "description": "Quicker reloading of matched pairs , and custom clip reloads for semi-auto pistol sets.",
+      "description": "Quicker reloading of matched pairs, and custom clip reloads for semi-auto pistol sets.",
       "cost": 3,
       "rank": 34,
       "category": "supportive",
@@ -29,30 +29,30 @@
       "weapon_synergies": [
         {
           "weapon_id": "bornheim_no_3",
-          "reason": "Ambidextrous speeds up the custom clip reload for the Bornheim's semi-auto magazine."
+          "reason": "Ambidextrous speeds up the custom clip reload for semi-auto pistols like the Bornheim."
         },
         {
           "weapon_id": "caldwell_conversion_pistol",
-          "reason": "Ambidextrous speeds up matched pair reloads for dual-wielded Conversion Pistols."
+          "reason": "Ambidextrous speeds up reloading matched pairs, but the Conversion is a revolver, not semi-auto."
         },
         {
           "weapon_id": "crown_king_auto_5",
-          "reason": "Ambidextrous speeds up matched pair reloads for dual-wielded Crown & Kings."
+          "reason": "Ambidextrous speeds up reloading matched pairs, but the Auto-5 is a shotgun, not a pistol."
         },
         {
           "weapon_id": "dolch_96",
-          "reason": "Ambidextrous speeds up the custom clip reload for the Dolch's semi-auto magazine."
+          "reason": "Ambidextrous speeds up the custom clip reload for semi-auto pistols like the Dolch."
         },
         {
           "weapon_id": "quad_derringer",
-          "reason": "Ambidextrous speeds up matched pair reloads for dual-wielded Quad Derringers."
+          "reason": "Ambidextrous speeds up reloading matched pairs, but the Derringer is not semi-auto."
         }
       ]
     },
     {
       "id": "assailant",
       "name": "Assailant",
-      "description": "Increases melee effectiveness of Throwing Knives and Throwing Axes . Melee weapons found in the World can be thrown.",
+      "description": "Increases melee effectiveness of Throwing Knives and Throwing Axes. Melee weapons found in the World can be thrown.",
       "cost": 1,
       "rank": 18,
       "category": "offensive",
@@ -61,26 +61,26 @@
       "weapon_synergies": [
         {
           "weapon_id": "cavalry_saber",
-          "reason": "Assailant allows throwing the Cavalry Saber as a melee weapon."
+          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the saber itself."
         },
         {
           "weapon_id": "combat_axe",
-          "reason": "Assailant allows throwing the Combat Axe as a melee weapon."
+          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the combat axe."
         },
         {
           "weapon_id": "railroad_hammer",
-          "reason": "Assailant allows throwing the Railroad Hammer as a melee weapon."
+          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the hammer."
         },
         {
           "weapon_id": "winfield_1893_slate",
-          "reason": "Assailant allows throwing the Slate's melee as a projectile, leveraging its lever-action melee for ranged kills."
+          "reason": "Assailant allows throwing the Slate's melee as a projectile, increasing ranged melee options."
         }
       ]
     },
     {
       "id": "beastface",
       "name": "Beastface",
-      "description": "Reduced reaction range of animals (doesn't affect Monsters like Hellhounds ).",
+      "description": "Reduced reaction range of animals (doesn't affect Monsters like Hellhounds).",
       "cost": 4,
       "rank": 42,
       "category": "supportive",
@@ -102,7 +102,7 @@
     {
       "id": "blade_seer",
       "name": "Blade Seer",
-      "description": "Bolts , arrows , throwing axes , and throwing knives are highlighted in Dark Sight for better visibility. Also applies to Beetle view. (25m).",
+      "description": "Bolts, arrows, throwing axes, and throwing knives are highlighted in Dark Sight for better visibility. Also applies to Beetle view. (25m).",
       "cost": 1,
       "rank": 54,
       "category": "supportive",
@@ -111,19 +111,19 @@
       "weapon_synergies": [
         {
           "weapon_id": "cavalry_saber",
-          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, helping retrieve the Saber after throwing it."
+          "reason": "Blade Seer highlights the Saber in Dark Sight, aiding in tracking thrown melee weapons."
         },
         {
           "weapon_id": "combat_axe",
-          "reason": "Blade Seer highlights thrown axes in Dark Sight, aiding retrieval of the Combat Axe after throwing."
+          "reason": "Blade Seer highlights the Axe in Dark Sight, helping locate it after throwing."
         },
         {
           "weapon_id": "railroad_hammer",
-          "reason": "Blade Seer highlights thrown hammers in Dark Sight, helping locate the Railroad Hammer after throwing."
+          "reason": "Blade Seer highlights the Hammer in Dark Sight, useful for retrieval after throwing."
         },
         {
           "weapon_id": "winfield_1893_slate",
-          "reason": "Blade Seer highlights thrown melee weapons, useful for tracking the Slate's melee after throwing."
+          "reason": "Blade Seer highlights the Slate's melee in Dark Sight, aiding in tracking thrown attacks."
         }
       ]
     },
@@ -141,7 +141,7 @@
     {
       "id": "bolt_thrower",
       "name": "Bolt Thrower",
-      "description": "Reduced reload time for Crossbows .",
+      "description": "Reduced reload time for Crossbows.",
       "cost": 3,
       "rank": 32,
       "category": "offensive",
@@ -150,11 +150,11 @@
       "weapon_synergies": [
         {
           "weapon_id": "bow",
-          "reason": "Bolt Thrower reduces crossbow reload time, but does not affect Bow; no synergy."
+          "reason": "Bolt Thrower reduces reload time for crossbows, but Bow is not a crossbow; no benefit."
         },
         {
           "weapon_id": "crossbow",
-          "reason": "Bolt Thrower reduces crossbow reload time, increasing DPS and uptime in combat."
+          "reason": "Bolt Thrower reduces crossbow reload time, increasing DPS and follow-up shot speed."
         }
       ]
     },
@@ -172,7 +172,7 @@
     {
       "id": "bulwark",
       "name": "Bulwark",
-      "description": "Reduce the damage from explosions and Bomb Lance harpoon attacks by 50%. Vastly reduces the duration of being fully blinded by a Flash Bomb .",
+      "description": "Reduce the damage from explosions and Bomb Lance harpoon attacks by 50%. Vastly reduces the duration of being fully blinded by a Flash Bomb.",
       "cost": 2,
       "rank": 1,
       "category": "defensive",
@@ -183,7 +183,7 @@
     {
       "id": "conduit",
       "name": "Conduit",
-      "description": "Get a Health and Stamina boost when your team picks up a Clue or closes a Rift .",
+      "description": "Get a Health and Stamina boost when your team picks up a Clue or closes a Rift.",
       "cost": 5,
       "rank": 38,
       "category": "supportive",
@@ -227,7 +227,7 @@
     {
       "id": "decoy_supply",
       "name": "Decoy Supply",
-      "description": "Restock all types of Decoys from ammo crates .",
+      "description": "Restock all types of Decoys from ammo crates.",
       "cost": 1,
       "rank": 53,
       "category": "supportive",
@@ -238,7 +238,7 @@
     {
       "id": "determination",
       "name": "Determination",
-      "description": "Stamina recovery starts sooner.",
+      "description": "Stamina recovery starts 1 second sooner.",
       "cost": 4,
       "rank": 1,
       "category": "supportive",
@@ -249,7 +249,7 @@
     {
       "id": "doctor",
       "name": "Doctor",
-      "description": "Doubles the amount of Health restored by First Aid Kits .",
+      "description": "Doubles the amount of Health restored by First Aid Kits.",
       "cost": 9,
       "rank": 1,
       "category": "defensive",
@@ -273,39 +273,39 @@
         },
         {
           "weapon_id": "caldwell_92_new_army",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the New Army is a single-action revolver."
+          "reason": "Fanning increases fire rate for single-action revolvers; New Army is single-action."
         },
         {
           "weapon_id": "caldwell_conversion_pistol",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the Conversion Pistol is a single-action revolver."
+          "reason": "Fanning boosts fire rate for single-action pistols; Conversion Pistol is single-action."
         },
         {
           "weapon_id": "caldwell_pax",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the Pax is a single-action revolver."
+          "reason": "Fanning increases fire rate for single-action revolvers; Pax is single-action."
         },
         {
           "weapon_id": "dolch_96",
-          "reason": "Fanning only works on single-action pistols; the Dolch 96 is semi-auto, so no benefit."
+          "reason": "Fanning only works on single-action pistols; Dolch 96 is semi-auto, no benefit."
         },
         {
           "weapon_id": "lemat_mark_ii_revolver",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the LeMat is a single-action revolver."
+          "reason": "Fanning increases fire rate for single-action revolvers; LeMat is single-action."
         },
         {
           "weapon_id": "nagant_m1895",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the Nagant M1895 is a single-action revolver."
+          "reason": "Fanning increases fire rate for single-action revolvers; Nagant M1895 is single-action."
         },
         {
           "weapon_id": "nagant_m1895_officer",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the Officer is a single-action revolver."
+          "reason": "Fanning only works on single-action pistols; Officer is double-action, no benefit."
         },
         {
           "weapon_id": "quad_derringer",
-          "reason": "Fanning only works on single-action pistols; the Quad Derringer is not a revolver, so no benefit."
+          "reason": "Fanning only works on single-action revolvers; Derringer is not a revolver, no benefit."
         },
         {
           "weapon_id": "scottfield_model_3",
-          "reason": "Fanning drastically increases the fire rate of single-action revolvers like the Scottfield, making it deadly at close range."
+          "reason": "Fanning drastically increases the Scottfield's fire rate, making it a close-range powerhouse."
         }
       ]
     },
@@ -334,7 +334,7 @@
     {
       "id": "ghoul",
       "name": "Ghoul",
-      "description": "Killing Monsters restores a small amount of Health.",
+      "description": "Killing Monsters restores 5 Health.",
       "cost": 3,
       "rank": 20,
       "category": "supportive",
@@ -356,7 +356,7 @@
     {
       "id": "hornskin",
       "name": "Hornskin",
-      "description": "Reduce damage taken from blunt melee by 25%. Useful when fighting Armoreds and group of regular Grunts .",
+      "description": "Reduce damage taken from blunt melee by 25%. Useful when fighting Armoreds and group of regular Grunts.",
       "cost": 3,
       "rank": 1,
       "category": "defensive",
@@ -367,7 +367,7 @@
     {
       "id": "hundred_hands",
       "name": "Hundred Hands",
-      "description": "Increases the damage of a Bow and reduces sway while at full draw. Allows use of arrows in melee attacks.",
+      "description": "Increases the damage of a Bow by 10% and reduces sway while at full draw. Allows use of arrows in melee attacks.",
       "cost": 2,
       "rank": 51,
       "category": "offensive",
@@ -376,7 +376,7 @@
       "weapon_synergies": [
         {
           "weapon_id": "bow",
-          "reason": "Hundred Hands boosts bow damage and reduces sway at full draw, improving accuracy and lethality."
+          "reason": "Hundred Hands boosts bow damage and reduces sway, improving accuracy and lethality at full draw."
         },
         {
           "weapon_id": "crossbow",
@@ -396,75 +396,75 @@
       "weapon_synergies": [
         {
           "weapon_id": "berthier_mle_1892",
-          "reason": "Iron Eye keeps you in iron sights between shots, allowing faster follow-up shots with the Berthier's bolt-action."
+          "reason": "Iron Eye keeps you in ironsights between shots, maintaining aim for faster follow-up shots."
         },
         {
           "weapon_id": "caldwell_marathon",
-          "reason": "Iron Eye maintains sight picture between pump-action shots, enabling quicker follow-ups with the Marathon."
+          "reason": "Iron Eye allows staying in ironsights between pump-action shots, improving target tracking."
         },
         {
           "weapon_id": "caldwell_rival_78",
-          "reason": "Iron Eye keeps you aimed after each shot, improving follow-up speed with the Rival 78's pump-action."
+          "reason": "Iron Eye keeps you in ironsights after each shot, enabling quicker follow-up shots."
         },
         {
           "weapon_id": "crown_king_auto_5",
-          "reason": "Iron Eye allows staying in sights between semi-auto shots, enhancing rapid target reacquisition."
+          "reason": "Iron Eye is not applicable; Crown & King is semi-auto, not pump/bolt/lever."
         },
         {
           "weapon_id": "drilling",
-          "reason": "Iron Eye keeps you in sights between shots, aiding quick follow-ups with the Drilling's break-action."
+          "reason": "Iron Eye keeps you in ironsights between shots, useful for the Drilling's rifle and shotgun modes."
         },
         {
           "weapon_id": "lebel_1886",
-          "reason": "Keeps you in scope between bolt cycles, maintaining target acquisition for follow-up shots."
+          "reason": "Allows faster follow-up shots by keeping the sight picture after each bolt-action cycle."
         },
         {
           "weapon_id": "lemat_mark_ii_revolver",
-          "reason": "Iron Eye does not affect revolvers; this weapon is not bolt/lever/pump-action."
+          "reason": "Iron Eye does not affect revolvers; it only works on bolt/lever/pump actions."
         },
         {
           "weapon_id": "mako_1895_carbine",
-          "reason": "Stays in sights after levering, allowing faster follow-up shots without re-aiming."
+          "reason": "Keeps sights aligned after levering, enabling quicker consecutive shots."
         },
         {
           "weapon_id": "mosin_nagant_m1891",
-          "reason": "Remains in scope after bolt cycle, enabling quick successive shots on target."
+          "reason": "Maintains iron sight view after bolt cycling for faster target reacquisition."
         },
         {
           "weapon_id": "romero_77",
-          "reason": "Iron Eye does not affect single-shot break-action shotguns; no benefit."
+          "reason": "Iron Eye does not apply to single-shot shotguns; only bolt/lever/pump actions."
         },
         {
           "weapon_id": "specter_1882",
-          "reason": "Stays in sights after pump action, allowing faster follow-up shots without re-aiming."
+          "reason": "Keeps sights up after pump action, allowing rapid follow-up shots."
         },
         {
           "weapon_id": "springfield_m1892_krag",
-          "reason": "Keeps you in scope between bolt cycles, maintaining target acquisition for follow-up shots."
+          "reason": "Remains in iron sights after bolt cycle, improving shot consistency."
         },
         {
           "weapon_id": "vetterli_71_karabiner",
-          "reason": "Remains in sights after bolt cycle, enabling quick successive shots on target."
+          "reason": "Stays in iron sights after bolt action, aiding quick follow-up shots."
         },
         {
           "weapon_id": "winfield_1887_terminus",
-          "reason": "Iron Eye keeps you in sights between lever-action shots, improving follow-up accuracy for the Terminus shotgun."
+          "reason": "Lets you stay aimed between lever-action shots, improving follow-up accuracy with the shotgun."
         },
         {
           "weapon_id": "winfield_1893_slate",
-          "reason": "Iron Eye maintains sight picture between lever-action shots, crucial for precise follow-ups with the Slate shotgun."
+          "reason": "Keeps you in iron sights between lever-action shots, maintaining aim for quick follow-ups."
         },
         {
           "weapon_id": "winfield_m1873",
-          "reason": "Iron Eye keeps you aimed between lever-action shots, enabling faster and more accurate follow-ups with the M1873."
+          "reason": "Allows continuous aiming through lever cycles, boosting accuracy and fire rate control."
         },
         {
           "weapon_id": "winfield_m1873c",
-          "reason": "Iron Eye retains sight alignment between lever-action shots, improving rapid fire accuracy with the M1873C."
+          "reason": "Enables staying aimed between lever-action shots, enhancing precision and speed."
         },
         {
           "weapon_id": "winfield_m1876_centennial",
-          "reason": "Iron Eye keeps you in sights between lever-action shots, enhancing follow-up precision with the Centennial."
+          "reason": "Remain scoped between lever cycles, improving accuracy and follow-up shot speed."
         }
       ]
     },
@@ -491,27 +491,27 @@
       "weapon_synergies": [
         {
           "weapon_id": "mako_1895_carbine",
-          "reason": "Levering increases hip-fire rate for the Mako, allowing quicker follow-up shots in close quarters."
+          "reason": "Increases hip-fire rate for lever-action, making it deadly in close quarters."
         },
         {
           "weapon_id": "winfield_1887_terminus",
-          "reason": "Levering boosts hip-fire rate for the Terminus, maximizing close-range damage output."
+          "reason": "Boosts hip-fire rate for lever-action shotgun, allowing rapid close-range blasts."
         },
         {
           "weapon_id": "winfield_1893_slate",
-          "reason": "Levering increases hip-fire rate for the Slate, enabling faster follow-up shots in melee range."
+          "reason": "Speeds up hip-fire levering, enabling faster shotgun follow-ups in melee range."
         },
         {
           "weapon_id": "winfield_m1873",
-          "reason": "Levering increases hip-fire rate, maximizing the Winfield's lever-action mechanic for close-range spam."
+          "reason": "Levering increases hip-fire rate, maximizing the Winfield's lever-action spam potential at close range."
         },
         {
           "weapon_id": "winfield_m1873c",
-          "reason": "Levering boosts hip-fire rate, making the compact carbine deadly in close-quarters spam."
+          "reason": "Levering boosts hip-fire rate, making the compact Winfield even deadlier in close-quarters spam."
         },
         {
           "weapon_id": "winfield_m1876_centennial",
-          "reason": "Levering offsets the Centennial's slower fire rate, enabling rapid hip-fire with medium ammo."
+          "reason": "Levering offsets the Centennial's slower fire rate by enabling rapid hip-fire spam."
         }
       ]
     },
@@ -529,7 +529,7 @@
     {
       "id": "magpie",
       "name": "Magpie",
-      "description": "Receive three short effects when picking up a Bounty Token: Antidote, Stamina , and Regeneration. SOLO : Dark Sight Boost capacity in all Boost sources are doubled.",
+      "description": "Receive three short effects when picking up a Bounty Token: Antidote, Stamina, and Regeneration. SOLO: Dark Sight Boost capacity in all Boost sources are doubled.",
       "cost": 1,
       "rank": 1,
       "category": "supportive",
@@ -551,7 +551,7 @@
     {
       "id": "mithridatist",
       "name": "Mithridatist",
-      "description": "Drastically reduces the time needed to recover from poisoning .",
+      "description": "Drastically reduces the time needed to recover from poisoning. (Recovery time reduced by 75%)",
       "cost": 3,
       "rank": 40,
       "category": "defensive",
@@ -562,7 +562,7 @@
     {
       "id": "necromancer",
       "name": "Necromancer",
-      "description": "Using Dark Sight , revive a downed partner from a distance. (25m) SOLO : You can revive your downed Hunter. Triggers a Full Health Restoration upon revive.",
+      "description": "Using Dark Sight, revive a downed partner from a distance. (25m) SOLO: You can revive your downed Hunter. Triggers a Full Health Restoration upon revive.",
       "cost": 4,
       "rank": 1,
       "category": "supportive",
@@ -573,7 +573,7 @@
     {
       "id": "packmule",
       "name": "Packmule",
-      "description": "Receive an additional Tool or Consumable when looting players or opening item boxes .",
+      "description": "Receive an additional Tool or Consumable when looting players or opening item boxes.",
       "cost": 4,
       "rank": 1,
       "category": "supportive",
@@ -595,7 +595,7 @@
     {
       "id": "physician",
       "name": "Physician",
-      "description": "Reduce the time needed to bandage.",
+      "description": "Reduce the time needed to bandage. (Bandage time reduced by 50%)",
       "cost": 5,
       "rank": 45,
       "category": "defensive",
@@ -606,13 +606,18 @@
     {
       "id": "pitcher",
       "name": "Pitcher",
-      "description": "Increased throwing range for all items using the aim helper.",
+      "description": "Increased throwing range for all items using the aim helper. (Throwing range increased by 50%)",
       "cost": 6,
       "rank": 61,
       "category": "offensive",
       "trait_type": "normal",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/02/Pitcher.png",
-      "weapon_synergies": []
+      "weapon_synergies": [
+        {
+          "weapon_id": "bomb_lance",
+          "reason": "Pitcher extends throw range, allowing Bomb Lance explosive harpoons to hit targets from safer distances."
+        }
+      ]
     },
     {
       "id": "poacher",
@@ -628,7 +633,7 @@
     {
       "id": "poison_sense",
       "name": "Poison Sense",
-      "description": "You can see nearby poisoned Hunters while in Dark Sight . Also applies to Beetle view. (150m)",
+      "description": "You can see nearby poisoned Hunters while in Dark Sight. Also applies to Beetle view. (150m)",
       "cost": 1,
       "rank": 59,
       "category": "supportive",
@@ -639,7 +644,7 @@
     {
       "id": "quartermaster",
       "name": "Quartermaster",
-      "description": "Can equip a medium slot Weapon in addition to a large slot Weapon .",
+      "description": "Can equip a medium slot Weapon in addition to a large slot Weapon.",
       "cost": 6,
       "rank": 1,
       "category": "supportive",
@@ -672,7 +677,7 @@
     {
       "id": "remedy",
       "name": "Remedy",
-      "description": "Using Dark Sight , interact with a Trait Spur within range to trigger a Restoration effect similar to banishing for your team's Hunters . (25m)",
+      "description": "Using Dark Sight, interact with a Trait Spur within range to trigger a Restoration effect similar to banishing for your team's Hunters. (25m)",
       "cost": 0,
       "rank": 0,
       "category": "supportive",
@@ -694,7 +699,7 @@
     {
       "id": "salveskin",
       "name": "Salveskin",
-      "description": "While alive, reduce all fire damage and stop burn speed and stop time from escalating.",
+      "description": "While alive, reduce all fire damage and stop burn speed and stop time from escalating. (Fire damage reduced by 25%)",
       "cost": 2,
       "rank": 1,
       "category": "defensive",
@@ -716,7 +721,7 @@
     {
       "id": "serpent",
       "name": "Serpent",
-      "description": "Using Dark Sight , interact with nearby Clues , Rifts , Banishable Targets, and abandoned Bounty from a safe distance. (25m) SOLO : Interaction range increased. (50m)",
+      "description": "Using Dark Sight, interact with nearby Clues, Rifts, Banishable Targets, and abandoned Bounty from a safe distance. (25m) SOLO: Interaction range increased. (50m)",
       "cost": 4,
       "rank": 14,
       "category": "supportive",
@@ -780,26 +785,26 @@
       "weapon_synergies": [
         {
           "weapon_id": "bornheim_no_3",
-          "reason": "Steady Hand reduces sway on the Bornheim's scope, improving accuracy for follow-up shots."
+          "reason": "Steady Hand reduces sway on the Bornheim's scope, improving accuracy during rapid follow-up shots."
         },
         {
           "weapon_id": "caldwell_conversion_pistol",
-          "reason": "Steady Hand stabilizes the Conversion's scope sway, aiding precision with long ammo."
+          "reason": "Steady Hand stabilizes the Conversion Pistol's scope sway, enabling more precise long-range shots."
         },
         {
           "weapon_id": "dolch_96",
-          "reason": "Steady Hand tightens Dolch's scope sway, enhancing accuracy for its high-damage semi-auto shots."
+          "reason": "Steady Hand tightens Dolch's scope sway, enhancing accuracy for its high-damage semi-auto fire."
         },
         {
           "weapon_id": "quad_derringer",
-          "reason": "Steady Hand reduces sway on the Derringer's scope, making its four precise shots more reliable."
+          "reason": "Steady Hand reduces Derringer's scope sway, making its precise shots more reliable at range."
         }
       ]
     },
     {
       "id": "vigilant",
       "name": "Vigilant",
-      "description": "Nearby traps and active Beetles are highlighted in Dark Sight . Also applies to Beetle view. (25m)",
+      "description": "Nearby traps and active Beetles are highlighted in Dark Sight. Also applies to Beetle view. (25m)",
       "cost": 1,
       "rank": 36,
       "category": "supportive",
@@ -810,7 +815,7 @@
     {
       "id": "vigor",
       "name": "Vigor",
-      "description": "While in Dark Sight , doubles the rate at which Health and Stamina regenerate.",
+      "description": "While in Dark Sight, doubles the rate at which Health and Stamina regenerate.",
       "cost": 3,
       "rank": 63,
       "category": "defensive",
@@ -821,7 +826,7 @@
     {
       "id": "vulture",
       "name": "Vulture",
-      "description": "Looting a Hunter will always reward you money .",
+      "description": "Looting a Hunter will always reward you money.",
       "cost": 2,
       "rank": 24,
       "category": "supportive",
@@ -843,7 +848,7 @@
     {
       "id": "witness",
       "name": "Witness",
-      "description": "While in Dark Sight , dead Hunters and Monsters are visible and health restoration is marginally increased when close. Also highlighted in Beetle view. (75m)",
+      "description": "While in Dark Sight, dead Hunters and Monsters are visible and health restoration is marginally increased when close. Also highlighted in Beetle view. (75m)",
       "cost": 0,
       "rank": 0,
       "category": "[[:category:traits/{{{category}}}|{{{category}}}]]",
@@ -874,19 +879,24 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you in iron sights between shots, allowing faster follow-up shots with the Berthier's bolt-action."
+          "reason": "Iron Eye keeps you in ironsights between shots, maintaining aim for faster follow-up shots."
         }
       ]
     },
     {
       "id": "bomb_lance",
       "name": "Bomb Lance",
-      "type": "unknown",
+      "type": "explosive aim-helper",
       "size": "large",
       "ammo": "unknown",
       "description": "Adapted for combat on land, this explosive harpoon can be fired short distances and deals tremendous damage on direct impact.",
       "image_url": "",
-      "trait_synergies": []
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher extends throw range, allowing Bomb Lance explosive harpoons to hit targets from safer distances."
+        }
+      ]
     },
     {
       "id": "bornheim_no_3",
@@ -899,7 +909,7 @@
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Ambidextrous speeds up the custom clip reload for the Bornheim's semi-auto magazine."
+          "reason": "Ambidextrous speeds up the custom clip reload for semi-auto pistols like the Bornheim."
         },
         {
           "trait_id": "fanning",
@@ -907,7 +917,7 @@
         },
         {
           "trait_id": "steady_hand",
-          "reason": "Steady Hand reduces sway on the Bornheim's scope, improving accuracy for follow-up shots."
+          "reason": "Steady Hand reduces sway on the Bornheim's scope, improving accuracy during rapid follow-up shots."
         }
       ]
     },
@@ -922,11 +932,11 @@
       "trait_synergies": [
         {
           "trait_id": "bolt_thrower",
-          "reason": "Bolt Thrower reduces crossbow reload time, but does not affect Bow; no synergy."
+          "reason": "Bolt Thrower reduces reload time for crossbows, but Bow is not a crossbow; no benefit."
         },
         {
           "trait_id": "hundred_hands",
-          "reason": "Hundred Hands boosts bow damage and reduces sway at full draw, improving accuracy and lethality."
+          "reason": "Hundred Hands boosts bow damage and reduces sway, improving accuracy and lethality at full draw."
         }
       ]
     },
@@ -941,7 +951,7 @@
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the New Army is a single-action revolver."
+          "reason": "Fanning increases fire rate for single-action revolvers; New Army is single-action."
         }
       ]
     },
@@ -956,15 +966,15 @@
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Ambidextrous speeds up matched pair reloads for dual-wielded Conversion Pistols."
+          "reason": "Ambidextrous speeds up reloading matched pairs, but the Conversion is a revolver, not semi-auto."
         },
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the Conversion Pistol is a single-action revolver."
+          "reason": "Fanning boosts fire rate for single-action pistols; Conversion Pistol is single-action."
         },
         {
           "trait_id": "steady_hand",
-          "reason": "Steady Hand stabilizes the Conversion's scope sway, aiding precision with long ammo."
+          "reason": "Steady Hand stabilizes the Conversion Pistol's scope sway, enabling more precise long-range shots."
         }
       ]
     },
@@ -979,7 +989,7 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye maintains sight picture between pump-action shots, enabling quicker follow-ups with the Marathon."
+          "reason": "Iron Eye allows staying in ironsights between pump-action shots, improving target tracking."
         }
       ]
     },
@@ -994,7 +1004,7 @@
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the Pax is a single-action revolver."
+          "reason": "Fanning increases fire rate for single-action revolvers; Pax is single-action."
         }
       ]
     },
@@ -1009,7 +1019,7 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you aimed after each shot, improving follow-up speed with the Rival 78's pump-action."
+          "reason": "Iron Eye keeps you in ironsights after each shot, enabling quicker follow-up shots."
         }
       ]
     },
@@ -1024,11 +1034,11 @@
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant allows throwing the Cavalry Saber as a melee weapon."
+          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the saber itself."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, helping retrieve the Saber after throwing it."
+          "reason": "Blade Seer highlights the Saber in Dark Sight, aiding in tracking thrown melee weapons."
         }
       ]
     },
@@ -1043,11 +1053,11 @@
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant allows throwing the Combat Axe as a melee weapon."
+          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the combat axe."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown axes in Dark Sight, aiding retrieval of the Combat Axe after throwing."
+          "reason": "Blade Seer highlights the Axe in Dark Sight, helping locate it after throwing."
         }
       ]
     },
@@ -1062,7 +1072,7 @@
       "trait_synergies": [
         {
           "trait_id": "bolt_thrower",
-          "reason": "Bolt Thrower reduces crossbow reload time, increasing DPS and uptime in combat."
+          "reason": "Bolt Thrower reduces crossbow reload time, increasing DPS and follow-up shot speed."
         },
         {
           "trait_id": "hundred_hands",
@@ -1081,11 +1091,11 @@
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Ambidextrous speeds up matched pair reloads for dual-wielded Crown & Kings."
+          "reason": "Ambidextrous speeds up reloading matched pairs, but the Auto-5 is a shotgun, not a pistol."
         },
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye allows staying in sights between semi-auto shots, enhancing rapid target reacquisition."
+          "reason": "Iron Eye is not applicable; Crown & King is semi-auto, not pump/bolt/lever."
         }
       ]
     },
@@ -1100,15 +1110,15 @@
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Ambidextrous speeds up the custom clip reload for the Dolch's semi-auto magazine."
+          "reason": "Ambidextrous speeds up the custom clip reload for semi-auto pistols like the Dolch."
         },
         {
           "trait_id": "fanning",
-          "reason": "Fanning only works on single-action pistols; the Dolch 96 is semi-auto, so no benefit."
+          "reason": "Fanning only works on single-action pistols; Dolch 96 is semi-auto, no benefit."
         },
         {
           "trait_id": "steady_hand",
-          "reason": "Steady Hand tightens Dolch's scope sway, enhancing accuracy for its high-damage semi-auto shots."
+          "reason": "Steady Hand tightens Dolch's scope sway, enhancing accuracy for its high-damage semi-auto fire."
         }
       ]
     },
@@ -1123,7 +1133,7 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you in sights between shots, aiding quick follow-ups with the Drilling's break-action."
+          "reason": "Iron Eye keeps you in ironsights between shots, useful for the Drilling's rifle and shotgun modes."
         }
       ]
     },
@@ -1148,7 +1158,7 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Keeps you in scope between bolt cycles, maintaining target acquisition for follow-up shots."
+          "reason": "Allows faster follow-up shots by keeping the sight picture after each bolt-action cycle."
         }
       ]
     },
@@ -1157,17 +1167,17 @@
       "name": "LeMat Mark II Revolver",
       "type": "revolver shotgun",
       "size": "medium",
-      "ammo": "long",
+      "ammo": "shotgun",
       "description": "Infamous icon of the Confederacy, this updated model takes nine cartridges in its cylinder. Its second barrel delivers a shotgun blast up close.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/78/Lemat_lowered_pistol.png",
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the LeMat is a single-action revolver."
+          "reason": "Fanning increases fire rate for single-action revolvers; LeMat is single-action."
         },
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye does not affect revolvers; this weapon is not bolt/lever/pump-action."
+          "reason": "Iron Eye does not affect revolvers; it only works on bolt/lever/pump actions."
         }
       ]
     },
@@ -1192,11 +1202,11 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Stays in sights after levering, allowing faster follow-up shots without re-aiming."
+          "reason": "Keeps sights aligned after levering, enabling quicker consecutive shots."
         },
         {
           "trait_id": "levering",
-          "reason": "Levering increases hip-fire rate for the Mako, allowing quicker follow-up shots in close quarters."
+          "reason": "Increases hip-fire rate for lever-action, making it deadly in close quarters."
         }
       ]
     },
@@ -1221,7 +1231,7 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Remains in scope after bolt cycle, enabling quick successive shots on target."
+          "reason": "Maintains iron sight view after bolt cycling for faster target reacquisition."
         }
       ]
     },
@@ -1236,7 +1246,7 @@
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the Nagant M1895 is a single-action revolver."
+          "reason": "Fanning increases fire rate for single-action revolvers; Nagant M1895 is single-action."
         }
       ]
     },
@@ -1251,7 +1261,7 @@
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate on single-action revolvers, and the Officer is a single-action revolver."
+          "reason": "Fanning only works on single-action pistols; Officer is double-action, no benefit."
         }
       ]
     },
@@ -1276,15 +1286,15 @@
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Ambidextrous speeds up matched pair reloads for dual-wielded Quad Derringers."
+          "reason": "Ambidextrous speeds up reloading matched pairs, but the Derringer is not semi-auto."
         },
         {
           "trait_id": "fanning",
-          "reason": "Fanning only works on single-action pistols; the Quad Derringer is not a revolver, so no benefit."
+          "reason": "Fanning only works on single-action revolvers; Derringer is not a revolver, no benefit."
         },
         {
           "trait_id": "steady_hand",
-          "reason": "Steady Hand reduces sway on the Derringer's scope, making its four precise shots more reliable."
+          "reason": "Steady Hand reduces Derringer's scope sway, making its precise shots more reliable at range."
         }
       ]
     },
@@ -1299,11 +1309,11 @@
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant allows throwing the Railroad Hammer as a melee weapon."
+          "reason": "Assailant increases melee effectiveness of throwing knives/axes, not the hammer."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown hammers in Dark Sight, helping locate the Railroad Hammer after throwing."
+          "reason": "Blade Seer highlights the Hammer in Dark Sight, useful for retrieval after throwing."
         }
       ]
     },
@@ -1318,7 +1328,7 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye does not affect single-shot break-action shotguns; no benefit."
+          "reason": "Iron Eye does not apply to single-shot shotguns; only bolt/lever/pump actions."
         }
       ]
     },
@@ -1333,7 +1343,7 @@
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning drastically increases the fire rate of single-action revolvers like the Scottfield, making it deadly at close range."
+          "reason": "Fanning drastically increases the Scottfield's fire rate, making it a close-range powerhouse."
         }
       ]
     },
@@ -1342,7 +1352,7 @@
       "name": "Sparks LRR",
       "type": "single-shot",
       "size": "large",
-      "ammo": "long",
+      "ammo": "sparks",
       "description": "Renowned, large-bore, single-shot rifle with good sights. Can put down a bison across a prairie.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/f3/Sparks_lowered.png",
       "trait_synergies": []
@@ -1358,7 +1368,7 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Stays in sights after pump action, allowing faster follow-up shots without re-aiming."
+          "reason": "Keeps sights up after pump action, allowing rapid follow-up shots."
         }
       ]
     },
@@ -1383,7 +1393,7 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Keeps you in scope between bolt cycles, maintaining target acquisition for follow-up shots."
+          "reason": "Remains in iron sights after bolt cycle, improving shot consistency."
         }
       ]
     },
@@ -1398,7 +1408,7 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Remains in sights after bolt cycle, enabling quick successive shots on target."
+          "reason": "Stays in iron sights after bolt action, aiding quick follow-up shots."
         }
       ]
     },
@@ -1413,11 +1423,11 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you in sights between lever-action shots, improving follow-up accuracy for the Terminus shotgun."
+          "reason": "Lets you stay aimed between lever-action shots, improving follow-up accuracy with the shotgun."
         },
         {
           "trait_id": "levering",
-          "reason": "Levering boosts hip-fire rate for the Terminus, maximizing close-range damage output."
+          "reason": "Boosts hip-fire rate for lever-action shotgun, allowing rapid close-range blasts."
         }
       ]
     },
@@ -1432,19 +1442,19 @@
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant allows throwing the Slate's melee as a projectile, leveraging its lever-action melee for ranged kills."
+          "reason": "Assailant allows throwing the Slate's melee as a projectile, increasing ranged melee options."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown melee weapons, useful for tracking the Slate's melee after throwing."
+          "reason": "Blade Seer highlights the Slate's melee in Dark Sight, aiding in tracking thrown attacks."
         },
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye maintains sight picture between lever-action shots, crucial for precise follow-ups with the Slate shotgun."
+          "reason": "Keeps you in iron sights between lever-action shots, maintaining aim for quick follow-ups."
         },
         {
           "trait_id": "levering",
-          "reason": "Levering increases hip-fire rate for the Slate, enabling faster follow-up shots in melee range."
+          "reason": "Speeds up hip-fire levering, enabling faster shotgun follow-ups in melee range."
         }
       ]
     },
@@ -1459,11 +1469,11 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you aimed between lever-action shots, enabling faster and more accurate follow-ups with the M1873."
+          "reason": "Allows continuous aiming through lever cycles, boosting accuracy and fire rate control."
         },
         {
           "trait_id": "levering",
-          "reason": "Levering increases hip-fire rate, maximizing the Winfield's lever-action mechanic for close-range spam."
+          "reason": "Levering increases hip-fire rate, maximizing the Winfield's lever-action spam potential at close range."
         }
       ]
     },
@@ -1478,11 +1488,11 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye retains sight alignment between lever-action shots, improving rapid fire accuracy with the M1873C."
+          "reason": "Enables staying aimed between lever-action shots, enhancing precision and speed."
         },
         {
           "trait_id": "levering",
-          "reason": "Levering boosts hip-fire rate, making the compact carbine deadly in close-quarters spam."
+          "reason": "Levering boosts hip-fire rate, making the compact Winfield even deadlier in close-quarters spam."
         }
       ]
     },
@@ -1497,11 +1507,11 @@
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you in sights between lever-action shots, enhancing follow-up precision with the Centennial."
+          "reason": "Remain scoped between lever cycles, improving accuracy and follow-up shot speed."
         },
         {
           "trait_id": "levering",
-          "reason": "Levering offsets the Centennial's slower fire rate, enabling rapid hip-fire with medium ammo."
+          "reason": "Levering offsets the Centennial's slower fire rate by enabling rapid hip-fire spam."
         }
       ]
     }

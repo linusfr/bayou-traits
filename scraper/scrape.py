@@ -34,6 +34,7 @@ WEAPON_TYPE_HINTS = {
     "melee": ["melee weapon", "knife", "blade", "axe", "saber", "hammer"],
     "bow": ["bow", "crossbow"],
     "single_shot": ["single-shot", "single shot"],
+    "aim_helper": ["aim helper", "throwing range"],
 }
 
 AMMO_NAMES = {"compact", "medium", "long", "shotgun", "sparks", "nitro"}
@@ -214,6 +215,14 @@ def parse_weapon(html: str, title: str) -> dict | None:
         if matched:
             # Store as space-joined hyphenated forms so enrich.py substring matching works
             weapon_type = " ".join(k.replace("_", "-") for k in matched)
+
+    # Hard overrides for weapons whose name uniquely identifies ammo/type
+    # (wiki infobox may use generic category names that defeat keyword matching)
+    name_lower = title.lower()
+    if "sparks" in name_lower:
+        ammo = "sparks"
+    if title == "Bomb Lance":
+        weapon_type = "explosive aim-helper"
 
     # Infer size from weapon type if missing
     if not size:
