@@ -80,13 +80,26 @@ async def fetch_page_html(client: httpx.AsyncClient, title: str, api: str = WIKI
         "prop": "text",
         "format": "json",
     }
-    r = await client.get(api, params=params, headers=HEADERS)
-    if r.status_code != 200:
-        return ""
-    data = r.json()
-    if "error" in data:
-        return ""
-    return data.get("parse", {}).get("text", {}).get("*", "")
+    for attempt in range(4):
+        try:
+            r = await client.get(api, params=params, headers=HEADERS)
+            if r.status_code == 429:
+                wait = 10 * (2 ** attempt)
+                print(f"  Rate limited fetching {title!r}, waiting {wait}s...")
+                await asyncio.sleep(wait)
+                continue
+            if r.status_code != 200:
+                return ""
+            data = r.json()
+            if "error" in data:
+                return ""
+            return data.get("parse", {}).get("text", {}).get("*", "")
+        except Exception as e:
+            if attempt < 3:
+                await asyncio.sleep(5)
+            else:
+                print(f"  Failed fetching {title!r}: {e}")
+    return ""
 
 
 def slugify(name: str) -> str:
@@ -274,12 +287,20 @@ def parse_weapon(html: str, title: str) -> dict | None:
             # Store as space-joined hyphenated forms so enrich.py substring matching works
             weapon_type = " ".join(k.replace("_", "-") for k in matched)
 
-    # Hard overrides for weapons whose name uniquely identifies ammo/type
+    # Normalise wiki.gg ammo values to our system
+    # wiki.gg uses "Shells" for shotguns and "Special" for proprietary ammo
     name_lower = name.lower()
+    if ammo == "shells":
+        ammo = "shotgun"
+    elif ammo in ("special", "oil", ""):
+        ammo = ""  # will be resolved by name inference below
+
+    # Hard overrides
     if "sparks" in name_lower:
         ammo = "sparks"
     if name in ("Bomb Lance", "Bomb Launcher"):
         weapon_type = "explosive aim-helper"
+        ammo = ""
     if "nitro" in name_lower:
         ammo = "nitro"
 
@@ -290,18 +311,18 @@ def parse_weapon(html: str, title: str) -> dict | None:
         if matched:
             weapon_type = " ".join(k.replace("_", "-") for k in matched)
 
-    # Infer ammo from known name patterns if still missing
+    # Infer ammo from known name patterns when wiki gave "Special"/empty
     if not ammo:
         if any(x in name_lower for x in ["romero", "specter", "homestead", "haymaker", "auto-5", "auto-4", "shredder", "drilling", "rival", "terminus", "slate"]):
             ammo = "shotgun"
         elif any(x in name_lower for x in ["mosin", "krag", "lebel", "martini", "infantry", "berthier", "vetterli", "centennial", "maynard", "1865 carbine", "wildland"]):
             ammo = "long"
-        elif any(x in name_lower for x in ["winfield m1873", "mako", "springfield 1866", "marathon", "frontier", "ranger", "vandal", "uppercut"]):
+        elif any(x in name_lower for x in ["mako", "springfield 1866", "marathon", "frontier", "ranger", "vandal", "mosin obrez"]):
             ammo = "medium"
-        elif any(x in name_lower for x in ["dolch", "bornheim", "nagant", "scottfield", "lemat", "derringer", "pax", "new army", "conversion", "1890 cavalry"]):
+        elif any(x in name_lower for x in ["dolch", "bornheim", "nagant", "scottfield", "lemat", "derringer", "pax", "new army", "conversion", "1890 cavalry", "uppercut", "winfield m1873"]):
             ammo = "compact"
         elif any(x in name_lower for x in ["bow", "crossbow", "chu ko nu"]):
-            ammo = ""  # bows have no ammo class; weapon_class comes from type
+            ammo = ""  # bows: weapon_class comes from type
 
     # Infer size from slot count if wiki.gg didn't provide it
     if not size:
@@ -491,11 +512,11 @@ async def get_patch_version(client: httpx.AsyncClient) -> str:
 async def main() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-    sem = asyncio.Semaphore(5)
+    sem = asyncio.Semaphore(3)
 
     async def rate_limited_fetch(client: httpx.AsyncClient, title: str, api: str = WIKI_API) -> tuple[str, str]:
         async with sem:
-            await asyncio.sleep(0.25)
+            await asyncio.sleep(0.6)
             html = await fetch_page_html(client, title, api)
             return title, html
 

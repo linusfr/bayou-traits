@@ -1,21 +1,47 @@
 {
   "meta": {
-    "patch": "2.2.1",
-    "scraped_at": "2026-06-23T11:39:05.893796+00:00",
-    "trait_count": 63,
-    "weapon_count": 40,
-    "tool_count": 43
+    "patch": "2.8.0.3",
+    "scraped_at": "2026-06-23T12:25:45.131361+00:00",
+    "trait_count": 85,
+    "weapon_count": 55,
+    "tool_count": 43,
+    "wiki_weapon_count": 55,
+    "wiki_trait_count": 85
   },
   "traits": [
     {
+      "id": "acolyte",
+      "name": "Acolyte",
+      "description": "Acquire a random Trait and some Hunt Dollars when you or your team picks up a Clue.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
       "id": "adrenaline",
       "name": "Adrenaline",
-      "description": "When you enter critical health (below 25 HP), you will receive a small Stamina boost (restores 50 Stamina).",
+      "description": "When you enter critical health (below 25 HP), you will receive a small Stamina boost (50 stamina).",
       "cost": 1,
       "rank": 1,
       "category": "defensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e3/Adrenaline.png",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "all_ears",
+      "name": "All Ears",
+      "description": "While using Dark Sight, decreases Dark Sight noise by 50% and increases sounds of enemy Hunters in the direction you're facing by 50%.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
@@ -27,27 +53,23 @@
       "rank": 34,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/3a/Ambidextrous.png",
+      "image_url": "",
       "weapon_synergies": [
         {
+          "weapon_id": "auto_4_shorty",
+          "reason": "Speeds up the custom clip reload for this semi-auto shotgun, reducing downtime."
+        },
+        {
+          "weapon_id": "auto_5",
+          "reason": "Accelerates the custom clip reload for this semi-auto shotgun, improving fire rate."
+        },
+        {
           "weapon_id": "bornheim_no_3",
-          "reason": "Speeds up custom clip reloads for semi-auto pistols, reducing downtime in firefights."
-        },
-        {
-          "weapon_id": "caldwell_conversion_pistol",
-          "reason": "Faster matched pair reloads for revolvers, allowing quicker follow-up shots."
-        },
-        {
-          "weapon_id": "crown_king_auto_5",
-          "reason": "Quicker reloads for semi-auto shotguns, keeping pressure on enemies."
+          "reason": "Enables faster custom clip reloads for this semi-auto pistol, increasing sustained DPS."
         },
         {
           "weapon_id": "dolch_96",
-          "reason": "Speeds up custom clip reloads for semi-auto pistols, crucial in close combat."
-        },
-        {
-          "weapon_id": "quad_derringer",
-          "reason": "Faster matched pair reloads for dual-wielded Derringers, increasing sustained DPS."
+          "reason": "Quicker custom clip reloads for this semi-auto pistol, crucial in close fights."
         }
       ],
       "tool_synergies": []
@@ -55,66 +77,78 @@
     {
       "id": "assailant",
       "name": "Assailant",
-      "description": "Increases melee effectiveness of Throwing Knives and Throwing Axes (25% more damage). Melee weapons found in the World can be thrown.",
+      "description": "Increases melee effectiveness of Throwing Knives and Throwing Axes (50% more damage).",
       "cost": 1,
       "rank": 18,
       "category": "offensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/c0/Assailant.png",
+      "image_url": "",
       "weapon_synergies": [
         {
           "weapon_id": "baseball_bat",
-          "reason": "Allows throwing the bat as a melee weapon, adding ranged utility."
+          "reason": "Increases throwing knife/axe damage, but does not affect the bat itself."
         },
         {
           "weapon_id": "cavalry_saber",
-          "reason": "Enables throwing the saber, turning it into a versatile ranged melee option."
+          "reason": "Boosts throwing knife/axe effectiveness, but not the saber's melee."
         },
         {
           "weapon_id": "combat_axe",
-          "reason": "Allows throwing the axe, providing a powerful ranged melee attack."
+          "reason": "Enhances throwing knife/axe damage, irrelevant to the axe's melee."
         },
         {
           "weapon_id": "katana",
-          "reason": "Assailant allows the Katana to be thrown, turning it into a ranged melee attack."
+          "reason": "Improves throwing knife/axe performance, not the katana's melee."
         },
         {
           "weapon_id": "machete",
-          "reason": "Assailant allows the Machete to be thrown, turning it into a ranged melee attack."
+          "reason": "Assailant boosts throwing melee damage; Machete is melee but not thrown, so no benefit."
         },
         {
           "weapon_id": "railroad_hammer",
-          "reason": "Assailant allows the Railroad Hammer to be thrown, turning it into a ranged melee attack."
+          "reason": "Assailant boosts throwing melee damage; Railroad Hammer is melee but not thrown, so no benefit."
         },
         {
-          "weapon_id": "winfield_1893_slate",
-          "reason": "Assailant allows the Slate's melee to be thrown, turning it into a ranged melee attack."
+          "weapon_id": "shredder",
+          "reason": "Assailant boosts throwing melee damage; Shredder is melee but not thrown, so no benefit."
         }
       ],
       "tool_synergies": [
         {
           "tool_id": "knife",
-          "reason": "Assailant increases melee damage of thrown knives, making the Knife's throw more lethal."
+          "reason": "Assailant increases melee damage of throwing knives/axes, but does not affect standard knife."
         },
         {
           "tool_id": "throwing_knives",
-          "reason": "Assailant boosts melee effectiveness of Throwing Knives, improving their damage when used in close combat."
+          "reason": "Assailant increases melee damage of throwing knives, making them more effective in close combat."
+        },
+        {
+          "tool_id": "heavy_knife",
+          "reason": "Assailant increases melee damage of throwing knives/axes, but does not affect heavy knife."
         },
         {
           "tool_id": "throwing_axes",
-          "reason": "Assailant increases melee damage of Throwing Axes, making them more effective when used as melee weapons."
+          "reason": "Assailant increases melee damage of throwing axes, improving their close-quarters lethality."
+        },
+        {
+          "tool_id": "dusters",
+          "reason": "Assailant increases melee damage of throwing knives/axes, but does not affect dusters."
+        },
+        {
+          "tool_id": "knuckle_knife",
+          "reason": "Assailant increases melee damage of throwing knives/axes, but does not affect knuckle knife."
         }
       ]
     },
     {
       "id": "beastface",
       "name": "Beastface",
-      "description": "Reduced reaction range of animals (50% less detection range; doesn't affect Monsters like Hellhounds).",
+      "description": "Reduce reaction range of animals by 50% (doesn't affect Monsters like Hellhounds).",
       "cost": 4,
       "rank": 42,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/9/9d/Beastface.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
@@ -125,52 +159,112 @@
       "cost": 0,
       "rank": 0,
       "category": "offensive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/78/Desolation%27s_Wake_icon.png",
+      "trait_type": "scarce",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "blade_seer",
       "name": "Blade Seer",
-      "description": "Bolts, arrows, throwing axes, and throwing knives are highlighted in Dark Sight for better visibility. Also applies to Beetle view. (25m).",
+      "description": "While using Dark Sight, increases distance of highlighted Bolts, Arrows, Harpoon, Throwing Axes, and Throwing Knives to 75m. Also applies to Beetle View.",
       "cost": 1,
       "rank": 54,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a3/Blade_Seer.png",
+      "image_url": "",
       "weapon_synergies": [
         {
           "weapon_id": "baseball_bat",
-          "reason": "Blade Seer highlights thrown Baseball Bats in Dark Sight, aiding retrieval."
+          "reason": "Blade Seer highlights thrown melee in dark sight; Baseball Bat is not thrown, so no benefit."
         },
         {
           "weapon_id": "cavalry_saber",
-          "reason": "Blade Seer highlights thrown Cavalry Sabers in Dark Sight, aiding retrieval."
+          "reason": "Blade Seer highlights thrown melee in dark sight; Cavalry Saber is not thrown, so no benefit."
         },
         {
           "weapon_id": "combat_axe",
-          "reason": "Blade Seer highlights thrown Combat Axes in Dark Sight, aiding retrieval."
+          "reason": "Blade Seer highlights thrown melee in dark sight; Combat Axe is not thrown, so no benefit."
         },
         {
           "weapon_id": "katana",
-          "reason": "Blade Seer highlights thrown Katanas in Dark Sight, aiding retrieval."
+          "reason": "Blade Seer highlights thrown melee in dark sight; Katana is not thrown, so no benefit."
+        },
+        {
+          "weapon_id": "machete",
+          "reason": "Blade Seer highlights thrown melee in dark sight; Machete is not thrown, so no benefit."
+        },
+        {
+          "weapon_id": "railroad_hammer",
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, helping retrieve the Railroad Hammer after throwing it."
+        },
+        {
+          "weapon_id": "shredder",
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, helping retrieve the Shredder after throwing it."
         }
       ],
       "tool_synergies": [
         {
           "tool_id": "knife",
-          "reason": "Blade Seer highlights thrown knives in Dark Sight, helping you retrieve them after throwing."
+          "reason": "Blade Seer highlights thrown knives/axes in dark sight, but does not affect standard knife."
         },
         {
           "tool_id": "throwing_knives",
-          "reason": "Blade Seer highlights Throwing Knives in Dark Sight, making them easier to locate and recover."
+          "reason": "Blade Seer highlights thrown knives in dark sight up to 75m, aiding retrieval."
+        },
+        {
+          "tool_id": "heavy_knife",
+          "reason": "Blade Seer highlights thrown heavy knives in Dark Sight, making them easier to retrieve at range."
         },
         {
           "tool_id": "throwing_axes",
-          "reason": "Blade Seer highlights thrown axes in Dark Sight, making them easier to retrieve."
+          "reason": "Blade Seer highlights thrown axes in Dark Sight, allowing retrieval from up to 75m away."
+        },
+        {
+          "tool_id": "dusters",
+          "reason": "Dusters are not thrown, so Blade Seer has no effect on them."
+        },
+        {
+          "tool_id": "knuckle_knife",
+          "reason": "Knuckle Knife is not thrown, so Blade Seer does not benefit it."
         }
       ]
+    },
+    {
+      "id": "blademancer",
+      "name": "Blademancer",
+      "description": "Using Dark Sight, take retrievable ammo in front of you (100m range).",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "blast_sense",
+      "name": "Blast Sense",
+      "description": "Loud sounds such as gunshots and explosions are highlighted while in Dark Sight (200m range). Gunshots from Silenced Weapons with Subsonic Ammo cannot be seen.",
+      "cost": 2,
+      "rank": 1,
+      "category": "supportive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "blazeborne",
+      "name": "Blazeborne",
+      "description": "Health restoration is greatly increased (4x) while in flames and you can't catch on fire.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
     },
     {
       "id": "bloodless",
@@ -180,85 +274,219 @@
       "rank": 1,
       "category": "defensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e4/Bloodless.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "bolt_thrower",
       "name": "Bolt Thrower",
-      "description": "Reduced reload time for Crossbows (25% faster).",
+      "description": "Reduced reload time for Crossbows, Bomb Launchers, and Bomb Lances (25% faster).",
       "cost": 3,
       "rank": 32,
       "category": "offensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/81/Bolt_Thrower.png",
+      "image_url": "",
       "weapon_synergies": [
         {
+          "weapon_id": "chu_ko_nu",
+          "reason": "Bolt Thrower reduces reload time for crossbows, allowing faster follow-up shots with the Chu Ko Nu."
+        },
+        {
           "weapon_id": "crossbow",
-          "reason": "Bolt Thrower reduces crossbow reload time, directly benefiting Crossbow's slower reload."
+          "reason": "Bolt Thrower reduces reload time for crossbows, allowing faster follow-up shots with the Crossbow."
+        },
+        {
+          "weapon_id": "hand_crossbow",
+          "reason": "Bolt Thrower reduces reload time for crossbows, allowing faster follow-up shots with the Hand Crossbow."
+        },
+        {
+          "weapon_id": "hunting_bow",
+          "reason": "Bolt Thrower reduces reload time for crossbows, allowing faster follow-up shots with the Hunting Bow."
         }
       ],
       "tool_synergies": []
     },
     {
+      "id": "bruiser",
+      "name": "Bruiser",
+      "description": "Reduces melee stamina consumption by 25% and flinching when taking damage by 50%.",
+      "cost": 0,
+      "rank": 0,
+      "category": "defensive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
       "id": "bulletgrubber",
       "name": "Bulletgrubber",
-      "description": "Recover the unfired round when performing partial reloads.",
+      "description": "Recover unfired round when performing partial reloads.",
       "cost": 4,
       "rank": 26,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/8d/Bulletgrubber.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "bulwark",
       "name": "Bulwark",
-      "description": "Reduce the damage from explosions and Bomb Lance harpoon attacks by 50%. Vastly reduces the duration of being fully blinded by a Flash Bomb (by 75%).",
+      "description": "Reduce the damage from explosions by 50%. Vastly reduces the duration of being fully blinded by a Flash Bomb.",
       "cost": 2,
       "rank": 1,
       "category": "defensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/82/Bulwark.png",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "catalyst",
+      "name": "Catalyst",
+      "description": "Unlock Conditional Trait Effects on the Beastface, Kiteskin, Vigilant, Pain Sense, and Frontiersman Traits. Conditional Effects activate when their base Trait is equipped.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "scarce",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "communion",
+      "name": "Communion",
+      "description": "While using Dark Sight, temporarily lower your Max HP by 15 to heal your teammate 75 HP and remove their negative status effects (25m).",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "conduit",
       "name": "Conduit",
-      "description": "Get a Health and Stamina boost (restores 50 HP and 100 Stamina) when your team picks up a Clue or closes a Rift.",
+      "description": "Get a health and stamina boost when your team picks up a Clue or closes a Rift.",
       "cost": 5,
       "rank": 38,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/61/Conduit.png",
+      "image_url": "",
       "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "corpse_seer",
+      "name": "Corpse Seer",
+      "description": "Receive Dark Sight Boost when looting downed Hunters.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "crack_shot",
+      "name": "Crack Shot",
+      "description": "Reduce sway for weapons and increase zoom level in iron sights for rifles and pistols with stocks. Excludes shotguns and sawed-off variants.",
+      "cost": 0,
+      "rank": 0,
+      "category": "offensive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [
+        {
+          "weapon_id": "auto_4_shorty",
+          "reason": "Crack Shot reduces sway and increases zoom for rifles/pistols with stocks, but Auto-4 Shorty is a shotgun and excluded."
+        },
+        {
+          "weapon_id": "auto_5",
+          "reason": "Crack Shot reduces sway and increases zoom for rifles/pistols with stocks, but Auto-5 is a shotgun and excluded."
+        },
+        {
+          "weapon_id": "bornheim_no_3",
+          "reason": "Reduces sway on the Bornheim's iron sights, improving accuracy for follow-up shots at medium range."
+        },
+        {
+          "weapon_id": "dolch_96",
+          "reason": "Reduces sway on the Dolch's iron sights, enhancing precision for rapid semi-auto fire."
+        },
+        {
+          "weapon_id": "drilling",
+          "reason": "Crack Shot does not benefit the Drilling because it is a shotgun, which is excluded."
+        },
+        {
+          "weapon_id": "haymaker",
+          "reason": "Crack Shot does not benefit the Haymaker because it is a shotgun, which is excluded."
+        },
+        {
+          "weapon_id": "homestead_78",
+          "reason": "Crack Shot does not benefit the Homestead 78 because it is a shotgun, which is excluded."
+        },
+        {
+          "weapon_id": "lemat",
+          "reason": "Crack Shot does not benefit the LeMat because it is a shotgun, which is excluded."
+        },
+        {
+          "weapon_id": "marathon",
+          "reason": "Crack Shot does not benefit the Marathon because it is a shotgun, which is excluded."
+        },
+        {
+          "weapon_id": "rival_78",
+          "reason": "Crack Shot does not benefit the Rival 78 because it is a shotgun, which is excluded."
+        },
+        {
+          "weapon_id": "romero_77",
+          "reason": "Crack Shot excludes shotguns, so it does not benefit the Romero 77."
+        },
+        {
+          "weapon_id": "slate",
+          "reason": "Crack Shot excludes shotguns, so it does not benefit the Slate."
+        },
+        {
+          "weapon_id": "specter_1882",
+          "reason": "Crack Shot excludes shotguns, so it does not benefit the Specter 1882."
+        },
+        {
+          "weapon_id": "terminus",
+          "reason": "Crack Shot excludes shotguns, so it does not benefit the Terminus."
+        }
+      ],
       "tool_synergies": []
     },
     {
       "id": "dauntless",
       "name": "Dauntless",
-      "description": "Thrown Explosives can be defused when interacting with them (hold interact for 2 seconds).",
+      "description": "Thrown explosives can be defused when interacting with them.",
       "cost": 1,
-      "rank": 64,
+      "rank": 1,
       "category": "defensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e4/Dauntless.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "deadeye_scopesmith",
       "name": "Deadeye Scopesmith",
-      "description": "Remain in scope view after firing a shot while using any weapon with a short scope (Deadeye variants).",
+      "description": "See also: Scopesmith, Marksman Scopesmith, Sniper Scopesmith.",
       "cost": 0,
       "rank": 0,
       "category": "offensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/2/26/Deadeye_Scopesmith.png",
-      "weapon_synergies": [],
+      "image_url": "",
+      "weapon_synergies": [
+        {
+          "weapon_id": "maynard_sniper",
+          "reason": "Deadeye Scopesmith reduces sway and increases zoom for Deadeye scopes, benefiting the Maynard Sniper."
+        }
+      ],
       "tool_synergies": []
     },
     {
@@ -268,106 +496,236 @@
       "cost": 0,
       "rank": 0,
       "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/88/Burn_Trait_icon.png",
+      "trait_type": "scarce",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "decoy_supply",
       "name": "Decoy Supply",
-      "description": "Restock all types of Decoys from ammo crates (restores 2 of each type).",
+      "description": "Restock all types of Decoys from ammo crates.",
       "cost": 1,
       "rank": 53,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/55/Decoy_Supply.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "determination",
       "name": "Determination",
-      "description": "Stamina recovery starts 1 second sooner.",
-      "cost": 4,
+      "description": "Stamina recovery starts sooner.",
+      "cost": 1,
       "rank": 1,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/ff/Determination.png",
+      "image_url": "",
       "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "dewclaw",
+      "name": "Dewclaw",
+      "description": "Enhances the melee attack of a bow and arrow.",
+      "cost": 0,
+      "rank": 0,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [
+        {
+          "weapon_id": "chu_ko_nu",
+          "reason": "Dewclaw enhances the melee attack of bows, making the Chu Ko Nu's stock strike stronger."
+        },
+        {
+          "weapon_id": "crossbow",
+          "reason": "Dewclaw enhances the melee attack of bows, making the Crossbow's stock strike stronger."
+        },
+        {
+          "weapon_id": "hand_crossbow",
+          "reason": "Dewclaw enhances the melee attack of bows, making the Hand Crossbow's stock strike stronger."
+        },
+        {
+          "weapon_id": "hunting_bow",
+          "reason": "Dewclaw boosts the bow's melee damage, making it a viable close-range finisher without switching weapons."
+        }
+      ],
       "tool_synergies": []
     },
     {
       "id": "doctor",
       "name": "Doctor",
-      "description": "Doubles the amount of Health restored by First Aid Kits.",
+      "description": "Doubles the amount of Health restored by First Aid Kit.",
       "cost": 9,
       "rank": 1,
       "category": "defensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/6c/Doctor.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": [
         {
           "tool_id": "first_aid_kit",
-          "reason": "Doctor doubles health restored by First Aid Kits, maximising healing efficiency."
+          "reason": "Doctor doubles the health restored by First Aid Kit, from 50 to 100."
         },
         {
           "tool_id": "medical_pack",
-          "reason": "Doctor doubles health restored by healing items, including the Medical Pack."
-        },
-        {
-          "tool_id": "vitality_shot",
-          "reason": "Doctor doubles health from healing consumables, boosting Vitality Shot value."
+          "reason": "Medical Pack is a tool, not a consumable; Doctor only affects First Aid Kit."
         },
         {
           "tool_id": "vitality_shot_weak",
-          "reason": "Doctor doubles health from healing consumables, boosting Vitality Shot value."
+          "reason": "Doctor only affects First Aid Kit, not Vitality Shots."
+        },
+        {
+          "tool_id": "vitality_shot",
+          "reason": "Doctor only affects First Aid Kit, not Vitality Shots."
+        },
+        {
+          "tool_id": "stamina_shot_weak",
+          "reason": "Doctor doubles health restored by First Aid Kit, but Stamina Shot does not restore health."
+        },
+        {
+          "tool_id": "stamina_shot",
+          "reason": "Doctor doubles health restored by First Aid Kit, but Stamina Shot does not restore health."
+        },
+        {
+          "tool_id": "regeneration_shot_weak",
+          "reason": "Doctor doubles health restored by First Aid Kit, but Regeneration Shot does not restore health."
+        },
+        {
+          "tool_id": "regeneration_shot",
+          "reason": "Doctor doubles health restored by First Aid Kit, but Regeneration Shot does not restore health."
         }
       ]
     },
     {
       "id": "fanning",
       "name": "Fanning",
-      "description": "Faster rate of fire when using 1-handed single-action pistols.",
+      "description": "Faster rate of fire when using one-handed or two-handed single-action pistols.",
       "cost": 8,
       "rank": 12,
       "category": "offensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/0e/Fanning.png",
+      "image_url": "",
       "weapon_synergies": [
         {
-          "weapon_id": "caldwell_conversion_pistol",
-          "reason": "Fanning increases fire rate for single-action pistols, directly benefiting Conversion Pistol's slow fire rate."
+          "weapon_id": "bornheim_no_3",
+          "reason": "Fanning does not affect semi-auto pistols like the Bornheim; it only works on single-action revolvers."
         },
         {
-          "weapon_id": "caldwell_pax",
-          "reason": "Fanning increases fire rate for single-action revolvers like the Pax, allowing faster follow-up shots."
+          "weapon_id": "conversion",
+          "reason": "Fanning greatly increases the Conversion's fire rate, allowing rapid follow-up shots from the hip."
         },
         {
-          "weapon_id": "lemat_mark_ii_revolver",
-          "reason": "Fanning increases fire rate for single-action revolvers like the LeMat, enabling rapid shots."
+          "weapon_id": "dolch_96",
+          "reason": "Fanning does not affect semi-auto pistols like the Dolch; it only works on single-action revolvers."
+        },
+        {
+          "weapon_id": "haymaker",
+          "reason": "Fanning increases the Haymaker's fire rate, enabling quick successive shots despite its long ammo."
+        },
+        {
+          "weapon_id": "lemat",
+          "reason": "Fanning boosts the LeMat's fire rate, letting you rapidly fire compact ammo or the shotgun barrel."
         },
         {
           "weapon_id": "nagant_m1895",
-          "reason": "Fanning increases fire rate for single-action revolvers like the Nagant M1895, improving DPS."
+          "reason": "Fanning dramatically increases the Nagant's fire rate, turning it into a close-range spam weapon."
         },
         {
-          "weapon_id": "scottfield_model_3",
-          "reason": "Fanning increases fire rate for single-action revolvers like the Scottfield, enabling rapid shots."
+          "weapon_id": "new_army",
+          "reason": "Fanning boosts the New Army's fire rate, allowing faster follow-up shots despite its double-action mechanism."
+        },
+        {
+          "weapon_id": "pax",
+          "reason": "Fanning increases fire rate for single-action pistols like Pax, allowing faster follow-up shots."
+        },
+        {
+          "weapon_id": "scottfield",
+          "reason": "Fanning boosts fire rate for single-action pistols like Scottfield, enabling quicker successive shots."
         }
       ],
+      "tool_synergies": []
+    },
+    {
+      "id": "fast_fingers",
+      "name": "Fast Fingers",
+      "description": "Prepare some bullets in hand to reload single-shot rifles, and their non-pistol variants, faster.",
+      "cost": 4,
+      "rank": 11,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [
+        {
+          "weapon_id": "bornheim_no_3",
+          "reason": "Fast Fingers speeds reload for single-shot rifles; Bornheim is semi-auto, so no benefit."
+        },
+        {
+          "weapon_id": "dolch_96",
+          "reason": "Fast Fingers speeds reload for single-shot rifles; Dolch is semi-auto, so no benefit."
+        },
+        {
+          "weapon_id": "drilling",
+          "reason": "Fast Fingers speeds reload for single-shot rifles; Drilling's rifle barrel is single-shot, so benefits."
+        },
+        {
+          "weapon_id": "martini_henry",
+          "reason": "Fast Fingers speeds reload for single-shot rifles like Martini-Henry, reducing downtime."
+        },
+        {
+          "weapon_id": "sparks",
+          "reason": "Fast Fingers speeds reload for single-shot rifles like Sparks, allowing faster follow-up shots."
+        }
+      ],
+      "tool_synergies": []
+    },
+    {
+      "id": "final_gasp",
+      "name": "Final Gasp",
+      "description": "Looting a Hunter triggers a Restoration effect for your Hunter. (Burn Trait)",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "fire_eater",
+      "name": "Fire Eater",
+      "description": "In exchange for 1 Pledge Mark, when a health chunk is burnt away, it is instead instantly restored.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "flame_touched",
+      "name": "Flame Touched",
+      "description": "If you have 4 Pledge Marks, you can't catch on fire even when downed, but your health chunks still burn at a slower rate while in flames.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "frontiersman",
       "name": "Frontiersman",
       "description": "Carried Tools can be used one extra time.",
-      "cost": 7,
-      "rank": 57,
+      "cost": 6,
+      "rank": 47,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/06/Frontiersman.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
@@ -379,189 +737,277 @@
       "rank": 56,
       "category": "movement",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/b/b6/Gator_Legs.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "ghoul",
       "name": "Ghoul",
-      "description": "Killing Monsters restores a small amount of Health (5 HP per kill).",
+      "description": "Killing Monsters restores a small amount of health.",
       "cost": 3,
-      "rank": 20,
+      "rank": 1,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e3/Ghoul.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "greyhound",
       "name": "Greyhound",
-      "description": "Sprint at full speed for a longer duration (increases stamina by 25%).",
-      "cost": 5,
+      "description": "Sprint at full speed for a longer duration.",
+      "cost": 2,
       "rank": 3,
       "category": "movement",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/9/91/Greyhound.png",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "gunrunner",
+      "name": "Gunrunner",
+      "description": "Equip up to two Large Slot weapons on your Hunter.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "hornskin",
       "name": "Hornskin",
-      "description": "Reduce damage taken from blunt melee by 25%. Useful when fighting Armoreds and group of regular Grunts.",
+      "description": "Reduce damage taken from blunt damage by 25%.",
       "cost": 3,
       "rank": 1,
       "category": "defensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/87/Hornskin.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "hundred_hands",
       "name": "Hundred Hands",
-      "description": "Increases the damage of a Bow and reduces sway while at full draw. Allows use of arrows in melee attacks.",
-      "cost": 2,
-      "rank": 51,
+      "description": "Increases the damage of a Hunting Bow and reduces sway while at full draw. Allows use of arrows in melee attacks.",
+      "cost": 3,
+      "rank": 16,
       "category": "offensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/ee/Hundred_Hands.png",
+      "image_url": "",
       "weapon_synergies": [
         {
-          "weapon_id": "bow",
-          "reason": "Hundred Hands increases bow damage and reduces sway at full draw, improving accuracy and lethality."
+          "weapon_id": "chu_ko_nu",
+          "reason": "Hundred Hands increases bow damage and reduces sway; Chu Ko Nu is a crossbow, not a bow."
         },
         {
           "weapon_id": "crossbow",
-          "reason": "Hundred Hands increases bow damage and reduces sway, making crossbow shots more accurate and lethal at full draw."
+          "reason": "Reduces sway at full draw for better accuracy and increases damage, making crossbow bolts more lethal."
+        },
+        {
+          "weapon_id": "hand_crossbow",
+          "reason": "Reduces sway at full draw for better accuracy and increases damage, making hand crossbow bolts more lethal."
+        },
+        {
+          "weapon_id": "hunting_bow",
+          "reason": "Increases damage and reduces sway at full draw, improving hunting bow's one-hit kill potential."
         }
       ],
+      "tool_synergies": []
+    },
+    {
+      "id": "indomitable",
+      "name": "Indomitable",
+      "description": "If you have 4 Pledge Marks, health regenerates continuously until fully healed.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "instinct",
+      "name": "Instinct",
+      "description": "While in Dark Sight, sense when enemy Hunters are nearby. (75m)",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "iron_devastator",
+      "name": "Iron Devastator",
+      "description": "See also: Iron Eye, Iron Repeater, Iron Sharpshooter.",
+      "cost": 0,
+      "rank": 0,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "iron_eye",
       "name": "Iron Eye",
-      "description": "Remain in iron sights between shots when firing bolt-action, lever-action, and pump-action weapons.",
+      "description": "Remain in iron sights between shots when firing bolt-action, lever-action, and pump-action Weapons.",
       "cost": 3,
       "rank": 9,
       "category": "offensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/0f/Iron_Eye.png",
+      "image_url": "",
       "weapon_synergies": [
         {
-          "weapon_id": "berthier_mle_1892",
-          "reason": "Iron Eye keeps you in iron sights after each shot, allowing faster follow-up shots with the bolt-action Berthier."
+          "weapon_id": "1865_carbine",
+          "reason": "Allows staying in iron sights between lever-action shots, maintaining target acquisition for faster follow-ups."
         },
         {
-          "weapon_id": "caldwell_marathon",
-          "reason": "Iron Eye maintains sight picture between pump-action shots, improving accuracy and speed with the Marathon."
+          "weapon_id": "auto_4_shorty",
+          "reason": "Iron Eye does not benefit semi-auto shotguns; trait is for bolt/lever/pump only."
         },
         {
-          "weapon_id": "caldwell_rival_78",
-          "reason": "Iron Eye keeps you aimed after each shot, enabling quicker follow-up shots with the pump-action Rival 78."
+          "weapon_id": "auto_5",
+          "reason": "Iron Eye does not benefit semi-auto shotguns; trait is for bolt/lever/pump only."
+        },
+        {
+          "weapon_id": "berthier_1892",
+          "reason": "Keeps iron sights aligned between bolt-action shots, enabling quicker follow-up shots without re-aiming."
+        },
+        {
+          "weapon_id": "centennial",
+          "reason": "Allows staying in iron sights between lever-action shots, maintaining target acquisition for faster follow-ups."
         },
         {
           "weapon_id": "drilling",
-          "reason": "Iron Eye keeps you in sights after firing the Drilling's shotgun barrels, aiding rapid follow-up."
+          "reason": "The Drilling's shotgun barrel is single-shot; Iron Eye keeps sights up for follow-up rifle shots."
+        },
+        {
+          "weapon_id": "haymaker",
+          "reason": "Iron Eye does not benefit the Haymaker as it is a revolver, not bolt/lever/pump-action."
+        },
+        {
+          "weapon_id": "homestead_78",
+          "reason": "The Homestead 78 is pump-action; Iron Eye keeps sights up for faster follow-up shots."
         },
         {
           "weapon_id": "lebel_1886",
-          "reason": "Iron Eye keeps you aimed after each bolt-action shot, speeding up follow-up shots with the Lebel."
+          "reason": "The Lebel is bolt-action; Iron Eye maintains sight picture for quicker successive shots."
         },
         {
-          "weapon_id": "mako_1895_carbine",
-          "reason": "Keeps you scoped after each lever-action shot, maintaining accuracy for follow-up long ammo hits."
+          "weapon_id": "lemat",
+          "reason": "Iron Eye does not benefit the LeMat as it is a revolver, not bolt/lever/pump-action."
         },
         {
-          "weapon_id": "mosin_nagant_m1891",
-          "reason": "Stays in ironsights after bolt cycling, allowing faster follow-up shots without re-aiming."
+          "weapon_id": "mako_1895",
+          "reason": "The Mako is lever-action; Iron Eye keeps sights aligned for rapid follow-up shots."
+        },
+        {
+          "weapon_id": "marathon",
+          "reason": "The Marathon is pump-action; Iron Eye retains sight picture for consecutive shots."
+        },
+        {
+          "weapon_id": "rival_78",
+          "reason": "The Rival 78 is pump-action; Iron Eye keeps sights up for faster follow-up shots."
         },
         {
           "weapon_id": "romero_77",
-          "reason": "Romero is single-shot; Iron Eye is irrelevant as it doesn't cycle automatically."
+          "reason": "Iron Eye allows you to stay aimed after each pump, enabling faster follow-up shots with the Romero 77."
+        },
+        {
+          "weapon_id": "slate",
+          "reason": "Iron Eye keeps you in sights after each pump, improving follow-up shot speed with the Slate."
         },
         {
           "weapon_id": "specter_1882",
-          "reason": "Pump-action shotgun; Iron Eye keeps sights up between pumps for quicker follow-up shots."
+          "reason": "Iron Eye maintains aim after each pump, allowing quicker successive shots with the Specter 1882."
         },
         {
-          "weapon_id": "springfield_m1892_krag",
-          "reason": "Bolt-action; Iron Eye prevents scope exit after each shot, enabling rapid successive shots."
+          "weapon_id": "terminus",
+          "reason": "Iron Eye keeps you aimed after each lever cycle, enabling faster follow-up shots with the Terminus."
         },
         {
-          "weapon_id": "vetterli_71_karabiner",
-          "reason": "Bolt-action medium ammo; Iron Eye maintains sight picture for faster follow-up shots."
+          "weapon_id": "vetterli_71",
+          "reason": "Iron Eye keeps you scoped after each bolt cycle, allowing quicker follow-up shots with the Vetterli 71."
         },
         {
-          "weapon_id": "winfield_1887_terminus",
-          "reason": "Lever-action shotgun; Iron Eye keeps you aimed between lever cycles for quicker shots."
-        },
-        {
-          "weapon_id": "winfield_1893_slate",
-          "reason": "Lever-action shotgun; Iron Eye retains sight alignment after each lever pull for rapid fire."
-        },
-        {
-          "weapon_id": "winfield_m1873",
-          "reason": "Staying in iron sights between lever-action shots maintains accuracy and target tracking for follow-up shots."
-        },
-        {
-          "weapon_id": "winfield_m1873c",
-          "reason": "Staying in iron sights between lever-action shots maintains accuracy and target tracking for follow-up shots."
-        },
-        {
-          "weapon_id": "winfield_m1876_centennial",
-          "reason": "Staying in iron sights between lever-action shots maintains accuracy and target tracking for follow-up shots."
+          "weapon_id": "wildland",
+          "reason": "Iron Eye maintains aim after each lever cycle, enabling faster follow-up shots with the Wildland."
         }
       ],
       "tool_synergies": []
     },
     {
+      "id": "iron_repeater",
+      "name": "Iron Repeater",
+      "description": "See also: Iron Eye, Iron Devastator, Iron Sharpshooter.",
+      "cost": 0,
+      "rank": 0,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "iron_sharpshooter",
+      "name": "Iron Sharpshooter",
+      "description": "See also: Iron Eye , Iron Devastator , Iron Repeater .",
+      "cost": 0,
+      "rank": 0,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
       "id": "kiteskin",
       "name": "Kiteskin",
-      "description": "Significantly reduces fall damage (by 50%).",
+      "description": "Significantly reduces fall damage.",
       "cost": 1,
-      "rank": 16,
+      "rank": 51,
       "category": "movement",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a0/Kiteskin.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "levering",
       "name": "Levering",
-      "description": "Faster rate of fire from the hip when using lever-action weapons.",
-      "cost": 4,
+      "description": "Faster rate of fire from the hip (First aim stage) when using lever-action weapons.",
+      "cost": 7,
       "rank": 6,
       "category": "offensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/61/Levering.png",
+      "image_url": "",
       "weapon_synergies": [
         {
-          "weapon_id": "mako_1895_carbine",
-          "reason": "Increases hip-fire rate for lever-action, allowing faster follow-up shots at close range."
+          "weapon_id": "1865_carbine",
+          "reason": "Levering increases hip-fire rate, making the 1865 Carbine more effective in close-quarters spam."
         },
         {
-          "weapon_id": "winfield_1887_terminus",
-          "reason": "Increases hip-fire rate for lever-action shotguns, enabling quicker follow-up shots in close combat."
+          "weapon_id": "centennial",
+          "reason": "Levering boosts hip-fire rate, allowing the Centennial to deliver rapid medium-ammo shots up close."
         },
         {
-          "weapon_id": "winfield_1893_slate",
-          "reason": "Increases hip-fire rate for lever-action shotguns, enabling quicker follow-up shots in close combat."
+          "weapon_id": "mako_1895",
+          "reason": "Levering increases hip-fire rate for lever-action rifles, letting the Mako 1895 spam shots faster in close range."
         },
         {
-          "weapon_id": "winfield_m1873",
-          "reason": "Increases hip-fire rate for lever-action rifles, allowing faster spam fire at close range."
+          "weapon_id": "terminus",
+          "reason": "Levering boosts hip-fire speed on lever-action shotguns, allowing the Terminus to pump out shells rapidly."
         },
         {
-          "weapon_id": "winfield_m1873c",
-          "reason": "Increases hip-fire rate for lever-action rifles, allowing faster spam fire at close range."
-        },
-        {
-          "weapon_id": "winfield_m1876_centennial",
-          "reason": "Levering increases hip-fire rate for lever-action weapons, making the Centennial more effective in close quarters."
+          "weapon_id": "wildland",
+          "reason": "Levering raises hip-fire rate for lever-action weapons, making the Wildland fire faster without aiming."
         }
       ],
       "tool_synergies": []
@@ -569,279 +1015,352 @@
     {
       "id": "lightfoot",
       "name": "Lightfoot",
-      "description": "Vault, fall, and climb ladders silently. Also reduces the sound of walking through noise traps.",
+      "description": "Vault, fall and climb ladders silently. Also reduces the sound of walking through noise traps.",
       "cost": 5,
-      "rank": 47,
+      "rank": 1,
       "category": "movement",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a7/Lightfoot.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "magpie",
       "name": "Magpie",
-      "description": "Receive three short effects when picking up a Bounty Token: Antidote (10 min), Stamina (10 min), and Regeneration (10 min). SOLO: Dark Sight Boost capacity in all Boost sources are doubled.",
+      "description": "Receive three short effects when picking up a Bounty Token: Antidote, Stamina and Regeneration.",
       "cost": 1,
       "rank": 1,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/65/Solo_Trait_icon.png",
+      "image_url": "",
       "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "mariner",
+      "name": "Mariner",
+      "description": "Health and Stamina regeneration is greatly increased while in water and marginally increased while exposed to heavy rain.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "marksman_scopesmith",
+      "name": "Marksman Scopesmith",
+      "description": "See also: Scopesmith , Deadeye Scopesmith , Sniper Scopesmith .",
+      "cost": 0,
+      "rank": 0,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [
+        {
+          "weapon_id": "maynard_sniper",
+          "reason": "Marksman Scopesmith reduces sway and speeds up aiming for scoped rifles, improving the Maynard Sniper's precision."
+        }
+      ],
       "tool_synergies": []
     },
     {
       "id": "martialist",
       "name": "Martialist",
-      "description": "Allows a Katana to be sheathed, which enables a first strike attack that does extra damage (2x damage).",
+      "description": "Allows a Katana to be sheathed, which enables a first strike attack that does extra damage.",
       "cost": 2,
       "rank": 28,
       "category": "offensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/cb/Pugilist.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "mithridatist",
       "name": "Mithridatist",
-      "description": "Drastically reduces the time needed to recover from poisoning. (Recovery time reduced by 80%)",
+      "description": "Drastically reduces the time needed to recover from poisoning .",
       "cost": 3,
       "rank": 40,
       "category": "defensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/35/Mithridatist.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "necromancer",
       "name": "Necromancer",
-      "description": "Using Dark Sight, revive a downed partner from a distance. (25m) SOLO: You can revive your downed Hunter. Triggers a Full Health Restoration upon revive.",
+      "description": "Using Dark Sight , revive a downed teammate from a distance. (25m)",
       "cost": 4,
       "rank": 1,
       "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/88/Burn_Trait_icon.png",
+      "trait_type": "burn",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "packmule",
       "name": "Packmule",
-      "description": "Receive an additional Tool or Consumable when looting players or opening item boxes. (Guarantees 2 items instead of 1)",
+      "description": "Receive an additional Tool or Consumable when looting dead enemy Hunters or opening item boxes.",
       "cost": 4,
       "rank": 1,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/1a/Packmule.png",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "peacekeeper",
-      "name": "Peacekeeper",
-      "description": "Dead (red-skulled) teammates can be revived at the cost of burning some of your Health Chunks. Looting a dead Hunter will restore one Health Chunk.",
-      "cost": 0,
-      "rank": 0,
-      "category": "defensive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/78/Desolation%27s_Wake_icon.png",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "physician",
-      "name": "Physician",
-      "description": "Reduce the time needed to bandage. (Bandage time reduced by 50%)",
-      "cost": 5,
-      "rank": 45,
-      "category": "defensive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/52/Physician.png",
-      "weapon_synergies": [],
-      "tool_synergies": [
-        {
-          "tool_id": "first_aid_kit",
-          "reason": "Physician reduces First Aid Kit use time by 50%, allowing faster healing under pressure."
-        },
-        {
-          "tool_id": "medical_pack",
-          "reason": "Physician cuts Medical Pack use time by 50%, critical when reviving or healing mid-fight."
-        },
-        {
-          "tool_id": "vitality_shot",
-          "reason": "Physician reduces healing consumable use time, including Vitality Shots."
-        },
-        {
-          "tool_id": "vitality_shot_weak",
-          "reason": "Physician reduces healing consumable use time, including Vitality Shots."
-        },
-        {
-          "tool_id": "stamina_shot",
-          "reason": "Physician reduces use time for Stamina Shots, enabling quicker stamina recovery."
-        },
-        {
-          "tool_id": "stamina_shot_weak",
-          "reason": "Physician reduces use time for Stamina Shots, enabling quicker stamina recovery."
-        },
-        {
-          "tool_id": "regeneration_shot",
-          "reason": "Physician reduces Regeneration Shot use time, making health-over-time faster to apply."
-        },
-        {
-          "tool_id": "regeneration_shot_weak",
-          "reason": "Physician reduces Regeneration Shot use time, making health-over-time faster to apply."
-        }
-      ]
-    },
-    {
-      "id": "pitcher",
-      "name": "Pitcher",
-      "description": "Increased throwing range for all items using the aim helper. (Throwing range increased by 50%)",
-      "cost": 6,
-      "rank": 61,
-      "category": "offensive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/02/Pitcher.png",
-      "weapon_synergies": [
-        {
-          "weapon_id": "bomb_lance",
-          "reason": "Pitcher increases throwing range, allowing the Bomb Lance's explosive harpoon to hit targets from farther away."
-        }
-      ],
-      "tool_synergies": [
-        {
-          "tool_id": "dynamite_stick",
-          "reason": "Pitcher increases throwing range, allowing Dynamite Stick to be thrown farther."
-        },
-        {
-          "tool_id": "waxed_dynamite_stick",
-          "reason": "Pitcher increases throwing range, allowing Waxed Dynamite Stick to be thrown farther."
-        },
-        {
-          "tool_id": "sticky_bomb",
-          "reason": "Pitcher increases throwing range, allowing Sticky Bomb to be thrown farther."
-        },
-        {
-          "tool_id": "dynamite_bundle",
-          "reason": "Pitcher increases throwing range, allowing Dynamite Bundle to be thrown farther."
-        },
-        {
-          "tool_id": "frag_bomb",
-          "reason": "Pitcher increases throw range, allowing safer frag bomb tosses from distance."
-        },
-        {
-          "tool_id": "big_dynamite_bundle",
-          "reason": "Pitcher extends throw range, enabling distant placement of big dynamite bundle."
-        },
-        {
-          "tool_id": "fire_bomb",
-          "reason": "Pitcher increases throw range, letting you ignite targets from safer distance."
-        },
-        {
-          "tool_id": "liquid_fire_bomb",
-          "reason": "Pitcher extends throw range, allowing area denial from farther away."
-        },
-        {
-          "tool_id": "hellfire_bomb",
-          "reason": "Pitcher increases throw range, enabling safe deployment of hellfire bomb."
-        },
-        {
-          "tool_id": "throwing_knives",
-          "reason": "Pitcher increases throw range, allowing silent kills from farther distance."
-        },
-        {
-          "tool_id": "throwing_axes",
-          "reason": "Pitcher increases throwing range, allowing Throwing Axes to hit distant targets more effectively."
-        },
-        {
-          "tool_id": "decoys",
-          "reason": "Pitcher increases throwing range, enabling Decoys to be thrown farther to distract enemies."
-        },
-        {
-          "tool_id": "alert_trip_mine",
-          "reason": "Pitcher increases throwing range, allowing Alert Trip Mines to be placed at greater distances."
-        },
-        {
-          "tool_id": "chaos_bomb",
-          "reason": "Pitcher increases throwing range, letting Chaos Bombs be thrown farther to create confusion."
-        },
-        {
-          "tool_id": "blank_fire_decoys",
-          "reason": "Pitcher increases throwing range, enabling Blank Fire Decoys to be thrown farther to mimic gunshots."
-        },
-        {
-          "tool_id": "decoy_fuses",
-          "reason": "Pitcher increases throwing range, allowing Decoy Fuses to be thrown farther to simulate explosives."
-        },
-        {
-          "tool_id": "poison_bomb",
-          "reason": "Pitcher increases throw range, allowing safer deployment of Poison Bomb from distance."
-        },
-        {
-          "tool_id": "antidote_shot_weak",
-          "reason": "Pitcher increases throw range, enabling self-buff from safer distance."
-        },
-        {
-          "tool_id": "antidote_shot",
-          "reason": "Pitcher increases throw range, enabling self-buff from safer distance."
-        },
-        {
-          "tool_id": "hive_bomb",
-          "reason": "Pitcher increases throw range, allowing safer deployment of Hive Bomb from distance."
-        },
-        {
-          "tool_id": "poison_trip_mine",
-          "reason": "Pitcher increases throw range, enabling trap placement from safer distance."
-        },
-        {
-          "tool_id": "stalker_beetle",
-          "reason": "Pitcher increases throw range, allowing beetle launch from safer distance."
-        },
-        {
-          "tool_id": "choke_beetle",
-          "reason": "Pitcher increases throw range, allowing beetle launch from safer distance."
-        },
-        {
-          "tool_id": "fire_beetle",
-          "reason": "Pitcher increases throw range, allowing beetle launch from safer distance."
-        }
-      ]
-    },
-    {
-      "id": "poacher",
-      "name": "Poacher",
-      "description": "Place and disarm traps quietly. (No sound made when placing or disarming traps)",
-      "cost": 1,
-      "rank": 36,
-      "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/9/9a/Poacher.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "pain_sense",
       "name": "Pain Sense",
-      "description": "You can see nearby poisoned Hunters while in Dark Sight. Also applies to Beetle view. (150m)",
-      "cost": 1,
+      "description": "You can see nearby bleeding , poisoned and burning Hunters while in Dark Sight . Also applies to Beetle view. (150m)",
+      "cost": 3,
       "rank": 59,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/c4/Poison_Sense.png",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "peacekeeper",
+      "name": "Peacekeeper",
+      "description": "Looting a Hunter will restore one Health Chunk.",
+      "cost": 0,
+      "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "physician",
+      "name": "Physician",
+      "description": "Reduce the time needed to bandage.",
+      "cost": 5,
+      "rank": 45,
+      "category": "defensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": [
+        {
+          "tool_id": "first_aid_kit",
+          "reason": "Physician reduces bandage time, speeding up First Aid Kit usage."
+        },
+        {
+          "tool_id": "medical_pack",
+          "reason": "Physician reduces bandage time, speeding up Medical Pack usage."
+        },
+        {
+          "tool_id": "vitality_shot_weak",
+          "reason": "Physician reduces bandage time, but Vitality Shot is not a bandage item."
+        },
+        {
+          "tool_id": "vitality_shot",
+          "reason": "Physician reduces bandage time, but Vitality Shot is not a bandage item."
+        },
+        {
+          "tool_id": "stamina_shot_weak",
+          "reason": "Physician speeds up bandaging, but Stamina Shot does not require bandaging; no direct benefit."
+        },
+        {
+          "tool_id": "stamina_shot",
+          "reason": "Physician speeds up bandaging, but Stamina Shot does not require bandaging; no direct benefit."
+        },
+        {
+          "tool_id": "regeneration_shot_weak",
+          "reason": "Physician speeds up bandaging, but Regeneration Shot does not require bandaging; no direct benefit."
+        },
+        {
+          "tool_id": "regeneration_shot",
+          "reason": "Physician speeds up bandaging, but Regeneration Shot does not require bandaging; no direct benefit."
+        }
+      ]
+    },
+    {
+      "id": "pitcher",
+      "name": "Pitcher",
+      "description": "Increased throwing range for all items using the aim helper.",
+      "cost": 4,
+      "rank": 61,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [
+        {
+          "weapon_id": "bomb_lance",
+          "reason": "Pitcher increases throw range for aim-helper items, letting the Bomb Lance's explosive harpoon fly farther."
+        },
+        {
+          "weapon_id": "bomb_launcher",
+          "reason": "Pitcher extends throw range for aim-helper explosives, allowing the Bomb Launcher to lob bombs further."
+        }
+      ],
+      "tool_synergies": [
+        {
+          "tool_id": "fire_bomb",
+          "reason": "Pitcher increases throwing range, allowing Fire Bomb to be thrown farther and more accurately."
+        },
+        {
+          "tool_id": "liquid_fire_bomb",
+          "reason": "Pitcher increases throwing range, allowing Liquid Fire Bomb to be thrown farther and more accurately."
+        },
+        {
+          "tool_id": "hellfire_bomb",
+          "reason": "Pitcher increases throwing range, allowing Hellfire Bomb to be thrown farther and more accurately."
+        },
+        {
+          "tool_id": "knife",
+          "reason": "Pitcher increases throwing range, allowing Knife to be thrown farther and more accurately."
+        },
+        {
+          "tool_id": "throwing_knives",
+          "reason": "Pitcher increases throwing range, allowing knives to hit distant targets more effectively."
+        },
+        {
+          "tool_id": "heavy_knife",
+          "reason": "Pitcher extends throwing range, making heavy knife throws viable at longer distances."
+        },
+        {
+          "tool_id": "throwing_axes",
+          "reason": "Pitcher boosts throwing range, enabling axes to reach enemies from safer positions."
+        },
+        {
+          "tool_id": "dynamite_stick",
+          "reason": "Pitcher increases throw distance, allowing dynamite to be tossed farther for safer detonations."
+        },
+        {
+          "tool_id": "waxed_dynamite_stick",
+          "reason": "Pitcher extends range, letting waxed dynamite be thrown further without risk of water dousing."
+        },
+        {
+          "tool_id": "sticky_bomb",
+          "reason": "Pitcher increases throwing range, helping sticky bombs attach to targets from a distance."
+        },
+        {
+          "tool_id": "dynamite_bundle",
+          "reason": "Pitcher boosts throw distance, enabling dynamite bundles to be tossed farther for area denial."
+        },
+        {
+          "tool_id": "frag_bomb",
+          "reason": "Pitcher increases range, allowing frag bombs to be thrown further for safer fragmentation."
+        },
+        {
+          "tool_id": "big_dynamite_bundle",
+          "reason": "Pitcher increases throwing range, allowing safer placement of the Big Dynamite Bundle from distance."
+        },
+        {
+          "tool_id": "decoys",
+          "reason": "Pitcher increases throwing range, enabling decoys to be thrown farther to distract enemies."
+        },
+        {
+          "tool_id": "alert_trip_mine",
+          "reason": "Pitcher increases throwing range, allowing Alert Trip Mines to be placed at longer distances."
+        },
+        {
+          "tool_id": "chaos_bomb",
+          "reason": "Pitcher increases throwing range, enabling Chaos Bombs to be thrown farther to create distractions."
+        },
+        {
+          "tool_id": "blank_fire_decoys",
+          "reason": "Pitcher increases throwing range, allowing Blank Fire Decoys to be thrown farther to simulate gunfire."
+        },
+        {
+          "tool_id": "decoy_fuses",
+          "reason": "Pitcher increases throwing range, enabling Decoy Fuses to be thrown farther to mimic explosives."
+        },
+        {
+          "tool_id": "poison_bomb",
+          "reason": "Pitcher increases throwing range, allowing Poison Bombs to be thrown farther to deny areas."
+        },
+        {
+          "tool_id": "antidote_shot_weak",
+          "reason": "Pitcher increases throwing range, enabling Antidote Shot to be thrown farther to allies."
+        },
+        {
+          "tool_id": "antidote_shot",
+          "reason": "Pitcher increases throwing range, allowing you to toss Antidote Shot farther to teammates or yourself."
+        },
+        {
+          "tool_id": "hive_bomb",
+          "reason": "Pitcher increases throwing range, letting you toss Hive Bombs farther to hit enemies from safer distances."
+        },
+        {
+          "tool_id": "poison_trip_mine",
+          "reason": "Pitcher increases throwing range, enabling you to place Poison Trip Mines from farther away."
+        },
+        {
+          "tool_id": "dusters",
+          "reason": "Pitcher does not benefit Dusters as they are melee tools, not thrown items."
+        },
+        {
+          "tool_id": "knuckle_knife",
+          "reason": "Pitcher does not benefit Knuckle Knife as it is a melee tool, not thrown."
+        },
+        {
+          "tool_id": "stalker_beetle",
+          "reason": "Pitcher increases throwing range, allowing you to launch Stalker Beetles farther for scouting."
+        },
+        {
+          "tool_id": "choke_beetle",
+          "reason": "Pitcher increases throwing range, letting you deploy Choke Beetles from greater distances."
+        },
+        {
+          "tool_id": "fire_beetle",
+          "reason": "Pitcher increases throwing range, enabling you to send Fire Beetles farther to ignite enemies."
+        },
+        {
+          "tool_id": "concertina_trip_mine",
+          "reason": "Pitcher increases throw range, allowing safer placement of concertina trip mines from distance."
+        },
+        {
+          "tool_id": "concertina_bomb",
+          "reason": "Pitcher increases throw range, enabling you to deploy concertina bombs from safer positions."
+        },
+        {
+          "tool_id": "flash_bomb",
+          "reason": "Pitcher increases throw range, letting you flash enemies from farther away."
+        }
+      ]
+    },
+    {
+      "id": "poacher",
+      "name": "Poacher",
+      "description": "Place and disarm traps quietly.",
+      "cost": 1,
+      "rank": 36,
+      "category": "supportive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "poltergeist",
+      "name": "Poltergeist",
+      "description": "Players can manipulate, interact, and agitate in-world objects and animals remotely via Dark Sight. (50m) Works in Beetle View.",
+      "cost": 2,
+      "rank": 62,
+      "category": "supportive",
+      "trait_type": "normal",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "quartermaster",
       "name": "Quartermaster",
-      "description": "Can equip a medium slot Weapon in addition to a large slot Weapon.",
-      "cost": 6,
+      "description": "Gain +1 Weapon Capacity",
+      "cost": 8,
       "rank": 1,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/9/9b/Quartermaster.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
@@ -852,8 +1371,8 @@
       "cost": 0,
       "rank": 0,
       "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/88/Burn_Trait_icon.png",
+      "trait_type": "scarce",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
@@ -864,44 +1383,44 @@
       "cost": 0,
       "rank": 0,
       "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/88/Burn_Trait_icon.png",
+      "trait_type": "scarce",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "remedy",
       "name": "Remedy",
-      "description": "Using Dark Sight, interact with a Trait Spur within range to trigger a Restoration effect similar to banishing for your team's Hunters. (25m)",
+      "description": "While using Dark Sight, interact with a Trait Spur within range to trigger a Restoration effect for your team. (25m) Also applies to Beetle view.",
       "cost": 0,
       "rank": 0,
       "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/88/Burn_Trait_icon.png",
+      "trait_type": "scarce",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "resilience",
       "name": "Resilience",
-      "description": "Your Hunter is revived with up to full Health. (Revives with 100 HP regardless of missing chunks)",
+      "description": "Your Hunter is revived with up to full health.",
       "cost": 3,
       "rank": 4,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/2/27/Resilience.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "salveskin",
       "name": "Salveskin",
-      "description": "While alive, reduce all fire damage and stop burn speed and stop time from escalating. (Fire damage reduced by 25%, burn speed reduced by 50%)",
+      "description": "While alive, reduce all fire damage by 25% and stop burn speed and stop time from escalating.",
       "cost": 2,
       "rank": 1,
       "category": "defensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e2/Salveskin.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
@@ -913,19 +1432,19 @@
       "rank": 22,
       "category": "offensive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/02/Scopesmith.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
       "id": "serpent",
       "name": "Serpent",
-      "description": "Using Dark Sight, interact with nearby Clues, Rifts, Banishable Targets, and abandoned Bounty from a safe distance. (25m) SOLO: Interaction range increased. (50m)",
+      "description": "Using Dark Sight, interact with nearby Clues, Rifts, Banishable Targets and abandoned Bounty Tokens. (25m) Applies to Beetle view, except for Bounty Token interactions.",
       "cost": 4,
       "rank": 14,
       "category": "supportive",
       "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/65/Solo_Trait_icon.png",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
@@ -936,328 +1455,21 @@
       "cost": 0,
       "rank": 0,
       "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/8e/Shadow.png",
+      "trait_type": "scarce",
+      "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
-      "id": "silent_killer",
-      "name": "Silent Killer",
-      "description": "Reduces the sound you make when performing melee attacks.",
-      "cost": 4,
-      "rank": 62,
-      "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/b/b4/Silent_Killer.png",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "sniper_scopesmith",
-      "name": "Sniper Scopesmith",
-      "description": "Remain in scope view after firing a shot while using any weapon with a long scope (Sniper variants).",
-      "cost": 2,
-      "rank": 83,
-      "category": "offensive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/1d/Sniper_Scopesmith.png",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "steady_aim",
-      "name": "Steady Aim",
-      "description": "Weapon sway gradually lessens and stops when you're looking through a scope or aperture sights.",
-      "cost": 2,
-      "rank": 30,
-      "category": "offensive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/4/44/Steady_Aim.png",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "steady_hand",
-      "name": "Steady Hand",
-      "description": "Weapon sway gradually lessens when you're looking through the scope of a pistol or a stock-less weapon (applies to 2-slot weapons with a scope).",
-      "cost": 2,
-      "rank": 39,
-      "category": "offensive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/15/Steady_Hand.png",
-      "weapon_synergies": [
-        {
-          "weapon_id": "bornheim_no_3",
-          "reason": "Steady Hand reduces sway when aiming down sights on pistols, improving accuracy for the Bornheim's rapid follow-up shots."
-        },
-        {
-          "weapon_id": "caldwell_conversion_pistol",
-          "reason": "Steady Hand reduces sway when aiming down sights on pistols, helping the Conversion Pistol land precise shots."
-        },
-        {
-          "weapon_id": "dolch_96",
-          "reason": "Steady Hand reduces sway when aiming down sights on pistols, enhancing the Dolch's accuracy during rapid fire."
-        },
-        {
-          "weapon_id": "quad_derringer",
-          "reason": "Steady Hand reduces sway when aiming down sights on pistols, making the Derringer's small shots more reliable."
-        }
-      ],
-      "tool_synergies": []
-    },
-    {
-      "id": "vigilant",
-      "name": "Vigilant",
-      "description": "Nearby traps and active Beetles are highlighted in Dark Sight. Also applies to Beetle view. (25m)",
-      "cost": 1,
-      "rank": 36,
-      "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/2/25/Vigilant.png",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "vigor",
-      "name": "Vigor",
-      "description": "While in Dark Sight, doubles the rate at which Health and Stamina regenerate.",
-      "cost": 3,
-      "rank": 63,
-      "category": "defensive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/f4/Vigor.png",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "vulture",
-      "name": "Vulture",
-      "description": "Looting a Hunter will always reward you money.",
-      "cost": 2,
-      "rank": 24,
-      "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/01/Vulture.png",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "whispersmith",
-      "name": "Whispersmith",
-      "description": "Reduces noise when selecting equipment.",
-      "cost": 1,
-      "rank": 49,
-      "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/6f/Whispersmith.png",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "witness",
-      "name": "Witness",
-      "description": "While in Dark Sight, dead Hunters and Monsters are visible and health restoration is marginally increased when close. Also highlighted in Beetle view. (75m)",
+      "id": "shadow_crush",
+      "name": "Shadow Crush",
+      "description": "Using Dark Sight, damage any Monster or Target once. (25m)",
       "cost": 0,
       "rank": 0,
-      "category": "defensive",
-      "trait_type": "normal",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/78/Desolation%27s_Wake_icon.png",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "surefoot",
-      "name": "Surefoot",
-      "description": "You can sprint while holding primed Throwables, First Aid Kits, and Consumable Shots.",
-      "cost": 6,
-      "rank": 20,
-      "category": "movement",
-      "trait_type": "normal",
-      "image_url": "",
-      "weapon_synergies": [],
-      "tool_synergies": [
-        {
-          "tool_id": "choke_beetle",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "decoy_fuses",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "decoys",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "vitality_shot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "liquid_fire_bomb",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "blank_fire_decoys",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "stamina_shot_weak",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "waxed_dynamite_stick",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "antidote_shot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "hellfire_bomb",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "concertina_trip_mine",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "antidote_shot_weak",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "concertina_bomb",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "stamina_shot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "frag_bomb",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "hive_bomb",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "knife",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "knuckle_knife",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "regeneration_shot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "big_dynamite_bundle",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "stalker_beetle",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "poison_bomb",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "poison_trip_mine",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "regeneration_shot_weak",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "throwing_knives",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "alert_trip_mine",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "fire_bomb",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "chaos_bomb",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "throwing_axes",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "flash_bomb",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "dynamite_stick",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "heavy_knife",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "first_aid_kit",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "sticky_bomb",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "vitality_shot_weak",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "medical_pack",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "fire_beetle",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "dynamite_bundle",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        },
-        {
-          "tool_id": "dusters",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "fast_fingers",
-      "name": "Fast Fingers",
-      "description": "Prepare some bullets in hand to reload single-shot rifles, and their non-pistol variants, faster.",
-      "cost": 4,
-      "rank": 0,
       "category": "offensive",
-      "trait_type": "normal",
+      "trait_type": "event",
       "image_url": "",
-      "weapon_synergies": [
-        {
-          "weapon_id": "martini_henry_ic1",
-          "reason": "Fast Fingers speeds up single-shot rifle reload, directly buffing fire rate for this weapon."
-        },
-        {
-          "weapon_id": "springfield_m1892_krag",
-          "reason": "Fast Fingers speeds up single-shot rifle reload, directly buffing fire rate for this weapon."
-        },
-        {
-          "weapon_id": "bomb_lance",
-          "reason": "Fast Fingers speeds up single-shot rifle reload, directly buffing fire rate for this weapon."
-        }
-      ],
+      "weapon_synergies": [],
       "tool_synergies": []
     },
     {
@@ -1273,11 +1485,23 @@
       "tool_synergies": []
     },
     {
-      "id": "blast_sense",
-      "name": "Blast Sense",
-      "description": "Loud sounds such as gunshots and explosions are highlighted while in Dark Sight. Gunshots from Silenced Weapons with Subsonic Ammo cannot be seen. (200m)",
-      "cost": 2,
+      "id": "signee",
+      "name": "Signee",
+      "description": "Boost Event Points by 10%.",
+      "cost": 6,
       "rank": 0,
+      "category": "supportive",
+      "trait_type": "event",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "silent_killer",
+      "name": "Silent Killer",
+      "description": "Reduces the sound you make when performing melee attacks by 80%.",
+      "cost": 3,
+      "rank": 60,
       "category": "supportive",
       "trait_type": "normal",
       "image_url": "",
@@ -1285,35 +1509,152 @@
       "tool_synergies": []
     },
     {
-      "id": "catalyst",
-      "name": "Catalyst",
-      "description": "Unlock Conditional Trait Effects on the Beastface, Kiteskin, Vigilant, Pain Sense, and Frontiersman Traits.",
+      "id": "sniper_scopesmith",
+      "name": "Sniper Scopesmith",
+      "description": "See also: Scopesmith , Deadeye Scopesmith , Marksman Scopesmith .",
       "cost": 0,
       "rank": 0,
-      "category": "supportive",
+      "category": "offensive",
       "trait_type": "normal",
       "image_url": "",
       "weapon_synergies": [],
       "tool_synergies": []
     },
     {
-      "id": "pain_sense",
-      "name": "Pain Sense",
-      "description": "You can see nearby bleeding, poisoned and burning Hunters while in Dark Sight. Also applies to Beetle view. (150m)",
-      "cost": 3,
-      "rank": 0,
-      "category": "supportive",
-      "trait_type": "normal",
-      "image_url": "",
-      "weapon_synergies": [],
-      "tool_synergies": []
-    },
-    {
-      "id": "poltergeist",
-      "name": "Poltergeist",
-      "description": "Players can manipulate, interact, and agitate in-world objects and animals remotely via Dark Sight. (50m). Works in Beetle View.",
+      "id": "steady_aim",
+      "name": "Steady Aim",
+      "description": "Weapon sway gradually lessens when you're looking through a scope or Aperture sights.",
       "cost": 2,
+      "rank": 30,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "steady_hand",
+      "name": "Steady Hand",
+      "description": "See also: Steady Aim .",
+      "cost": 0,
       "rank": 0,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "surefoot",
+      "name": "Surefoot",
+      "description": "You can sprint while holding primed Throwables, First Aid Kits , and Consumable Shots.",
+      "cost": 6,
+      "rank": 20,
+      "category": "movement",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": [
+        {
+          "tool_id": "first_aid_kit",
+          "reason": "Surefoot allows sprinting while holding first aid kit, enabling faster repositioning during healing."
+        },
+        {
+          "tool_id": "medical_pack",
+          "reason": "Surefoot allows sprinting while holding medical pack, enabling faster repositioning during healing."
+        },
+        {
+          "tool_id": "vitality_shot_weak",
+          "reason": "Surefoot allows sprinting while holding vitality shot, enabling faster repositioning during healing."
+        },
+        {
+          "tool_id": "vitality_shot",
+          "reason": "Surefoot allows sprinting while holding vitality shot, enabling faster repositioning during healing."
+        },
+        {
+          "tool_id": "stamina_shot_weak",
+          "reason": "Surefoot allows sprinting while holding stamina shot, enabling faster repositioning during healing."
+        },
+        {
+          "tool_id": "stamina_shot",
+          "reason": "Surefoot lets you sprint while priming Stamina Shot, enabling faster repositioning during combat."
+        },
+        {
+          "tool_id": "regeneration_shot_weak",
+          "reason": "Surefoot lets you sprint while priming Weak Regen Shot, allowing safe healing on the move."
+        },
+        {
+          "tool_id": "regeneration_shot",
+          "reason": "Surefoot lets you sprint while priming Regen Shot, maintaining mobility while healing."
+        }
+      ]
+    },
+    {
+      "id": "tomahawk",
+      "name": "Tomahawk",
+      "description": "See also: Assailant .",
+      "cost": 0,
+      "rank": 0,
+      "category": "offensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "vigilant",
+      "name": "Vigilant",
+      "description": "Nearby traps and active Beetles are highlighted in Dark Sight . Also applies to Beetle view. (25m)",
+      "cost": 1,
+      "rank": 36,
+      "category": "supportive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "vigor",
+      "name": "Vigor",
+      "description": "While in Dark Sight , doubles the rate at which Health and Stamina regenerate.",
+      "cost": 3,
+      "rank": 57,
+      "category": "defensive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "vulture",
+      "name": "Vulture",
+      "description": "Looting a dead enemy Hunter will always reward you Hunt Dollars .",
+      "cost": 2,
+      "rank": 24,
+      "category": "supportive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "whispersmith",
+      "name": "Whispersmith",
+      "description": "Reduces noise when selecting equipment.",
+      "cost": 1,
+      "rank": 49,
+      "category": "supportive",
+      "trait_type": "normal",
+      "image_url": "",
+      "weapon_synergies": [],
+      "tool_synergies": []
+    },
+    {
+      "id": "witness",
+      "name": "Witness",
+      "description": "While in Dark Sight , dead Hunters and Monsters are visible. Also applies to Beetle view.",
+      "cost": 4,
+      "rank": 44,
       "category": "supportive",
       "trait_type": "normal",
       "image_url": "",
@@ -1323,38 +1664,117 @@
   ],
   "weapons": [
     {
+      "id": "1865_carbine",
+      "name": "1865 Carbine",
+      "type": "lever-action",
+      "size": "large",
+      "ammo": "medium",
+      "weapon_class": "medium",
+      "description": "Specter Arms made, repeating rifle. Well-balanced and fast reloads make this effective at medium range, but lacks Levering.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "iron_eye",
+          "reason": "Allows staying in iron sights between lever-action shots, maintaining target acquisition for faster follow-ups."
+        },
+        {
+          "trait_id": "levering",
+          "reason": "Levering increases hip-fire rate, making the 1865 Carbine more effective in close-quarters spam."
+        }
+      ]
+    },
+    {
+      "id": "1890_cavalry",
+      "name": "1890 Cavalry",
+      "type": "unknown",
+      "size": "large",
+      "ammo": "long",
+      "weapon_class": "long",
+      "description": "See also: Springfield 1866 .",
+      "image_url": "",
+      "trait_synergies": []
+    },
+    {
+      "id": "auto_4_shorty",
+      "name": "Auto-4 Shorty",
+      "type": "semi-auto shotgun",
+      "size": "large",
+      "ammo": "shotgun",
+      "weapon_class": "shotgun",
+      "description": "Crown & King made, semi-automatic shotgun. Dominates close range with high power and fire-rate, but has a strong recoil. Shortened stock and barrel with one less round than the Auto-5 .",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "ambidextrous",
+          "reason": "Speeds up the custom clip reload for this semi-auto shotgun, reducing downtime."
+        },
+        {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot reduces sway and increases zoom for rifles/pistols with stocks, but Auto-4 Shorty is a shotgun and excluded."
+        },
+        {
+          "trait_id": "iron_eye",
+          "reason": "Iron Eye does not benefit semi-auto shotguns; trait is for bolt/lever/pump only."
+        }
+      ]
+    },
+    {
+      "id": "auto_5",
+      "name": "Auto-5",
+      "type": "semi-auto shotgun",
+      "size": "5",
+      "ammo": "shotgun",
+      "weapon_class": "shotgun",
+      "description": "Crown & King made, semi-automatic shotgun. Dominates close range with high power and fire-rate, but has a strong recoil.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "ambidextrous",
+          "reason": "Accelerates the custom clip reload for this semi-auto shotgun, improving fire rate."
+        },
+        {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot reduces sway and increases zoom for rifles/pistols with stocks, but Auto-5 is a shotgun and excluded."
+        },
+        {
+          "trait_id": "iron_eye",
+          "reason": "Iron Eye does not benefit semi-auto shotguns; trait is for bolt/lever/pump only."
+        }
+      ]
+    },
+    {
       "id": "baseball_bat",
       "name": "Baseball Bat",
       "type": "melee",
       "size": "small",
       "ammo": "unknown",
       "weapon_class": "melee",
-      "description": "The Baseball Bat swings intuitively and easily, delivering a solid blow.",
+      "description": "Wooden Baseball Bat that swings fast and powerfully.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Allows throwing the bat as a melee weapon, adding ranged utility."
+          "reason": "Increases throwing knife/axe damage, but does not affect the bat itself."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown Baseball Bats in Dark Sight, aiding retrieval."
+          "reason": "Blade Seer highlights thrown melee in dark sight; Baseball Bat is not thrown, so no benefit."
         }
       ]
     },
     {
-      "id": "berthier_mle_1892",
-      "name": "Berthier Mle 1892",
+      "id": "berthier_1892",
+      "name": "Berthier 1892",
       "type": "bolt-action",
       "size": "large",
       "ammo": "long",
       "weapon_class": "long",
-      "description": "The lighter alternative to the Lebel 1886, the Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience.",
+      "description": "French made, bolt-action carbine. High power for its light barrel. Partial reloads are punishing.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you in iron sights after each shot, allowing faster follow-up shots with the bolt-action Berthier."
+          "reason": "Keeps iron sights aligned between bolt-action shots, enabling quicker follow-up shots without re-aiming."
         }
       ]
     },
@@ -1365,12 +1785,28 @@
       "size": "large",
       "ammo": "unknown",
       "weapon_class": "launcher",
-      "description": "Adapted for combat on land, this explosive harpoon can be fired short distances and deals tremendous damage on direct impact.",
+      "description": "Bladed harpoon launcher, adapted to fire projectiles with a delayed explosive. Lethal at short range but cumbersome to reload.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, allowing the Bomb Lance's explosive harpoon to hit targets from farther away."
+          "reason": "Pitcher increases throw range for aim-helper items, letting the Bomb Lance's explosive harpoon fly farther."
+        }
+      ]
+    },
+    {
+      "id": "bomb_launcher",
+      "name": "Bomb Launcher",
+      "type": "explosive aim-helper",
+      "size": "medium",
+      "ammo": "unknown",
+      "weapon_class": "launcher",
+      "description": "This compact launcher fires spring-loaded projectiles over short distances. Deals tremendous damage on direct impact.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher extends throw range for aim-helper explosives, allowing the Bomb Launcher to lob bombs further."
         }
       ]
     },
@@ -1381,115 +1817,24 @@
       "size": "small",
       "ammo": "compact",
       "weapon_class": "compact",
-      "description": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. Reloads via a five-round magazine, or by topping up rounds individually.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/b/bc/Bornheim_lowered.png",
+      "description": "German made, semi-automatic pistol. High fire-rate and velocity, and low recoil. Balanced by low power and wasteful reloads. Can be dual wielded.",
+      "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Speeds up custom clip reloads for semi-auto pistols, reducing downtime in firefights."
+          "reason": "Enables faster custom clip reloads for this semi-auto pistol, increasing sustained DPS."
         },
         {
-          "trait_id": "steady_hand",
-          "reason": "Steady Hand reduces sway when aiming down sights on pistols, improving accuracy for the Bornheim's rapid follow-up shots."
-        }
-      ]
-    },
-    {
-      "id": "bow",
-      "name": "Bow",
-      "type": "bow",
-      "size": "medium",
-      "ammo": "unknown",
-      "weapon_class": "bow",
-      "description": "Able to pierce through flesh and bone at a great distance, the Hunting Bow will make quick, stealthy work of monsters and men.",
-      "image_url": "",
-      "trait_synergies": [
-        {
-          "trait_id": "hundred_hands",
-          "reason": "Hundred Hands increases bow damage and reduces sway at full draw, improving accuracy and lethality."
-        }
-      ]
-    },
-    {
-      "id": "caldwell_92_new_army",
-      "name": "Caldwell 92 New Army",
-      "type": "revolver",
-      "size": "small",
-      "ammo": "compact",
-      "weapon_class": "compact",
-      "description": "Fast, light, and easy to handle, this double-action revolver has a distinguished counter-clockwise rotating cylinder that swings out to effortlessly reload its six .38 bullets.",
-      "image_url": "",
-      "trait_synergies": []
-    },
-    {
-      "id": "caldwell_conversion_pistol",
-      "name": "Caldwell Conversion Pistol",
-      "type": "revolver pistol",
-      "size": "medium",
-      "ammo": "long",
-      "weapon_class": "long",
-      "description": "The Caldwell Conversion Pistol is a single-action six-shot revolver. Slow to reload but sturdy and reliable.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/f3/Caldwell_conversion_lowered.png",
-      "trait_synergies": [
-        {
-          "trait_id": "ambidextrous",
-          "reason": "Faster matched pair reloads for revolvers, allowing quicker follow-up shots."
+          "trait_id": "crack_shot",
+          "reason": "Reduces sway on the Bornheim's iron sights, improving accuracy for follow-up shots at medium range."
         },
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action pistols, directly benefiting Conversion Pistol's slow fire rate."
+          "reason": "Fanning does not affect semi-auto pistols like the Bornheim; it only works on single-action revolvers."
         },
         {
-          "trait_id": "steady_hand",
-          "reason": "Steady Hand reduces sway when aiming down sights on pistols, helping the Conversion Pistol land precise shots."
-        }
-      ]
-    },
-    {
-      "id": "caldwell_marathon",
-      "name": "Caldwell Marathon",
-      "type": "shotgun",
-      "size": "large",
-      "ammo": "compact",
-      "weapon_class": "compact",
-      "description": "Fast-firing pump-action rifle that performs best at mid-range. A clunky reload reduces its flexibility.",
-      "image_url": "",
-      "trait_synergies": [
-        {
-          "trait_id": "iron_eye",
-          "reason": "Iron Eye maintains sight picture between pump-action shots, improving accuracy and speed with the Marathon."
-        }
-      ]
-    },
-    {
-      "id": "caldwell_pax",
-      "name": "Caldwell Pax",
-      "type": "revolver",
-      "size": "small",
-      "ammo": "medium",
-      "weapon_class": "medium",
-      "description": "This iconic single-action six round revolver needs no further introduction. Robust, powerful, and accurate, it brought peace to the once lawless West.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a9/Pax_lowered.png",
-      "trait_synergies": [
-        {
-          "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action revolvers like the Pax, allowing faster follow-up shots."
-        }
-      ]
-    },
-    {
-      "id": "caldwell_rival_78",
-      "name": "Caldwell Rival 78",
-      "type": "shotgun",
-      "size": "medium",
-      "ammo": "shotgun",
-      "weapon_class": "shotgun",
-      "description": "Sturdy, break-action, side-by-side shotgun with a medium-length barrel that can destroy all but the toughest targets at close range.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/4/44/Caldwell_rivall_lowered.png",
-      "trait_synergies": [
-        {
-          "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you aimed after each shot, enabling quicker follow-up shots with the pump-action Rival 78."
+          "trait_id": "fast_fingers",
+          "reason": "Fast Fingers speeds reload for single-shot rifles; Bornheim is semi-auto, so no benefit."
         }
       ]
     },
@@ -1500,16 +1845,60 @@
       "size": "small",
       "ammo": "unknown",
       "weapon_class": "melee",
-      "description": "Regulation cavalry saber in use since the Civil War. Lightweight with good reach.",
+      "description": "One-handed saber in use since the Civil War. Lightweight with good reach.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Enables throwing the saber, turning it into a versatile ranged melee option."
+          "reason": "Boosts throwing knife/axe effectiveness, but not the saber's melee."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown Cavalry Sabers in Dark Sight, aiding retrieval."
+          "reason": "Blade Seer highlights thrown melee in dark sight; Cavalry Saber is not thrown, so no benefit."
+        }
+      ]
+    },
+    {
+      "id": "centennial",
+      "name": "Centennial",
+      "type": "lever-action",
+      "size": "large",
+      "ammo": "medium",
+      "weapon_class": "medium",
+      "description": "Winfield made, lever-action repeating rifle. High muzzle velocity and good damage at range.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "iron_eye",
+          "reason": "Allows staying in iron sights between lever-action shots, maintaining target acquisition for faster follow-ups."
+        },
+        {
+          "trait_id": "levering",
+          "reason": "Levering boosts hip-fire rate, allowing the Centennial to deliver rapid medium-ammo shots up close."
+        }
+      ]
+    },
+    {
+      "id": "chu_ko_nu",
+      "name": "Chu Ko Nu",
+      "type": "bow",
+      "size": "medium",
+      "ammo": "unknown",
+      "weapon_class": "bow",
+      "description": "Repeating Crossbow that fires Compact Bolts. Has a high rate of fire and is quiet. Bolts can be recovered and reused.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "bolt_thrower",
+          "reason": "Bolt Thrower reduces reload time for crossbows, allowing faster follow-up shots with the Chu Ko Nu."
+        },
+        {
+          "trait_id": "dewclaw",
+          "reason": "Dewclaw enhances the melee attack of bows, making the Chu Ko Nu's stock strike stronger."
+        },
+        {
+          "trait_id": "hundred_hands",
+          "reason": "Hundred Hands increases bow damage and reduces sway; Chu Ko Nu is a crossbow, not a bow."
         }
       ]
     },
@@ -1517,55 +1906,59 @@
       "id": "combat_axe",
       "name": "Combat Axe",
       "type": "melee",
-      "size": "small",
+      "size": "medium",
       "ammo": "unknown",
       "weapon_class": "melee",
-      "description": "A heavy two-handed melee weapon that can split open the toughest of enemies with ease.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/9/90/Combat_axe_lowered.png",
+      "description": "Two-handed axe that swings slowly but splits skulls.",
+      "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Allows throwing the axe, providing a powerful ranged melee attack."
+          "reason": "Enhances throwing knife/axe damage, irrelevant to the axe's melee."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown Combat Axes in Dark Sight, aiding retrieval."
+          "reason": "Blade Seer highlights thrown melee in dark sight; Combat Axe is not thrown, so no benefit."
+        }
+      ]
+    },
+    {
+      "id": "conversion",
+      "name": "Conversion",
+      "type": "revolver",
+      "size": "small",
+      "ammo": "compact",
+      "weapon_class": "compact",
+      "description": "Caldwell made, single-action revolver. Slow to reload, but reliable and accurate. Converted to fire cartridges. Can be dual wielded.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "fanning",
+          "reason": "Fanning greatly increases the Conversion's fire rate, allowing rapid follow-up shots from the hip."
         }
       ]
     },
     {
       "id": "crossbow",
-      "name": "Hand Crossbow",
+      "name": "Crossbow",
       "type": "bow",
       "size": "large",
       "ammo": "unknown",
       "weapon_class": "bow",
-      "description": "Imaginative hand crossbow that fires compact bolts. Excels in situations when discretion is required above all. Bolts can be retrieved and re-used.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/1d/Hand_crossbow_lowered.png",
+      "description": "See also: Hand Crossbow .",
+      "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "bolt_thrower",
-          "reason": "Bolt Thrower reduces crossbow reload time, directly benefiting Crossbow's slower reload."
+          "reason": "Bolt Thrower reduces reload time for crossbows, allowing faster follow-up shots with the Crossbow."
+        },
+        {
+          "trait_id": "dewclaw",
+          "reason": "Dewclaw enhances the melee attack of bows, making the Crossbow's stock strike stronger."
         },
         {
           "trait_id": "hundred_hands",
-          "reason": "Hundred Hands increases bow damage and reduces sway, making crossbow shots more accurate and lethal at full draw."
-        }
-      ]
-    },
-    {
-      "id": "crown_king_auto_5",
-      "name": "Crown & King Auto-5",
-      "type": "semi-auto shotgun",
-      "size": "large",
-      "ammo": "shotgun",
-      "weapon_class": "shotgun",
-      "description": "Prototype long-barreled semi-automatic shotgun with internal four round magazine plus one in the chamber. High power and rate of fire, but strong recoil and short range.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/19/Cnk_lowered.png",
-      "trait_synergies": [
-        {
-          "trait_id": "ambidextrous",
-          "reason": "Quicker reloads for semi-auto shotguns, keeping pressure on enemies."
+          "reason": "Reduces sway at full draw for better accuracy and increases damage, making crossbow bolts more lethal."
         }
       ]
     },
@@ -1576,54 +1969,206 @@
       "size": "medium",
       "ammo": "compact",
       "weapon_class": "compact",
-      "description": "Powerful, German, prototype, semi-automatic pistol with an internal magazine loaded from the top. When fully emptied, it can be reloaded fast with a ten-round stripper clip.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/62/Dolch_96_lowered.png",
+      "description": "Ludwig Arms made, semi-automatic pistol. High power and fire-rate. When empty, can be reloaded with a stripper clip. Can be dual wielded.",
+      "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "ambidextrous",
-          "reason": "Speeds up custom clip reloads for semi-auto pistols, crucial in close combat."
+          "reason": "Quicker custom clip reloads for this semi-auto pistol, crucial in close fights."
         },
         {
-          "trait_id": "steady_hand",
-          "reason": "Steady Hand reduces sway when aiming down sights on pistols, enhancing the Dolch's accuracy during rapid fire."
+          "trait_id": "crack_shot",
+          "reason": "Reduces sway on the Dolch's iron sights, enhancing precision for rapid semi-auto fire."
+        },
+        {
+          "trait_id": "fanning",
+          "reason": "Fanning does not affect semi-auto pistols like the Dolch; it only works on single-action revolvers."
+        },
+        {
+          "trait_id": "fast_fingers",
+          "reason": "Fast Fingers speeds reload for single-shot rifles; Dolch is semi-auto, so no benefit."
         }
       ]
     },
     {
       "id": "drilling",
       "name": "Drilling",
-      "type": "shotgun",
-      "size": "medium",
+      "type": "shotgun single-shot",
+      "size": "large",
       "ammo": "medium",
       "weapon_class": "medium",
-      "description": "Two medium rifle barrels combined with a shotgun underbarrel to create an all-round flexible and powerful weapon.",
+      "description": "German made, break-action combination firearm with two rifle barrels and single shotgun underbarrel. Highly flexible.",
       "image_url": "",
       "trait_synergies": [
         {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot does not benefit the Drilling because it is a shotgun, which is excluded."
+        },
+        {
+          "trait_id": "fast_fingers",
+          "reason": "Fast Fingers speeds reload for single-shot rifles; Drilling's rifle barrel is single-shot, so benefits."
+        },
+        {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you in sights after firing the Drilling's shotgun barrels, aiding rapid follow-up."
+          "reason": "The Drilling's shotgun barrel is single-shot; Iron Eye keeps sights up for follow-up rifle shots."
         }
       ]
+    },
+    {
+      "id": "flame_rifle",
+      "name": "Flame Rifle",
+      "type": "unknown",
+      "size": "medium",
+      "ammo": "unknown",
+      "weapon_class": "unknown",
+      "description": "Custom-made, rifle conversion that releases pressurized liquid which ignites on ejection, producing a steady burst of flames. Requires pumping to increase pressure - higher pressure means longer reaching flames. The pressure is lost over time and while shooting. Can only resupply at Oil Barrels .",
+      "image_url": "",
+      "trait_synergies": []
+    },
+    {
+      "id": "frontier_73c",
+      "name": "Frontier 73C",
+      "type": "unknown",
+      "size": "large",
+      "ammo": "compact",
+      "weapon_class": "compact",
+      "description": "See also: Infantry 73L , Ranger 73 , Vandal 73C .",
+      "image_url": "",
+      "trait_synergies": []
+    },
+    {
+      "id": "hand_crossbow",
+      "name": "Hand Crossbow",
+      "type": "bow",
+      "size": "small",
+      "ammo": "unknown",
+      "weapon_class": "bow",
+      "description": "Hand Crossbow that fires compact bolts. Quiet at range and convenient to carry. Bolts can be retrieved and reused.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "bolt_thrower",
+          "reason": "Bolt Thrower reduces reload time for crossbows, allowing faster follow-up shots with the Hand Crossbow."
+        },
+        {
+          "trait_id": "dewclaw",
+          "reason": "Dewclaw enhances the melee attack of bows, making the Hand Crossbow's stock strike stronger."
+        },
+        {
+          "trait_id": "hundred_hands",
+          "reason": "Reduces sway at full draw for better accuracy and increases damage, making hand crossbow bolts more lethal."
+        }
+      ]
+    },
+    {
+      "id": "haymaker",
+      "name": "Haymaker",
+      "type": "revolver shotgun",
+      "size": "medium",
+      "ammo": "long",
+      "weapon_class": "long",
+      "description": "Re-envisioned, single-action combination revolver with an additional shotgun barrel. A Long Ammo conversion of the LeMat.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot does not benefit the Haymaker because it is a shotgun, which is excluded."
+        },
+        {
+          "trait_id": "fanning",
+          "reason": "Fanning increases the Haymaker's fire rate, enabling quick successive shots despite its long ammo."
+        },
+        {
+          "trait_id": "iron_eye",
+          "reason": "Iron Eye does not benefit the Haymaker as it is a revolver, not bolt/lever/pump-action."
+        }
+      ]
+    },
+    {
+      "id": "homestead_78",
+      "name": "Homestead 78",
+      "type": "shotgun",
+      "size": "large",
+      "ammo": "shotgun",
+      "weapon_class": "shotgun",
+      "description": "Sturdy, break-action, side-by-side shotgun with a long barrel that can destroy all but the toughest targets.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot does not benefit the Homestead 78 because it is a shotgun, which is excluded."
+        },
+        {
+          "trait_id": "iron_eye",
+          "reason": "The Homestead 78 is pump-action; Iron Eye keeps sights up for faster follow-up shots."
+        }
+      ]
+    },
+    {
+      "id": "hunting_bow",
+      "name": "Hunting Bow",
+      "type": "bow",
+      "size": "large",
+      "ammo": "unknown",
+      "weapon_class": "bow",
+      "description": "Hunting Bow that fires arrows a great distance. Perfect for stealth. Arrows can be recovered and reused.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "bolt_thrower",
+          "reason": "Bolt Thrower reduces reload time for crossbows, allowing faster follow-up shots with the Hunting Bow."
+        },
+        {
+          "trait_id": "dewclaw",
+          "reason": "Dewclaw boosts the bow's melee damage, making it a viable close-range finisher without switching weapons."
+        },
+        {
+          "trait_id": "hundred_hands",
+          "reason": "Increases damage and reduces sway at full draw, improving hunting bow's one-hit kill potential."
+        }
+      ]
+    },
+    {
+      "id": "infantry_73l",
+      "name": "Infantry 73L",
+      "type": "unknown",
+      "size": "large",
+      "ammo": "compact",
+      "weapon_class": "compact",
+      "description": "See also: Frontier 73C , Ranger 73 , Vandal 73C .",
+      "image_url": "",
+      "trait_synergies": []
     },
     {
       "id": "katana",
       "name": "Katana",
       "type": "melee",
-      "size": "small",
+      "size": "medium",
       "ammo": "unknown",
       "weapon_class": "melee",
-      "description": "A two-handed sword refined over hundreds of years to slice and pierce even the sturdiest armor, making human flesh effortless to rend. Special attack enabled with Martialist Trait .",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e9/Katana.png",
+      "description": "Two-handed, single-edged sword. Swift and sharp enough to pierce the sturdiest armor.",
+      "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant allows the Katana to be thrown, turning it into a ranged melee attack."
+          "reason": "Improves throwing knife/axe performance, not the katana's melee."
         },
         {
           "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown Katanas in Dark Sight, aiding retrieval."
+          "reason": "Blade Seer highlights thrown melee in dark sight; Katana is not thrown, so no benefit."
         }
       ]
+    },
+    {
+      "id": "krag",
+      "name": "Krag",
+      "type": "unknown",
+      "size": "large",
+      "ammo": "long",
+      "weapon_class": "long",
+      "description": "See also: Springfield 1866 .",
+      "image_url": "",
+      "trait_synergies": []
     },
     {
       "id": "lebel_1886",
@@ -1632,28 +2177,36 @@
       "size": "large",
       "ammo": "long",
       "weapon_class": "long",
-      "description": "The Lebel 1886, groundbreaking for its time, is a bolt-action rifle with an internal 10-round magazine. Slightly outperformed by more modern designs, it remains a powerful weapon of choice.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/84/Lebel_lowered.png",
+      "description": "French made, bolt-action rifle. High magazine capacity, damage, and velocity are offset with a slow and wasteful reload.",
+      "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Iron Eye keeps you aimed after each bolt-action shot, speeding up follow-up shots with the Lebel."
+          "reason": "The Lebel is bolt-action; Iron Eye maintains sight picture for quicker successive shots."
         }
       ]
     },
     {
-      "id": "lemat_mark_ii_revolver",
-      "name": "LeMat Mark II Revolver",
+      "id": "lemat",
+      "name": "LeMat",
       "type": "revolver shotgun",
-      "size": "medium",
-      "ammo": "long",
-      "weapon_class": "long",
-      "description": "Infamous icon of the Confederacy, this updated model takes nine cartridges in its cylinder. Its second barrel delivers a shotgun blast up close.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/78/Lemat_lowered_pistol.png",
+      "size": "small",
+      "ammo": "compact",
+      "weapon_class": "compact",
+      "description": "Re-envisioned, single-action combination revolver with an additional shotgun barrel. High capacity and strong at close range. Can be dual wielded.",
+      "image_url": "",
       "trait_synergies": [
         {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot does not benefit the LeMat because it is a shotgun, which is excluded."
+        },
+        {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action revolvers like the LeMat, enabling rapid shots."
+          "reason": "Fanning boosts the LeMat's fire rate, letting you rapidly fire compact ammo or the shotgun barrel."
+        },
+        {
+          "trait_id": "iron_eye",
+          "reason": "Iron Eye does not benefit the LeMat as it is a revolver, not bolt/lever/pump-action."
         }
       ]
     },
@@ -1664,117 +2217,184 @@
       "size": "small",
       "ammo": "unknown",
       "weapon_class": "melee",
-      "description": "Used both for cutting through undergrowth and limbs, a machete is a reliable weapon to forge a path.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/88/Machete_lowered.png",
+      "description": "One-handed machete, reliable and convenient to carry.",
+      "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant allows the Machete to be thrown, turning it into a ranged melee attack."
+          "reason": "Assailant boosts throwing melee damage; Machete is melee but not thrown, so no benefit."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Blade Seer highlights thrown melee in dark sight; Machete is not thrown, so no benefit."
         }
       ]
     },
     {
-      "id": "mako_1895_carbine",
-      "name": "Mako 1895 Carbine",
+      "id": "mako_1895",
+      "name": "Mako 1895",
       "type": "lever-action",
       "size": "large",
       "ammo": "long",
       "weapon_class": "long",
-      "description": "Long range, lever-action rifle that delivers a powerful punch with long ammo. From a new manufacturer in competition with Winfield.",
+      "description": "American made, lever-action rifle. Good cycle rate and high damage make this versatile. Can be topped off.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Keeps you scoped after each lever-action shot, maintaining accuracy for follow-up long ammo hits."
+          "reason": "The Mako is lever-action; Iron Eye keeps sights aligned for rapid follow-up shots."
         },
         {
           "trait_id": "levering",
-          "reason": "Increases hip-fire rate for lever-action, allowing faster follow-up shots at close range."
+          "reason": "Levering increases hip-fire rate for lever-action rifles, letting the Mako 1895 spam shots faster in close range."
         }
       ]
     },
     {
-      "id": "martini_henry_ic1",
-      "name": "Martini-Henry IC1",
+      "id": "marathon",
+      "name": "Marathon",
+      "type": "shotgun",
+      "size": "large",
+      "ammo": "compact",
+      "weapon_class": "compact",
+      "description": "Caldwell made, pump-action rifle. Good cycle rate and high capacity, but has a wasteful reload.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot does not benefit the Marathon because it is a shotgun, which is excluded."
+        },
+        {
+          "trait_id": "iron_eye",
+          "reason": "The Marathon is pump-action; Iron Eye retains sight picture for consecutive shots."
+        }
+      ]
+    },
+    {
+      "id": "martini_henry",
+      "name": "Martini-Henry",
       "type": "single-shot",
       "size": "large",
       "ammo": "long",
       "weapon_class": "long",
-      "description": "The workhorse rifle of the British Empire, the Martini-Henry IC1 is a single-shot breech-loading rifle that values simplicity and power.",
+      "description": "British made, single-shot breech-loading rifle. Can be quickly reloaded and offers good power.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "fast_fingers",
+          "reason": "Fast Fingers speeds reload for single-shot rifles like Martini-Henry, reducing downtime."
+        }
+      ]
+    },
+    {
+      "id": "maynard_sniper",
+      "name": "Maynard Sniper",
+      "type": "sniper",
+      "size": "large",
+      "ammo": "medium",
+      "weapon_class": "medium",
+      "description": "A scoped rifle with high damage and medium ammo. Requires a two-stage reload with the placement of a percussion cap.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "deadeye_scopesmith",
+          "reason": "Deadeye Scopesmith reduces sway and increases zoom for Deadeye scopes, benefiting the Maynard Sniper."
+        },
+        {
+          "trait_id": "marksman_scopesmith",
+          "reason": "Marksman Scopesmith reduces sway and speeds up aiming for scoped rifles, improving the Maynard Sniper's precision."
+        }
+      ]
+    },
+    {
+      "id": "mosin_obrez",
+      "name": "Mosin Obrez",
+      "type": "unknown",
+      "size": "medium",
+      "ammo": "medium",
+      "weapon_class": "medium",
+      "description": "See also: Mosin-Nagant .",
       "image_url": "",
       "trait_synergies": []
     },
     {
-      "id": "mosin_nagant_m1891",
-      "name": "Mosin-Nagant M1891",
-      "type": "bolt-action",
+      "id": "mosin_nagant",
+      "name": "Mosin-Nagant",
+      "type": "unknown",
       "size": "large",
       "ammo": "long",
       "weapon_class": "long",
-      "description": "Modern Imperial Russian bolt-action service rifle with an internal magazine, firing powerful long cartridges. When fully emptied, can be reloaded fast with a five-round stripper clip.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/2/24/Mosin_lowered.png",
-      "trait_synergies": [
-        {
-          "trait_id": "iron_eye",
-          "reason": "Stays in ironsights after bolt cycling, allowing faster follow-up shots without re-aiming."
-        }
-      ]
+      "description": "See also: Mosin Obrez .",
+      "image_url": "",
+      "trait_synergies": []
     },
     {
       "id": "nagant_m1895",
       "name": "Nagant M1895",
       "type": "revolver",
-      "size": "medium",
+      "size": "small",
       "ammo": "compact",
       "weapon_class": "compact",
-      "description": "Modern, Imperial Russian, single-action revolver. Slow to reload. Sacrifices stopping power for an extra bullet in the drum and a higher rate of fire.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/c1/Nagant_lowered.png",
+      "description": "Nagant made, single-action revolver. Medium damage, with a decent muzzle velocity and capacity. Can be dual wielded.",
+      "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action revolvers like the Nagant M1895, improving DPS."
+          "reason": "Fanning dramatically increases the Nagant's fire rate, turning it into a close-range spam weapon."
         }
       ]
     },
     {
-      "id": "nagant_m1895_officer",
-      "name": "Nagant M1895 Officer",
+      "id": "new_army",
+      "name": "New Army",
       "type": "revolver",
-      "size": "large",
+      "size": "small",
       "ammo": "compact",
       "weapon_class": "compact",
-      "description": "Modern, Imperial Russian, double-action revolver. Though it has a faster rate of fire, the stronger force required to pull the trigger has a negative impact on accuracy.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/9/96/Nagant_officer_lowered.png",
-      "trait_synergies": []
-    },
-    {
-      "id": "nitro_express_rifle",
-      "name": "Nitro Express Rifle",
-      "type": "unknown",
-      "size": "large",
-      "ammo": "nitro",
-      "weapon_class": "nitro",
-      "description": "Powerful, side-by-side, big game hunting rifle that can bring down the largest targets at mid-range. Carries limited ammunition.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e2/Nitro_Express_Rifle_lowered.png",
-      "trait_synergies": []
-    },
-    {
-      "id": "quad_derringer",
-      "name": "Quad Derringer",
-      "type": "pistol",
-      "size": "tool",
-      "ammo": "compact",
-      "weapon_class": "compact",
-      "description": "A small, light pistol that is easy to carry and conceal. Holds four shots. Twelve additional rounds carried.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/85/Quad_derringer_lowered.png",
+      "description": "Caldwell made, double-action revolver. High cycle rate and good damage, but balanced by low muzzle velocity. Can be dual wielded.",
+      "image_url": "",
       "trait_synergies": [
         {
-          "trait_id": "ambidextrous",
-          "reason": "Faster matched pair reloads for dual-wielded Derringers, increasing sustained DPS."
-        },
+          "trait_id": "fanning",
+          "reason": "Fanning boosts the New Army's fire rate, allowing faster follow-up shots despite its double-action mechanism."
+        }
+      ]
+    },
+    {
+      "id": "nitro_express",
+      "name": "Nitro Express",
+      "type": "unknown",
+      "size": "5",
+      "ammo": "nitro",
+      "weapon_class": "nitro",
+      "description": "American made, break-action rifle with two barrels. High power, but limited ammunition, and damage drops over range.",
+      "image_url": "",
+      "trait_synergies": []
+    },
+    {
+      "id": "officer",
+      "name": "Officer",
+      "type": "unknown",
+      "size": "small",
+      "ammo": "compact",
+      "weapon_class": "compact",
+      "description": "See also: Nagant M1895 .",
+      "image_url": "",
+      "trait_synergies": []
+    },
+    {
+      "id": "pax",
+      "name": "Pax",
+      "type": "revolver",
+      "size": "small",
+      "ammo": "medium",
+      "weapon_class": "medium",
+      "description": "Caldwell made, single-action revolver. Reliable, accurate, and sturdy. Once brought peace to the lawless west. Can be dual wielded.",
+      "image_url": "",
+      "trait_synergies": [
         {
-          "trait_id": "steady_hand",
-          "reason": "Steady Hand reduces sway when aiming down sights on pistols, making the Derringer's small shots more reliable."
+          "trait_id": "fanning",
+          "reason": "Fanning increases fire rate for single-action pistols like Pax, allowing faster follow-up shots."
         }
       ]
     },
@@ -1782,15 +2402,50 @@
       "id": "railroad_hammer",
       "name": "Railroad Hammer",
       "type": "melee",
-      "size": "small",
+      "size": "medium",
       "ammo": "unknown",
       "weapon_class": "melee",
-      "description": "Large mallet designed to hammer railroad spikes into their tracks, repurposed to hammer heads into the dirt.",
+      "description": "Two-handed Hammer, swings with weight and power.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "assailant",
-          "reason": "Assailant allows the Railroad Hammer to be thrown, turning it into a ranged melee attack."
+          "reason": "Assailant boosts throwing melee damage; Railroad Hammer is melee but not thrown, so no benefit."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, helping retrieve the Railroad Hammer after throwing it."
+        }
+      ]
+    },
+    {
+      "id": "ranger_73",
+      "name": "Ranger 73",
+      "type": "unknown",
+      "size": "large",
+      "ammo": "compact",
+      "weapon_class": "compact",
+      "description": "See also: Frontier 73C , Infantry 73L , Vandal 73C .",
+      "image_url": "",
+      "trait_synergies": []
+    },
+    {
+      "id": "rival_78",
+      "name": "Rival 78",
+      "type": "shotgun",
+      "size": "large",
+      "ammo": "shotgun",
+      "weapon_class": "shotgun",
+      "description": "Caldwell made, break-action shotgun with two barrels. High damage but high pellet spread, two-tapping gives it an edge.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot does not benefit the Rival 78 because it is a shotgun, which is excluded."
+        },
+        {
+          "trait_id": "iron_eye",
+          "reason": "The Rival 78 is pump-action; Iron Eye keeps sights up for faster follow-up shots."
         }
       ]
     },
@@ -1801,41 +2456,90 @@
       "size": "large",
       "ammo": "shotgun",
       "weapon_class": "shotgun",
-      "description": "Classic break-action shotgun with a long barrel. Good range and power for a shotgun. Has to reload after every shot.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/8f/Romero_77_lowered.png",
+      "description": "American made, break-action shotgun with single barrel. High damage, cost-effective, and tight bullet spread.",
+      "image_url": "",
       "trait_synergies": [
         {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot excludes shotguns, so it does not benefit the Romero 77."
+        },
+        {
           "trait_id": "iron_eye",
-          "reason": "Romero is single-shot; Iron Eye is irrelevant as it doesn't cycle automatically."
+          "reason": "Iron Eye allows you to stay aimed after each pump, enabling faster follow-up shots with the Romero 77."
         }
       ]
     },
     {
-      "id": "scottfield_model_3",
-      "name": "Scottfield Model 3",
+      "id": "scottfield",
+      "name": "Scottfield",
       "type": "revolver",
       "size": "small",
       "ammo": "medium",
       "weapon_class": "medium",
-      "description": "A classic, single-action break open revolver, the Scottfield has seen both sides of the law. The break action allows for quicker ejecting of spent rounds, meaning a faster overall reload when empty.",
+      "description": "Scottfield made, single-action top-break revolver. Performs well at medium range and can be reloaded quickly when empty. Can be dual wielded.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action revolvers like the Scottfield, enabling rapid shots."
+          "reason": "Fanning boosts fire rate for single-action pistols like Scottfield, enabling quicker successive shots."
         }
       ]
     },
     {
-      "id": "sparks_lrr",
-      "name": "Sparks LRR",
+      "id": "shredder",
+      "name": "Shredder",
+      "type": "melee",
+      "size": "large",
+      "ammo": "shotgun",
+      "weapon_class": "shotgun",
+      "description": "Experimental weapon that shoots sawblades. Sawblades bounce off hard surfaces and rip into targets. Runes etchings give them the potential to ricochet in the direction of nearby enemies. Must be spun before firing. Only found at the circus.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "assailant",
+          "reason": "Assailant boosts throwing melee damage; Shredder is melee but not thrown, so no benefit."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, helping retrieve the Shredder after throwing it."
+        }
+      ]
+    },
+    {
+      "id": "slate",
+      "name": "Slate",
+      "type": "shotgun",
+      "size": "large",
+      "ammo": "shotgun",
+      "weapon_class": "shotgun",
+      "description": "Winfield made, pump-action shotgun. High damage and fast cycle rate, with high pellet spread.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot excludes shotguns, so it does not benefit the Slate."
+        },
+        {
+          "trait_id": "iron_eye",
+          "reason": "Iron Eye keeps you in sights after each pump, improving follow-up shot speed with the Slate."
+        }
+      ]
+    },
+    {
+      "id": "sparks",
+      "name": "Sparks",
       "type": "single-shot",
       "size": "large",
       "ammo": "sparks",
       "weapon_class": "sparks",
-      "description": "Renowned, large-bore, single-shot rifle with good sights. Can put down a bison across a prairie.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/f3/Sparks_lowered.png",
-      "trait_synergies": []
+      "description": "Big-game, single-shot rifle. High power and very effective at range, but cumbersome. Can put down a bison across a prairie.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "fast_fingers",
+          "reason": "Fast Fingers speeds reload for single-shot rifles like Sparks, allowing faster follow-up shots."
+        }
+      ]
     },
     {
       "id": "specter_1882",
@@ -1844,12 +2548,16 @@
       "size": "large",
       "ammo": "shotgun",
       "weapon_class": "shotgun",
-      "description": "Revolutionary pump-action shotgun with long barrel, able to fire shells in rapid succession. Reloading the internal magazine takes time, due to its clunky, unrefined loading sequence.",
+      "description": "Specter made, pump-action shotgun. Tight pellet spread and competitive rate of fire, but wasteful reloads.",
       "image_url": "",
       "trait_synergies": [
         {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot excludes shotguns, so it does not benefit the Specter 1882."
+        },
+        {
           "trait_id": "iron_eye",
-          "reason": "Pump-action shotgun; Iron Eye keeps sights up between pumps for quicker follow-up shots."
+          "reason": "Iron Eye maintains aim after each pump, allowing quicker successive shots with the Specter 1882."
         }
       ]
     },
@@ -1860,148 +2568,422 @@
       "size": "large",
       "ammo": "medium",
       "weapon_class": "medium",
-      "description": "A breech-loading rifle with a .50-70 caliber centerfire cartridge, the Springfield 1866 is best known for its quick rate of fire.",
+      "description": "See also: 1890 Cavalry .",
       "image_url": "",
       "trait_synergies": []
     },
     {
-      "id": "springfield_m1892_krag",
-      "name": "Springfield M1892 Krag",
-      "type": "bolt-action",
+      "id": "terminus",
+      "name": "Terminus",
+      "type": "lever-action shotgun",
       "size": "large",
+      "ammo": "shotgun",
+      "weapon_class": "shotgun",
+      "description": "Winfield made, lever-action repeating shotgun. High capacity and damage, but wasteful reloads.",
+      "image_url": "",
+      "trait_synergies": [
+        {
+          "trait_id": "crack_shot",
+          "reason": "Crack Shot excludes shotguns, so it does not benefit the Terminus."
+        },
+        {
+          "trait_id": "iron_eye",
+          "reason": "Iron Eye keeps you aimed after each lever cycle, enabling faster follow-up shots with the Terminus."
+        },
+        {
+          "trait_id": "levering",
+          "reason": "Levering boosts hip-fire speed on lever-action shotguns, allowing the Terminus to pump out shells rapidly."
+        }
+      ]
+    },
+    {
+      "id": "uppercut",
+      "name": "Uppercut",
+      "type": "unknown",
+      "size": "medium",
       "ammo": "long",
       "weapon_class": "long",
-      "description": "The Springfield M1892 Krag is a bolt-action rifle that holds five rounds in its internal magazine, and one in its chamber. Its magazine lid allows the wielder to top it up from the side, without opening the bolt, and ejecting the chambered round.",
+      "description": "See also: Conversion .",
       "image_url": "",
-      "trait_synergies": [
-        {
-          "trait_id": "iron_eye",
-          "reason": "Bolt-action; Iron Eye prevents scope exit after each shot, enabling rapid successive shots."
-        }
-      ]
+      "trait_synergies": []
     },
     {
-      "id": "vetterli_71_karabiner",
-      "name": "Vetterli 71 Karabiner",
+      "id": "vandal_73c",
+      "name": "Vandal 73C",
+      "type": "unknown",
+      "size": "medium",
+      "ammo": "compact",
+      "weapon_class": "compact",
+      "description": "See also: Frontier 73C , Infantry 73L , Ranger 73 .",
+      "image_url": "",
+      "trait_synergies": []
+    },
+    {
+      "id": "vetterli_71",
+      "name": "Vetterli 71",
       "type": "bolt-action",
       "size": "large",
       "ammo": "medium",
       "weapon_class": "medium",
-      "description": "Swiss military, bolt-action carbine with internal magazine. Powerful at medium distances. Reloading is inspired by the Winfield repeater rifle, making it easy to top up ammunition.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/51/Veterli_lowered.png",
-      "trait_synergies": [
-        {
-          "trait_id": "iron_eye",
-          "reason": "Bolt-action medium ammo; Iron Eye maintains sight picture for faster follow-up shots."
-        }
-      ]
-    },
-    {
-      "id": "winfield_1887_terminus",
-      "name": "Winfield 1887 Terminus",
-      "type": "lever-action shotgun",
-      "size": "medium",
-      "ammo": "shotgun",
-      "weapon_class": "shotgun",
-      "description": "Seminal lever-action repeating shotgun. Boasting a balance between power and rate-of-fire, this became an icon of the era. Chamber 5+2 shells.",
+      "description": "Swiss made, bolt-action carbine. Powerful at medium distances, and easy to reload. Balances ease of use with damage.",
       "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Lever-action shotgun; Iron Eye keeps you aimed between lever cycles for quicker shots."
-        },
-        {
-          "trait_id": "levering",
-          "reason": "Increases hip-fire rate for lever-action shotguns, enabling quicker follow-up shots in close combat."
+          "reason": "Iron Eye keeps you scoped after each bolt cycle, allowing quicker follow-up shots with the Vetterli 71."
         }
       ]
     },
     {
-      "id": "winfield_1893_slate",
-      "name": "Winfield 1893 Slate",
-      "type": "lever-action shotgun melee",
-      "size": "large",
-      "ammo": "shotgun",
-      "weapon_class": "shotgun",
-      "description": "An exposed hammer shotgun that replaces lever-action with pump-action, this Winfield Model 93 holds several 12-gauge rounds to cause devastating damage to opponents.",
-      "image_url": "",
-      "trait_synergies": [
-        {
-          "trait_id": "assailant",
-          "reason": "Assailant allows the Slate's melee to be thrown, turning it into a ranged melee attack."
-        },
-        {
-          "trait_id": "iron_eye",
-          "reason": "Lever-action shotgun; Iron Eye retains sight alignment after each lever pull for rapid fire."
-        },
-        {
-          "trait_id": "levering",
-          "reason": "Increases hip-fire rate for lever-action shotguns, enabling quicker follow-up shots in close combat."
-        }
-      ]
-    },
-    {
-      "id": "winfield_m1873",
-      "name": "Winfield M1873",
-      "type": "lever-action",
-      "size": "large",
-      "ammo": "compact",
-      "weapon_class": "compact",
-      "description": "Iconic repeating rifle with very large internal magazine, capable of firing compact bullets at rapid speed. Reload is very simple, making an ammo top-up a quick job.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/7c/Winfield_Landing.png",
-      "trait_synergies": [
-        {
-          "trait_id": "iron_eye",
-          "reason": "Staying in iron sights between lever-action shots maintains accuracy and target tracking for follow-up shots."
-        },
-        {
-          "trait_id": "levering",
-          "reason": "Increases hip-fire rate for lever-action rifles, allowing faster spam fire at close range."
-        }
-      ]
-    },
-    {
-      "id": "winfield_m1873c",
-      "name": "Winfield M1873C",
-      "type": "lever-action",
-      "size": "medium",
-      "ammo": "compact",
-      "weapon_class": "compact",
-      "description": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/5d/Winfield_M1873C_lowered.png",
-      "trait_synergies": [
-        {
-          "trait_id": "iron_eye",
-          "reason": "Staying in iron sights between lever-action shots maintains accuracy and target tracking for follow-up shots."
-        },
-        {
-          "trait_id": "levering",
-          "reason": "Increases hip-fire rate for lever-action rifles, allowing faster spam fire at close range."
-        }
-      ]
-    },
-    {
-      "id": "winfield_m1876_centennial",
-      "name": "Winfield M1876 Centennial",
+      "id": "wildland",
+      "name": "Wildland",
       "type": "lever-action",
       "size": "large",
       "ammo": "medium",
       "weapon_class": "medium",
-      "description": "Powerful repeating rifle chambered for larger ammunition than previous models. The magazine holds 9 rounds.",
-      "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/8c/WinfieldCentennial_Landing.png",
+      "description": "Winfield made, lever-action repeating rifle. Based on the Centennial , it features a long barrel and Swift reloader.",
+      "image_url": "",
       "trait_synergies": [
         {
           "trait_id": "iron_eye",
-          "reason": "Staying in iron sights between lever-action shots maintains accuracy and target tracking for follow-up shots."
+          "reason": "Iron Eye maintains aim after each lever cycle, enabling faster follow-up shots with the Wildland."
         },
         {
           "trait_id": "levering",
-          "reason": "Levering increases hip-fire rate for lever-action weapons, making the Centennial more effective in close quarters."
+          "reason": "Levering raises hip-fire rate for lever-action weapons, making the Wildland fire faster without aiming."
         }
       ]
     }
   ],
   "tools": [
+    {
+      "id": "fire_bomb",
+      "name": "Fire Bomb",
+      "description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
+      "cost": 30,
+      "tool_class": "fire",
+      "type": "throwable fire aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, allowing Fire Bomb to be thrown farther and more accurately."
+        }
+      ]
+    },
+    {
+      "id": "liquid_fire_bomb",
+      "name": "Liquid Fire Bomb",
+      "description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
+      "cost": 35,
+      "tool_class": "fire",
+      "type": "throwable fire aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, allowing Liquid Fire Bomb to be thrown farther and more accurately."
+        }
+      ]
+    },
+    {
+      "id": "hellfire_bomb",
+      "name": "Hellfire Bomb",
+      "description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
+      "cost": 70,
+      "tool_class": "fire",
+      "type": "throwable fire aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, allowing Hellfire Bomb to be thrown farther and more accurately."
+        }
+      ]
+    },
+    {
+      "id": "knife",
+      "name": "Knife",
+      "description": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
+      "cost": 40,
+      "tool_class": "melee",
+      "type": "throwable melee aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "assailant",
+          "reason": "Assailant increases melee damage of throwing knives/axes, but does not affect standard knife."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Blade Seer highlights thrown knives/axes in dark sight, but does not affect standard knife."
+        },
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, allowing Knife to be thrown farther and more accurately."
+        }
+      ]
+    },
+    {
+      "id": "throwing_knives",
+      "name": "Throwing Knives",
+      "description": "Silent, but short-ranged projectile weapon. Thrown knives can be retrieved and re-used.",
+      "cost": 30,
+      "tool_class": "melee",
+      "type": "throwable melee aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "assailant",
+          "reason": "Assailant increases melee damage of throwing knives, making them more effective in close combat."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Blade Seer highlights thrown knives in dark sight up to 75m, aiding retrieval."
+        },
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, allowing knives to hit distant targets more effectively."
+        }
+      ]
+    },
+    {
+      "id": "heavy_knife",
+      "name": "Heavy Knife",
+      "description": "The heavy knife is honed for close quarters combat, its iconic silhouette carves out its home in the American pantheon of armaments.",
+      "cost": 20,
+      "tool_class": "melee",
+      "type": "throwable melee aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "assailant",
+          "reason": "Assailant increases melee damage of throwing knives/axes, but does not affect heavy knife."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Blade Seer highlights thrown heavy knives in Dark Sight, making them easier to retrieve at range."
+        },
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher extends throwing range, making heavy knife throws viable at longer distances."
+        }
+      ]
+    },
+    {
+      "id": "throwing_axes",
+      "name": "Throwing Axes",
+      "description": "Silent and deadly short-ranged projectile weapon. Can be retrieved and reused.",
+      "cost": 50,
+      "tool_class": "melee",
+      "type": "throwable melee aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "assailant",
+          "reason": "Assailant increases melee damage of throwing axes, improving their close-quarters lethality."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Blade Seer highlights thrown axes in Dark Sight, allowing retrieval from up to 75m away."
+        },
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher boosts throwing range, enabling axes to reach enemies from safer positions."
+        }
+      ]
+    },
+    {
+      "id": "dynamite_stick",
+      "name": "Dynamite Stick",
+      "description": "A dynamite stick that detonates with a massive blast after four seconds.",
+      "cost": 18,
+      "tool_class": "explosive",
+      "type": "throwable explosive aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throw distance, allowing dynamite to be tossed farther for safer detonations."
+        }
+      ]
+    },
+    {
+      "id": "waxed_dynamite_stick",
+      "name": "Waxed Dynamite Stick",
+      "description": "A dynamite stick with a modified powder fuse that enables detonation under water and in choke bomb clouds.",
+      "cost": 24,
+      "tool_class": "explosive",
+      "type": "throwable explosive aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher extends range, letting waxed dynamite be thrown further without risk of water dousing."
+        }
+      ]
+    },
+    {
+      "id": "sticky_bomb",
+      "name": "Sticky Bomb",
+      "description": "Dynamite charge in a sticky frame that can be attached to objects and enemies. Its eight-second fuse doubles the detonation time of a dynamite stick.",
+      "cost": 64,
+      "tool_class": "explosive",
+      "type": "throwable explosive aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, helping sticky bombs attach to targets from a distance."
+        }
+      ]
+    },
+    {
+      "id": "dynamite_bundle",
+      "name": "Dynamite Bundle",
+      "description": "A bundle of several dynamite sticks. Why only bring one?",
+      "cost": 75,
+      "tool_class": "explosive",
+      "type": "throwable explosive aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher boosts throw distance, enabling dynamite bundles to be tossed farther for area denial."
+        }
+      ]
+    },
+    {
+      "id": "frag_bomb",
+      "name": "Frag Bomb",
+      "description": "Frag bombs send lethal shrapnel over a large area, lacerating nearby enemies. unlike dynamite however, the blast is not strong enough to destroy doors or concertina wire.",
+      "cost": 103,
+      "tool_class": "explosive",
+      "type": "throwable explosive aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases range, allowing frag bombs to be thrown further for safer fragmentation."
+        }
+      ]
+    },
+    {
+      "id": "big_dynamite_bundle",
+      "name": "Big Dynamite Bundle",
+      "description": "A bundle of many dynamite sticks. When something really needs to be blown up.",
+      "cost": 110,
+      "tool_class": "explosive",
+      "type": "throwable explosive aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, allowing safer placement of the Big Dynamite Bundle from distance."
+        }
+      ]
+    },
+    {
+      "id": "first_aid_kit",
+      "name": "First Aid Kit",
+      "description": "A bag of medical supplies that heal 50 health and stop bleeding. Can be used three times.",
+      "cost": 30,
+      "tool_class": "healing",
+      "type": "healing",
+      "trait_synergies": [
+        {
+          "trait_id": "doctor",
+          "reason": "Doctor doubles the health restored by First Aid Kit, from 50 to 100."
+        },
+        {
+          "trait_id": "physician",
+          "reason": "Physician reduces bandage time, speeding up First Aid Kit usage."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while holding first aid kit, enabling faster repositioning during healing."
+        }
+      ]
+    },
+    {
+      "id": "medical_pack",
+      "name": "Medical Pack",
+      "description": "A portable medical kit that heals 100 health. Deployable in active health emergencies.",
+      "cost": 35,
+      "tool_class": "healing",
+      "type": "healing",
+      "trait_synergies": [
+        {
+          "trait_id": "doctor",
+          "reason": "Medical Pack is a tool, not a consumable; Doctor only affects First Aid Kit."
+        },
+        {
+          "trait_id": "physician",
+          "reason": "Physician reduces bandage time, speeding up Medical Pack usage."
+        },
+        {
+          "trait_id": "surefoot",
+          "reason": "Surefoot allows sprinting while holding medical pack, enabling faster repositioning during healing."
+        }
+      ]
+    },
+    {
+      "id": "decoys",
+      "name": "Decoys",
+      "description": "A bag of scrap metal and glass. When thrown the noise can be effectively used to distract or divert enemies.",
+      "cost": 6,
+      "tool_class": "decoy",
+      "type": "throwable decoy aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, enabling decoys to be thrown farther to distract enemies."
+        }
+      ]
+    },
+    {
+      "id": "alert_trip_mine",
+      "name": "Alert Trip Mine",
+      "description": "This portable tripwire mine releases firecrackers and a small flare, alerting others to its location. Comes in a pack of four.",
+      "cost": 30,
+      "tool_class": "decoy",
+      "type": "throwable decoy aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, allowing Alert Trip Mines to be placed at longer distances."
+        }
+      ]
+    },
+    {
+      "id": "chaos_bomb",
+      "name": "Chaos Bomb",
+      "description": "Set of firecrackers that can be used to temporarily distract nearby enemies. Duration of about 30 seconds.",
+      "cost": 15,
+      "tool_class": "decoy",
+      "type": "throwable decoy aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, enabling Chaos Bombs to be thrown farther to create distractions."
+        }
+      ]
+    },
+    {
+      "id": "blank_fire_decoys",
+      "name": "Blank Fire Decoys",
+      "description": "A decoy that imitates the sound of a gunshot on impact. Useful to distract and confuse enemies.",
+      "cost": 45,
+      "tool_class": "decoy",
+      "type": "throwable decoy aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, allowing Blank Fire Decoys to be thrown farther to simulate gunfire."
+        }
+      ]
+    },
+    {
+      "id": "decoy_fuses",
+      "name": "Decoy Fuses",
+      "description": "Pack of decoy fuses that can be used to breach closed doors and window shutters. It can also imitate the behavior of a lit bomb and can fool your enemies in clearing a space.",
+      "cost": 30,
+      "tool_class": "decoy",
+      "type": "throwable decoy aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, enabling Decoy Fuses to be thrown farther to mimic explosives."
+        }
+      ]
+    },
     {
       "id": "fusees",
       "name": "Fusees",
@@ -2021,418 +3003,6 @@
       "trait_synergies": []
     },
     {
-      "id": "dynamite_stick",
-      "name": "Dynamite Stick",
-      "description": "A dynamite stick that detonates with a massive blast after four seconds.",
-      "cost": 18,
-      "tool_class": "explosive",
-      "type": "throwable explosive aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, allowing Dynamite Stick to be thrown farther."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "waxed_dynamite_stick",
-      "name": "Waxed Dynamite Stick",
-      "description": "A dynamite stick with a modified powder fuse that enables detonation under water and in choke bomb clouds.",
-      "cost": 24,
-      "tool_class": "explosive",
-      "type": "throwable explosive aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, allowing Waxed Dynamite Stick to be thrown farther."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "sticky_bomb",
-      "name": "Sticky Bomb",
-      "description": "Dynamite charge in a sticky frame that can be attached to objects and enemies. Its eight-second fuse doubles the detonation time of a dynamite stick.",
-      "cost": 64,
-      "tool_class": "explosive",
-      "type": "throwable explosive aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, allowing Sticky Bomb to be thrown farther."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "dynamite_bundle",
-      "name": "Dynamite Bundle",
-      "description": "A bundle of several dynamite sticks. Why only bring one?",
-      "cost": 75,
-      "tool_class": "explosive",
-      "type": "throwable explosive aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, allowing Dynamite Bundle to be thrown farther."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "frag_bomb",
-      "name": "Frag Bomb",
-      "description": "Frag bombs send lethal shrapnel over a large area, lacerating nearby enemies. unlike dynamite however, the blast is not strong enough to destroy doors or concertina wire.",
-      "cost": 103,
-      "tool_class": "explosive",
-      "type": "throwable explosive aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, allowing safer frag bomb tosses from distance."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "big_dynamite_bundle",
-      "name": "Big Dynamite Bundle",
-      "description": "A bundle of many dynamite sticks. When something really needs to be blown up.",
-      "cost": 110,
-      "tool_class": "explosive",
-      "type": "throwable explosive aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher extends throw range, enabling distant placement of big dynamite bundle."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "fire_bomb",
-      "name": "Fire Bomb",
-      "description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
-      "cost": 30,
-      "tool_class": "fire",
-      "type": "throwable fire aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, letting you ignite targets from safer distance."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "liquid_fire_bomb",
-      "name": "Liquid Fire Bomb",
-      "description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
-      "cost": 35,
-      "tool_class": "fire",
-      "type": "throwable fire aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher extends throw range, allowing area denial from farther away."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "hellfire_bomb",
-      "name": "Hellfire Bomb",
-      "description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
-      "cost": 70,
-      "tool_class": "fire",
-      "type": "throwable fire aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, enabling safe deployment of hellfire bomb."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "knife",
-      "name": "Knife",
-      "description": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
-      "cost": 40,
-      "tool_class": "melee",
-      "type": "throwable melee aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "assailant",
-          "reason": "Assailant increases melee damage of thrown knives, making the Knife's throw more lethal."
-        },
-        {
-          "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown knives in Dark Sight, helping you retrieve them after throwing."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "throwing_knives",
-      "name": "Throwing Knives",
-      "description": "Silent, but short-ranged projectile weapon. Thrown knives can be retrieved and re-used.",
-      "cost": 30,
-      "tool_class": "melee",
-      "type": "throwable melee aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "assailant",
-          "reason": "Assailant boosts melee effectiveness of Throwing Knives, improving their damage when used in close combat."
-        },
-        {
-          "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights Throwing Knives in Dark Sight, making them easier to locate and recover."
-        },
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, allowing silent kills from farther distance."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "heavy_knife",
-      "name": "Heavy Knife",
-      "description": "The heavy knife is honed for close quarters combat, its iconic silhouette carves out its home in the American pantheon of armaments.",
-      "cost": 20,
-      "tool_class": "melee",
-      "type": "throwable melee aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "throwing_axes",
-      "name": "Throwing Axes",
-      "description": "Silent and deadly short-ranged projectile weapon. Can be retrieved and reused.",
-      "cost": 50,
-      "tool_class": "melee",
-      "type": "throwable melee aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "assailant",
-          "reason": "Assailant increases melee damage of Throwing Axes, making them more effective when used as melee weapons."
-        },
-        {
-          "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown axes in Dark Sight, making them easier to retrieve."
-        },
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, allowing Throwing Axes to hit distant targets more effectively."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "decoys",
-      "name": "Decoys",
-      "description": "A bag of scrap metal and glass. When thrown the noise can be effectively used to distract or divert enemies.",
-      "cost": 6,
-      "tool_class": "decoy",
-      "type": "throwable decoy aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, enabling Decoys to be thrown farther to distract enemies."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "alert_trip_mine",
-      "name": "Alert Trip Mine",
-      "description": "This portable tripwire mine releases firecrackers and a small flare, alerting others to its location. Comes in a pack of four.",
-      "cost": 30,
-      "tool_class": "decoy",
-      "type": "throwable decoy aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, allowing Alert Trip Mines to be placed at greater distances."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "chaos_bomb",
-      "name": "Chaos Bomb",
-      "description": "Set of firecrackers that can be used to temporarily distract nearby enemies. Duration of about 30 seconds.",
-      "cost": 15,
-      "tool_class": "decoy",
-      "type": "throwable decoy aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, letting Chaos Bombs be thrown farther to create confusion."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "blank_fire_decoys",
-      "name": "Blank Fire Decoys",
-      "description": "A decoy that imitates the sound of a gunshot on impact. Useful to distract and confuse enemies.",
-      "cost": 45,
-      "tool_class": "decoy",
-      "type": "throwable decoy aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, enabling Blank Fire Decoys to be thrown farther to mimic gunshots."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "decoy_fuses",
-      "name": "Decoy Fuses",
-      "description": "Pack of decoy fuses that can be used to breach closed doors and window shutters. It can also imitate the behavior of a lit bomb and can fool your enemies in clearing a space.",
-      "cost": 30,
-      "tool_class": "decoy",
-      "type": "throwable decoy aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, allowing Decoy Fuses to be thrown farther to simulate explosives."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "first_aid_kit",
-      "name": "First Aid Kit",
-      "description": "A bag of medical supplies that heal 50 health and stop bleeding. Can be used three times.",
-      "cost": 30,
-      "tool_class": "healing",
-      "type": "healing",
-      "trait_synergies": [
-        {
-          "trait_id": "doctor",
-          "reason": "Doctor doubles health restored by First Aid Kits, maximising healing efficiency."
-        },
-        {
-          "trait_id": "physician",
-          "reason": "Physician reduces First Aid Kit use time by 50%, allowing faster healing under pressure."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "medical_pack",
-      "name": "Medical Pack",
-      "description": "A portable medical kit that heals 100 health. Deployable in active health emergencies.",
-      "cost": 35,
-      "tool_class": "healing",
-      "type": "healing",
-      "trait_synergies": [
-        {
-          "trait_id": "doctor",
-          "reason": "Doctor doubles health restored by healing items, including the Medical Pack."
-        },
-        {
-          "trait_id": "physician",
-          "reason": "Physician cuts Medical Pack use time by 50%, critical when reviving or healing mid-fight."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "dusters",
-      "name": "Dusters",
-      "description": "A row of metal rings worn on the hand in order to increase the damage caused in hand-to-hand combat.",
-      "cost": 30,
-      "tool_class": "melee",
-      "type": "throwable melee aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "knuckle_knife",
-      "name": "Knuckle Knife",
-      "description": "The savage knuckle knife is a roughshod specialization for close quarters combat, suited for both bludgeoning and brutal thrusting deathblows.",
-      "cost": 50,
-      "tool_class": "melee",
-      "type": "throwable melee aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
       "id": "vitality_shot_weak",
       "name": "Vitality Shot (Weak)",
       "description": "A shot which immediately restores 75 health.",
@@ -2442,15 +3012,15 @@
       "trait_synergies": [
         {
           "trait_id": "doctor",
-          "reason": "Doctor doubles health from healing consumables, boosting Vitality Shot value."
+          "reason": "Doctor only affects First Aid Kit, not Vitality Shots."
         },
         {
           "trait_id": "physician",
-          "reason": "Physician reduces healing consumable use time, including Vitality Shots."
+          "reason": "Physician reduces bandage time, but Vitality Shot is not a bandage item."
         },
         {
           "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "reason": "Surefoot allows sprinting while holding vitality shot, enabling faster repositioning during healing."
         }
       ]
     },
@@ -2464,15 +3034,15 @@
       "trait_synergies": [
         {
           "trait_id": "doctor",
-          "reason": "Doctor doubles health from healing consumables, boosting Vitality Shot value."
+          "reason": "Doctor only affects First Aid Kit, not Vitality Shots."
         },
         {
           "trait_id": "physician",
-          "reason": "Physician reduces healing consumable use time, including Vitality Shots."
+          "reason": "Physician reduces bandage time, but Vitality Shot is not a bandage item."
         },
         {
           "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "reason": "Surefoot allows sprinting while holding vitality shot, enabling faster repositioning during healing."
         }
       ]
     },
@@ -2485,12 +3055,16 @@
       "type": "healing",
       "trait_synergies": [
         {
+          "trait_id": "doctor",
+          "reason": "Doctor doubles health restored by First Aid Kit, but Stamina Shot does not restore health."
+        },
+        {
           "trait_id": "physician",
-          "reason": "Physician reduces use time for Stamina Shots, enabling quicker stamina recovery."
+          "reason": "Physician speeds up bandaging, but Stamina Shot does not require bandaging; no direct benefit."
         },
         {
           "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "reason": "Surefoot allows sprinting while holding stamina shot, enabling faster repositioning during healing."
         }
       ]
     },
@@ -2503,12 +3077,16 @@
       "type": "healing",
       "trait_synergies": [
         {
+          "trait_id": "doctor",
+          "reason": "Doctor doubles health restored by First Aid Kit, but Stamina Shot does not restore health."
+        },
+        {
           "trait_id": "physician",
-          "reason": "Physician reduces use time for Stamina Shots, enabling quicker stamina recovery."
+          "reason": "Physician speeds up bandaging, but Stamina Shot does not require bandaging; no direct benefit."
         },
         {
           "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "reason": "Surefoot lets you sprint while priming Stamina Shot, enabling faster repositioning during combat."
         }
       ]
     },
@@ -2521,12 +3099,16 @@
       "type": "healing",
       "trait_synergies": [
         {
+          "trait_id": "doctor",
+          "reason": "Doctor doubles health restored by First Aid Kit, but Regeneration Shot does not restore health."
+        },
+        {
           "trait_id": "physician",
-          "reason": "Physician reduces Regeneration Shot use time, making health-over-time faster to apply."
+          "reason": "Physician speeds up bandaging, but Regeneration Shot does not require bandaging; no direct benefit."
         },
         {
           "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "reason": "Surefoot lets you sprint while priming Weak Regen Shot, allowing safe healing on the move."
         }
       ]
     },
@@ -2539,12 +3121,16 @@
       "type": "healing",
       "trait_synergies": [
         {
+          "trait_id": "doctor",
+          "reason": "Doctor doubles health restored by First Aid Kit, but Regeneration Shot does not restore health."
+        },
+        {
           "trait_id": "physician",
-          "reason": "Physician reduces Regeneration Shot use time, making health-over-time faster to apply."
+          "reason": "Physician speeds up bandaging, but Regeneration Shot does not require bandaging; no direct benefit."
         },
         {
           "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "reason": "Surefoot lets you sprint while priming Regen Shot, maintaining mobility while healing."
         }
       ]
     },
@@ -2558,11 +3144,7 @@
       "trait_synergies": [
         {
           "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, allowing safer deployment of Poison Bomb from distance."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "reason": "Pitcher increases throwing range, allowing Poison Bombs to be thrown farther to deny areas."
         }
       ]
     },
@@ -2576,11 +3158,7 @@
       "trait_synergies": [
         {
           "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, enabling self-buff from safer distance."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "reason": "Pitcher increases throwing range, enabling Antidote Shot to be thrown farther to allies."
         }
       ]
     },
@@ -2594,11 +3172,7 @@
       "trait_synergies": [
         {
           "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, enabling self-buff from safer distance."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "reason": "Pitcher increases throwing range, allowing you to toss Antidote Shot farther to teammates or yourself."
         }
       ]
     },
@@ -2612,11 +3186,7 @@
       "trait_synergies": [
         {
           "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, allowing safer deployment of Hive Bomb from distance."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "reason": "Pitcher increases throwing range, letting you toss Hive Bombs farther to hit enemies from safer distances."
         }
       ]
     },
@@ -2630,11 +3200,93 @@
       "trait_synergies": [
         {
           "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, enabling trap placement from safer distance."
+          "reason": "Pitcher increases throwing range, enabling you to place Poison Trip Mines from farther away."
+        }
+      ]
+    },
+    {
+      "id": "dusters",
+      "name": "Dusters",
+      "description": "A row of metal rings worn on the hand in order to increase the damage caused in hand-to-hand combat.",
+      "cost": 30,
+      "tool_class": "melee",
+      "type": "throwable melee aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "assailant",
+          "reason": "Assailant increases melee damage of throwing knives/axes, but does not affect dusters."
         },
         {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "trait_id": "blade_seer",
+          "reason": "Dusters are not thrown, so Blade Seer has no effect on them."
+        },
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher does not benefit Dusters as they are melee tools, not thrown items."
+        }
+      ]
+    },
+    {
+      "id": "knuckle_knife",
+      "name": "Knuckle Knife",
+      "description": "The savage knuckle knife is a roughshod specialization for close quarters combat, suited for both bludgeoning and brutal thrusting deathblows.",
+      "cost": 50,
+      "tool_class": "melee",
+      "type": "throwable melee aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "assailant",
+          "reason": "Assailant increases melee damage of throwing knives/axes, but does not affect knuckle knife."
+        },
+        {
+          "trait_id": "blade_seer",
+          "reason": "Knuckle Knife is not thrown, so Blade Seer does not benefit it."
+        },
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher does not benefit Knuckle Knife as it is a melee tool, not thrown."
+        }
+      ]
+    },
+    {
+      "id": "stalker_beetle",
+      "name": "Stalker Beetle",
+      "description": "Stalker Beetles are bred to hunt and track prey, giving hunters a view from above. As a last resort, they can sacrifice themselves to cause a small explosion hampering anything caught in the radius.",
+      "cost": 45,
+      "tool_class": "decoy",
+      "type": "throwable decoy aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, allowing you to launch Stalker Beetles farther for scouting."
+        }
+      ]
+    },
+    {
+      "id": "choke_beetle",
+      "name": "Choke Beetle",
+      "description": "Choke Beetles are bred to hunt and track prey, giving Hunters a view from above. They have evolved to explode into a cloud of suffocating gas, which they themselves are immune to.",
+      "cost": 22,
+      "tool_class": "decoy",
+      "type": "throwable decoy aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, letting you deploy Choke Beetles from greater distances."
+        }
+      ]
+    },
+    {
+      "id": "fire_beetle",
+      "name": "Fire Beetle",
+      "description": "Fire Beetles are bred to find and track pey, giving hunters a view from above. Upon death or command, they will burst into flames that burn everything they touch.",
+      "cost": 57,
+      "tool_class": "decoy",
+      "type": "throwable decoy aim-helper",
+      "trait_synergies": [
+        {
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throwing range, enabling you to send Fire Beetles farther to ignite enemies."
         }
       ]
     },
@@ -2657,70 +3309,16 @@
       "trait_synergies": []
     },
     {
-      "id": "stalker_beetle",
-      "name": "Stalker Beetle",
-      "description": "Stalker Beetles are bred to hunt and track prey, giving hunters a view from above. As a last resort, they can sacrifice themselves to cause a small explosion hampering anything caught in the radius.",
-      "cost": 45,
-      "tool_class": "decoy",
-      "type": "throwable decoy aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, allowing beetle launch from safer distance."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "choke_beetle",
-      "name": "Choke Beetle",
-      "description": "Choke Beetles are bred to hunt and track prey, giving Hunters a view from above. They have evolved to explode into a cloud of suffocating gas, which they themselves are immune to.",
-      "cost": 22,
-      "tool_class": "decoy",
-      "type": "throwable decoy aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, allowing beetle launch from safer distance."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
-      "id": "fire_beetle",
-      "name": "Fire Beetle",
-      "description": "Fire Beetles are bred to find and track pey, giving hunters a view from above. Upon death or command, they will burst into flames that burn everything they touch.",
-      "cost": 57,
-      "tool_class": "decoy",
-      "type": "throwable decoy aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throw range, allowing beetle launch from safer distance."
-        },
-        {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
-        }
-      ]
-    },
-    {
       "id": "concertina_trip_mine",
       "name": "Concertina Trip Mine",
-      "description": "This portable tripwire mine deploys a small concertina bundle perfect for blocking doors and windows.",
+      "description": "This portable tripwire mine deploys a small concertina bundle perfect for blocking doors and windows. Comes in a pack of two.",
       "cost": 90,
       "tool_class": "explosive",
       "type": "throwable explosive aim-helper",
       "trait_synergies": [
         {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throw range, allowing safer placement of concertina trip mines from distance."
         }
       ]
     },
@@ -2733,22 +3331,22 @@
       "type": "throwable explosive aim-helper",
       "trait_synergies": [
         {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throw range, enabling you to deploy concertina bombs from safer positions."
         }
       ]
     },
     {
       "id": "flash_bomb",
       "name": "Flash Bomb",
-      "description": "Light bomb that requires a short priming for its mercury based chemical reaction. The explosion is capable of blinding all in close proximity.",
+      "description": "Light bomb that requires a short priming for its mercury based chemical reaction. The explosion is capable of blinding all in close proximity, even if their eyes are shielded or averted. Needs a short time to be prepared.",
       "cost": 25,
-      "tool_class": "decoy",
-      "type": "throwable decoy aim-helper",
+      "tool_class": "explosive",
+      "type": "throwable explosive aim-helper",
       "trait_synergies": [
         {
-          "trait_id": "surefoot",
-          "reason": "Surefoot allows sprinting while priming or using this item, eliminating the movement penalty."
+          "trait_id": "pitcher",
+          "reason": "Pitcher increases throw range, letting you flash enemies from farther away."
         }
       ]
     }
