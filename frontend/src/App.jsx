@@ -82,6 +82,10 @@ export default function App() {
 					? item.weapon_class === filter
 					: mode === 'tool'
 					? item.tool_class === filter
+					: filter === 'burn'   ? item.is_burn
+					: filter === 'solo'   ? item.is_solo
+					: filter === 'scarce' ? item.trait_type === 'scarce'
+					: filter === 'event'  ? item.trait_type === 'event'
 					: item.category === filter
 			)
 		}
@@ -125,7 +129,13 @@ export default function App() {
 			return TOOL_CLASS_ORDER.filter(c => present.has(c))
 		}
 		const present = new Set(traits.map(t => t.category).filter(c => c && c !== 'unknown'))
-		return [...present].sort()
+		const tags = ['burn', 'solo', 'scarce', 'event'].filter(tag =>
+			tag === 'burn'   ? traits.some(t => t.is_burn)
+			: tag === 'solo'   ? traits.some(t => t.is_solo)
+			: tag === 'scarce' ? traits.some(t => t.trait_type === 'scarce')
+			: traits.some(t => t.trait_type === 'event')
+		)
+		return [...[...present].sort(), ...tags]
 	}, [mode, weapons, traits, tools])
 
 	const panelOpen = !!detail
