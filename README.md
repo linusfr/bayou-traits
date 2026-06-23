@@ -2,9 +2,9 @@
 
 > *The bayou remembers. Your hunter doesn't have to.*
 
-A fast, searchable reference for Hunt: Showdown trait-weapon synergies — built for hunters who are tired of alt-tabbing to the wiki mid-lobby.
+A fast, searchable reference for Hunt: Showdown trait, weapon, and tool synergies — built for hunters who are tired of alt-tabbing to the wiki mid-lobby.
 
-Search by weapon to find the traits that make it sing. Search by trait to see which weapons it transforms. Cross-reference in both directions. Know your loadout before you step into the fog.
+Search by weapon to find the traits that make it sing. Search by tool to see which perks improve your consumables. Search by trait to see everything it affects. Cross-reference in all directions. Know your loadout before you step into the fog.
 
 **[→ Open the finder](https://linusfr.github.io/bayou-traits)**
 
@@ -13,12 +13,13 @@ Search by weapon to find the traits that make it sing. Search by trait to see wh
 ## What it does
 
 - **By Weapon** — pick a gun, see exactly which traits make it dangerous and why
-- **By Trait** — find which weapons benefit from a given perk
-- Filter by ammo type (long, medium, compact, shotgun, sparks, nitro) or trait category
+- **By Tool** — pick a consumable (throwables, healing shots, First Aid Kits…) and see which traits improve it
+- **By Trait** — find which weapons and tools benefit from a given perk, in one view
+- Filter by weapon class (ammo type + melee / bow / launcher), tool category, or trait category
 - Fuzzy search across names and descriptions
 - Responsive — works on mobile, desktop, and your cursed ultrawide
 
-Data is scraped from the official wiki and enriched with DeepSeek to explain *why* each synergy works, not just that it does.
+Data is scraped from [huntshowdown.wiki.gg](https://huntshowdown.wiki.gg) and enriched with DeepSeek to explain *why* each synergy works, not just that it does.
 
 ---
 
@@ -71,7 +72,7 @@ Pushing to `main` automatically triggers the deploy workflow.
 
 ```
 scraper/           Python pipeline (uv)
-  scrape.py        → fetches traits + weapons from the wiki via MediaWiki API
+  scrape.py        → fetches traits + weapons from wiki.gg, tools from Fandom
   enrich.py        → calls DeepSeek to write "why it helps" for each synergy
   build.py         → orchestrates scrape → enrich → copy to frontend
 
@@ -97,3 +98,9 @@ feat(scraper): add variant parsing for weapon pages
 fix(ui): correct ammo color for nitro express
 chore(data): refresh for patch 1.18
 ```
+
+---
+
+## License
+
+[MIT](LICENSE) — use it however you want.
