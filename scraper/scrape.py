@@ -273,13 +273,11 @@ def parse_weapon(html: str, title: str) -> dict | None:
         if key in ("type", "weapon type", "class", "action"):
             weapon_type = val.lower()
         elif key in ("size", "slot"):
-            # wiki.gg uses numeric slot sizes: 4=large, 2=medium, 1=small
             m = re.search(r"\d+", val)
             if m:
-                n = int(m.group())
-                size = {4: "large", 3: "large", 2: "medium", 1: "small"}.get(n, val.lower())
+                size = int(m.group())
             else:
-                size = val.lower()
+                size = 0
         elif "ammo type" in key or "ammunition" in key or "caliber" in key:
             ammo = val.lower().split()[0]  # e.g. "Long Ammo" → "long"
         elif key == "ammo" and not ammo:
@@ -337,16 +335,8 @@ def parse_weapon(html: str, title: str) -> dict | None:
         elif any(x in name_lower for x in ["bow", "crossbow", "chu ko nu"]):
             ammo = ""  # bows: weapon_class comes from type
 
-    # Infer size from slot count if wiki.gg didn't provide it
-    if not size:
-        if any(x in name_lower for x in ["rifle", "mosin", "springfield", "lebel", "martini", "sparks", "nitro", "mako", "berthier", "vetterli", "krag", "centennial", "maynard", "infantry", "1865 carbine", "wildland"]):
-            size = "large"
-        elif any(x in name_lower for x in ["romero", "specter", "drilling", "auto-5", "terminus", "slate", "haymaker", "homestead", "shredder"]):
-            size = "medium"
-        elif any(x in name_lower for x in ["dolch", "bornheim", "nagant", "scottfield", "lemat", "derringer", "pax", "new army", "conversion", "1890 cavalry", "uppercut"]):
-            size = "small"
-        elif any(x in name_lower for x in ["knife", "sword", "axe", "hammer", "saber", "machete", "katana", "bat", "lance"]):
-            size = "melee"
+    # Size should now always come from the wiki infobox as a numeric slot count.
+    # Keep a fallback of 0 if the infobox had nothing.
 
     # Parse "Key Traits" section (may exist on some wiki pages)
     wiki_synergy_traits = []
@@ -382,7 +372,7 @@ def parse_weapon(html: str, title: str) -> dict | None:
         "id": slugify(name),
         "name": name,
         "type": _type,
-        "size": size or "unknown",
+        "size": size or 0,
         "ammo": _ammo,
         "weapon_class": weapon_class,
         "description": description,
