@@ -229,7 +229,7 @@ export default function App() {
 				</div>
 
 				{/* Filter pills */}
-				<div className="max-w-[1800px] mx-auto px-4 sm:px-6 pb-2 flex items-center gap-2 flex-wrap">
+				<div className="hidden sm:flex max-w-[1800px] mx-auto px-4 sm:px-6 pb-2 items-center gap-2 flex-wrap">
 					<span className="text-xs text-hunt-text-dim uppercase tracking-widest shrink-0">
 						{mode === "weapon" ? "Ammo" : mode === "tool" || mode === "consumable" ? "Class" : "Category"}
 					</span>
