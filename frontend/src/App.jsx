@@ -228,7 +228,7 @@ export default function App() {
 					/>
 				</div>
 
-				{/* Class / category filter pills */}
+				{/* Filter pills */}
 				<div className="max-w-[1800px] mx-auto px-4 sm:px-6 pb-2 flex items-center gap-2 overflow-x-auto no-scrollbar">
 					<span className="text-xs text-hunt-text-dim uppercase tracking-widest shrink-0">
 						{mode === "weapon" ? "Ammo" : mode === "tool" || mode === "consumable" ? "Class" : "Category"}
@@ -273,37 +273,38 @@ export default function App() {
 							</button>
 						);
 					})}
-				</div>
 
-				{/* Slot size filter pills — weapons only */}
-				{mode === "weapon" && activeSizes.length > 0 && (
-					<div className="max-w-[1800px] mx-auto px-4 sm:px-6 pb-2 flex items-center gap-2 overflow-x-auto no-scrollbar">
-						<span className="text-xs text-hunt-text-dim uppercase tracking-widest shrink-0">Slots</span>
-						<button
-							onClick={() => { setSizeFilter(null); setSelectedId(null); }}
-							className={`px-3 py-1 text-xs rounded-full border shrink-0 transition-colors
-								${!sizeFilter
-									? "border-hunt-gold text-hunt-gold bg-hunt-gold/10"
-									: "border-hunt-border text-hunt-text-muted hover:border-hunt-border-strong"
-								}`}
-						>
-							All
-						</button>
-						{activeSizes.map((s) => (
+					{/* Slot size — appended in the same row, weapons only */}
+					{mode === "weapon" && activeSizes.length > 0 && (
+						<>
+							<span className="text-hunt-border-strong shrink-0 select-none">|</span>
+							<span className="text-xs text-hunt-text-dim uppercase tracking-widest shrink-0">Slots</span>
 							<button
-								key={s}
-								onClick={() => { setSizeFilter((prev) => (prev === s ? null : s)); setSelectedId(null); }}
+								onClick={() => { setSizeFilter(null); setSelectedId(null); }}
 								className={`px-3 py-1 text-xs rounded-full border shrink-0 transition-colors
-									${sizeFilter === s
+									${!sizeFilter
 										? "border-hunt-gold text-hunt-gold bg-hunt-gold/10"
 										: "border-hunt-border text-hunt-text-muted hover:border-hunt-border-strong"
 									}`}
 							>
-								{s}
+								All
 							</button>
-						))}
-					</div>
-				)}
+							{activeSizes.map((s) => (
+								<button
+									key={s}
+									onClick={() => { setSizeFilter((prev) => (prev === s ? null : s)); setSelectedId(null); }}
+									className={`px-3 py-1 text-xs rounded-full border shrink-0 transition-colors
+										${sizeFilter === s
+											? "border-hunt-gold text-hunt-gold bg-hunt-gold/10"
+											: "border-hunt-border text-hunt-text-muted hover:border-hunt-border-strong"
+										}`}
+								>
+									{s}
+								</button>
+							))}
+						</>
+					)}
+				</div>
 			</div>
 
 			{/* ── Main content ── */}
