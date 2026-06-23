@@ -161,7 +161,7 @@ export default function SynergyPanel({ detail, onClose, onNavigate }) {
 				</p>
 				{synergies.length === 0 ? (
 					<p className="text-sm text-hunt-text-dim italic">
-						The bayou keeps its secrets. Trigger a data refresh to populate synergies.
+						No synergies found.
 					</p>
 				) : (
 					<div className="space-y-2 pr-1">
