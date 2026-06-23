@@ -2500,7 +2500,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Springfield 1866 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -2986,7 +2986,7 @@
 			"size": "large",
 			"ammo": "unknown",
 			"weapon_class": "bow",
-			"description": "See also: Hand Crossbow .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3006,7 +3006,7 @@
 			"size": "large",
 			"ammo": "unknown",
 			"weapon_class": "bow",
-			"description": "See also: Hand Crossbow .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3177,7 +3177,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Infantry 73L , Ranger 73 , Vandal 73C .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3197,7 +3197,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Infantry 73L , Ranger 73 , Vandal 73C .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3221,7 +3221,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Infantry 73L , Ranger 73 , Vandal 73C .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3312,7 +3312,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Frontier 73C , Ranger 73 , Vandal 73C .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3332,7 +3332,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Frontier 73C , Ranger 73 , Vandal 73C .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3356,7 +3356,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Frontier 73C , Ranger 73 , Vandal 73C .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3400,7 +3400,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Springfield 1866 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3416,7 +3416,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Springfield 1866 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3436,7 +3436,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Springfield 1866 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3452,7 +3452,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Springfield 1866 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3853,7 +3853,7 @@
 			"size": "medium",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Mosin-Nagant .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3877,7 +3877,7 @@
 			"size": "medium",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Mosin-Nagant .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3901,7 +3901,7 @@
 			"size": "medium",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Mosin-Nagant .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3929,7 +3929,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Mosin-Nagant .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3949,7 +3949,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Mosin-Nagant .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3973,7 +3973,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Mosin Obrez .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -3993,7 +3993,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Mosin Obrez .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4009,7 +4009,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Mosin Obrez .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4033,7 +4033,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Mosin Obrez .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4170,7 +4170,7 @@
 			"size": "small",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Nagant M1895 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": []
 		},
@@ -4181,7 +4181,7 @@
 			"size": "small",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Nagant M1895 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4197,7 +4197,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Nagant M1895 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": []
 		},
@@ -4208,7 +4208,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Nagant M1895 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4292,7 +4292,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Frontier 73C , Infantry 73L , Vandal 73C .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4312,7 +4312,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Frontier 73C , Infantry 73L , Vandal 73C .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4336,7 +4336,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Frontier 73C , Infantry 73L , Vandal 73C .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4356,7 +4356,7 @@
 			"size": "large",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Frontier 73C , Infantry 73L , Vandal 73C .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4799,7 +4799,7 @@
 			"size": "large",
 			"ammo": "medium",
 			"weapon_class": "medium",
-			"description": "See also: 1890 Cavalry .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4975,7 +4975,7 @@
 			"size": "medium",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Conversion .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -4995,7 +4995,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Conversion .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -5019,7 +5019,7 @@
 			"size": "large",
 			"ammo": "long",
 			"weapon_class": "long",
-			"description": "See also: Conversion .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -5035,7 +5035,7 @@
 			"size": "medium",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Frontier 73C , Infantry 73L , Ranger 73 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -5059,7 +5059,7 @@
 			"size": "medium",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Frontier 73C , Infantry 73L , Ranger 73 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{
@@ -5087,7 +5087,7 @@
 			"size": "medium",
 			"ammo": "compact",
 			"weapon_class": "compact",
-			"description": "See also: Frontier 73C , Infantry 73L , Ranger 73 .",
+			"description": "",
 			"image_url": "",
 			"trait_synergies": [
 				{

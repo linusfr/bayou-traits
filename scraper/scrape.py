@@ -158,7 +158,7 @@ def parse_infobox_table(soup: BeautifulSoup) -> dict:
 def first_real_paragraph(soup: BeautifulSoup) -> str:
     for p in soup.find_all("p"):
         text = re.sub(r"\s+", " ", p.get_text(separator=" ", strip=True)).strip()
-        if len(text) > 20 and not text.startswith("["):
+        if len(text) > 20 and not text.startswith("[") and not text.startswith("See also"):
             return text
     return ""
 
