@@ -324,7 +324,8 @@ TOOL_GROUPS = {
     "Dusters":        "melee",
     "Spyglass":       "support",
     "Stalker Beetle": "decoy",
-    "Ammo Box":       "support",
+    "Ammo Box":          "support",
+    "Tactical Gadgets":  "explosive",
 }
 
 
@@ -488,6 +489,17 @@ async def main() -> None:
         tools = await scrape_tools(client, sem)
         print(f"  Parsed {len(tools)} tools")
 
+    wiki_weapon_count = len(weapon_titles)
+    wiki_trait_count = len(trait_titles)
+    if wiki_weapon_count != len(weapons):
+        print(f"\n⚠ Coverage gap: scraped {len(weapons)} weapons but wiki lists {wiki_weapon_count}")
+        scraped_names = {w["name"].lower() for w in weapons}
+        missing = [t for t in weapon_titles if t.lower() not in scraped_names]
+        if missing:
+            print(f"  Possibly missing: {missing[:10]}")
+    if wiki_trait_count != len(traits):
+        print(f"\n⚠ Coverage gap: scraped {len(traits)} traits but wiki lists {wiki_trait_count}")
+
     output = {
         "meta": {
             "patch": patch,
@@ -495,6 +507,8 @@ async def main() -> None:
             "trait_count": len(traits),
             "weapon_count": len(weapons),
             "tool_count": len(tools),
+            "wiki_weapon_count": wiki_weapon_count,
+            "wiki_trait_count": wiki_trait_count,
         },
         "traits": traits,
         "weapons": weapons,

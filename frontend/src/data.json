@@ -4,7 +4,7 @@
     "scraped_at": "2026-06-23T11:39:05.893796+00:00",
     "trait_count": 56,
     "weapon_count": 40,
-    "tool_count": 40
+    "tool_count": 43
   },
   "traits": [
     {
@@ -101,20 +101,8 @@
           "reason": "Assailant boosts melee effectiveness of Throwing Knives, improving their damage when used in close combat."
         },
         {
-          "tool_id": "heavy_knife",
-          "reason": "Assailant does not affect Heavy Knife; it only benefits throwing knives/axes and world melee weapons."
-        },
-        {
           "tool_id": "throwing_axes",
           "reason": "Assailant increases melee damage of Throwing Axes, making them more effective when used as melee weapons."
-        },
-        {
-          "tool_id": "dusters",
-          "reason": "Assailant does not affect Dusters; it only benefits throwing knives/axes and world melee weapons."
-        },
-        {
-          "tool_id": "knuckle_knife",
-          "reason": "Assailant does not affect Knuckle Knife; it only benefits throwing knives/axes and world melee weapons."
         }
       ]
     },
@@ -167,18 +155,6 @@
         {
           "weapon_id": "katana",
           "reason": "Blade Seer highlights thrown Katanas in Dark Sight, aiding retrieval."
-        },
-        {
-          "weapon_id": "machete",
-          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, but Machete is not thrown; no benefit."
-        },
-        {
-          "weapon_id": "railroad_hammer",
-          "reason": "Blade Seer highlights thrown melee weapons, but Railroad Hammer is not thrown; no benefit."
-        },
-        {
-          "weapon_id": "winfield_1893_slate",
-          "reason": "Blade Seer highlights thrown melee weapons, but Slate is a shotgun; no benefit."
         }
       ],
       "tool_synergies": [
@@ -191,20 +167,8 @@
           "reason": "Blade Seer highlights Throwing Knives in Dark Sight, making them easier to locate and recover."
         },
         {
-          "tool_id": "heavy_knife",
-          "reason": "Blade Seer does not affect Heavy Knife as it is not a thrown weapon."
-        },
-        {
           "tool_id": "throwing_axes",
           "reason": "Blade Seer highlights thrown axes in Dark Sight, making them easier to retrieve."
-        },
-        {
-          "tool_id": "dusters",
-          "reason": "Blade Seer does not affect Dusters as they are not thrown weapons."
-        },
-        {
-          "tool_id": "knuckle_knife",
-          "reason": "Blade Seer does not affect Knuckle Knife as it is not a thrown weapon."
         }
       ]
     },
@@ -230,10 +194,6 @@
       "trait_type": "normal",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/81/Bolt_Thrower.png",
       "weapon_synergies": [
-        {
-          "weapon_id": "bow",
-          "reason": "Bolt Thrower reduces crossbow reload time, but Bow is not a crossbow; no benefit."
-        },
         {
           "weapon_id": "crossbow",
           "reason": "Bolt Thrower reduces crossbow reload time, directly benefiting Crossbow's slower reload."
@@ -377,14 +337,6 @@
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/0e/Fanning.png",
       "weapon_synergies": [
         {
-          "weapon_id": "bornheim_no_3",
-          "reason": "Fanning increases fire rate for single-action pistols, but Bornheim is semi-auto; no benefit."
-        },
-        {
-          "weapon_id": "caldwell_92_new_army",
-          "reason": "Fanning increases fire rate for single-action pistols, but New Army is double-action; no benefit."
-        },
-        {
           "weapon_id": "caldwell_conversion_pistol",
           "reason": "Fanning increases fire rate for single-action pistols, directly benefiting Conversion Pistol's slow fire rate."
         },
@@ -393,24 +345,12 @@
           "reason": "Fanning increases fire rate for single-action revolvers like the Pax, allowing faster follow-up shots."
         },
         {
-          "weapon_id": "dolch_96",
-          "reason": "Fanning does not benefit the Dolch 96 because it is semi-automatic, not single-action."
-        },
-        {
           "weapon_id": "lemat_mark_ii_revolver",
           "reason": "Fanning increases fire rate for single-action revolvers like the LeMat, enabling rapid shots."
         },
         {
           "weapon_id": "nagant_m1895",
           "reason": "Fanning increases fire rate for single-action revolvers like the Nagant M1895, improving DPS."
-        },
-        {
-          "weapon_id": "nagant_m1895_officer",
-          "reason": "Fanning does not benefit the Officer because it is double-action, not single-action."
-        },
-        {
-          "weapon_id": "quad_derringer",
-          "reason": "Fanning does not benefit the Quad Derringer because it is not a single-action pistol."
         },
         {
           "weapon_id": "scottfield_model_3",
@@ -523,20 +463,12 @@
           "reason": "Iron Eye keeps you aimed after each shot, enabling quicker follow-up shots with the pump-action Rival 78."
         },
         {
-          "weapon_id": "crown_king_auto_5",
-          "reason": "Iron Eye is not applicable; the Auto-5 is semi-auto, not bolt/lever/pump-action."
-        },
-        {
           "weapon_id": "drilling",
           "reason": "Iron Eye keeps you in sights after firing the Drilling's shotgun barrels, aiding rapid follow-up."
         },
         {
           "weapon_id": "lebel_1886",
           "reason": "Iron Eye keeps you aimed after each bolt-action shot, speeding up follow-up shots with the Lebel."
-        },
-        {
-          "weapon_id": "lemat_mark_ii_revolver",
-          "reason": "Iron Eye is not applicable; the LeMat is a revolver, not bolt/lever/pump-action."
         },
         {
           "weapon_id": "mako_1895_carbine",
@@ -816,16 +748,8 @@
           "reason": "Pitcher increases throw range, enabling safe deployment of hellfire bomb."
         },
         {
-          "tool_id": "knife",
-          "reason": "Pitcher does not affect knife; knife is melee, not thrown."
-        },
-        {
           "tool_id": "throwing_knives",
           "reason": "Pitcher increases throw range, allowing silent kills from farther distance."
-        },
-        {
-          "tool_id": "heavy_knife",
-          "reason": "Pitcher does not affect heavy knife; it is melee, not thrown."
         },
         {
           "tool_id": "throwing_axes",
@@ -850,14 +774,6 @@
         {
           "tool_id": "decoy_fuses",
           "reason": "Pitcher increases throwing range, allowing Decoy Fuses to be thrown farther to simulate explosives."
-        },
-        {
-          "tool_id": "dusters",
-          "reason": "Pitcher increases throwing range, but Dusters are melee; no benefit."
-        },
-        {
-          "tool_id": "knuckle_knife",
-          "reason": "Pitcher increases throwing range, but Knuckle Knife is melee; no benefit."
         },
         {
           "tool_id": "poison_bomb",
@@ -1219,10 +1135,6 @@
           "reason": "Speeds up custom clip reloads for semi-auto pistols, reducing downtime in firefights."
         },
         {
-          "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action pistols, but Bornheim is semi-auto; no benefit."
-        },
-        {
           "trait_id": "steady_hand",
           "reason": "Steady Hand reduces sway when aiming down sights on pistols, improving accuracy for the Bornheim's rapid follow-up shots."
         }
@@ -1239,10 +1151,6 @@
       "image_url": "",
       "trait_synergies": [
         {
-          "trait_id": "bolt_thrower",
-          "reason": "Bolt Thrower reduces crossbow reload time, but Bow is not a crossbow; no benefit."
-        },
-        {
           "trait_id": "hundred_hands",
           "reason": "Hundred Hands increases bow damage and reduces sway at full draw, improving accuracy and lethality."
         }
@@ -1257,12 +1165,7 @@
       "weapon_class": "compact",
       "description": "Fast, light, and easy to handle, this double-action revolver has a distinguished counter-clockwise rotating cylinder that swings out to effortlessly reload its six .38 bullets.",
       "image_url": "",
-      "trait_synergies": [
-        {
-          "trait_id": "fanning",
-          "reason": "Fanning increases fire rate for single-action pistols, but New Army is double-action; no benefit."
-        }
-      ]
+      "trait_synergies": []
     },
     {
       "id": "caldwell_conversion_pistol",
@@ -1409,10 +1312,6 @@
         {
           "trait_id": "ambidextrous",
           "reason": "Quicker reloads for semi-auto shotguns, keeping pressure on enemies."
-        },
-        {
-          "trait_id": "iron_eye",
-          "reason": "Iron Eye is not applicable; the Auto-5 is semi-auto, not bolt/lever/pump-action."
         }
       ]
     },
@@ -1429,10 +1328,6 @@
         {
           "trait_id": "ambidextrous",
           "reason": "Speeds up custom clip reloads for semi-auto pistols, crucial in close combat."
-        },
-        {
-          "trait_id": "fanning",
-          "reason": "Fanning does not benefit the Dolch 96 because it is semi-automatic, not single-action."
         },
         {
           "trait_id": "steady_hand",
@@ -1505,10 +1400,6 @@
         {
           "trait_id": "fanning",
           "reason": "Fanning increases fire rate for single-action revolvers like the LeMat, enabling rapid shots."
-        },
-        {
-          "trait_id": "iron_eye",
-          "reason": "Iron Eye is not applicable; the LeMat is a revolver, not bolt/lever/pump-action."
         }
       ]
     },
@@ -1525,10 +1416,6 @@
         {
           "trait_id": "assailant",
           "reason": "Assailant allows the Machete to be thrown, turning it into a ranged melee attack."
-        },
-        {
-          "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown melee weapons in Dark Sight, but Machete is not thrown; no benefit."
         }
       ]
     },
@@ -1604,12 +1491,7 @@
       "weapon_class": "compact",
       "description": "Modern, Imperial Russian, double-action revolver. Though it has a faster rate of fire, the stronger force required to pull the trigger has a negative impact on accuracy.",
       "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/9/96/Nagant_officer_lowered.png",
-      "trait_synergies": [
-        {
-          "trait_id": "fanning",
-          "reason": "Fanning does not benefit the Officer because it is double-action, not single-action."
-        }
-      ]
+      "trait_synergies": []
     },
     {
       "id": "nitro_express_rifle",
@@ -1637,10 +1519,6 @@
           "reason": "Faster matched pair reloads for dual-wielded Derringers, increasing sustained DPS."
         },
         {
-          "trait_id": "fanning",
-          "reason": "Fanning does not benefit the Quad Derringer because it is not a single-action pistol."
-        },
-        {
           "trait_id": "steady_hand",
           "reason": "Steady Hand reduces sway when aiming down sights on pistols, making the Derringer's small shots more reliable."
         }
@@ -1659,10 +1537,6 @@
         {
           "trait_id": "assailant",
           "reason": "Assailant allows the Railroad Hammer to be thrown, turning it into a ranged melee attack."
-        },
-        {
-          "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown melee weapons, but Railroad Hammer is not thrown; no benefit."
         }
       ]
     },
@@ -1801,10 +1675,6 @@
         {
           "trait_id": "assailant",
           "reason": "Assailant allows the Slate's melee to be thrown, turning it into a ranged melee attack."
-        },
-        {
-          "trait_id": "blade_seer",
-          "reason": "Blade Seer highlights thrown melee weapons, but Slate is a shotgun; no benefit."
         },
         {
           "trait_id": "iron_eye",
@@ -2037,10 +1907,6 @@
         {
           "trait_id": "blade_seer",
           "reason": "Blade Seer highlights thrown knives in Dark Sight, helping you retrieve them after throwing."
-        },
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher does not affect knife; knife is melee, not thrown."
         }
       ]
     },
@@ -2073,20 +1939,7 @@
       "cost": 20,
       "tool_class": "melee",
       "type": "throwable melee aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "assailant",
-          "reason": "Assailant does not affect Heavy Knife; it only benefits throwing knives/axes and world melee weapons."
-        },
-        {
-          "trait_id": "blade_seer",
-          "reason": "Blade Seer does not affect Heavy Knife as it is not a thrown weapon."
-        },
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher does not affect heavy knife; it is melee, not thrown."
-        }
-      ]
+      "trait_synergies": []
     },
     {
       "id": "throwing_axes",
@@ -2223,20 +2076,7 @@
       "cost": 30,
       "tool_class": "melee",
       "type": "throwable melee aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "assailant",
-          "reason": "Assailant does not affect Dusters; it only benefits throwing knives/axes and world melee weapons."
-        },
-        {
-          "trait_id": "blade_seer",
-          "reason": "Blade Seer does not affect Dusters as they are not thrown weapons."
-        },
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, but Dusters are melee; no benefit."
-        }
-      ]
+      "trait_synergies": []
     },
     {
       "id": "knuckle_knife",
@@ -2245,20 +2085,7 @@
       "cost": 50,
       "tool_class": "melee",
       "type": "throwable melee aim-helper",
-      "trait_synergies": [
-        {
-          "trait_id": "assailant",
-          "reason": "Assailant does not affect Knuckle Knife; it only benefits throwing knives/axes and world melee weapons."
-        },
-        {
-          "trait_id": "blade_seer",
-          "reason": "Blade Seer does not affect Knuckle Knife as it is not a thrown weapon."
-        },
-        {
-          "trait_id": "pitcher",
-          "reason": "Pitcher increases throwing range, but Knuckle Knife is melee; no benefit."
-        }
-      ]
+      "trait_synergies": []
     },
     {
       "id": "vitality_shot_weak",
@@ -2481,6 +2308,33 @@
           "reason": "Pitcher increases throw range, allowing beetle launch from safer distance."
         }
       ]
+    },
+    {
+      "id": "concertina_trip_mine",
+      "name": "Concertina Trip Mine",
+      "description": "This portable tripwire mine deploys a small concertina bundle perfect for blocking doors and windows.",
+      "cost": 90,
+      "tool_class": "explosive",
+      "type": "throwable explosive aim-helper",
+      "trait_synergies": []
+    },
+    {
+      "id": "concertina_bomb",
+      "name": "Concertina Bomb",
+      "description": "Spring-loaded razorwire coil that unfolds violently when thrown. Shreds and entangles anything that tries to move through.",
+      "cost": 48,
+      "tool_class": "explosive",
+      "type": "throwable explosive aim-helper",
+      "trait_synergies": []
+    },
+    {
+      "id": "flash_bomb",
+      "name": "Flash Bomb",
+      "description": "Light bomb that requires a short priming for its mercury based chemical reaction. The explosion is capable of blinding all in close proximity.",
+      "cost": 25,
+      "tool_class": "decoy",
+      "type": "throwable decoy aim-helper",
+      "trait_synergies": []
     }
   ]
 }

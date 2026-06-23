@@ -280,7 +280,9 @@ export default function App() {
 						Hunt: Showdown Wiki
 					</a>
 					{' '}· Built {new Date(data.meta.scraped_at).toLocaleDateString()}
-					{' '}· {data.meta.trait_count} traits · {data.meta.weapon_count} weapons{data.meta.tool_count ? ` · ${data.meta.tool_count} tools` : ''}
+					{' '}· {data.meta.trait_count}{data.meta.wiki_trait_count && data.meta.wiki_trait_count !== data.meta.trait_count ? `/${data.meta.wiki_trait_count}` : ''} traits
+					{' '}· {data.meta.weapon_count}{data.meta.wiki_weapon_count && data.meta.wiki_weapon_count !== data.meta.weapon_count ? `/${data.meta.wiki_weapon_count}` : ''} weapons
+					{data.meta.tool_count ? ` · ${data.meta.tool_count} tools` : ''}
 					{' '}·{' '}
 					<a
 						href="https://github.com/linusfr/bayou-traits"
