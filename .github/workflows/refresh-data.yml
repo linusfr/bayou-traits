@@ -23,16 +23,8 @@ jobs:
       - name: Install Python dependencies
         run: cd scraper && uv sync
 
-      - name: Scrape wiki
-        run: cd scraper && uv run python scrape.py
-
-      - name: Enrich with DeepSeek
-        env:
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: cd scraper && uv run python enrich.py
-
-      - name: Copy enriched data
-        run: cp scraper/data/enriched.json frontend/src/data.json
+      - name: Run data pipeline
+        run: cd scraper && uv run python build.py
 
       - name: Commit updated data
         run: |

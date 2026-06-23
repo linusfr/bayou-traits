@@ -280,8 +280,8 @@ export default function App() {
 						huntshowdown.wiki.gg
 					</a>
 					{' '}· Built {new Date(data.meta.scraped_at).toLocaleDateString()}
-					{' '}· {data.meta.trait_count}{data.meta.wiki_trait_count && data.meta.wiki_trait_count !== data.meta.trait_count ? `/${data.meta.wiki_trait_count}` : ''} traits
-					{' '}· {data.meta.weapon_count}{data.meta.wiki_weapon_count && data.meta.wiki_weapon_count !== data.meta.weapon_count ? `/${data.meta.wiki_weapon_count}` : ''} weapons
+					{' '}· {data.meta.trait_count} traits
+					{' '}· {data.meta.weapon_count} weapons
 					{data.meta.tool_count ? ` · ${data.meta.tool_count} tools` : ''}
 					{' '}·{' '}
 					<a
