@@ -42,6 +42,7 @@ export default function App() {
 	const [mode, setMode] = useState("weapon");
 	const [query, setQuery] = useState("");
 	const [filter, setFilter] = useState(null);
+	const [traitFilters, setTraitFilters] = useState(new Set());
 	const [sizeFilter, setSizeFilter] = useState(null);
 	const [selectedId, setSelectedId] = useState(null);
 
@@ -76,20 +77,25 @@ export default function App() {
 			list = list.filter((item) =>
 				mode === "weapon"
 					? item.weapon_class === filter
-					: mode === "tool" || mode === "consumable"
-					? item.tool_class === filter
-					: filter === "burn"   ? item.is_burn
-					: filter === "solo"   ? item.is_solo
-					: filter === "scarce" ? item.trait_type === "scarce"
-					: filter === "event"  ? item.trait_type === "event"
-					: item.category === filter,
+					: item.tool_class === filter,
+			);
+		}
+		if (mode === "trait" && traitFilters.size > 0) {
+			list = list.filter((item) =>
+				[...traitFilters].every((f) =>
+					f === "burn"   ? item.is_burn
+					: f === "solo"   ? item.is_solo
+					: f === "scarce" ? item.trait_type === "scarce"
+					: f === "event"  ? item.trait_type === "event"
+					: item.category === f,
+				),
 			);
 		}
 		if (sizeFilter && mode === "weapon") {
 			list = list.filter((item) => item.size === sizeFilter);
 		}
 		return list;
-	}, [mode, query, filter, sizeFilter, weapons, traits, toolItems, consumableItems, weaponFuse, traitFuse, toolFuse, consumableFuse]);
+	}, [mode, query, filter, traitFilters, sizeFilter, weapons, traits, toolItems, consumableItems, weaponFuse, traitFuse, toolFuse, consumableFuse]);
 
 	const detail = useMemo(() => {
 		if (!selectedId) return null;
@@ -106,6 +112,7 @@ export default function App() {
 		setMode(m);
 		setQuery("");
 		setFilter(null);
+		setTraitFilters(new Set());
 		setSizeFilter(null);
 		setSelectedId(null);
 	}, []);
@@ -126,6 +133,7 @@ export default function App() {
 			);
 			setQuery("");
 			setFilter(null);
+			setTraitFilters(new Set());
 			setSizeFilter(null);
 			setSelectedId(id);
 		},
@@ -226,28 +234,45 @@ export default function App() {
 						{mode === "weapon" ? "Ammo" : mode === "tool" || mode === "consumable" ? "Class" : "Category"}
 					</span>
 					<button
-						onClick={() => { setFilter(null); setSelectedId(null); }}
+						onClick={() => {
+							mode === "trait" ? setTraitFilters(new Set()) : setFilter(null);
+							setSelectedId(null);
+						}}
 						className={`px-3 py-1 text-xs rounded-full border shrink-0 transition-colors
-							${!filter
+							${mode === "trait" ? traitFilters.size === 0 : !filter
 								? "border-hunt-gold text-hunt-gold bg-hunt-gold/10"
 								: "border-hunt-border text-hunt-text-muted hover:border-hunt-border-strong"
 							}`}
 					>
 						All
 					</button>
-					{activeFilters.map((f) => (
-						<button
-							key={f}
-							onClick={() => { setFilter((prev) => (prev === f ? null : f)); setSelectedId(null); }}
-							className={`px-3 py-1 text-xs rounded-full border shrink-0 capitalize transition-colors
-								${filter === f
-									? "border-hunt-gold text-hunt-gold bg-hunt-gold/10"
-									: "border-hunt-border text-hunt-text-muted hover:border-hunt-border-strong"
-								}`}
-						>
-							{f}
-						</button>
-					))}
+					{activeFilters.map((f) => {
+						const active = mode === "trait" ? traitFilters.has(f) : filter === f;
+						return (
+							<button
+								key={f}
+								onClick={() => {
+									if (mode === "trait") {
+										setTraitFilters((prev) => {
+											const next = new Set(prev);
+											next.has(f) ? next.delete(f) : next.add(f);
+											return next;
+										});
+									} else {
+										setFilter((prev) => (prev === f ? null : f));
+									}
+									setSelectedId(null);
+								}}
+								className={`px-3 py-1 text-xs rounded-full border shrink-0 capitalize transition-colors
+									${active
+										? "border-hunt-gold text-hunt-gold bg-hunt-gold/10"
+										: "border-hunt-border text-hunt-text-muted hover:border-hunt-border-strong"
+									}`}
+							>
+								{f}
+							</button>
+						);
+					})}
 				</div>
 
 				{/* Slot size filter pills — weapons only */}
