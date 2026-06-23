@@ -242,8 +242,8 @@ def parse_trait(html: str, title: str) -> dict | None:
 
 
 def parse_weapon(html: str, title: str) -> dict | None:
-    # title is "Weapons/SparkName" on wiki.gg; strip prefix for the display name
-    name = title.removeprefix("Weapons/").strip()
+    # title is "Weapons/Name" or "Weapons/Name/Variant"; normalise to display name
+    name = title.removeprefix("Weapons/").replace("/", " ").strip()
     if not html or not name or name in SKIP_PAGES:
         return None
     soup = BeautifulSoup(html, "lxml")
@@ -537,12 +537,12 @@ async def main() -> None:
 
         print("Fetching weapon list from wiki.gg...")
         raw_weapon_titles = await fetch_category_members(client, "Weapons")
-        # wiki.gg: base weapons are "Weapons/Name" (exactly one slash); variants have more
+        # wiki.gg: base weapons at "Weapons/Name" (one slash), variants at "Weapons/Name/Variant" (two slashes)
         weapon_titles = [
             t for t in raw_weapon_titles
-            if t.startswith("Weapons/") and t.count("/") == 1
+            if t.startswith("Weapons/") and t.count("/") in (1, 2)
         ]
-        print(f"  Found {len(weapon_titles)} base weapon pages")
+        print(f"  Found {len(weapon_titles)} weapon pages ({sum(1 for t in weapon_titles if t.count('/') == 1)} base, {sum(1 for t in weapon_titles if t.count('/') == 2)} variants)")
 
         print("Scraping trait pages from wiki.gg...")
         trait_results = await asyncio.gather(*[rate_limited_fetch(client, t) for t in trait_titles])
@@ -563,8 +563,8 @@ async def main() -> None:
     if wiki_weapon_count != len(weapons):
         print(f"\n⚠ Coverage gap: scraped {len(weapons)} weapons but wiki lists {wiki_weapon_count}")
         scraped_names = {w["name"].lower() for w in weapons}
-        missing = [t.removeprefix("Weapons/") for t in weapon_titles
-                   if t.removeprefix("Weapons/").lower() not in scraped_names]
+        missing = [t.removeprefix("Weapons/").replace("/", " ") for t in weapon_titles
+                   if t.removeprefix("Weapons/").replace("/", " ").lower() not in scraped_names]
         if missing:
             print(f"  Possibly missing: {missing[:10]}")
     if wiki_trait_count != len(traits):
