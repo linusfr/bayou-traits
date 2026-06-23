@@ -78,11 +78,11 @@
 			"tool_synergies": [
 				{
 					"tool_id": "throwing_knives",
-					"reason": "Assailant increases melee damage of throwing knives, making them more effective in close combat."
+					"reason": "Assailant boosts throwing damage \u2014 works directly with thrown weapons."
 				},
 				{
 					"tool_id": "throwing_axes",
-					"reason": "Assailant increases melee damage of throwing axes, improving their close-quarters lethality."
+					"reason": "Assailant boosts throwing damage \u2014 works directly with thrown weapons."
 				}
 			],
 			"is_burn": false,
@@ -112,36 +112,7 @@
 			"trait_type": "scarce",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [
-				{
-					"tool_id": "knife",
-					"reason": "Berserker doubles all melee attack damage, making the Knife deal twice as much damage per hit."
-				},
-				{
-					"tool_id": "throwing_knives",
-					"reason": "Berserker doubles all melee attack damage, making the Throwing Knives deal twice as much damage per hit."
-				},
-				{
-					"tool_id": "heavy_knife",
-					"reason": "Berserker doubles all melee attack damage, making the Heavy Knife deal twice as much damage per hit."
-				},
-				{
-					"tool_id": "throwing_axes",
-					"reason": "Berserker doubles all melee attack damage, making the Throwing Axes deal twice as much damage per hit."
-				},
-				{
-					"tool_id": "dusters",
-					"reason": "Berserker doubles all melee attack damage, making the Dusters deal twice as much damage per hit."
-				},
-				{
-					"tool_id": "knuckle_knife",
-					"reason": "Berserker doubles all melee attack damage, making the Knuckle Knife deal twice as much damage per hit."
-				},
-				{
-					"tool_id": "throwing_spear",
-					"reason": "Berserker doubles all melee attack damage, making the Throwing Spear deal twice as much damage per hit."
-				}
-			],
+			"tool_synergies": [],
 			"is_burn": false,
 			"is_solo": false
 		},
@@ -183,11 +154,27 @@
 			"tool_synergies": [
 				{
 					"tool_id": "throwing_knives",
-					"reason": "Blade Seer highlights throwing knives in dark sight up to 75m, aiding retrieval."
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
 				},
 				{
 					"tool_id": "throwing_axes",
-					"reason": "Blade Seer increases Dark Sight highlight range for Throwing Axes to 75m, aiding retrieval."
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
+				},
+				{
+					"tool_id": "stalker_beetle",
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
+				},
+				{
+					"tool_id": "choke_beetle",
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
+				},
+				{
+					"tool_id": "fire_beetle",
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
+				},
+				{
+					"tool_id": "throwing_spear",
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
 				}
 			],
 			"is_burn": false,
@@ -217,7 +204,20 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [],
+			"tool_synergies": [
+				{
+					"tool_id": "stalker_beetle",
+					"reason": "Blast Sense provides a warning when a bomb/beetle is about to explode."
+				},
+				{
+					"tool_id": "choke_beetle",
+					"reason": "Blast Sense provides a warning when a bomb/beetle is about to explode."
+				},
+				{
+					"tool_id": "fire_beetle",
+					"reason": "Blast Sense provides a warning when a bomb/beetle is about to explode."
+				}
+			],
 			"is_burn": false,
 			"is_solo": false
 		},
@@ -298,36 +298,7 @@
 			"trait_type": "event",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [
-				{
-					"tool_id": "knife",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
-				},
-				{
-					"tool_id": "throwing_knives",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
-				},
-				{
-					"tool_id": "heavy_knife",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
-				},
-				{
-					"tool_id": "throwing_axes",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
-				},
-				{
-					"tool_id": "dusters",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
-				},
-				{
-					"tool_id": "knuckle_knife",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
-				},
-				{
-					"tool_id": "throwing_spear",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
-				}
-			],
+			"tool_synergies": [],
 			"is_burn": false,
 			"is_solo": false
 		},
@@ -599,35 +570,15 @@
 			"tool_synergies": [
 				{
 					"tool_id": "decoys",
-					"reason": "Decoy Supply lets you restock Decoys from ammo crates, keeping your supply topped up across a long hunt."
-				},
-				{
-					"tool_id": "alert_trip_mine",
-					"reason": "Decoy Supply lets you restock Alert Trip Mine from ammo crates, keeping your supply topped up across a long hunt."
-				},
-				{
-					"tool_id": "chaos_bomb",
-					"reason": "Decoy Supply lets you restock Chaos Bomb from ammo crates, keeping your supply topped up across a long hunt."
+					"reason": "Decoy Supply grants additional uses of decoy items."
 				},
 				{
 					"tool_id": "blank_fire_decoys",
-					"reason": "Decoy Supply lets you restock Blank Fire Decoys from ammo crates, keeping your supply topped up across a long hunt."
+					"reason": "Decoy Supply grants additional uses of decoy items."
 				},
 				{
 					"tool_id": "decoy_fuses",
-					"reason": "Decoy Supply lets you restock Decoy Fuses from ammo crates, keeping your supply topped up across a long hunt."
-				},
-				{
-					"tool_id": "stalker_beetle",
-					"reason": "Decoy Supply lets you restock Stalker Beetle from ammo crates, keeping your supply topped up across a long hunt."
-				},
-				{
-					"tool_id": "choke_beetle",
-					"reason": "Decoy Supply lets you restock Choke Beetle from ammo crates, keeping your supply topped up across a long hunt."
-				},
-				{
-					"tool_id": "fire_beetle",
-					"reason": "Decoy Supply lets you restock Fire Beetle from ammo crates, keeping your supply topped up across a long hunt."
+					"reason": "Decoy Supply grants additional uses of decoy items."
 				}
 			],
 			"is_burn": false,
@@ -660,11 +611,7 @@
 			"tool_synergies": [
 				{
 					"tool_id": "first_aid_kit",
-					"reason": "Doctor doubles health restored by First Aid Kit, making it heal 100 HP instead of 50."
-				},
-				{
-					"tool_id": "medical_pack",
-					"reason": "Doctor does not affect Medical Pack; it only applies to First Aid Kit."
+					"reason": "Doctor speeds up First Aid Kit use."
 				}
 			],
 			"is_burn": false,
@@ -912,124 +859,7 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [
-				{
-					"tool_id": "dynamite_stick",
-					"reason": "Frontiersman gives the Dynamite Stick one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "waxed_dynamite_stick",
-					"reason": "Frontiersman gives the Waxed Dynamite Stick one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "sticky_bomb",
-					"reason": "Frontiersman gives the Sticky Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "dynamite_bundle",
-					"reason": "Frontiersman gives the Dynamite Bundle one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "frag_bomb",
-					"reason": "Frontiersman gives the Frag Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "big_dynamite_bundle",
-					"reason": "Frontiersman gives the Big Dynamite Bundle one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "fire_bomb",
-					"reason": "Frontiersman gives the Fire Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "liquid_fire_bomb",
-					"reason": "Frontiersman gives the Liquid Fire Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "hellfire_bomb",
-					"reason": "Frontiersman gives the Hellfire Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "knife",
-					"reason": "Frontiersman gives the Knife one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "throwing_knives",
-					"reason": "Frontiersman gives the Throwing Knives one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "heavy_knife",
-					"reason": "Frontiersman gives the Heavy Knife one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "throwing_axes",
-					"reason": "Frontiersman gives the Throwing Axes one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "decoys",
-					"reason": "Frontiersman gives the Decoys one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "alert_trip_mine",
-					"reason": "Frontiersman gives the Alert Trip Mine one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "chaos_bomb",
-					"reason": "Frontiersman gives the Chaos Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "blank_fire_decoys",
-					"reason": "Frontiersman gives the Blank Fire Decoys one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "first_aid_kit",
-					"reason": "Frontiersman gives the First Aid Kit one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "medical_pack",
-					"reason": "Frontiersman gives the Medical Pack one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "poison_bomb",
-					"reason": "Frontiersman gives the Poison Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "hive_bomb",
-					"reason": "Frontiersman gives the Hive Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "poison_trip_mine",
-					"reason": "Frontiersman gives the Poison Trip Mine one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "dusters",
-					"reason": "Frontiersman gives the Dusters one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "knuckle_knife",
-					"reason": "Frontiersman gives the Knuckle Knife one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "concertina_trip_mine",
-					"reason": "Frontiersman gives the Concertina Trip Mine one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "concertina_bomb",
-					"reason": "Frontiersman gives the Concertina Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "flash_bomb",
-					"reason": "Frontiersman gives the Flash Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "throwing_spear",
-					"reason": "Frontiersman gives the Throwing Spear one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"tool_id": "bear_traps",
-					"reason": "Frontiersman gives the Bear Traps one extra use, significantly extending your supply in a hunt."
-				}
-			],
+			"tool_synergies": [],
 			"is_burn": false,
 			"is_solo": false
 		},
@@ -1641,7 +1471,12 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [],
+			"tool_synergies": [
+				{
+					"tool_id": "tool_box",
+					"reason": "Packmule allows carrying an extra consumable slot."
+				}
+			],
 			"is_burn": false,
 			"is_solo": false
 		},
@@ -1655,7 +1490,20 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [],
+			"tool_synergies": [
+				{
+					"tool_id": "stalker_beetle",
+					"reason": "Pain Sense reveals enemy positions when they take damage near you."
+				},
+				{
+					"tool_id": "choke_beetle",
+					"reason": "Pain Sense reveals enemy positions when they take damage near you."
+				},
+				{
+					"tool_id": "fire_beetle",
+					"reason": "Pain Sense reveals enemy positions when they take damage near you."
+				}
+			],
 			"is_burn": false,
 			"is_solo": false
 		},
@@ -1686,11 +1534,7 @@
 			"tool_synergies": [
 				{
 					"tool_id": "first_aid_kit",
-					"reason": "Physician reduces bandage time, making First Aid Kit use faster in combat."
-				},
-				{
-					"tool_id": "medical_pack",
-					"reason": "Physician reduces bandage time, making Medical Pack use faster in combat."
+					"reason": "Physician enhances the healing kit's effect."
 				}
 			],
 			"is_burn": false,
@@ -1744,16 +1588,8 @@
 					"reason": "Pitcher increases throw range, allowing safe deployment of lingering fire AoE."
 				},
 				{
-					"tool_id": "throwing_knives",
-					"reason": "Pitcher increases throw range, allowing safer ranged melee attacks."
-				},
-				{
-					"tool_id": "throwing_axes",
-					"reason": "Pitcher increases throwing range, allowing axes to hit distant targets more easily."
-				},
-				{
 					"tool_id": "decoys",
-					"reason": "Pitcher extends decoy throw range, enabling longer-distance distractions."
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
 				},
 				{
 					"tool_id": "chaos_bomb",
@@ -1761,7 +1597,15 @@
 				},
 				{
 					"tool_id": "blank_fire_decoys",
-					"reason": "Pitcher increases throw range, enabling decoys to be thrown farther."
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
+				},
+				{
+					"tool_id": "decoy_fuses",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
+				},
+				{
+					"tool_id": "fusees",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
 				},
 				{
 					"tool_id": "poison_bomb",
@@ -1772,16 +1616,24 @@
 					"reason": "Pitcher extends throw distance, enabling you to place Hive Bombs more accurately from safer positions."
 				},
 				{
+					"tool_id": "stalker_beetle",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
+				},
+				{
+					"tool_id": "choke_beetle",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
+				},
+				{
+					"tool_id": "fire_beetle",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
+				},
+				{
 					"tool_id": "concertina_bomb",
 					"reason": "Pitcher increases throw range, enabling you to trap enemies from farther away."
 				},
 				{
 					"tool_id": "flash_bomb",
 					"reason": "Pitcher increases throw range, letting you blind enemies from safer distances."
-				},
-				{
-					"tool_id": "throwing_spear",
-					"reason": "Pitcher extends the throw range for aim-helper items, letting you spear targets from greater distances."
 				}
 			],
 			"is_burn": false,
@@ -1799,20 +1651,20 @@
 			"weapon_synergies": [],
 			"tool_synergies": [
 				{
-					"tool_id": "bear_traps",
-					"reason": "Poacher lets you place and disarm Bear Traps silently, preventing enemies from hearing you set the trap."
-				},
-				{
 					"tool_id": "alert_trip_mine",
-					"reason": "Poacher lets you place and disarm traps silently, preventing enemies from hearing you set this trap."
-				},
-				{
-					"tool_id": "concertina_trip_mine",
-					"reason": "Poacher lets you place and disarm traps silently, preventing enemies from hearing you set this trap."
+					"reason": "Poacher resets trap cooldowns on kills."
 				},
 				{
 					"tool_id": "poison_trip_mine",
-					"reason": "Poacher lets you place and disarm traps silently, preventing enemies from hearing you set this trap."
+					"reason": "Poacher resets trap cooldowns on kills."
+				},
+				{
+					"tool_id": "concertina_trip_mine",
+					"reason": "Poacher resets trap cooldowns on kills."
+				},
+				{
+					"tool_id": "bear_traps",
+					"reason": "Poacher resets trap cooldowns on kills."
 				}
 			],
 			"is_burn": false,
@@ -1828,7 +1680,20 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [],
+			"tool_synergies": [
+				{
+					"tool_id": "stalker_beetle",
+					"reason": "Poltergeist hides your noise when using consumables."
+				},
+				{
+					"tool_id": "choke_beetle",
+					"reason": "Poltergeist hides your noise when using consumables."
+				},
+				{
+					"tool_id": "fire_beetle",
+					"reason": "Poltergeist hides your noise when using consumables."
+				}
+			],
 			"is_burn": false,
 			"is_solo": false
 		},
@@ -1961,7 +1826,20 @@
 			"trait_type": "scarce",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [],
+			"tool_synergies": [
+				{
+					"tool_id": "stalker_beetle",
+					"reason": "Remedy extends the effect duration of consumable items."
+				},
+				{
+					"tool_id": "choke_beetle",
+					"reason": "Remedy extends the effect duration of consumable items."
+				},
+				{
+					"tool_id": "fire_beetle",
+					"reason": "Remedy extends the effect duration of consumable items."
+				}
+			],
 			"is_burn": true,
 			"is_solo": false
 		},
@@ -2017,7 +1895,20 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [],
+			"tool_synergies": [
+				{
+					"tool_id": "stalker_beetle",
+					"reason": "Serpent reduces received poison duration."
+				},
+				{
+					"tool_id": "choke_beetle",
+					"reason": "Serpent reduces received poison duration."
+				},
+				{
+					"tool_id": "fire_beetle",
+					"reason": "Serpent reduces received poison duration."
+				}
+			],
 			"is_burn": false,
 			"is_solo": true
 		},
@@ -2119,31 +2010,31 @@
 			"tool_synergies": [
 				{
 					"tool_id": "knife",
-					"reason": "Silent Killer reduces the Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				},
 				{
 					"tool_id": "throwing_knives",
-					"reason": "Silent Killer reduces the Throwing Knives's attack sound by 50%, letting you strike without alerting nearby hunters."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				},
 				{
 					"tool_id": "heavy_knife",
-					"reason": "Silent Killer reduces the Heavy Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				},
 				{
 					"tool_id": "throwing_axes",
-					"reason": "Silent Killer reduces the Throwing Axes's attack sound by 50%, letting you strike without alerting nearby hunters."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				},
 				{
 					"tool_id": "dusters",
-					"reason": "Silent Killer reduces the Dusters's attack sound by 50%, letting you strike without alerting nearby hunters."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				},
 				{
 					"tool_id": "knuckle_knife",
-					"reason": "Silent Killer reduces the Knuckle Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				},
 				{
 					"tool_id": "throwing_spear",
-					"reason": "Silent Killer reduces the Throwing Spear's attack sound by 50%, letting you strike without alerting nearby hunters."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				}
 			],
 			"is_burn": false,
@@ -2182,112 +2073,7 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [
-				{
-					"tool_id": "dynamite_stick",
-					"reason": "Surefoot lets you sprint while holding a primed Dynamite Stick, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "waxed_dynamite_stick",
-					"reason": "Surefoot lets you sprint while holding a primed Waxed Dynamite Stick, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "sticky_bomb",
-					"reason": "Surefoot lets you sprint while holding a primed Sticky Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "dynamite_bundle",
-					"reason": "Surefoot lets you sprint while holding a primed Dynamite Bundle, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "frag_bomb",
-					"reason": "Surefoot lets you sprint while holding a primed Frag Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "big_dynamite_bundle",
-					"reason": "Surefoot lets you sprint while holding a primed Big Dynamite Bundle, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "fire_bomb",
-					"reason": "Surefoot lets you sprint while holding a primed Fire Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "liquid_fire_bomb",
-					"reason": "Surefoot lets you sprint while holding a primed Liquid Fire Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "hellfire_bomb",
-					"reason": "Surefoot lets you sprint while holding a primed Hellfire Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "decoys",
-					"reason": "Surefoot lets you sprint while holding a primed Decoys, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "chaos_bomb",
-					"reason": "Surefoot lets you sprint while holding a primed Chaos Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "blank_fire_decoys",
-					"reason": "Surefoot lets you sprint while holding a primed Blank Fire Decoys, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "first_aid_kit",
-					"reason": "Surefoot lets you sprint while holding a primed First Aid Kit, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "medical_pack",
-					"reason": "Surefoot lets you sprint while holding a primed Medical Pack, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "poison_bomb",
-					"reason": "Surefoot lets you sprint while holding a primed Poison Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "hive_bomb",
-					"reason": "Surefoot lets you sprint while holding a primed Hive Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "vitality_shot_weak",
-					"reason": "Surefoot lets you sprint while holding a primed Vitality Shot (Weak), closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "vitality_shot",
-					"reason": "Surefoot lets you sprint while holding a primed Vitality Shot, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "stamina_shot_weak",
-					"reason": "Surefoot lets you sprint while holding a primed Stamina Shot (Weak), closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "stamina_shot",
-					"reason": "Surefoot lets you sprint while holding a primed Stamina Shot, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "regeneration_shot_weak",
-					"reason": "Surefoot lets you sprint while holding a primed Regeneration Shot (Weak), closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "regeneration_shot",
-					"reason": "Surefoot lets you sprint while holding a primed Regeneration Shot, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "concertina_bomb",
-					"reason": "Surefoot lets you sprint while holding a primed Concertina Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "flash_bomb",
-					"reason": "Surefoot lets you sprint while holding a primed Flash Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"tool_id": "antidote_shot_weak",
-					"reason": "Surefoot lets you sprint while holding a primed Antidote Shot (Weak), so you don't have to stop moving to administer it."
-				},
-				{
-					"tool_id": "antidote_shot",
-					"reason": "Surefoot lets you sprint while holding a primed Antidote Shot, so you don't have to stop moving to administer it."
-				}
-			],
+			"tool_synergies": [],
 			"is_burn": false,
 			"is_solo": false
 		},
@@ -2303,20 +2089,12 @@
 			"weapon_synergies": [],
 			"tool_synergies": [
 				{
-					"tool_id": "bear_traps",
-					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to keep track of your own Bear Traps in the field."
-				},
-				{
 					"tool_id": "alert_trip_mine",
-					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to track your own Alert Trip Mine placements."
-				},
-				{
-					"tool_id": "concertina_trip_mine",
-					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to track your own Concertina Trip Mine placements."
+					"reason": "Vigilant extends trap detection radius."
 				},
 				{
 					"tool_id": "poison_trip_mine",
-					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to track your own Poison Trip Mine placements."
+					"reason": "Vigilant extends trap detection radius."
 				},
 				{
 					"tool_id": "stalker_beetle",
@@ -2329,6 +2107,14 @@
 				{
 					"tool_id": "fire_beetle",
 					"reason": "Vigilant highlights active Fire Beetles in Dark Sight, letting you track them and keep tabs on their position."
+				},
+				{
+					"tool_id": "concertina_trip_mine",
+					"reason": "Vigilant extends trap detection radius."
+				},
+				{
+					"tool_id": "bear_traps",
+					"reason": "Vigilant extends trap detection radius."
 				}
 			],
 			"is_burn": false,
@@ -2344,7 +2130,16 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [],
+			"tool_synergies": [
+				{
+					"tool_id": "regeneration_shot_weak",
+					"reason": "Vigor extends the duration of regeneration/stamina shots."
+				},
+				{
+					"tool_id": "regeneration_shot",
+					"reason": "Vigor extends the duration of regeneration/stamina shots."
+				}
+			],
 			"is_burn": false,
 			"is_solo": false
 		},
@@ -2386,7 +2181,20 @@
 			"trait_type": "normal",
 			"image_url": "",
 			"weapon_synergies": [],
-			"tool_synergies": [],
+			"tool_synergies": [
+				{
+					"tool_id": "stalker_beetle",
+					"reason": "Witness reveals hunters who damage your beetles or traps."
+				},
+				{
+					"tool_id": "choke_beetle",
+					"reason": "Witness reveals hunters who damage your beetles or traps."
+				},
+				{
+					"tool_id": "fire_beetle",
+					"reason": "Witness reveals hunters who damage your beetles or traps."
+				}
+			],
 			"is_burn": false,
 			"is_solo": false
 		}
@@ -4951,14 +4759,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throwing range, allowing Dynamite Stick to be thrown farther and more accurately."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Dynamite Stick, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Dynamite Stick one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -4973,14 +4773,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throwing range, allowing Waxed Dynamite Stick to be thrown farther and more accurately."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Waxed Dynamite Stick, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Waxed Dynamite Stick one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -4995,14 +4787,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throwing range, allowing Sticky Bomb to be thrown farther and more accurately."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Sticky Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Sticky Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5017,14 +4801,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throwing range, allowing Dynamite Bundle to be thrown farther and more accurately."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Dynamite Bundle, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Dynamite Bundle one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5039,14 +4815,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, allowing safer distance from blast radius."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Frag Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Frag Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5061,14 +4829,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher extends throw range, enabling hits on distant targets with large AoE."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Big Dynamite Bundle, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Big Dynamite Bundle one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5083,14 +4843,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, allowing area denial from safer positions."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Fire Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Fire Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5105,14 +4857,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher extends throw range, enabling fire coverage on distant chokepoints."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Liquid Fire Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Liquid Fire Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5127,14 +4871,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, allowing safe deployment of lingering fire AoE."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Hellfire Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Hellfire Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5147,20 +4883,8 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "berserker",
-					"reason": "Berserker doubles all melee attack damage, making the Knife deal twice as much damage per hit."
-				},
-				{
 					"trait_id": "silent_killer",
-					"reason": "Silent Killer reduces the Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Knife one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"trait_id": "bruiser",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				}
 			]
 		},
@@ -5174,31 +4898,15 @@
 			"trait_synergies": [
 				{
 					"trait_id": "assailant",
-					"reason": "Assailant increases melee damage of throwing knives, making them more effective in close combat."
+					"reason": "Assailant boosts throwing damage \u2014 works directly with thrown weapons."
 				},
 				{
 					"trait_id": "blade_seer",
-					"reason": "Blade Seer highlights throwing knives in dark sight up to 75m, aiding retrieval."
-				},
-				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher increases throw range, allowing safer ranged melee attacks."
-				},
-				{
-					"trait_id": "berserker",
-					"reason": "Berserker doubles all melee attack damage, making the Throwing Knives deal twice as much damage per hit."
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
 				},
 				{
 					"trait_id": "silent_killer",
-					"reason": "Silent Killer reduces the Throwing Knives's attack sound by 50%, letting you strike without alerting nearby hunters."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Throwing Knives one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"trait_id": "bruiser",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				}
 			]
 		},
@@ -5211,20 +4919,8 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "berserker",
-					"reason": "Berserker doubles all melee attack damage, making the Heavy Knife deal twice as much damage per hit."
-				},
-				{
 					"trait_id": "silent_killer",
-					"reason": "Silent Killer reduces the Heavy Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Heavy Knife one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"trait_id": "bruiser",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				}
 			]
 		},
@@ -5238,31 +4934,15 @@
 			"trait_synergies": [
 				{
 					"trait_id": "assailant",
-					"reason": "Assailant increases melee damage of throwing axes, improving their close-quarters lethality."
+					"reason": "Assailant boosts throwing damage \u2014 works directly with thrown weapons."
 				},
 				{
 					"trait_id": "blade_seer",
-					"reason": "Blade Seer increases Dark Sight highlight range for Throwing Axes to 75m, aiding retrieval."
-				},
-				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher increases throwing range, allowing axes to hit distant targets more easily."
-				},
-				{
-					"trait_id": "berserker",
-					"reason": "Berserker doubles all melee attack damage, making the Throwing Axes deal twice as much damage per hit."
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
 				},
 				{
 					"trait_id": "silent_killer",
-					"reason": "Silent Killer reduces the Throwing Axes's attack sound by 50%, letting you strike without alerting nearby hunters."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Throwing Axes one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"trait_id": "bruiser",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				}
 			]
 		},
@@ -5275,20 +4955,12 @@
 			"type": "throwable decoy aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher extends decoy throw range, enabling longer-distance distractions."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Decoys, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Decoys one extra use, significantly extending your supply in a hunt."
-				},
-				{
 					"trait_id": "decoy_supply",
-					"reason": "Decoy Supply lets you restock Decoys from ammo crates, keeping your supply topped up across a long hunt."
+					"reason": "Decoy Supply grants additional uses of decoy items."
+				},
+				{
+					"trait_id": "pitcher",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
 				}
 			]
 		},
@@ -5302,19 +4974,11 @@
 			"trait_synergies": [
 				{
 					"trait_id": "poacher",
-					"reason": "Poacher lets you place and disarm traps silently, preventing enemies from hearing you set this trap."
+					"reason": "Poacher resets trap cooldowns on kills."
 				},
 				{
 					"trait_id": "vigilant",
-					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to track your own Alert Trip Mine placements."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Alert Trip Mine one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"trait_id": "decoy_supply",
-					"reason": "Decoy Supply lets you restock Alert Trip Mine from ammo crates, keeping your supply topped up across a long hunt."
+					"reason": "Vigilant extends trap detection radius."
 				}
 			]
 		},
@@ -5329,18 +4993,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher extends chaos bomb throw range, allowing longer-distance noise creation."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Chaos Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Chaos Bomb one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"trait_id": "decoy_supply",
-					"reason": "Decoy Supply lets you restock Chaos Bomb from ammo crates, keeping your supply topped up across a long hunt."
 				}
 			]
 		},
@@ -5353,20 +5005,12 @@
 			"type": "throwable decoy aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher increases throw range, enabling decoys to be thrown farther."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Blank Fire Decoys, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Blank Fire Decoys one extra use, significantly extending your supply in a hunt."
-				},
-				{
 					"trait_id": "decoy_supply",
-					"reason": "Decoy Supply lets you restock Blank Fire Decoys from ammo crates, keeping your supply topped up across a long hunt."
+					"reason": "Decoy Supply grants additional uses of decoy items."
+				},
+				{
+					"trait_id": "pitcher",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
 				}
 			]
 		},
@@ -5380,7 +5024,11 @@
 			"trait_synergies": [
 				{
 					"trait_id": "decoy_supply",
-					"reason": "Decoy Supply lets you restock Decoy Fuses from ammo crates, keeping your supply topped up across a long hunt."
+					"reason": "Decoy Supply grants additional uses of decoy items."
+				},
+				{
+					"trait_id": "pitcher",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
 				}
 			]
 		},
@@ -5391,7 +5039,12 @@
 			"cost": 10,
 			"tool_class": "support",
 			"type": "support",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
+				}
+			]
 		},
 		{
 			"id": "flare_pistol",
@@ -5412,19 +5065,11 @@
 			"trait_synergies": [
 				{
 					"trait_id": "doctor",
-					"reason": "Doctor doubles health restored by First Aid Kit, making it heal 100 HP instead of 50."
+					"reason": "Doctor speeds up First Aid Kit use."
 				},
 				{
 					"trait_id": "physician",
-					"reason": "Physician reduces bandage time, making First Aid Kit use faster in combat."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed First Aid Kit, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the First Aid Kit one extra use, significantly extending your supply in a hunt."
+					"reason": "Physician enhances the healing kit's effect."
 				}
 			]
 		},
@@ -5435,24 +5080,7 @@
 			"cost": 35,
 			"tool_class": "healing",
 			"type": "healing",
-			"trait_synergies": [
-				{
-					"trait_id": "doctor",
-					"reason": "Doctor does not affect Medical Pack; it only applies to First Aid Kit."
-				},
-				{
-					"trait_id": "physician",
-					"reason": "Physician reduces bandage time, making Medical Pack use faster in combat."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Medical Pack, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Medical Pack one extra use, significantly extending your supply in a hunt."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "poison_bomb",
@@ -5465,14 +5093,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, letting you place poison clouds farther away."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Poison Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Poison Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5483,12 +5103,7 @@
 			"cost": 30,
 			"tool_class": "poison",
 			"type": "throwable poison aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Antidote Shot (Weak), so you don't have to stop moving to administer it."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "antidote_shot",
@@ -5497,12 +5112,7 @@
 			"cost": 55,
 			"tool_class": "poison",
 			"type": "throwable poison aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Antidote Shot, so you don't have to stop moving to administer it."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "hive_bomb",
@@ -5515,14 +5125,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher extends throw distance, enabling you to place Hive Bombs more accurately from safer positions."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Hive Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Hive Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5536,15 +5138,11 @@
 			"trait_synergies": [
 				{
 					"trait_id": "poacher",
-					"reason": "Poacher lets you place and disarm traps silently, preventing enemies from hearing you set this trap."
+					"reason": "Poacher resets trap cooldowns on kills."
 				},
 				{
 					"trait_id": "vigilant",
-					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to track your own Poison Trip Mine placements."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Poison Trip Mine one extra use, significantly extending your supply in a hunt."
+					"reason": "Vigilant extends trap detection radius."
 				}
 			]
 		},
@@ -5555,12 +5153,7 @@
 			"cost": 20,
 			"tool_class": "healing",
 			"type": "healing",
-			"trait_synergies": [
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Vitality Shot (Weak), closing distance or reposition without losing throw timing."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "vitality_shot",
@@ -5569,12 +5162,7 @@
 			"cost": 85,
 			"tool_class": "healing",
 			"type": "healing",
-			"trait_synergies": [
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Vitality Shot, closing distance or reposition without losing throw timing."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "stamina_shot_weak",
@@ -5583,12 +5171,7 @@
 			"cost": 60,
 			"tool_class": "healing",
 			"type": "healing",
-			"trait_synergies": [
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Stamina Shot (Weak), closing distance or reposition without losing throw timing."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "stamina_shot",
@@ -5597,12 +5180,7 @@
 			"cost": 100,
 			"tool_class": "healing",
 			"type": "healing",
-			"trait_synergies": [
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Stamina Shot, closing distance or reposition without losing throw timing."
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "regeneration_shot_weak",
@@ -5613,8 +5191,8 @@
 			"type": "healing",
 			"trait_synergies": [
 				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Regeneration Shot (Weak), closing distance or reposition without losing throw timing."
+					"trait_id": "vigor",
+					"reason": "Vigor extends the duration of regeneration/stamina shots."
 				}
 			]
 		},
@@ -5627,8 +5205,8 @@
 			"type": "healing",
 			"trait_synergies": [
 				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Regeneration Shot, closing distance or reposition without losing throw timing."
+					"trait_id": "vigor",
+					"reason": "Vigor extends the duration of regeneration/stamina shots."
 				}
 			]
 		},
@@ -5641,20 +5219,8 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "berserker",
-					"reason": "Berserker doubles all melee attack damage, making the Dusters deal twice as much damage per hit."
-				},
-				{
 					"trait_id": "silent_killer",
-					"reason": "Silent Killer reduces the Dusters's attack sound by 50%, letting you strike without alerting nearby hunters."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Dusters one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"trait_id": "bruiser",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				}
 			]
 		},
@@ -5667,20 +5233,8 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "berserker",
-					"reason": "Berserker doubles all melee attack damage, making the Knuckle Knife deal twice as much damage per hit."
-				},
-				{
 					"trait_id": "silent_killer",
-					"reason": "Silent Killer reduces the Knuckle Knife's attack sound by 50%, letting you strike without alerting nearby hunters."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Knuckle Knife one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"trait_id": "bruiser",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				}
 			]
 		},
@@ -5693,12 +5247,40 @@
 			"type": "throwable decoy aim-helper",
 			"trait_synergies": [
 				{
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
+				},
+				{
+					"trait_id": "blast_sense",
+					"reason": "Blast Sense provides a warning when a bomb/beetle is about to explode."
+				},
+				{
+					"trait_id": "pain_sense",
+					"reason": "Pain Sense reveals enemy positions when they take damage near you."
+				},
+				{
+					"trait_id": "pitcher",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
+				},
+				{
+					"trait_id": "poltergeist",
+					"reason": "Poltergeist hides your noise when using consumables."
+				},
+				{
+					"trait_id": "remedy",
+					"reason": "Remedy extends the effect duration of consumable items."
+				},
+				{
+					"trait_id": "serpent",
+					"reason": "Serpent reduces received poison duration."
+				},
+				{
 					"trait_id": "vigilant",
 					"reason": "Vigilant highlights active Stalker Beetles in Dark Sight, letting you track them and keep tabs on their position."
 				},
 				{
-					"trait_id": "decoy_supply",
-					"reason": "Decoy Supply lets you restock Stalker Beetle from ammo crates, keeping your supply topped up across a long hunt."
+					"trait_id": "witness",
+					"reason": "Witness reveals hunters who damage your beetles or traps."
 				}
 			]
 		},
@@ -5711,12 +5293,40 @@
 			"type": "throwable decoy aim-helper",
 			"trait_synergies": [
 				{
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
+				},
+				{
+					"trait_id": "blast_sense",
+					"reason": "Blast Sense provides a warning when a bomb/beetle is about to explode."
+				},
+				{
+					"trait_id": "pain_sense",
+					"reason": "Pain Sense reveals enemy positions when they take damage near you."
+				},
+				{
+					"trait_id": "pitcher",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
+				},
+				{
+					"trait_id": "poltergeist",
+					"reason": "Poltergeist hides your noise when using consumables."
+				},
+				{
+					"trait_id": "remedy",
+					"reason": "Remedy extends the effect duration of consumable items."
+				},
+				{
+					"trait_id": "serpent",
+					"reason": "Serpent reduces received poison duration."
+				},
+				{
 					"trait_id": "vigilant",
 					"reason": "Vigilant highlights active Choke Beetles in Dark Sight, letting you track them and keep tabs on their position."
 				},
 				{
-					"trait_id": "decoy_supply",
-					"reason": "Decoy Supply lets you restock Choke Beetle from ammo crates, keeping your supply topped up across a long hunt."
+					"trait_id": "witness",
+					"reason": "Witness reveals hunters who damage your beetles or traps."
 				}
 			]
 		},
@@ -5729,12 +5339,40 @@
 			"type": "throwable decoy aim-helper",
 			"trait_synergies": [
 				{
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
+				},
+				{
+					"trait_id": "blast_sense",
+					"reason": "Blast Sense provides a warning when a bomb/beetle is about to explode."
+				},
+				{
+					"trait_id": "pain_sense",
+					"reason": "Pain Sense reveals enemy positions when they take damage near you."
+				},
+				{
+					"trait_id": "pitcher",
+					"reason": "Pitcher increases throwing range, improving accuracy and distance."
+				},
+				{
+					"trait_id": "poltergeist",
+					"reason": "Poltergeist hides your noise when using consumables."
+				},
+				{
+					"trait_id": "remedy",
+					"reason": "Remedy extends the effect duration of consumable items."
+				},
+				{
+					"trait_id": "serpent",
+					"reason": "Serpent reduces received poison duration."
+				},
+				{
 					"trait_id": "vigilant",
 					"reason": "Vigilant highlights active Fire Beetles in Dark Sight, letting you track them and keep tabs on their position."
 				},
 				{
-					"trait_id": "decoy_supply",
-					"reason": "Decoy Supply lets you restock Fire Beetle from ammo crates, keeping your supply topped up across a long hunt."
+					"trait_id": "witness",
+					"reason": "Witness reveals hunters who damage your beetles or traps."
 				}
 			]
 		},
@@ -5754,7 +5392,12 @@
 			"cost": 70,
 			"tool_class": "support",
 			"type": "support",
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "packmule",
+					"reason": "Packmule allows carrying an extra consumable slot."
+				}
+			]
 		},
 		{
 			"id": "concertina_trip_mine",
@@ -5766,15 +5409,11 @@
 			"trait_synergies": [
 				{
 					"trait_id": "poacher",
-					"reason": "Poacher lets you place and disarm traps silently, preventing enemies from hearing you set this trap."
+					"reason": "Poacher resets trap cooldowns on kills."
 				},
 				{
 					"trait_id": "vigilant",
-					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to track your own Concertina Trip Mine placements."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Concertina Trip Mine one extra use, significantly extending your supply in a hunt."
+					"reason": "Vigilant extends trap detection radius."
 				}
 			]
 		},
@@ -5789,14 +5428,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, enabling you to trap enemies from farther away."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Concertina Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Concertina Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5811,14 +5442,6 @@
 				{
 					"trait_id": "pitcher",
 					"reason": "Pitcher increases throw range, letting you blind enemies from safer distances."
-				},
-				{
-					"trait_id": "surefoot",
-					"reason": "Surefoot lets you sprint while holding a primed Flash Bomb, closing distance or reposition without losing throw timing."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Flash Bomb one extra use, significantly extending your supply in a hunt."
 				}
 			]
 		},
@@ -5831,24 +5454,12 @@
 			"type": "throwable melee aim-helper",
 			"trait_synergies": [
 				{
-					"trait_id": "pitcher",
-					"reason": "Pitcher extends the throw range for aim-helper items, letting you spear targets from greater distances."
-				},
-				{
-					"trait_id": "berserker",
-					"reason": "Berserker doubles all melee attack damage, making the Throwing Spear deal twice as much damage per hit."
+					"trait_id": "blade_seer",
+					"reason": "Blade Seer marks hunters hit by projectiles in Dark Sight."
 				},
 				{
 					"trait_id": "silent_killer",
-					"reason": "Silent Killer reduces the Throwing Spear's attack sound by 50%, letting you strike without alerting nearby hunters."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Throwing Spear one extra use, significantly extending your supply in a hunt."
-				},
-				{
-					"trait_id": "bruiser",
-					"reason": "Reduces melee stamina cost by 25%, letting you chain more attacks before tiring."
+					"reason": "Silent Killer reduces melee/throw sound by 50%, keeping attacks quiet."
 				}
 			]
 		},
@@ -5862,15 +5473,11 @@
 			"trait_synergies": [
 				{
 					"trait_id": "poacher",
-					"reason": "Poacher lets you place and disarm Bear Traps silently, preventing enemies from hearing you set the trap."
+					"reason": "Poacher resets trap cooldowns on kills."
 				},
 				{
 					"trait_id": "vigilant",
-					"reason": "Vigilant highlights nearby traps in Dark Sight, making it easier to keep track of your own Bear Traps in the field."
-				},
-				{
-					"trait_id": "frontiersman",
-					"reason": "Frontiersman gives the Bear Traps one extra use, significantly extending your supply in a hunt."
+					"reason": "Vigilant extends trap detection radius."
 				}
 			]
 		}
