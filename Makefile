@@ -1,4 +1,4 @@
-.PHONY: install scrape enrich data build dev clean hooks
+.PHONY: install scrape synergies data build dev clean hooks
 
 # First-time setup: hermit tools + pre-commit hooks + deps
 install: hooks
@@ -12,15 +12,17 @@ hooks:
 scrape:
 	cd scraper && uv run python scrape.py
 
-enrich:
-	cd scraper && uv run python enrich.py
+# Scrape synergies from wiki (run after scrape + data)
+synergies:
+	cd scraper && uv run python scrape_weapon_traits.py
+	cd scraper && uv run python scrape_tool_traits.py
 
-# Copy enriched data into the frontend — run after enrich
+# Copy raw scraped data into the frontend — run after scrape
 data:
-	cp scraper/data/enriched.json frontend/src/data.json
+	cp scraper/data/raw.json frontend/src/data.json
 	@echo "data.json ready"
 
-# Full pipeline: scrape → enrich → copy → build
+# Full pipeline: scrape → copy → synergies → build
 build:
 	cd scraper && uv run python build.py
 	cd frontend && pnpm build
