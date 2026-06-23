@@ -16,11 +16,11 @@ Search by weapon to find the traits that make it sing. Search by tool to see whi
 - **By Tool** — pick a consumable (throwables, healing shots, First Aid Kits…) and see which traits improve it
 - **By Trait** — find which weapons and tools benefit from a given perk, in one view
 - Filter by weapon class (ammo type + melee / bow / launcher), tool category, or trait category
-- Traits are tagged: **scarce** (in-run pickups only), **burn** (lost when your hunter dies), **event** (limited availability)
+- Traits are tagged: **scarce** (in-run pickups only), **burn** (lost when your hunter dies), **solo** (bonus when playing alone), **event** (limited availability)
 - Fuzzy search across names and descriptions
 - Responsive — works on mobile, desktop, and your cursed ultrawide
 
-Data is scraped from [huntshowdown.wiki.gg](https://huntshowdown.wiki.gg) and enriched with DeepSeek to explain *why* each synergy works, not just that it does.
+Synergy data is scraped directly from the "Recommended Traits" section on each weapon and tool page on [huntshowdown.wiki.gg](https://huntshowdown.wiki.gg) — no LLM guessing.
 
 ---
 
@@ -31,10 +31,6 @@ Requires [hermit](https://cashapp.github.io/hermit/) and [direnv](https://direnv
 ```bash
 # Activate hermit (installs prek, gitleaks, uv into bin/)
 . bin/activate-hermit
-
-# Set up DeepSeek API key via 1Password (see .envrc.example)
-cp .envrc.example .envrc
-direnv allow
 
 # Install pre-commit hooks
 prek install
@@ -49,16 +45,15 @@ make install
 # Dev server (hot reload, uses whatever data.json is in frontend/src/)
 make dev
 
-# Rebuild data from scratch (scrape wiki → enrich with DeepSeek → copy)
+# Rebuild data from scratch (scrape wiki metadata → scrape synergies → copy)
 make build
 ```
 
 ## Refreshing data after a Hunt patch
 
-The wiki scraper picks up the current patch version automatically. Run the pipeline locally or trigger the [Refresh Data](../../actions/workflows/refresh-data.yml) workflow manually on GitHub.
+The wiki scrapers pick up the current patch version automatically. Run the pipeline locally or trigger the [Refresh Data](../../actions/workflows/refresh-data.yml) workflow manually on GitHub.
 
 ```bash
-# Needs DEEPSEEK_API_KEY in your environment
 make build
 git add frontend/src/data.json
 git commit -m "chore(data): refresh for patch X.X.X"
@@ -72,20 +67,22 @@ Pushing to `main` automatically triggers the deploy workflow.
 ## Architecture
 
 ```
-scraper/           Python pipeline (uv)
-  scrape.py        → fetches traits + weapons from wiki.gg, tools from Fandom
-  enrich.py        → calls DeepSeek to write "why it helps" for each synergy
-  build.py         → orchestrates scrape → enrich → copy to frontend
+scraper/                  Python pipeline (uv)
+  scrape.py               → fetches trait/weapon/tool metadata from wiki.gg
+  scrape_weapon_traits.py → scrapes "Recommended Traits" from each weapon page
+  scrape_tool_traits.py   → scrapes "Recommended Traits" from each tool/consumable page
+  enrich.py               → (legacy) DeepSeek enrichment, no longer used for synergies
+  build.py                → orchestrates scrape → synergy scrape → copy to frontend
 
-frontend/          Preact + Tailwind + Fuse.js (pnpm, Vite 8)
-  src/data.json    → committed build artifact, updated by refresh pipeline
+frontend/                 Preact + Tailwind + Fuse.js (pnpm, Vite 6)
+  src/data.json           → committed build artifact, updated by refresh pipeline
 
-dist/              built static site (gitignored, deployed to Pages)
+dist/                     built static site (gitignored, deployed to Pages)
 
 .github/
   workflows/
-    deploy.yml         → push to main → build frontend → deploy Pages (no API key needed)
-    refresh-data.yml   → manual/scheduled → scrape + enrich + commit data.json
+    deploy.yml            → push to main → build frontend → deploy Pages
+    refresh-data.yml      → manual/scheduled → scrape + commit data.json
 ```
 
 ---
