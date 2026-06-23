@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html, body, #app {
+		height: 100%;
+	}
+
+	html {
+		background-color: #0B0906;
+		color: #E4D5B8;
+	}
+
+	/* Slim warm scrollbars site-wide */
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: #5C3E20 #131009;
+	}
+	*::-webkit-scrollbar       { width: 5px; height: 5px; }
+	*::-webkit-scrollbar-track { background: #131009; }
+	*::-webkit-scrollbar-thumb { background: #5C3E20; border-radius: 3px; }
+}
+
+@layer utilities {
+	/* Hide scrollbar but keep scroll functionality */
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.no-scrollbar::-webkit-scrollbar { display: none; }
+
+	/* Subtle gold text glow for headings */
+	.glow-gold {
+		text-shadow: 0 0 24px rgba(201, 147, 42, 0.35);
+	}
+
+	/* Thin top border highlight on cards */
+	.card-shine::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		background: linear-gradient(
+			180deg,
+			rgba(201, 147, 42, 0.08) 0%,
+			transparent 40%
+		);
+		pointer-events: none;
+	}
+}

@@ -1,0 +1,4 @@
+# Copy this file to .envrc, fill in your values, then run `direnv allow`
+# If you use 1Password CLI, the .envrc below auto-fetches the key.
+
+export DEEPSEEK_API_KEY=$(op item get --account my.1password.eu --vault Homelab "bayou-traits" --reveal --field deepseek-api-token)

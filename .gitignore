@@ -1,0 +1,8 @@
+node_modules/
+dist/
+scraper/data/
+*.pyc
+__pycache__/
+.env
+.envrc
+.DS_Store
