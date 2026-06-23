@@ -181,7 +181,7 @@ export default function App() {
 				{/* Filter pills */}
 				<div className="max-w-[1800px] mx-auto px-4 sm:px-6 pb-2 flex gap-2 overflow-x-auto no-scrollbar">
 					<button
-						onClick={() => setFilter(null)}
+						onClick={() => { setFilter(null); setSelectedId(null) }}
 						className={`px-3 py-1 text-xs rounded-full border shrink-0 transition-colors
 							${!filter
 								? 'border-hunt-gold text-hunt-gold bg-hunt-gold/10'
@@ -193,7 +193,7 @@ export default function App() {
 					{activeFilters.map(f => (
 						<button
 							key={f}
-							onClick={() => setFilter(prev => prev === f ? null : f)}
+							onClick={() => { setFilter(prev => prev === f ? null : f); setSelectedId(null) }}
 							className={`px-3 py-1 text-xs rounded-full border shrink-0 capitalize transition-colors
 								${filter === f
 									? 'border-hunt-gold text-hunt-gold bg-hunt-gold/10'
