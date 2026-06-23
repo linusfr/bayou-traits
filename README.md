@@ -20,7 +20,7 @@ Search by weapon to find the traits that make it sing. Search by tool to see whi
 - Fuzzy search across names and descriptions
 - Responsive — works on mobile, desktop, and your cursed ultrawide
 
-Synergy data is scraped directly from the "Recommended Traits" section on each weapon and tool page on [huntshowdown.wiki.gg](https://huntshowdown.wiki.gg) — no LLM guessing.
+Synergy data is scraped directly from the "Recommended Traits" section on each weapon and tool page on [huntshowdown.wiki.gg](https://huntshowdown.wiki.gg).
 
 ---
 
