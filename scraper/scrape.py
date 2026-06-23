@@ -24,17 +24,19 @@ SKIP_PAGES = {
 
 # Keywords in trait descriptions that hint at weapon type affinity
 WEAPON_TYPE_HINTS = {
-    "lever_action": ["lever-action", "lever action"],
+    "lever_action": ["lever-action", "lever action", "repeating rifle"],
     "bolt_action": ["bolt-action", "bolt action"],
     "semi_auto": ["semi-auto", "semi-automatic"],
-    "revolver": ["revolver"],
-    "pistol": ["pistol"],
-    "shotgun": ["shotgun"],
+    "revolver": ["revolver", "single-action", "double-action"],
+    "pistol": ["pistol", "handgun"],
+    "shotgun": ["shotgun", "pump-action"],
     "sniper": ["sniper"],
     "melee": ["melee weapon", "knife", "blade", "axe", "saber", "hammer"],
     "bow": ["bow", "crossbow"],
     "single_shot": ["single-shot", "single shot"],
 }
+
+AMMO_NAMES = {"compact", "medium", "long", "shotgun", "sparks", "nitro"}
 
 AMMO_HINTS = {
     "long": ["long ammo", "long-ammo"],
@@ -103,8 +105,8 @@ def parse_infobox_table(soup: BeautifulSoup) -> dict:
         for row in table.find_all("tr"):
             cells = row.find_all(["td", "th"])
             if len(cells) == 2:
-                key = cells[0].get_text(strip=True).lower()
-                val = cells[1].get_text(strip=True)
+                key = re.sub(r"\s+", " ", cells[0].get_text(separator=" ", strip=True)).strip().lower()
+                val = re.sub(r"\s+", " ", cells[1].get_text(separator=" ", strip=True)).strip()
                 if key and val:
                     fields[key] = val
     return fields
@@ -112,7 +114,7 @@ def parse_infobox_table(soup: BeautifulSoup) -> dict:
 
 def first_real_paragraph(soup: BeautifulSoup) -> str:
     for p in soup.find_all("p"):
-        text = p.get_text(strip=True)
+        text = re.sub(r"\s+", " ", p.get_text(separator=" ", strip=True)).strip()
         if len(text) > 20 and not text.startswith("["):
             return text
     return ""
@@ -197,6 +199,21 @@ def parse_weapon(html: str, title: str) -> dict | None:
             size = val.lower()
         elif "ammo" in key or "ammunition" in key or "caliber" in key:
             ammo = val.lower()
+        elif key == "name" and not ammo:
+            # Some weapon infoboxes use a "Name" row whose value is the ammo type
+            val_lower = val.lower()
+            for ammo_name in AMMO_NAMES:
+                if ammo_name in val_lower:
+                    ammo = ammo_name
+                    break
+
+    # Infer weapon type from name + description when the infobox has no type field
+    if not weapon_type:
+        combined = f"{title.lower()} {description.lower()}"
+        matched = [k for k, kws in WEAPON_TYPE_HINTS.items() if any(kw in combined for kw in kws)]
+        if matched:
+            # Store as space-joined hyphenated forms so enrich.py substring matching works
+            weapon_type = " ".join(k.replace("_", "-") for k in matched)
 
     # Infer size from weapon type if missing
     if not size:

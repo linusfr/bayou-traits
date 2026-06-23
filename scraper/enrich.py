@@ -27,7 +27,7 @@ that specific weapon. Focus on game mechanics, not flavor.
 
 {pairs}
 
-Respond ONLY with: {{"pairs": [{{"weapon_id": "...", "trait_id": "...", "reason": "..."}}]}}
+Respond ONLY with valid JSON: {{"pairs": [{{"weapon_id": "...", "trait_id": "...", "reason": "..."}}]}}
 """
 
 
