@@ -1,6 +1,6 @@
 # Bayou Traits
 
-> **Note:** This project is primarily vibe-coded and experimental — an end-to-end test of how Claude handles a full project, including a scraping pipeline and a simple frontend. Expect rough edges.
+> **Note:** This project is primarily vibe-coded and experimental — an end-to-end test of how Claude handles a full project, including a scraping pipeline and a simple frontend. Expect rough edges. It is not meant to replace the [official wiki](https://huntshowdown.wiki.gg) in any way.
 
 ---
 
