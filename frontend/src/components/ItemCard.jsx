@@ -23,6 +23,7 @@ const TRAIT_TYPE_PILL = {
 }
 
 const BURN_PILL = 'text-red-400 border-red-900/60 bg-red-950/30'
+const SOLO_PILL = 'text-violet-400 border-violet-900/60 bg-violet-950/30'
 
 const TOOL_CLASS_COLOR = {
 	explosive: 'text-orange-400',
@@ -124,8 +125,13 @@ export default function ItemCard({ item, type, selected, onClick }) {
 							</span>
 						)}
 						{item.is_burn && (
-							<span className={`inline text-xs px-2 py-0.5 rounded border ${BURN_PILL}`}>
+							<span className={`inline text-xs px-2 py-0.5 rounded border capitalize ${BURN_PILL}`}>
 								burn
+							</span>
+						)}
+						{item.is_solo && (
+							<span className={`inline text-xs px-2 py-0.5 rounded border capitalize ${SOLO_PILL}`}>
+								solo
 							</span>
 						)}
 					</div>

@@ -23,6 +23,7 @@ const TRAIT_TYPE_PILL = {
 }
 
 const BURN_PILL = 'text-red-400 border-red-900/60 bg-red-950/30'
+const SOLO_PILL = 'text-violet-400 border-violet-900/60 bg-violet-950/30'
 
 const TOOL_CLASS_PILL = {
 	explosive: 'text-orange-400 border-orange-900/60 bg-orange-950/30',
@@ -145,7 +146,10 @@ export default function SynergyPanel({ detail, onClose, onNavigate }) {
 								<Pill label={item.trait_type} className={TRAIT_TYPE_PILL[item.trait_type]} />
 							)}
 							{item.is_burn && (
-								<Pill label="burn" className={BURN_PILL} />
+								<Pill label="Burn" className={BURN_PILL} />
+							)}
+							{item.is_solo && (
+								<Pill label="Solo" className={SOLO_PILL} />
 							)}
 						</>
 					)}
