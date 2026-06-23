@@ -1,5 +1,9 @@
 # Bayou Traits
 
+> **Note:** This project is primarily vibe-coded and experimental — an end-to-end test of how Claude handles a full project, including a scraping pipeline and a simple frontend. Expect rough edges.
+
+---
+
 > *The bayou remembers. Your hunter doesn't have to.*
 
 A fast, searchable reference for Hunt: Showdown trait, weapon, and tool synergies — built for hunters who are tired of alt-tabbing to the wiki mid-lobby.
