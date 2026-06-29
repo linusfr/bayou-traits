@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"patch": "2.8.0.3",
-		"scraped_at": "2026-06-23T23:12:35.712445+00:00",
+		"scraped_at": "2026-06-29T14:03:10.944652+00:00",
 		"trait_count": 85,
 		"weapon_count": 147,
 		"tool_count": 43,
@@ -44,7 +44,7 @@
 		{
 			"id": "all_ears",
 			"name": "All Ears",
-			"description": "While using Dark Sight, decreases Dark Sight noise and increases sounds of enemy Hunters in the direction you're facing.",
+			"description": "While using Dark Sight , decreases Dark Sight noise and increases sounds of enemy Hunters in the direction you're facing.",
 			"cost": 0,
 			"rank": 0,
 			"category": "supportive",
@@ -106,7 +106,7 @@
 		{
 			"id": "beastface",
 			"name": "Beastface",
-			"description": "Reduce reaction range of animals (doesn't affect Monsters like Hellhounds ).",
+			"description": "Catalyst",
 			"cost": 4,
 			"rank": 42,
 			"category": "supportive",
@@ -202,7 +202,7 @@
 		{
 			"id": "blademancer",
 			"name": "Blademancer",
-			"description": "Using Dark Sight , take retrievable ammo in front of you. (100m)",
+			"description": "Using Dark Sight , take retrievable Ammo in front of you. (100m)",
 			"cost": 0,
 			"rank": 0,
 			"category": "supportive",
@@ -515,7 +515,7 @@
 		{
 			"id": "communion",
 			"name": "Communion",
-			"description": "While using Dark Sight , temporarily lower your Max HP by 15 to heal your teammate 75 HP and remove their negative status effects (25m).",
+			"description": "While using Dark Sight , temporarily lower your max. HP by 15 to heal your teammate 75 HP and remove their negative status effects (25m).",
 			"cost": 0,
 			"rank": 0,
 			"category": "supportive",
@@ -531,13 +531,13 @@
 		{
 			"id": "conduit",
 			"name": "Conduit",
-			"description": "Get a health and stamina boost when your team picks up a Clue or closes a Rift .",
+			"description": "Solo",
 			"cost": 5,
 			"rank": 38,
 			"category": "supportive",
 			"trait_type": "normal",
 			"is_burn": false,
-			"is_solo": true,
+			"is_solo": false,
 			"image_url": "",
 			"_weapon_type_hints": [],
 			"_ammo_hints": [],
@@ -630,7 +630,7 @@
 		{
 			"id": "decoy_supply",
 			"name": "Decoy Supply",
-			"description": "Restock all types of Decoys from ammo crates.",
+			"description": "Restock all types of Decoys from Ammo Crates .",
 			"cost": 1,
 			"rank": 53,
 			"category": "supportive",
@@ -675,7 +675,7 @@
 		{
 			"id": "dewclaw",
 			"name": "Dewclaw",
-			"description": "Enhances the melee attack of a bow and arrow.",
+			"description": "Enhances the melee attack of a bow and arrow .",
 			"cost": 0,
 			"rank": 0,
 			"category": "offensive",
@@ -912,7 +912,7 @@
 		{
 			"id": "fire_eater",
 			"name": "Fire Eater",
-			"description": "In exchange for 1 Pledge Mark, when a health chunk is burnt away, it is instead instantly restored.",
+			"description": "In exchange for 1 Pledge Mark, when a Health Chunk is burnt away, it is instead instantly restored.",
 			"cost": 0,
 			"rank": 0,
 			"category": "supportive",
@@ -928,7 +928,7 @@
 		{
 			"id": "flame_touched",
 			"name": "Flame Touched",
-			"description": "If you have 4 Pledge Marks, you can't catch on fire even when downed, but your health chunks still burn at a slower rate while in flames.",
+			"description": "If you have 4 Pledge Marks, you can't catch on fire even when downed, but your Health Chunks still burn at a slower rate while in flames.",
 			"cost": 0,
 			"rank": 0,
 			"category": "supportive",
@@ -944,7 +944,7 @@
 		{
 			"id": "frontiersman",
 			"name": "Frontiersman",
-			"description": "Carried Tools can be used one extra time.",
+			"description": "Solo , Catalyst",
 			"cost": 6,
 			"rank": 47,
 			"category": "supportive",
@@ -976,7 +976,7 @@
 		{
 			"id": "ghoul",
 			"name": "Ghoul",
-			"description": "Killing Monsters restores a small amount of health.",
+			"description": "Killing Monsters restores a small amount of Health .",
 			"cost": 3,
 			"rank": 1,
 			"category": "supportive",
@@ -1358,7 +1358,7 @@
 		{
 			"id": "kiteskin",
 			"name": "Kiteskin",
-			"description": "Significantly reduces fall damage.",
+			"description": "Catalyst",
 			"cost": 1,
 			"rank": 51,
 			"category": "movement",
@@ -1493,7 +1493,7 @@
 		{
 			"id": "lightfoot",
 			"name": "Lightfoot",
-			"description": "Vault, fall and climb ladders silently. Also reduces the sound of walking through noise traps.",
+			"description": "Vault, fall and climb ladders silently. Also reduces the sound of walking through Noise Traps .",
 			"cost": 5,
 			"rank": 1,
 			"category": "movement",
@@ -1509,13 +1509,13 @@
 		{
 			"id": "magpie",
 			"name": "Magpie",
-			"description": "Receive three short effects when picking up a Bounty Token: Antidote, Stamina and Regeneration.",
+			"description": "Solo",
 			"cost": 1,
 			"rank": 1,
 			"category": "supportive",
 			"trait_type": "normal",
 			"is_burn": false,
-			"is_solo": true,
+			"is_solo": false,
 			"image_url": "",
 			"_weapon_type_hints": [],
 			"_ammo_hints": [],
@@ -1594,13 +1594,13 @@
 		{
 			"id": "necromancer",
 			"name": "Necromancer",
-			"description": "Using Dark Sight , revive a downed teammate from a distance. (25m)",
+			"description": "Solo",
 			"cost": 4,
 			"rank": 1,
 			"category": "supportive",
 			"trait_type": "normal",
 			"is_burn": true,
-			"is_solo": true,
+			"is_solo": false,
 			"image_url": "",
 			"_weapon_type_hints": [],
 			"_ammo_hints": [],
@@ -1610,7 +1610,7 @@
 		{
 			"id": "packmule",
 			"name": "Packmule",
-			"description": "Receive an additional Tool or Consumable when looting dead enemy Hunters or opening item boxes.",
+			"description": "Receive an additional item when looting Hunters or opening Tool Boxes .",
 			"cost": 4,
 			"rank": 1,
 			"category": "supportive",
@@ -1631,7 +1631,7 @@
 		{
 			"id": "pain_sense",
 			"name": "Pain Sense",
-			"description": "You can see nearby bleeding , poisoned and burning Hunters while in Dark Sight . Also applies to Beetle view. (150m)",
+			"description": "Catalyst",
 			"cost": 3,
 			"rank": 59,
 			"category": "supportive",
@@ -1660,7 +1660,7 @@
 		{
 			"id": "peacekeeper",
 			"name": "Peacekeeper",
-			"description": "Looting a Hunter will restore one Health Chunk.",
+			"description": "Looting a Hunter will restore one Health Chunk .",
 			"cost": 0,
 			"rank": 0,
 			"category": "supportive",
@@ -1802,7 +1802,7 @@
 		{
 			"id": "poacher",
 			"name": "Poacher",
-			"description": "Place and disarm traps quietly.",
+			"description": "Place and disarm Traps quietly.",
 			"cost": 1,
 			"rank": 36,
 			"category": "supportive",
@@ -1831,7 +1831,7 @@
 		{
 			"id": "poltergeist",
 			"name": "Poltergeist",
-			"description": "Players can manipulate, interact, and agitate in-world objects and animals remotely via Dark Sight . (50m) Works in Beetle View.",
+			"description": "While using Dark Sight , remotely manipulate, interact with, and agitate in-world objects and animals . (50m) Also applies to Beetle View.",
 			"cost": 2,
 			"rank": 62,
 			"category": "supportive",
@@ -1969,10 +1969,6 @@
 				},
 				{
 					"weapon_id": "springfield_1866_bullseye",
-					"reason": ""
-				},
-				{
-					"weapon_id": "springfield_1866_shorty",
 					"reason": ""
 				},
 				{
@@ -2175,13 +2171,13 @@
 		{
 			"id": "serpent",
 			"name": "Serpent",
-			"description": "Using Dark Sight , interact with nearby Clues , Rifts , Banishable Targets and abandoned Bounty Tokens. (25m) Applies to Beetle view, except for Bounty Token interactions.",
+			"description": "Solo",
 			"cost": 4,
 			"rank": 14,
 			"category": "supportive",
 			"trait_type": "normal",
 			"is_burn": false,
-			"is_solo": true,
+			"is_solo": false,
 			"image_url": "",
 			"_weapon_type_hints": [],
 			"_ammo_hints": [],
@@ -2204,7 +2200,7 @@
 		{
 			"id": "shadow",
 			"name": "Shadow",
-			"description": "Monsters can't see you, but they can still hear you.",
+			"description": "Monsters can't see and won't attack you, but they can still hear you.",
 			"cost": 0,
 			"rank": 0,
 			"category": "supportive",
@@ -2268,7 +2264,7 @@
 		{
 			"id": "silent_killer",
 			"name": "Silent Killer",
-			"description": "Reduces the sound you make when performing melee attacks.",
+			"description": "Reduce noise when performing melee attacks.",
 			"cost": 3,
 			"rank": 60,
 			"category": "supportive",
@@ -2456,7 +2452,7 @@
 		{
 			"id": "steady_aim",
 			"name": "Steady Aim",
-			"description": "Weapon sway gradually lessens when you're looking through a scope or Aperture sights.",
+			"description": "Gradually lessen weapon sway when looking through a scope or Aperture sights.",
 			"cost": 2,
 			"rank": 30,
 			"category": "offensive",
@@ -2625,7 +2621,7 @@
 		{
 			"id": "tomahawk",
 			"name": "Tomahawk",
-			"description": "Melee weapons found in the world can be thrown.",
+			"description": "Melee Weapons found in the world can be thrown.",
 			"cost": 0,
 			"rank": 0,
 			"category": "offensive",
@@ -2643,7 +2639,7 @@
 		{
 			"id": "vigilant",
 			"name": "Vigilant",
-			"description": "Nearby traps and active Beetles are highlighted in Dark Sight . Also applies to Beetle view. (25m)",
+			"description": "Catalyst",
 			"cost": 1,
 			"rank": 36,
 			"category": "supportive",
@@ -2709,7 +2705,7 @@
 		{
 			"id": "vulture",
 			"name": "Vulture",
-			"description": "Looting a dead enemy Hunter will always reward you Hunt Dollars .",
+			"description": "Looting a Hunter will always reward you money .",
 			"cost": 2,
 			"rank": 24,
 			"category": "supportive",
@@ -2725,7 +2721,7 @@
 		{
 			"id": "whispersmith",
 			"name": "Whispersmith",
-			"description": "Reduces noise when selecting equipment.",
+			"description": "Reduce noise when selecting equipment.",
 			"cost": 1,
 			"rank": 49,
 			"category": "supportive",
@@ -2741,7 +2737,7 @@
 		{
 			"id": "witness",
 			"name": "Witness",
-			"description": "While in Dark Sight , dead Hunters and Monsters are visible. Also applies to Beetle view.",
+			"description": "While using Dark Sight , dead Hunters and Monsters are visible. Also applies to Beetle View.",
 			"cost": 4,
 			"rank": 44,
 			"category": "supportive",
@@ -5344,10 +5340,6 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": ""
-				},
-				{
-					"trait_id": "quartermaster",
-					"reason": ""
 				}
 			]
 		},
@@ -5709,6 +5701,78 @@
 	],
 	"tools": [
 		{
+			"id": "knife",
+			"name": "Knife",
+			"description": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
+			"cost": 40,
+			"tool_class": "melee",
+			"type": "throwable melee aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "silent_killer",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "throwing_knives",
+			"name": "Throwing Knives",
+			"description": "Silent, but short-ranged projectile weapon. Thrown knives can be retrieved and re-used.",
+			"cost": 30,
+			"tool_class": "melee",
+			"type": "throwable melee aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "assailant",
+					"reason": ""
+				},
+				{
+					"trait_id": "blade_seer",
+					"reason": ""
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "heavy_knife",
+			"name": "Heavy Knife",
+			"description": "The heavy knife is honed for close quarters combat, its iconic silhouette carves out its home in the American pantheon of armaments.",
+			"cost": 20,
+			"tool_class": "melee",
+			"type": "throwable melee aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "silent_killer",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "throwing_axes",
+			"name": "Throwing Axes",
+			"description": "Silent and deadly short-ranged projectile weapon. Can be retrieved and reused.",
+			"cost": 50,
+			"tool_class": "melee",
+			"type": "throwable melee aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "assailant",
+					"reason": ""
+				},
+				{
+					"trait_id": "blade_seer",
+					"reason": ""
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": ""
+				}
+			]
+		},
+		{
 			"id": "dynamite_stick",
 			"name": "Dynamite Stick",
 			"description": "A dynamite stick that detonates with a massive blast after four seconds.",
@@ -5793,78 +5857,6 @@
 			]
 		},
 		{
-			"id": "knife",
-			"name": "Knife",
-			"description": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
-			"cost": 40,
-			"tool_class": "melee",
-			"type": "throwable melee aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "silent_killer",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "throwing_knives",
-			"name": "Throwing Knives",
-			"description": "Silent, but short-ranged projectile weapon. Thrown knives can be retrieved and re-used.",
-			"cost": 30,
-			"tool_class": "melee",
-			"type": "throwable melee aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "assailant",
-					"reason": ""
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": ""
-				},
-				{
-					"trait_id": "silent_killer",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "heavy_knife",
-			"name": "Heavy Knife",
-			"description": "The heavy knife is honed for close quarters combat, its iconic silhouette carves out its home in the American pantheon of armaments.",
-			"cost": 20,
-			"tool_class": "melee",
-			"type": "throwable melee aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "silent_killer",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "throwing_axes",
-			"name": "Throwing Axes",
-			"description": "Silent and deadly short-ranged projectile weapon. Can be retrieved and reused.",
-			"cost": 50,
-			"tool_class": "melee",
-			"type": "throwable melee aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "assailant",
-					"reason": ""
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": ""
-				},
-				{
-					"trait_id": "silent_killer",
-					"reason": ""
-				}
-			]
-		},
-		{
 			"id": "fire_bomb",
 			"name": "Fire Bomb",
 			"description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
@@ -5905,33 +5897,6 @@
 					"reason": ""
 				}
 			]
-		},
-		{
-			"id": "first_aid_kit",
-			"name": "First Aid Kit",
-			"description": "A bag of medical supplies that heal 50 health and stop bleeding. Can be used three times.",
-			"cost": 30,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": [
-				{
-					"trait_id": "doctor",
-					"reason": ""
-				},
-				{
-					"trait_id": "physician",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "medical_pack",
-			"name": "Medical Pack",
-			"description": "A portable medical kit that heals 100 health. Deployable in active health emergencies.",
-			"cost": 35,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": []
 		},
 		{
 			"id": "decoys",
@@ -6043,68 +6008,31 @@
 			"trait_synergies": []
 		},
 		{
-			"id": "vitality_shot_weak",
-			"name": "Vitality Shot (Weak)",
-			"description": "A shot which immediately restores 75 health.",
-			"cost": 20,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": []
-		},
-		{
-			"id": "vitality_shot",
-			"name": "Vitality Shot",
-			"description": "A shot which immediately restores all health.",
-			"cost": 85,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": []
-		},
-		{
-			"id": "stamina_shot_weak",
-			"name": "Stamina Shot (Weak)",
-			"description": "A shot which immediately restores all stamina and stops further depletion for 5 minutes.",
-			"cost": 60,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": []
-		},
-		{
-			"id": "stamina_shot",
-			"name": "Stamina Shot",
-			"description": "A shot which immediately restores all stamina and stops further depletion for 10 minutes.",
-			"cost": 100,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": []
-		},
-		{
-			"id": "regeneration_shot_weak",
-			"name": "Regeneration Shot (Weak)",
-			"description": "A shot that continually restores health over a short duration.",
-			"cost": 40,
+			"id": "first_aid_kit",
+			"name": "First Aid Kit",
+			"description": "A bag of medical supplies that heal 50 health and stop bleeding. Can be used three times.",
+			"cost": 30,
 			"tool_class": "healing",
 			"type": "healing",
 			"trait_synergies": [
 				{
-					"trait_id": "vigor",
+					"trait_id": "doctor",
+					"reason": ""
+				},
+				{
+					"trait_id": "physician",
 					"reason": ""
 				}
 			]
 		},
 		{
-			"id": "regeneration_shot",
-			"name": "Regeneration Shot",
-			"description": "A shot that continuously restores health until fully healed.",
-			"cost": 105,
+			"id": "medical_pack",
+			"name": "Medical Pack",
+			"description": "A portable medical kit that heals 100 health. Deployable in active health emergencies.",
+			"cost": 35,
 			"tool_class": "healing",
 			"type": "healing",
-			"trait_synergies": [
-				{
-					"trait_id": "vigor",
-					"reason": ""
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "poison_bomb",
@@ -6166,6 +6094,70 @@
 				},
 				{
 					"trait_id": "vigilant",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "vitality_shot_weak",
+			"name": "Vitality Shot (Weak)",
+			"description": "A shot which immediately restores 75 health.",
+			"cost": 20,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": []
+		},
+		{
+			"id": "vitality_shot",
+			"name": "Vitality Shot",
+			"description": "A shot which immediately restores all health.",
+			"cost": 85,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": []
+		},
+		{
+			"id": "stamina_shot_weak",
+			"name": "Stamina Shot (Weak)",
+			"description": "A shot which immediately restores all stamina and stops further depletion for 5 minutes.",
+			"cost": 60,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": []
+		},
+		{
+			"id": "stamina_shot",
+			"name": "Stamina Shot",
+			"description": "A shot which immediately restores all stamina and stops further depletion for 10 minutes.",
+			"cost": 100,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": []
+		},
+		{
+			"id": "regeneration_shot_weak",
+			"name": "Regeneration Shot (Weak)",
+			"description": "A shot that continually restores health over a short duration.",
+			"cost": 40,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": [
+				{
+					"trait_id": "vigor",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "regeneration_shot",
+			"name": "Regeneration Shot",
+			"description": "A shot that continuously restores health until fully healed.",
+			"cost": 105,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": [
+				{
+					"trait_id": "vigor",
 					"reason": ""
 				}
 			]
