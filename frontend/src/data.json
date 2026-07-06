@@ -1,7 +1,7 @@
 {
 	"meta": {
-		"patch": "2.8.0.3",
-		"scraped_at": "2026-06-29T14:03:10.944652+00:00",
+		"patch": "2.8.1",
+		"scraped_at": "2026-07-06T13:43:16.163264+00:00",
 		"trait_count": 85,
 		"weapon_count": 147,
 		"tool_count": 43,
@@ -1969,6 +1969,10 @@
 				},
 				{
 					"weapon_id": "springfield_1866_bullseye",
+					"reason": ""
+				},
+				{
+					"weapon_id": "springfield_1866_shorty",
 					"reason": ""
 				},
 				{
@@ -5340,6 +5344,10 @@
 				{
 					"trait_id": "fast_fingers",
 					"reason": ""
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": ""
 				}
 			]
 		},
@@ -5701,78 +5709,6 @@
 	],
 	"tools": [
 		{
-			"id": "knife",
-			"name": "Knife",
-			"description": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
-			"cost": 40,
-			"tool_class": "melee",
-			"type": "throwable melee aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "silent_killer",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "throwing_knives",
-			"name": "Throwing Knives",
-			"description": "Silent, but short-ranged projectile weapon. Thrown knives can be retrieved and re-used.",
-			"cost": 30,
-			"tool_class": "melee",
-			"type": "throwable melee aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "assailant",
-					"reason": ""
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": ""
-				},
-				{
-					"trait_id": "silent_killer",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "heavy_knife",
-			"name": "Heavy Knife",
-			"description": "The heavy knife is honed for close quarters combat, its iconic silhouette carves out its home in the American pantheon of armaments.",
-			"cost": 20,
-			"tool_class": "melee",
-			"type": "throwable melee aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "silent_killer",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "throwing_axes",
-			"name": "Throwing Axes",
-			"description": "Silent and deadly short-ranged projectile weapon. Can be retrieved and reused.",
-			"cost": 50,
-			"tool_class": "melee",
-			"type": "throwable melee aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "assailant",
-					"reason": ""
-				},
-				{
-					"trait_id": "blade_seer",
-					"reason": ""
-				},
-				{
-					"trait_id": "silent_killer",
-					"reason": ""
-				}
-			]
-		},
-		{
 			"id": "dynamite_stick",
 			"name": "Dynamite Stick",
 			"description": "A dynamite stick that detonates with a massive blast after four seconds.",
@@ -5852,6 +5788,78 @@
 			"trait_synergies": [
 				{
 					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "knife",
+			"name": "Knife",
+			"description": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
+			"cost": 40,
+			"tool_class": "melee",
+			"type": "throwable melee aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "silent_killer",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "throwing_knives",
+			"name": "Throwing Knives",
+			"description": "Silent, but short-ranged projectile weapon. Thrown knives can be retrieved and re-used.",
+			"cost": 30,
+			"tool_class": "melee",
+			"type": "throwable melee aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "assailant",
+					"reason": ""
+				},
+				{
+					"trait_id": "blade_seer",
+					"reason": ""
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "heavy_knife",
+			"name": "Heavy Knife",
+			"description": "The heavy knife is honed for close quarters combat, its iconic silhouette carves out its home in the American pantheon of armaments.",
+			"cost": 20,
+			"tool_class": "melee",
+			"type": "throwable melee aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "silent_killer",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "throwing_axes",
+			"name": "Throwing Axes",
+			"description": "Silent and deadly short-ranged projectile weapon. Can be retrieved and reused.",
+			"cost": 50,
+			"tool_class": "melee",
+			"type": "throwable melee aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "assailant",
+					"reason": ""
+				},
+				{
+					"trait_id": "blade_seer",
+					"reason": ""
+				},
+				{
+					"trait_id": "silent_killer",
 					"reason": ""
 				}
 			]
@@ -6035,70 +6043,6 @@
 			"trait_synergies": []
 		},
 		{
-			"id": "poison_bomb",
-			"name": "Poison Bomb",
-			"description": "On detonation emits a persistant, deadly cloud. Anything caught in or that passes through the cloud will be poisoned.",
-			"cost": 25,
-			"tool_class": "poison",
-			"type": "throwable poison aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "antidote_shot_weak",
-			"name": "Antidote Shot (Weak)",
-			"description": "Instantly cures and prevents all poison effects. Physical damage associated with poison attacks still applies.",
-			"cost": 30,
-			"tool_class": "poison",
-			"type": "throwable poison aim-helper",
-			"trait_synergies": []
-		},
-		{
-			"id": "antidote_shot",
-			"name": "Antidote Shot",
-			"description": "Instantly cures and prevents all poison effects. Physical damage associated with poison attacks still applies.",
-			"cost": 55,
-			"tool_class": "poison",
-			"type": "throwable poison aim-helper",
-			"trait_synergies": []
-		},
-		{
-			"id": "hive_bomb",
-			"name": "Hive Bomb",
-			"description": "Poisonous wasps emerge from this bomb to terrorize anyone unfortunate enough to be in the area. However it has no effect on monsters.",
-			"cost": 40,
-			"tool_class": "poison",
-			"type": "throwable poison aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "poison_trip_mine",
-			"name": "Poison Trip Mine",
-			"description": "This portable tripwire mine releases a cloud of poison when triggered, disorienting enemies. Comes in a pack of two.",
-			"cost": 60,
-			"tool_class": "poison",
-			"type": "throwable poison aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "poacher",
-					"reason": ""
-				},
-				{
-					"trait_id": "vigilant",
-					"reason": ""
-				}
-			]
-		},
-		{
 			"id": "vitality_shot_weak",
 			"name": "Vitality Shot (Weak)",
 			"description": "A shot which immediately restores 75 health.",
@@ -6158,6 +6102,70 @@
 			"trait_synergies": [
 				{
 					"trait_id": "vigor",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "poison_bomb",
+			"name": "Poison Bomb",
+			"description": "On detonation emits a persistant, deadly cloud. Anything caught in or that passes through the cloud will be poisoned.",
+			"cost": 25,
+			"tool_class": "poison",
+			"type": "throwable poison aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "antidote_shot_weak",
+			"name": "Antidote Shot (Weak)",
+			"description": "Instantly cures and prevents all poison effects. Physical damage associated with poison attacks still applies.",
+			"cost": 30,
+			"tool_class": "poison",
+			"type": "throwable poison aim-helper",
+			"trait_synergies": []
+		},
+		{
+			"id": "antidote_shot",
+			"name": "Antidote Shot",
+			"description": "Instantly cures and prevents all poison effects. Physical damage associated with poison attacks still applies.",
+			"cost": 55,
+			"tool_class": "poison",
+			"type": "throwable poison aim-helper",
+			"trait_synergies": []
+		},
+		{
+			"id": "hive_bomb",
+			"name": "Hive Bomb",
+			"description": "Poisonous wasps emerge from this bomb to terrorize anyone unfortunate enough to be in the area. However it has no effect on monsters.",
+			"cost": 40,
+			"tool_class": "poison",
+			"type": "throwable poison aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "poison_trip_mine",
+			"name": "Poison Trip Mine",
+			"description": "This portable tripwire mine releases a cloud of poison when triggered, disorienting enemies. Comes in a pack of two.",
+			"cost": 60,
+			"tool_class": "poison",
+			"type": "throwable poison aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "poacher",
+					"reason": ""
+				},
+				{
+					"trait_id": "vigilant",
 					"reason": ""
 				}
 			]
