@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"patch": "2.8.1",
-		"scraped_at": "2026-07-06T13:43:16.163264+00:00",
+		"scraped_at": "2026-07-13T12:30:17.690677+00:00",
 		"trait_count": 85,
 		"weapon_count": 147,
 		"tool_count": 43,
@@ -1750,6 +1750,10 @@
 					"reason": ""
 				},
 				{
+					"tool_id": "fusees",
+					"reason": ""
+				},
+				{
 					"tool_id": "decoys",
 					"reason": ""
 				},
@@ -1763,10 +1767,6 @@
 				},
 				{
 					"tool_id": "decoy_fuses",
-					"reason": ""
-				},
-				{
-					"tool_id": "fusees",
 					"reason": ""
 				},
 				{
@@ -5793,6 +5793,48 @@
 			]
 		},
 		{
+			"id": "fire_bomb",
+			"name": "Fire Bomb",
+			"description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
+			"cost": 30,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "liquid_fire_bomb",
+			"name": "Liquid Fire Bomb",
+			"description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
+			"cost": 35,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "hellfire_bomb",
+			"name": "Hellfire Bomb",
+			"description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
+			"cost": 70,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
 			"id": "knife",
 			"name": "Knife",
 			"description": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
@@ -5865,12 +5907,12 @@
 			]
 		},
 		{
-			"id": "fire_bomb",
-			"name": "Fire Bomb",
-			"description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
-			"cost": 30,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
+			"id": "fusees",
+			"name": "Fusees",
+			"description": "Handheld railroad flares used for illuminating dark areas and for signalling. Can ignite flammable materials. Comes in a pack of three.",
+			"cost": 10,
+			"tool_class": "support",
+			"type": "support",
 			"trait_synergies": [
 				{
 					"trait_id": "pitcher",
@@ -5879,32 +5921,13 @@
 			]
 		},
 		{
-			"id": "liquid_fire_bomb",
-			"name": "Liquid Fire Bomb",
-			"description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
-			"cost": 35,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "hellfire_bomb",
-			"name": "Hellfire Bomb",
-			"description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
-			"cost": 70,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
+			"id": "flare_pistol",
+			"name": "Flare Pistol",
+			"description": "A small pistol for firing flares into the air, illuminating the area. Can ignite flammable materials.",
+			"cost": 36,
+			"tool_class": "support",
+			"type": "support",
+			"trait_synergies": []
 		},
 		{
 			"id": "decoys",
@@ -5991,29 +6014,6 @@
 					"reason": ""
 				}
 			]
-		},
-		{
-			"id": "fusees",
-			"name": "Fusees",
-			"description": "Handheld railroad flares used for illuminating dark areas and for signalling. Can ignite flammable materials. Comes in a pack of three.",
-			"cost": 10,
-			"tool_class": "support",
-			"type": "support",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "flare_pistol",
-			"name": "Flare Pistol",
-			"description": "A small pistol for firing flares into the air, illuminating the area. Can ignite flammable materials.",
-			"cost": 36,
-			"tool_class": "support",
-			"type": "support",
-			"trait_synergies": []
 		},
 		{
 			"id": "first_aid_kit",
