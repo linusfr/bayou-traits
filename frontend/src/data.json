@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"patch": "2.8.1",
-		"scraped_at": "2026-07-13T12:30:17.690677+00:00",
+		"scraped_at": "2026-07-20T12:15:25.942891+00:00",
 		"trait_count": 85,
 		"weapon_count": 147,
 		"tool_count": 43,
@@ -1161,6 +1161,10 @@
 					"reason": ""
 				},
 				{
+					"weapon_id": "centennial_sniper",
+					"reason": ""
+				},
+				{
 					"weapon_id": "centennial_trauma",
 					"reason": ""
 				},
@@ -2122,10 +2126,6 @@
 					"reason": ""
 				},
 				{
-					"weapon_id": "centennial_sniper",
-					"reason": ""
-				},
-				{
 					"weapon_id": "frontier_73c_marksman",
 					"reason": ""
 				},
@@ -2481,10 +2481,6 @@
 				},
 				{
 					"weapon_id": "centennial_pointman",
-					"reason": ""
-				},
-				{
-					"weapon_id": "centennial_sniper",
 					"reason": ""
 				},
 				{
@@ -3221,15 +3217,11 @@
 			"_wiki_synergy_traits": [],
 			"trait_synergies": [
 				{
+					"trait_id": "iron_eye",
+					"reason": ""
+				},
+				{
 					"trait_id": "levering",
-					"reason": ""
-				},
-				{
-					"trait_id": "scopesmith",
-					"reason": ""
-				},
-				{
-					"trait_id": "steady_aim",
 					"reason": ""
 				}
 			]
@@ -5793,48 +5785,6 @@
 			]
 		},
 		{
-			"id": "fire_bomb",
-			"name": "Fire Bomb",
-			"description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
-			"cost": 30,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "liquid_fire_bomb",
-			"name": "Liquid Fire Bomb",
-			"description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
-			"cost": 35,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "hellfire_bomb",
-			"name": "Hellfire Bomb",
-			"description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
-			"cost": 70,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
 			"id": "knife",
 			"name": "Knife",
 			"description": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
@@ -5902,6 +5852,48 @@
 				},
 				{
 					"trait_id": "silent_killer",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "fire_bomb",
+			"name": "Fire Bomb",
+			"description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
+			"cost": 30,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "liquid_fire_bomb",
+			"name": "Liquid Fire Bomb",
+			"description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
+			"cost": 35,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "hellfire_bomb",
+			"name": "Hellfire Bomb",
+			"description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
+			"cost": 70,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
 					"reason": ""
 				}
 			]
@@ -6043,70 +6035,6 @@
 			"trait_synergies": []
 		},
 		{
-			"id": "vitality_shot_weak",
-			"name": "Vitality Shot (Weak)",
-			"description": "A shot which immediately restores 75 health.",
-			"cost": 20,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": []
-		},
-		{
-			"id": "vitality_shot",
-			"name": "Vitality Shot",
-			"description": "A shot which immediately restores all health.",
-			"cost": 85,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": []
-		},
-		{
-			"id": "stamina_shot_weak",
-			"name": "Stamina Shot (Weak)",
-			"description": "A shot which immediately restores all stamina and stops further depletion for 5 minutes.",
-			"cost": 60,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": []
-		},
-		{
-			"id": "stamina_shot",
-			"name": "Stamina Shot",
-			"description": "A shot which immediately restores all stamina and stops further depletion for 10 minutes.",
-			"cost": 100,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": []
-		},
-		{
-			"id": "regeneration_shot_weak",
-			"name": "Regeneration Shot (Weak)",
-			"description": "A shot that continually restores health over a short duration.",
-			"cost": 40,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": [
-				{
-					"trait_id": "vigor",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "regeneration_shot",
-			"name": "Regeneration Shot",
-			"description": "A shot that continuously restores health until fully healed.",
-			"cost": 105,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": [
-				{
-					"trait_id": "vigor",
-					"reason": ""
-				}
-			]
-		},
-		{
 			"id": "poison_bomb",
 			"name": "Poison Bomb",
 			"description": "On detonation emits a persistant, deadly cloud. Anything caught in or that passes through the cloud will be poisoned.",
@@ -6166,6 +6094,70 @@
 				},
 				{
 					"trait_id": "vigilant",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "vitality_shot_weak",
+			"name": "Vitality Shot (Weak)",
+			"description": "A shot which immediately restores 75 health.",
+			"cost": 20,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": []
+		},
+		{
+			"id": "vitality_shot",
+			"name": "Vitality Shot",
+			"description": "A shot which immediately restores all health.",
+			"cost": 85,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": []
+		},
+		{
+			"id": "stamina_shot_weak",
+			"name": "Stamina Shot (Weak)",
+			"description": "A shot which immediately restores all stamina and stops further depletion for 5 minutes.",
+			"cost": 60,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": []
+		},
+		{
+			"id": "stamina_shot",
+			"name": "Stamina Shot",
+			"description": "A shot which immediately restores all stamina and stops further depletion for 10 minutes.",
+			"cost": 100,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": []
+		},
+		{
+			"id": "regeneration_shot_weak",
+			"name": "Regeneration Shot (Weak)",
+			"description": "A shot that continually restores health over a short duration.",
+			"cost": 40,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": [
+				{
+					"trait_id": "vigor",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "regeneration_shot",
+			"name": "Regeneration Shot",
+			"description": "A shot that continuously restores health until fully healed.",
+			"cost": 105,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": [
+				{
+					"trait_id": "vigor",
 					"reason": ""
 				}
 			]
