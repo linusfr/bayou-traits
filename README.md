@@ -1,5 +1,7 @@
 # Bayou Traits
 
+![Hunt Patch](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Flinusfr%2Fbayou-traits%2Fmain%2Ffrontend%2Fsrc%2Fdata.json&query=%24.meta.patch&label=Hunt%20Patch&color=%23222)
+
 > *This project is primarily vibe-coded and experimental — an end-to-end test of how Claude handles a full project, including a scraping pipeline and a simple frontend. It is not meant to replace the [official wiki](https://huntshowdown.wiki.gg) in any way.*
 
 A fast, searchable reference for Hunt: Showdown trait, weapon, and tool synergies — built for hunters who are tired of alt-tabbing to the wiki mid-lobby.
