@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"patch": "2.8.1",
-		"scraped_at": "2026-07-27T12:55:22.162239+00:00",
+		"scraped_at": "2026-08-03T12:54:32.371616+00:00",
 		"trait_count": 85,
 		"weapon_count": 147,
 		"tool_count": 43,
@@ -294,10 +294,6 @@
 			"weapon_synergies": [
 				{
 					"weapon_id": "bomb_lance",
-					"reason": ""
-				},
-				{
-					"weapon_id": "bomb_launcher",
 					"reason": ""
 				},
 				{
@@ -1714,18 +1710,6 @@
 			"weapon_synergies": [],
 			"tool_synergies": [
 				{
-					"tool_id": "fire_bomb",
-					"reason": ""
-				},
-				{
-					"tool_id": "liquid_fire_bomb",
-					"reason": ""
-				},
-				{
-					"tool_id": "hellfire_bomb",
-					"reason": ""
-				},
-				{
 					"tool_id": "dynamite_stick",
 					"reason": ""
 				},
@@ -1750,7 +1734,15 @@
 					"reason": ""
 				},
 				{
-					"tool_id": "fusees",
+					"tool_id": "fire_bomb",
+					"reason": ""
+				},
+				{
+					"tool_id": "liquid_fire_bomb",
+					"reason": ""
+				},
+				{
+					"tool_id": "hellfire_bomb",
 					"reason": ""
 				},
 				{
@@ -1767,6 +1759,10 @@
 				},
 				{
 					"tool_id": "decoy_fuses",
+					"reason": ""
+				},
+				{
+					"tool_id": "fusees",
 					"reason": ""
 				},
 				{
@@ -1871,10 +1867,6 @@
 			"_weapon_type_hints": [],
 			"_ammo_hints": [],
 			"weapon_synergies": [
-				{
-					"weapon_id": "bomb_launcher",
-					"reason": ""
-				},
 				{
 					"weapon_id": "bornheim_no_3_match",
 					"reason": ""
@@ -3009,16 +3001,7 @@
 			"description": "This compact launcher fires spring-loaded projectiles over short distances. Deals tremendous damage on direct impact.",
 			"image_url": "",
 			"_wiki_synergy_traits": [],
-			"trait_synergies": [
-				{
-					"trait_id": "bolt_thrower",
-					"reason": ""
-				},
-				{
-					"trait_id": "quartermaster",
-					"reason": ""
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "bornheim_no_3",
@@ -5709,6 +5692,90 @@
 	],
 	"tools": [
 		{
+			"id": "dynamite_stick",
+			"name": "Dynamite Stick",
+			"description": "A dynamite stick that detonates with a massive blast after four seconds.",
+			"cost": 18,
+			"tool_class": "explosive",
+			"type": "throwable explosive aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "waxed_dynamite_stick",
+			"name": "Waxed Dynamite Stick",
+			"description": "A dynamite stick with a modified powder fuse that enables detonation under water and in choke bomb clouds.",
+			"cost": 24,
+			"tool_class": "explosive",
+			"type": "throwable explosive aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "sticky_bomb",
+			"name": "Sticky Bomb",
+			"description": "Dynamite charge in a sticky frame that can be attached to objects and enemies. Its eight-second fuse doubles the detonation time of a dynamite stick.",
+			"cost": 64,
+			"tool_class": "explosive",
+			"type": "throwable explosive aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "dynamite_bundle",
+			"name": "Dynamite Bundle",
+			"description": "A bundle of several dynamite sticks. Why only bring one?",
+			"cost": 75,
+			"tool_class": "explosive",
+			"type": "throwable explosive aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "frag_bomb",
+			"name": "Frag Bomb",
+			"description": "Frag bombs send lethal shrapnel over a large area, lacerating nearby enemies. unlike dynamite however, the blast is not strong enough to destroy doors or concertina wire.",
+			"cost": 103,
+			"tool_class": "explosive",
+			"type": "throwable explosive aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "big_dynamite_bundle",
+			"name": "Big Dynamite Bundle",
+			"description": "A bundle of many dynamite sticks. When something really needs to be blown up.",
+			"cost": 110,
+			"tool_class": "explosive",
+			"type": "throwable explosive aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
 			"id": "fire_bomb",
 			"name": "Fire Bomb",
 			"description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
@@ -5823,90 +5890,6 @@
 			]
 		},
 		{
-			"id": "dynamite_stick",
-			"name": "Dynamite Stick",
-			"description": "A dynamite stick that detonates with a massive blast after four seconds.",
-			"cost": 18,
-			"tool_class": "explosive",
-			"type": "throwable explosive aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "waxed_dynamite_stick",
-			"name": "Waxed Dynamite Stick",
-			"description": "A dynamite stick with a modified powder fuse that enables detonation under water and in choke bomb clouds.",
-			"cost": 24,
-			"tool_class": "explosive",
-			"type": "throwable explosive aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "sticky_bomb",
-			"name": "Sticky Bomb",
-			"description": "Dynamite charge in a sticky frame that can be attached to objects and enemies. Its eight-second fuse doubles the detonation time of a dynamite stick.",
-			"cost": 64,
-			"tool_class": "explosive",
-			"type": "throwable explosive aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "dynamite_bundle",
-			"name": "Dynamite Bundle",
-			"description": "A bundle of several dynamite sticks. Why only bring one?",
-			"cost": 75,
-			"tool_class": "explosive",
-			"type": "throwable explosive aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "frag_bomb",
-			"name": "Frag Bomb",
-			"description": "Frag bombs send lethal shrapnel over a large area, lacerating nearby enemies. unlike dynamite however, the blast is not strong enough to destroy doors or concertina wire.",
-			"cost": 103,
-			"tool_class": "explosive",
-			"type": "throwable explosive aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "big_dynamite_bundle",
-			"name": "Big Dynamite Bundle",
-			"description": "A bundle of many dynamite sticks. When something really needs to be blown up.",
-			"cost": 110,
-			"tool_class": "explosive",
-			"type": "throwable explosive aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
 			"id": "first_aid_kit",
 			"name": "First Aid Kit",
 			"description": "A bag of medical supplies that heal 50 health and stop bleeding. Can be used three times.",
@@ -5931,29 +5914,6 @@
 			"cost": 35,
 			"tool_class": "healing",
 			"type": "healing",
-			"trait_synergies": []
-		},
-		{
-			"id": "fusees",
-			"name": "Fusees",
-			"description": "Handheld railroad flares used for illuminating dark areas and for signalling. Can ignite flammable materials. Comes in a pack of three.",
-			"cost": 10,
-			"tool_class": "support",
-			"type": "support",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "flare_pistol",
-			"name": "Flare Pistol",
-			"description": "A small pistol for firing flares into the air, illuminating the area. Can ignite flammable materials.",
-			"cost": 36,
-			"tool_class": "support",
-			"type": "support",
 			"trait_synergies": []
 		},
 		{
@@ -6041,6 +6001,29 @@
 					"reason": ""
 				}
 			]
+		},
+		{
+			"id": "fusees",
+			"name": "Fusees",
+			"description": "Handheld railroad flares used for illuminating dark areas and for signalling. Can ignite flammable materials. Comes in a pack of three.",
+			"cost": 10,
+			"tool_class": "support",
+			"type": "support",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "flare_pistol",
+			"name": "Flare Pistol",
+			"description": "A small pistol for firing flares into the air, illuminating the area. Can ignite flammable materials.",
+			"cost": 36,
+			"tool_class": "support",
+			"type": "support",
+			"trait_synergies": []
 		},
 		{
 			"id": "vitality_shot_weak",
