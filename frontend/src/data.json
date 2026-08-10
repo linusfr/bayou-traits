@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"patch": "2.8.1",
-		"scraped_at": "2026-08-03T12:54:32.371616+00:00",
+		"scraped_at": "2026-08-10T11:05:12.374929+00:00",
 		"trait_count": 85,
 		"weapon_count": 147,
 		"tool_count": 43,
@@ -294,6 +294,10 @@
 			"weapon_synergies": [
 				{
 					"weapon_id": "bomb_lance",
+					"reason": ""
+				},
+				{
+					"weapon_id": "bomb_launcher",
 					"reason": ""
 				},
 				{
@@ -1710,6 +1714,18 @@
 			"weapon_synergies": [],
 			"tool_synergies": [
 				{
+					"tool_id": "fire_bomb",
+					"reason": ""
+				},
+				{
+					"tool_id": "liquid_fire_bomb",
+					"reason": ""
+				},
+				{
+					"tool_id": "hellfire_bomb",
+					"reason": ""
+				},
+				{
 					"tool_id": "dynamite_stick",
 					"reason": ""
 				},
@@ -1731,18 +1747,6 @@
 				},
 				{
 					"tool_id": "big_dynamite_bundle",
-					"reason": ""
-				},
-				{
-					"tool_id": "fire_bomb",
-					"reason": ""
-				},
-				{
-					"tool_id": "liquid_fire_bomb",
-					"reason": ""
-				},
-				{
-					"tool_id": "hellfire_bomb",
 					"reason": ""
 				},
 				{
@@ -1867,6 +1871,10 @@
 			"_weapon_type_hints": [],
 			"_ammo_hints": [],
 			"weapon_synergies": [
+				{
+					"weapon_id": "bomb_launcher",
+					"reason": ""
+				},
 				{
 					"weapon_id": "bornheim_no_3_match",
 					"reason": ""
@@ -3001,7 +3009,16 @@
 			"description": "This compact launcher fires spring-loaded projectiles over short distances. Deals tremendous damage on direct impact.",
 			"image_url": "",
 			"_wiki_synergy_traits": [],
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "bolt_thrower",
+					"reason": ""
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": ""
+				}
+			]
 		},
 		{
 			"id": "bornheim_no_3",
@@ -5692,6 +5709,48 @@
 	],
 	"tools": [
 		{
+			"id": "fire_bomb",
+			"name": "Fire Bomb",
+			"description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
+			"cost": 30,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "liquid_fire_bomb",
+			"name": "Liquid Fire Bomb",
+			"description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
+			"cost": 35,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "hellfire_bomb",
+			"name": "Hellfire Bomb",
+			"description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
+			"cost": 70,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
 			"id": "dynamite_stick",
 			"name": "Dynamite Stick",
 			"description": "A dynamite stick that detonates with a massive blast after four seconds.",
@@ -5776,48 +5835,6 @@
 			]
 		},
 		{
-			"id": "fire_bomb",
-			"name": "Fire Bomb",
-			"description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
-			"cost": 30,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "liquid_fire_bomb",
-			"name": "Liquid Fire Bomb",
-			"description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
-			"cost": 35,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "hellfire_bomb",
-			"name": "Hellfire Bomb",
-			"description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
-			"cost": 70,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
 			"id": "knife",
 			"name": "Knife",
 			"description": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
@@ -5888,33 +5905,6 @@
 					"reason": ""
 				}
 			]
-		},
-		{
-			"id": "first_aid_kit",
-			"name": "First Aid Kit",
-			"description": "A bag of medical supplies that heal 50 health and stop bleeding. Can be used three times.",
-			"cost": 30,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": [
-				{
-					"trait_id": "doctor",
-					"reason": ""
-				},
-				{
-					"trait_id": "physician",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "medical_pack",
-			"name": "Medical Pack",
-			"description": "A portable medical kit that heals 100 health. Deployable in active health emergencies.",
-			"cost": 35,
-			"tool_class": "healing",
-			"type": "healing",
-			"trait_synergies": []
 		},
 		{
 			"id": "decoys",
@@ -6023,6 +6013,33 @@
 			"cost": 36,
 			"tool_class": "support",
 			"type": "support",
+			"trait_synergies": []
+		},
+		{
+			"id": "first_aid_kit",
+			"name": "First Aid Kit",
+			"description": "A bag of medical supplies that heal 50 health and stop bleeding. Can be used three times.",
+			"cost": 30,
+			"tool_class": "healing",
+			"type": "healing",
+			"trait_synergies": [
+				{
+					"trait_id": "doctor",
+					"reason": ""
+				},
+				{
+					"trait_id": "physician",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "medical_pack",
+			"name": "Medical Pack",
+			"description": "A portable medical kit that heals 100 health. Deployable in active health emergencies.",
+			"cost": 35,
+			"tool_class": "healing",
+			"type": "healing",
 			"trait_synergies": []
 		},
 		{
