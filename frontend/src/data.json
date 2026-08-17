@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"patch": "2.8.1",
-		"scraped_at": "2026-08-10T11:05:12.374929+00:00",
+		"scraped_at": "2026-08-17T10:28:23.803220+00:00",
 		"trait_count": 85,
 		"weapon_count": 147,
 		"tool_count": 43,
@@ -1579,7 +1579,7 @@
 			"id": "mithridatist",
 			"name": "Mithridatist",
 			"description": "Drastically reduces the time needed to recover from poisoning .",
-			"cost": 3,
+			"cost": 2,
 			"rank": 40,
 			"category": "defensive",
 			"trait_type": "normal",
@@ -6199,6 +6199,29 @@
 			]
 		},
 		{
+			"id": "ammo_box",
+			"name": "Ammo Box",
+			"description": "This small portable Ammo Box partially refills your weapons' extra ammunition, including special ammunition types.",
+			"cost": 65,
+			"tool_class": "support",
+			"type": "support",
+			"trait_synergies": []
+		},
+		{
+			"id": "tool_box",
+			"name": "Tool Box",
+			"description": "A portable toolkit that refills some dwindling supplies in a tight spot.",
+			"cost": 70,
+			"tool_class": "support",
+			"type": "support",
+			"trait_synergies": [
+				{
+					"trait_id": "packmule",
+					"reason": ""
+				}
+			]
+		},
+		{
 			"id": "stalker_beetle",
 			"name": "Stalker Beetle",
 			"description": "Stalker Beetles are bred to hunt and track prey, giving hunters a view from above. As a last resort, they can sacrifice themselves to cause a small explosion hampering anything caught in the radius.",
@@ -6332,29 +6355,6 @@
 				},
 				{
 					"trait_id": "witness",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "ammo_box",
-			"name": "Ammo Box",
-			"description": "This small portable Ammo Box partially refills your weapons' extra ammunition, including special ammunition types.",
-			"cost": 65,
-			"tool_class": "support",
-			"type": "support",
-			"trait_synergies": []
-		},
-		{
-			"id": "tool_box",
-			"name": "Tool Box",
-			"description": "A portable toolkit that refills some dwindling supplies in a tight spot.",
-			"cost": 70,
-			"tool_class": "support",
-			"type": "support",
-			"trait_synergies": [
-				{
-					"trait_id": "packmule",
 					"reason": ""
 				}
 			]
