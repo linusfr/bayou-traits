@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"patch": "2.8.1",
-		"scraped_at": "2026-08-17T10:28:23.803220+00:00",
+		"scraped_at": "2026-08-24T10:34:33.378273+00:00",
 		"trait_count": 85,
 		"weapon_count": 147,
 		"tool_count": 43,
@@ -294,10 +294,6 @@
 			"weapon_synergies": [
 				{
 					"weapon_id": "bomb_lance",
-					"reason": ""
-				},
-				{
-					"weapon_id": "bomb_launcher",
 					"reason": ""
 				},
 				{
@@ -1714,18 +1710,6 @@
 			"weapon_synergies": [],
 			"tool_synergies": [
 				{
-					"tool_id": "fire_bomb",
-					"reason": ""
-				},
-				{
-					"tool_id": "liquid_fire_bomb",
-					"reason": ""
-				},
-				{
-					"tool_id": "hellfire_bomb",
-					"reason": ""
-				},
-				{
 					"tool_id": "dynamite_stick",
 					"reason": ""
 				},
@@ -1747,6 +1731,18 @@
 				},
 				{
 					"tool_id": "big_dynamite_bundle",
+					"reason": ""
+				},
+				{
+					"tool_id": "fire_bomb",
+					"reason": ""
+				},
+				{
+					"tool_id": "liquid_fire_bomb",
+					"reason": ""
+				},
+				{
+					"tool_id": "hellfire_bomb",
 					"reason": ""
 				},
 				{
@@ -1871,10 +1867,6 @@
 			"_weapon_type_hints": [],
 			"_ammo_hints": [],
 			"weapon_synergies": [
-				{
-					"weapon_id": "bomb_launcher",
-					"reason": ""
-				},
 				{
 					"weapon_id": "bornheim_no_3_match",
 					"reason": ""
@@ -3009,16 +3001,7 @@
 			"description": "This compact launcher fires spring-loaded projectiles over short distances. Deals tremendous damage on direct impact.",
 			"image_url": "",
 			"_wiki_synergy_traits": [],
-			"trait_synergies": [
-				{
-					"trait_id": "bolt_thrower",
-					"reason": ""
-				},
-				{
-					"trait_id": "quartermaster",
-					"reason": ""
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "bornheim_no_3",
@@ -5709,48 +5692,6 @@
 	],
 	"tools": [
 		{
-			"id": "fire_bomb",
-			"name": "Fire Bomb",
-			"description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
-			"cost": 30,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "liquid_fire_bomb",
-			"name": "Liquid Fire Bomb",
-			"description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
-			"cost": 35,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
-			"id": "hellfire_bomb",
-			"name": "Hellfire Bomb",
-			"description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
-			"cost": 70,
-			"tool_class": "fire",
-			"type": "throwable fire aim-helper",
-			"trait_synergies": [
-				{
-					"trait_id": "pitcher",
-					"reason": ""
-				}
-			]
-		},
-		{
 			"id": "dynamite_stick",
 			"name": "Dynamite Stick",
 			"description": "A dynamite stick that detonates with a massive blast after four seconds.",
@@ -5827,6 +5768,48 @@
 			"cost": 110,
 			"tool_class": "explosive",
 			"type": "throwable explosive aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "fire_bomb",
+			"name": "Fire Bomb",
+			"description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
+			"cost": 30,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "liquid_fire_bomb",
+			"name": "Liquid Fire Bomb",
+			"description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
+			"cost": 35,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
+			"trait_synergies": [
+				{
+					"trait_id": "pitcher",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "hellfire_bomb",
+			"name": "Hellfire Bomb",
+			"description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
+			"cost": 70,
+			"tool_class": "fire",
+			"type": "throwable fire aim-helper",
 			"trait_synergies": [
 				{
 					"trait_id": "pitcher",
@@ -6199,29 +6182,6 @@
 			]
 		},
 		{
-			"id": "ammo_box",
-			"name": "Ammo Box",
-			"description": "This small portable Ammo Box partially refills your weapons' extra ammunition, including special ammunition types.",
-			"cost": 65,
-			"tool_class": "support",
-			"type": "support",
-			"trait_synergies": []
-		},
-		{
-			"id": "tool_box",
-			"name": "Tool Box",
-			"description": "A portable toolkit that refills some dwindling supplies in a tight spot.",
-			"cost": 70,
-			"tool_class": "support",
-			"type": "support",
-			"trait_synergies": [
-				{
-					"trait_id": "packmule",
-					"reason": ""
-				}
-			]
-		},
-		{
 			"id": "stalker_beetle",
 			"name": "Stalker Beetle",
 			"description": "Stalker Beetles are bred to hunt and track prey, giving hunters a view from above. As a last resort, they can sacrifice themselves to cause a small explosion hampering anything caught in the radius.",
@@ -6355,6 +6315,29 @@
 				},
 				{
 					"trait_id": "witness",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "ammo_box",
+			"name": "Ammo Box",
+			"description": "This small portable Ammo Box partially refills your weapons' extra ammunition, including special ammunition types.",
+			"cost": 65,
+			"tool_class": "support",
+			"type": "support",
+			"trait_synergies": []
+		},
+		{
+			"id": "tool_box",
+			"name": "Tool Box",
+			"description": "A portable toolkit that refills some dwindling supplies in a tight spot.",
+			"cost": 70,
+			"tool_class": "support",
+			"type": "support",
+			"trait_synergies": [
+				{
+					"trait_id": "packmule",
 					"reason": ""
 				}
 			]
