@@ -42,6 +42,12 @@ tasks:
       - cd scraper && uv run python build.py
       - cd frontend && pnpm build
 
+  test:
+    desc: Run scraper tests
+    dir: scraper
+    cmds:
+      - uv run python -m unittest discover -s tests
+
   dev:
     desc: Start dev server with hot reload
     dir: frontend

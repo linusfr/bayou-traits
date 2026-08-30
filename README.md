@@ -55,6 +55,7 @@ task build
 ## Refreshing data after a Hunt patch
 
 The wiki scrapers pick up the current patch version automatically. Run the pipeline locally or trigger the [Refresh Data](../../actions/workflows/refresh-data.yml) workflow manually on GitHub.
+Generated collections keep stable source order, and scheduled refreshes do not commit when only the scrape timestamp changed.
 
 ```bash
 task build

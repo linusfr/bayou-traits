@@ -472,20 +472,24 @@ def parse_tool_page(html: str, tool_class: str) -> list[dict]:
 
 
 async def scrape_tools(client: httpx.AsyncClient, sem: asyncio.Semaphore) -> list[dict]:
-    tools: list[dict] = []
-    seen_ids: set[str] = set()
+	async def fetch_group(page: str, tool_class: str) -> list[dict]:
+		async with sem:
+			await asyncio.sleep(0.25)
+			html = await fetch_page_html(client, page, api=FANDOM_API)
+		return parse_tool_page(html, tool_class)
 
-    async def fetch_group(page: str, tool_class: str) -> None:
-        async with sem:
-            await asyncio.sleep(0.25)
-            html = await fetch_page_html(client, page, api=FANDOM_API)
-        for item in parse_tool_page(html, tool_class):
-            if item["id"] not in seen_ids:
-                seen_ids.add(item["id"])
-                tools.append(item)
-
-    await asyncio.gather(*[fetch_group(page, tc) for page, tc in TOOL_GROUPS.items()])
-    return tools
+	# gather preserves input order; flatten afterward so network timing cannot reorder output.
+	group_results = await asyncio.gather(
+		*[fetch_group(page, tool_class) for page, tool_class in TOOL_GROUPS.items()]
+	)
+	tools: list[dict] = []
+	seen_ids: set[str] = set()
+	for group in group_results:
+		for item in group:
+			if item["id"] not in seen_ids:
+				seen_ids.add(item["id"])
+				tools.append(item)
+	return tools
 
 
 async def get_patch_version(client: httpx.AsyncClient) -> str:
