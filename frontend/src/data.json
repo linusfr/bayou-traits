@@ -1,11 +1,11 @@
 {
 	"meta": {
 		"patch": "2.8.1",
-		"scraped_at": "2026-08-24T10:34:33.378273+00:00",
+		"scraped_at": "2026-08-31T17:23:47.603460+00:00",
 		"trait_count": 85,
-		"weapon_count": 147,
+		"weapon_count": 150,
 		"tool_count": 43,
-		"wiki_weapon_count": 147,
+		"wiki_weapon_count": 150,
 		"wiki_trait_count": 85
 	},
 	"traits": [
@@ -297,6 +297,10 @@
 					"reason": ""
 				},
 				{
+					"weapon_id": "bomb_launcher",
+					"reason": ""
+				},
+				{
 					"weapon_id": "chu_ko_nu",
 					"reason": ""
 				},
@@ -375,6 +379,18 @@
 				},
 				{
 					"weapon_id": "bornheim_no_3_silencer",
+					"reason": ""
+				},
+				{
+					"weapon_id": "burgess",
+					"reason": ""
+				},
+				{
+					"weapon_id": "burgess_bayonet",
+					"reason": ""
+				},
+				{
+					"weapon_id": "burgess_trauma",
 					"reason": ""
 				},
 				{
@@ -1145,6 +1161,18 @@
 					"reason": ""
 				},
 				{
+					"weapon_id": "burgess",
+					"reason": ""
+				},
+				{
+					"weapon_id": "burgess_bayonet",
+					"reason": ""
+				},
+				{
+					"weapon_id": "burgess_trauma",
+					"reason": ""
+				},
+				{
 					"weapon_id": "centennial",
 					"reason": ""
 				},
@@ -1868,6 +1896,10 @@
 			"_ammo_hints": [],
 			"weapon_synergies": [
 				{
+					"weapon_id": "bomb_launcher",
+					"reason": ""
+				},
+				{
 					"weapon_id": "bornheim_no_3_match",
 					"reason": ""
 				},
@@ -2281,6 +2313,14 @@
 				},
 				{
 					"weapon_id": "bomb_lance",
+					"reason": ""
+				},
+				{
+					"weapon_id": "burgess_bayonet",
+					"reason": ""
+				},
+				{
+					"weapon_id": "burgess_trauma",
 					"reason": ""
 				},
 				{
@@ -3001,7 +3041,16 @@
 			"description": "This compact launcher fires spring-loaded projectiles over short distances. Deals tremendous damage on direct impact.",
 			"image_url": "",
 			"_wiki_synergy_traits": [],
-			"trait_synergies": []
+			"trait_synergies": [
+				{
+					"trait_id": "bolt_thrower",
+					"reason": ""
+				},
+				{
+					"trait_id": "quartermaster",
+					"reason": ""
+				}
+			]
 		},
 		{
 			"id": "bornheim_no_3",
@@ -3071,6 +3120,77 @@
 			"trait_synergies": [
 				{
 					"trait_id": "bulletgrubber",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "burgess",
+			"name": "Burgess",
+			"type": "shotgun",
+			"size": 3,
+			"ammo": "shotgun",
+			"weapon_class": "shotgun",
+			"description": "Burgess designed, slide-action, single barrel shotgun. Folding makes it a compact carry while still packing a punch.",
+			"image_url": "",
+			"_wiki_synergy_traits": [],
+			"trait_synergies": [
+				{
+					"trait_id": "bulletgrubber",
+					"reason": ""
+				},
+				{
+					"trait_id": "iron_eye",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "burgess_bayonet",
+			"name": "Burgess Bayonet",
+			"type": "shotgun",
+			"size": 3,
+			"ammo": "shotgun",
+			"weapon_class": "shotgun",
+			"description": "Burgess designed, slide-action, single barrel shotgun. Folding makes it a compact carry while still packing a punch. Modified with a bayonet for melee.",
+			"image_url": "",
+			"_wiki_synergy_traits": [],
+			"trait_synergies": [
+				{
+					"trait_id": "bulletgrubber",
+					"reason": ""
+				},
+				{
+					"trait_id": "iron_eye",
+					"reason": ""
+				},
+				{
+					"trait_id": "silent_killer",
+					"reason": ""
+				}
+			]
+		},
+		{
+			"id": "burgess_trauma",
+			"name": "Burgess Trauma",
+			"type": "shotgun",
+			"size": 3,
+			"ammo": "shotgun",
+			"weapon_class": "shotgun",
+			"description": "Burgess designed, slide-action, single barrel shotgun. Folding makes it a compact carry while still packing a punch. Modified with a stock mounted bludgeon.",
+			"image_url": "",
+			"_wiki_synergy_traits": [],
+			"trait_synergies": [
+				{
+					"trait_id": "bulletgrubber",
+					"reason": ""
+				},
+				{
+					"trait_id": "iron_eye",
+					"reason": ""
+				},
+				{
+					"trait_id": "silent_killer",
 					"reason": ""
 				}
 			]
