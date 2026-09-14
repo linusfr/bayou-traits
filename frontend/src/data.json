@@ -1,12 +1,12 @@
 {
 	"meta": {
-		"patch": "2.8.1",
-		"scraped_at": "2026-08-31T17:23:47.603460+00:00",
-		"trait_count": 85,
+		"patch": "2.9.0.1",
+		"scraped_at": "2026-09-14T16:08:54.515811+00:00",
+		"trait_count": 87,
 		"weapon_count": 150,
 		"tool_count": 43,
 		"wiki_weapon_count": 150,
-		"wiki_trait_count": 85
+		"wiki_trait_count": 87
 	},
 	"traits": [
 		{
@@ -202,11 +202,11 @@
 		{
 			"id": "blademancer",
 			"name": "Blademancer",
-			"description": "Using Dark Sight , take retrievable Ammo in front of you. (100m)",
+			"description": "While using Dark Sight , retrievable Ammo in front of you returns automatically to your inventory. (100m)",
 			"cost": 0,
 			"rank": 0,
 			"category": "supportive",
-			"trait_type": "event",
+			"trait_type": "scarce",
 			"is_burn": false,
 			"is_solo": false,
 			"image_url": "",
@@ -511,12 +511,28 @@
 		{
 			"id": "catalyst",
 			"name": "Catalyst",
-			"description": "Unlock Conditional Trait Effects on the Beastface , Kiteskin , Vigilant , Pain Sense , and Frontiersman Traits. Conditional Effects activate when their base Trait is equipped.",
+			"description": "Unlock Conditional Trait Effects on the Beastface , Kiteskin , Vigilant , Pain Sense , Frontiersman , Lightfoot and Vulture Traits. Conditional Effects activate when their base Trait is equipped.",
 			"cost": 0,
 			"rank": 0,
 			"category": "supportive",
 			"trait_type": "scarce",
 			"is_burn": false,
+			"is_solo": false,
+			"image_url": "",
+			"_weapon_type_hints": [],
+			"_ammo_hints": [],
+			"weapon_synergies": [],
+			"tool_synergies": []
+		},
+		{
+			"id": "chupacabra",
+			"name": "Chupacabra",
+			"description": "Interact with a live horse, cow, or animal cage to restore 1 Health Chunk.",
+			"cost": 2,
+			"rank": 0,
+			"category": "supportive",
+			"trait_type": "normal",
+			"is_burn": true,
 			"is_solo": false,
 			"image_url": "",
 			"_weapon_type_hints": [],
@@ -563,7 +579,7 @@
 			"cost": 0,
 			"rank": 0,
 			"category": "supportive",
-			"trait_type": "event",
+			"trait_type": "scarce",
 			"is_burn": false,
 			"is_solo": false,
 			"image_url": "",
@@ -579,7 +595,7 @@
 			"cost": 0,
 			"rank": 0,
 			"category": "offensive",
-			"trait_type": "event",
+			"trait_type": "scarce",
 			"is_burn": false,
 			"is_solo": false,
 			"image_url": "",
@@ -1517,7 +1533,7 @@
 		{
 			"id": "lightfoot",
 			"name": "Lightfoot",
-			"description": "Vault, fall and climb ladders silently. Also reduces the sound of walking through Noise Traps .",
+			"description": "Catalyst",
 			"cost": 5,
 			"rank": 1,
 			"category": "movement",
@@ -2468,6 +2484,22 @@
 			]
 		},
 		{
+			"id": "siphon",
+			"name": "Siphon",
+			"description": "Allows you to loot a Scarce Trait off an enemy Hunter's body, leaving Siphon in its place.",
+			"cost": 0,
+			"rank": 0,
+			"category": "supportive",
+			"trait_type": "scarce",
+			"is_burn": true,
+			"is_solo": false,
+			"image_url": "",
+			"_weapon_type_hints": [],
+			"_ammo_hints": [],
+			"weapon_synergies": [],
+			"tool_synergies": []
+		},
+		{
 			"id": "sniper_scopesmith",
 			"name": "Sniper Scopesmith",
 			"description": "Remain in scope view after firing a shot while using any weapon with a long scope (Sniper variants).",
@@ -2521,10 +2553,6 @@
 				},
 				{
 					"weapon_id": "crossbow_deadeye",
-					"reason": ""
-				},
-				{
-					"weapon_id": "dolch_96_bullseye",
 					"reason": ""
 				},
 				{
@@ -2741,7 +2769,7 @@
 		{
 			"id": "vulture",
 			"name": "Vulture",
-			"description": "Looting a Hunter will always reward you money .",
+			"description": "Catalyst",
 			"cost": 2,
 			"rank": 24,
 			"category": "supportive",
@@ -3522,10 +3550,6 @@
 				},
 				{
 					"trait_id": "quartermaster",
-					"reason": ""
-				},
-				{
-					"trait_id": "steady_aim",
 					"reason": ""
 				}
 			]
