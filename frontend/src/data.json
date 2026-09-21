@@ -1,7 +1,7 @@
 {
 	"meta": {
-		"patch": "2.9.0.1",
-		"scraped_at": "2026-09-14T16:08:54.515811+00:00",
+		"patch": "2.9.0.3",
+		"scraped_at": "2026-09-21T16:11:26.106050+00:00",
 		"trait_count": 87,
 		"weapon_count": 150,
 		"tool_count": 43,
@@ -2556,6 +2556,10 @@
 					"reason": ""
 				},
 				{
+					"weapon_id": "dolch_96_bullseye",
+					"reason": ""
+				},
+				{
 					"weapon_id": "frontier_73c_marksman",
 					"reason": ""
 				},
@@ -3550,6 +3554,10 @@
 				},
 				{
 					"trait_id": "quartermaster",
+					"reason": ""
+				},
+				{
+					"trait_id": "steady_aim",
 					"reason": ""
 				}
 			]
