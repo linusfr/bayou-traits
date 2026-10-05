@@ -1,7 +1,7 @@
 {
 	"meta": {
-		"patch": "2.9.0.3",
-		"scraped_at": "2026-09-21T16:11:26.106050+00:00",
+		"patch": "2.9.1",
+		"scraped_at": "2026-10-05T19:02:57.549890+00:00",
 		"trait_count": 87,
 		"weapon_count": 150,
 		"tool_count": 43,
@@ -169,10 +169,6 @@
 				},
 				{
 					"weapon_id": "hunting_bow",
-					"reason": ""
-				},
-				{
-					"weapon_id": "shredder",
 					"reason": ""
 				}
 			],
@@ -5186,12 +5182,7 @@
 			"description": "Experimental weapon that shoots sawblades. Sawblades bounce off hard surfaces and rip into targets. Runes etchings give them the potential to ricochet in the direction of nearby enemies. Must be spun before firing. Only found at the circus.",
 			"image_url": "",
 			"_wiki_synergy_traits": [],
-			"trait_synergies": [
-				{
-					"trait_id": "blade_seer",
-					"reason": ""
-				}
-			]
+			"trait_synergies": []
 		},
 		{
 			"id": "slate",
