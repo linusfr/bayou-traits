@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"patch": "2.9.1",
-		"scraped_at": "2026-10-12T19:36:33.898557+00:00",
+		"scraped_at": "2026-10-19T16:47:30.020499+00:00",
 		"trait_count": 87,
 		"weapon_count": 150,
 		"tool_count": 43,
@@ -1173,10 +1173,6 @@
 					"reason": ""
 				},
 				{
-					"weapon_id": "berthier_1892_deadeye",
-					"reason": ""
-				},
-				{
 					"weapon_id": "berthier_1892_riposte",
 					"reason": ""
 				},
@@ -2154,6 +2150,10 @@
 			"_ammo_hints": [],
 			"weapon_synergies": [
 				{
+					"weapon_id": "berthier_1892_deadeye",
+					"reason": ""
+				},
+				{
 					"weapon_id": "berthier_1892_marksman",
 					"reason": ""
 				},
@@ -2533,6 +2533,10 @@
 			"weapon_synergies": [
 				{
 					"weapon_id": "1865_carbine_aperture",
+					"reason": ""
+				},
+				{
+					"weapon_id": "berthier_1892_deadeye",
 					"reason": ""
 				},
 				{
@@ -2979,7 +2983,11 @@
 					"reason": ""
 				},
 				{
-					"trait_id": "iron_eye",
+					"trait_id": "scopesmith",
+					"reason": ""
+				},
+				{
+					"trait_id": "steady_aim",
 					"reason": ""
 				}
 			]
