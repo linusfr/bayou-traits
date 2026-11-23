@@ -1,11 +1,11 @@
 {
 	"meta": {
 		"patch": "2.9.1",
-		"scraped_at": "2026-10-19T16:47:30.020499+00:00",
+		"scraped_at": "2026-11-23T21:54:04.652310+00:00",
 		"trait_count": 87,
-		"weapon_count": 150,
+		"weapon_count": 151,
 		"tool_count": 43,
-		"wiki_weapon_count": 150,
+		"wiki_weapon_count": 151,
 		"wiki_trait_count": 87
 	},
 	"traits": [
@@ -3980,6 +3980,18 @@
 					"reason": ""
 				}
 			]
+		},
+		{
+			"id": "lancaster",
+			"name": "Lancaster",
+			"type": "pistol",
+			"size": 1,
+			"ammo": "medium",
+			"weapon_class": "medium",
+			"description": "Lancaster designed, break-action, multi-barreled pistol. A high powered, fast firing handgun with long reaload.",
+			"image_url": "",
+			"_wiki_synergy_traits": [],
+			"trait_synergies": []
 		},
 		{
 			"id": "lebel_1886",
